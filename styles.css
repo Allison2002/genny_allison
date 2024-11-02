@@ -1575,8 +1575,17 @@ button.submit-button:hover {
   }
 
   .resume {
-    padding: 4vh 0 2vh; 
+    padding: 2vh 0 2vh; 
     background-color: white;
+  }
+
+  .resume h2 {
+    font-size: 4.5vw;
+  }
+
+  .resume h3 {
+    font-size: 3.5vw;
+    padding: 2vw;
   }
 
   .menu-toggle {
@@ -1693,7 +1702,7 @@ button.submit-button:hover {
   }
 
   .canvas-skills-title h1 {
-    font-size: 4vw;
+    font-size: 6vw;
     padding: 0;
   }
 
