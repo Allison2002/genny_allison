@@ -1162,13 +1162,14 @@ button.submit-button:hover {
     }
 
     /* Hide desktop and show mobile */
-    .desktop-version {
-        display: none; /* Hide desktop on mobile */
-    }
-    .mobile-version {
-        display: block; /* Show mobile content */
-        padding: 2vh 5vw;
-    }
+  .desktop-version {
+      display: none; /* Hide desktop on mobile */
+  }
+  .mobile-version {
+      display: block; /* Show mobile content */
+      padding: 2vh 5vw;
+  }
+
  /* nav */ 
   .nav-links ul li {
     padding: 1vw;
@@ -1295,12 +1296,221 @@ button.submit-button:hover {
       align-self: flex-end; /* Aligns headshot to the bottom */
   }
 
+/* about me, portfolio */
 
+  .about-me {
+    margin: 0 auto;
+    max-width: 100vw;
+    width: 100%;
+    position: relative;
+    padding-bottom: 4vh;
+  }
+
+  .outer-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    max-width: 50vw;
+    height: 25vh;
+    margin: 0 auto;
+  }
+
+  .section1 {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 25vw;
+    position: relative;
+    height: 10vh;
+  }
+
+  .dots {
+    width: 40vw;
+    left: -20%;
+    height: 10vh;
+  }
+
+  .dots img {
+    width: 35vw;
+  }
+
+  .headshot-about {
+    top: 108%;
+    left: 30%; 
+    width: 10vw; 
+  }
+
+  .headshot-about img {
+    width: auto;
+    height: 20vh;
+  }
+
+  .portfolio-name {
+    display: flex;
+    padding: 25% 0;
+    justify-content: left;
+    align-items: center;
+    height: 5vh;
+  }
+
+  .portfolio-name img {
+    width: auto;
+    height: 10vh;
+  }
+
+  .greeting-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+    width: 100%;
+  }
+
+  .greetings-label {  
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 100%;
+    border-top: .625vh solid black;
+    border-right: .625vh solid black;
+    border-left: .625vh solid black;
+    margin-left: 2.1vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.1);  
+  }
+
+  .greetings-label h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0.5vw 2vw;
+    width: 100%;
+  }
+
+  .greetings {
+    width: 90%;
+    border-bottom: 0.16vw solid white;
+    border-left: 0.16vw solid white;
+    border-right: 0.16vw solid white;
+  }
+
+  .greetings p {
+    color: white;
+    font-family: tt norms pro, Arial, Helvetica, sans-serif;
+    font-weight: 250;
+    line-height: 1.4;
+    font-size: 1.3rem;
+    padding: 2vw;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    margin: 20px;
+    max-width: 100%;
+    padding: 1vh 1vw;
+  }
+
+  .fun-facts-grid {
+    display: grid;
+    grid-template-rows: 0.4fr 3fr;
+    border: 3px solid white;
+  }
+  .facts-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+  }
+
+  .favorites-label h3 {
+    padding: 2.5vh 0;
+  }
+
+  .sub-labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+
+  .sub-labels h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+  }
+
+  .my-favorites-grid {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    padding:  0;
+  }
+
+  .inside-grid-favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+    padding: 0;
+  }
+
+  .favorites img {
+    width: 8vw;
+    padding: 2vh 0;
+  }
+
+  .favorites {
+    padding: 0;
+  }
+
+  .fun-facts {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+  }
+
+  .facts {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 0;
+  }
+
+  .check-mark img {
+    width: 10vw;
+    padding: 1vh;
+  }
+
+  .books {
+    padding-bottom: 5vh;
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
+    margin-bottom: 4vh;
+  }
+
+  .quote img {
+    width: 4vw;
+  }
+
+  .quote p {
+    color: white;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    padding: 4vw;
+  }
 
   /* Footer Adjustment */
   footer {
       padding-top: 0;
       margin-top: 0;
+      padding-bottom: 15vh;
   }
 
   .footer-logo {
@@ -1312,10 +1522,6 @@ button.submit-button:hover {
 
   .footer-logo img {
     width: 30%;
-  }
-
-  footer {
-    padding-bottom: 10vh;
   }
 
   .social-media ul li a img {
@@ -1343,23 +1549,28 @@ button.submit-button:hover {
   }
 
   .greetings-label {  
-    display: flex;
-    background-color: white;
-    color: black;
-    width: 20.5vw;
-    border-top: .225vw solid black;
-    border-right: .225vw solid black;
-    border-left: .225vw solid black;
-    margin-left: 2.1vw;
+    width: 30%; 
+    margin: 0 5vw; 
+    padding: 1vh 0; 
+    border-top: 0.4vh solid black;
+    border-right: 0.4vh solid black;
+    border-left: 0.4vh solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.1); 
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.1);  
+  }
+
+  .greetings {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 0.16vw solid white;
+    border-left: 0.16vw solid white;
+    border-right: 0.16vw solid white;
+    padding-top: 1vh; 
   }
 
   .greetings-label h2 {
     font-size: 1.5rem;
-    font-weight: bold;
+    margin: 0;
     padding: 0.5vw;
   }
 
