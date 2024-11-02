@@ -1235,9 +1235,15 @@ button.submit-button:hover {
   }
 
   /* Designer and Coder Sections */
-  .designer-box {
-      padding: 2vh 0;
-      width: 100%;
+  .textbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .main-title {
@@ -1247,20 +1253,22 @@ button.submit-button:hover {
     background-size: cover;
   }
 
-  .designer-box,
-  .coder-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-      align-items: center;
-      width: 100%;
-      max-width: 100vw; 
-      text-align: center;
+  .designer-box {
+    padding-left: 15vw;
   }
 
-  .designer-box {
-    margin-top: 10vh;
+  .coder-box {
+    padding-left: 3vw;
   }
+  
+  .designer-box,
+  .coder-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
   .designer-box h2,
   .coder-box h2 {
     font-size: 4vw;
@@ -1268,6 +1276,7 @@ button.submit-button:hover {
     white-space: nowrap;
     text-align: center;
   }
+
   .designer-box h3,
   .coder-box h3 {
     font-size: 3vw;
