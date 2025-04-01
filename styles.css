@@ -8,6 +8,7 @@ body,
 html {
   width: 100%;
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -63,6 +64,7 @@ nav {
   justify-content: space-between;
   /* Ensures logo stays to the left */
   width: 100%;
+  max-width: 100vw;
   background-color: black;
 }
 
@@ -103,6 +105,7 @@ nav {
 
 .nav-logo img {
   width: 100%;
+  object-fit: cover;
 }
 
 .footer-logo {
@@ -118,6 +121,7 @@ nav {
 .footer-logo img {
   width: 100%;
   max-width: 30vw;
+  object-fit: cover;
 }
 
 .footer-links ul li {
@@ -162,6 +166,7 @@ footer {
 .social-media ul li a img {
   width: 2vw;
   padding: 2vh 0;
+  object-fit: cover;
 }
 
 
@@ -171,7 +176,9 @@ footer {
   display: flex;
   margin: 0 auto;
   width: 100%;
-  padding: 6vh 0;
+  max-width: 100%;
+  height: auto;
+  padding: 4em 0 1em;
   justify-content: center;
   text-align: center;
 }
@@ -204,9 +211,23 @@ footer {
   flex-wrap: wrap;
 }
 
+.headshot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Changed from 'end' to 'center' to center images */
+  text-align: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* To stack images on top of each other */
+}
+
 .headshot-container img {
-  width: auto;
+  width: 100%;
+  height: auto;
   padding-bottom: 7.5vh;
+  object-fit: cover;
 }
 
 .coder-box h2,
@@ -256,6 +277,7 @@ footer {
   width: 40vw;
   height: auto;
   transition: transform 0.6s ease, opacity 0.6s ease;
+  object-fit: cover;
 }
 
 .coder-box {
@@ -281,13 +303,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.headshot-container {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  text-align: center;
 }
 
 .headshot,
@@ -366,9 +381,9 @@ footer {
   justify-content: center;
   background-color: black;
   width: 100%;
-  margin: 2em auto;
+  margin: 2vh auto 0;
   border-radius: .225vw;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.4), inset 0 0 0.625em rgba(255, 255, 255, 0.1);
 }
 
 .skills-black-container {
@@ -378,67 +393,74 @@ footer {
   justify-content: center;
   background-color: black;
   margin: 0 auto;
-  max-height: 130vh;
+  height: auto;
+  max-height: 100%;
   padding: 3em;
-  /* Space for the inner border */
-  background-color: black;
-  background-image: url(/img/black-container-background.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.1);
-  max-width: 70vw;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.4), inset 0 0 0.625em rgba(255, 255, 255, 0.1);
+  max-width: 80vw;
 }
 
 .outer-container {
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  max-width: 50vw;
-  height: 82vh;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 100%;
+  height: auto;
 }
 
 .section1 {
   display: grid;
   grid-template-rows: 1fr 3fr;
-  width: 25vw;
-  position: relative;
-  height: 90vh;
+  width: 100%;
+  height: auto;
+}
+
+.section2 {
+  display: flex;
+  padding-right: 3vw;
 }
 
 .dots {
-  width: 20vw;
-  height: 100%;
+  width: 15vw;
+  height: auto;
   position: absolute;
   left: -10%;
 }
 
 .dots img {
-  width: 20vw;
+  width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .headshot-about {
   display: flex;
   height: auto;
-  width: 25vw;
+  width: 20vw;
   position: absolute;
-  top: 30%;
-  left: -8.5%;
+  left: -2%;
 }
 
 .headshot-about img {
-  width: auto;
-  height: 55vh;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about--me-container {
+  margin-top: 1.4vw;
 }
 
 .portfolio-name {
   display: flex;
-  padding: 30vh 0;
+  padding: 6.7vw 0 1vw;
+  width: 30vw;
+  height: auto;
 }
 
 .portfolio-name img {
-  width: auto;
-  height: 35vh;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .greeting-container {
@@ -453,25 +475,23 @@ footer {
   display: flex;
   background-color: white;
   color: black;
-  width: 20.5vw;
+  width: 15vw;
   border-top: .625vh solid black;
   border-right: .625vh solid black;
   border-left: .625vh solid black;
   margin-left: 2.1vw;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.25vw 0.5vw rgba(0, 0, 0, 0.4), inset 0 0 0.625vw rgba(255, 255, 255, 0.1);
 }
 
 .greetings-label h2 {
-  font-size: 1.8rem;
+  font-size: 1.9vw;
   font-weight: bold;
   padding: 0.5vw;
 }
 
 .greetings {
-  width: 45.8vw;
+  width: 90%;
   border-bottom: 0.16vw solid white;
   border-left: 0.16vw solid white;
   border-right: 0.16vw solid white;
@@ -482,7 +502,7 @@ footer {
   font-family: tt norms pro, Arial, Helvetica, sans-serif;
   font-weight: 250;
   line-height: 1.4;
-  font-size: 1.3rem;
+  font-size: 1.4vw;
   padding: 2vw;
 }
 
@@ -490,7 +510,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5vw;
-  margin: 20px;
+  margin: 1.25vw;
   max-width: 100%;
   padding: 1vh 1vw;
 }
@@ -498,18 +518,19 @@ footer {
 .fun-facts-grid {
   display: grid;
   grid-template-rows: 0.4fr 3fr;
-  border: 3px solid white;
+  border: .155vw solid white;
 }
 
 .facts-grid {
   display: grid;
   grid-template-rows: 2fr 1fr;
-  gap: 3em;
+  gap: 1.7vw;
   width: 100%
 }
 
-.favorites-label h3 {
-  padding: 2.5vh 0;
+.favorites-label {
+  height: 8vh;
+  width: 100%;
 }
 
 .sub-labels {
@@ -520,7 +541,7 @@ footer {
 }
 
 .sub-labels h3 {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   text-align: center;
   color: black;
 }
@@ -528,19 +549,28 @@ footer {
 .my-favorites-grid {
   display: grid;
   grid-template-rows: 0.4fr 3fr;
-  gap: 3em;
-  border: 0.16vw solid white;
+  gap: .5vw;
+  border: .155vw solid white;
 }
 
 .inside-grid-favorites {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 100%
+  width: 100%;
+  margin: 0 auto;
+}
+
+.favorites {
+  width: 5vw;
+  height: auto;
+  margin: 0 auto;
 }
 
 .favorites img {
-  width: 5vw;
+  width: 100%;
+  height: auto;
   padding: 2vh 0;
+  object-fit: cover;
 }
 
 .facts,
@@ -551,12 +581,42 @@ footer {
 .fun-facts {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .facts {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   padding: 2vw;
+}
+
+.check-mark-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 1vh;
+  padding: 0 .7vw;
+}
+
+.quote p {
+  color: white;
+  font-size: 1.6vw;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.quote:last-child {
+  padding-bottom: 1vw;
 }
 
 .check-mark {
@@ -565,25 +625,29 @@ footer {
   justify-content: center;
 }
 
+.check-mark img {
+  width: 5vw;
+  height: auto;
+  object-fit: cover;
+}
+
 .quote {
   display: flex;
   flex-direction: column;
   border: 0.16vw solid white;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .quote img {
   width: 3vw;
+  height: auto;
+  padding-top: 1vw;
+  object-fit: cover;
 }
 
-.quote p {
-  color: white;
-  font-size: 1.2rem;
-  font-style: italic;
-  text-align: center;
-  padding: 1vw;
-}
 
 /*  skills */
 .skills-black {
@@ -594,15 +658,18 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
   width: 100%;
+  max-width: 100vw;
+  height: auto;
   gap: 0;
 }
 
 .canvas-skills-img img {
-  height: 50vh;
-  width: auto;
-  border-bottom: 4vh solid black;
-  border-left: 4vh solid black;
-  border-right: 2vh solid black;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1em solid black;
+  border-right: 1em solid black;
+  border-left: .5em solid black;
+  object-fit: cover;
 }
 
 .canvas-skills-title {
@@ -610,10 +677,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 4vh solid black;
-  border-right: 4vh solid black;
-  border-left: 2vh solid black;
-  height: 50vh;
+  border-bottom: 1em solid black;
+  border-right: 1em solid black;
+  border-left: .5em solid black;
+  height: auto;
+  width: 1005;
 }
 
 .canvas-skills-title h1 {
@@ -629,34 +697,41 @@ footer {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
   margin: 0 auto;
   background-image: black;
+  padding: 1vw 2vw;
+  width: 100%;
+  height: auto;
 }
 
-.skills h4 {
-  font-size: 2rem;
+.skills-firstset h4 {
+  font-size: 2vw;
   color: #a6a6a6;
   transition: font-size 0.3s ease, color 0.3s ease;
-  padding: 2.5vw;
+  padding: 2vw 2vw;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
 }
 
-.skills :hover {
-  font-size: 2.3rem;
+.skills-firstset :hover {
+  font-size: 2.3vw;
   color: white;
 }
 
-.skills-label h3 {
-  font-size: 2.4rem;
+.skills-secondset h4 {
+  font-size: 2.4vw;
   color: #a6a6a6;
   transition: font-size 0.3s ease, color 0.3s ease;
-  padding: 3vw;
+  padding: 2vw 3vw;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
 }
 
-.skills-label :hover {
-  font-size: 2rem;
+.skills-secondset :hover {
+  font-size: 2vw;
   color: white;
-
 }
 
 .skills1 {
@@ -752,14 +827,15 @@ footer {
 }
 
 .resume h2 {
-  font-size: 2rem;
+  font-size: 2vw;
   color: black;
 
 }
 
 .resume-date h3 {
-  font-size: 1.4rem;
+  font-size: 1.5vw;
   color: black;
+  padding: 0.5em 0 0;
 }
 
 .resume-summary a {
@@ -776,8 +852,8 @@ footer {
   font-family: tt norms pro, Arial, Helvetica, sans-serif;
   font-weight: 250;
   line-height: 1.4;
-  padding: 20px 75px;
-  font-size: 1.3rem;
+  padding: 1.25em 3em;
+  font-size: 1.45vw;
 }
 
 .education {
@@ -789,13 +865,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: contain;
   width: 45vw;
+  height: auto;
 }
 
 .project-images img {
   width: 93%;
   height: auto;
+  padding: 3% 0;
+  object-fit: cover;
+
 }
 
 /* side menu and back to top button */
@@ -806,7 +885,7 @@ footer {
 #side-nav {
   position: fixed;
   bottom: 5%;
-  right: 2vw;
+  right: 5%;
   z-index: 1000;
   flex-direction: column;
   align-items: flex-end;
@@ -826,12 +905,12 @@ footer {
 
 #side-nav ul li a {
   display: block;
-  padding: 0.7em;
+  padding: .5em;
   background-color: black;
   color: white;
-  border: 1px solid white;
-  border-radius: 5px;
-  font-size: 1rem;
+  border: 0.0625em solid white;
+  border-radius: 0.3125em;
+  font-size: 1vw;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
   width: auto;
@@ -847,18 +926,18 @@ footer {
 /* Back-to-top button */
 #back-to-top {
   position: fixed;
-  bottom: 20px;
-  left: 30px;
+  bottom: 1.25rem;
+  left: 1.875rem;
   z-index: 99;
   background-color: black;
   color: white;
-  font-size: 1rem;
+  font-size: 1vw;
   border: none;
-  border-radius: 5px;
-  padding: 0.2em;
+  border-radius: 0.3125em;
+  padding: .5em;
   cursor: pointer;
   transition: opacity 0.3s, transform 0.3s ease;
-  border: 1px solid white;
+  border: 0.0625em solid white;
 }
 
 /* Menu button */
@@ -873,7 +952,8 @@ footer {
   align-items: center;
   margin: 2em auto;
   width: auto;
-  font-size: 1rem;
+  font-size: 1.1vw;
+  font-weight: 600;
   padding: 0.5em 1em;
   background-color: white;
   border: 0.2em solid black;
@@ -886,7 +966,7 @@ footer {
 
 .click-me:hover {
   background-color: cyan;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.7);
+  box-shadow: 0.0625em 0.0625em 0.3125em rgba(0, 0, 0, 0.3), -0.125em -0.125em 0.3125em rgba(255, 255, 255, 0.7);
 }
 
 .click-me a {
@@ -906,18 +986,27 @@ footer {
 }
 
 .skills-text:hover {
-  text-shadow: 8px 8px 16px rgba(11, 214, 226, 0.8),
+  text-shadow: 0.5em 0.5em 1em rgba(11, 214, 226, 0.8),
     /* outer glow */
-    2px 2px 8px rgba(11, 214, 226, 0.6),
+    0.125em 0.125em 0.5em rgba(11, 214, 226, 0.6),
     /* softer glow */
-    6px 6px 20px rgba(11, 214, 226, 0.4);
+    0.375em 0.375em 1.25em rgba(11, 214, 226, 0.4);
   /* faint glow */
 }
 
 .button-grid {
   display: flex;
-  padding-bottom: 8vh;
-  gap: 10vh;
+  width: 80%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  gap: 1em;
+}
+
+.takeme-text h3 {
+  color: cyan;
+  font-weight: 700;
+  font-size: 1.5vw;
 }
 
 /* contact page */
@@ -937,8 +1026,8 @@ footer {
 .contact-form-container textarea {
   width: 100%;
   padding: 0.75em;
-  border: 1px solid #B0B0B0;
-  border-radius: 5px;
+  border: 0.0625em solid #B0B0B0;
+  border-radius: 0.3125em;
   font-size: 1rem;
 }
 
@@ -951,9 +1040,9 @@ form {
   background-color: #F2F7FA;
   /* Match contact form background */
   width: 60%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0.25em 0.5em rgba(0, 0, 0, 0.1);
   /* Softer shadow */
-  border-radius: 8px;
+  border-radius: 0.5em;
   /* Smooth rounded corners */
   color: #1A1D9E;
   /* Consistent text color */
@@ -980,14 +1069,14 @@ form h1 {
 .form-sect select {
   width: 100%;
   padding: 0.75em;
-  border-radius: 5px;
-  border: 1px solid #B0B0B0;
+  border-radius: 0.3125em;
+  border: 0.0625em solid #B0B0B0;
   font-size: 1rem;
 }
 
 textarea {
   resize: vertical;
-  height: 100px;
+  height: 12.5vh;
 }
 
 button.submit-button {
@@ -996,7 +1085,7 @@ button.submit-button {
   background-color: black;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125em;
   font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -1015,36 +1104,12 @@ button.submit-button:hover {
   display: none;
 }
 
-.grade-container {
-  width: 861px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-#desktop-grade h3 {
-  font-size: 0.65rem;
-}
-
-.mood-board,
-.pagespeed-grade-img {
-  width: 861px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.grade-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  gap: 1em;
-}
 
 .hubspot {
   width: 93%;
   height: auto;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -1053,6 +1118,7 @@ button.submit-button:hover {
   margin: 0 auto;
   width: 93%;
   height: auto;
+  object-fit: cover;
 }
 
 /* borders */
@@ -1060,18 +1126,18 @@ button.submit-button:hover {
   border: 1em solid white;
   margin: 30px auto;
   width: 95%;
-  max-width: 1200px;
+  max-width: 100%;
   height: 100%;
-  padding: 15px 0;
+  padding: 0.9375em 0;
 }
 
 .collections-border-white {
   border: 1em solid white;
-  margin: 30px auto;
+  margin: 1.875em auto;
   width: 95%;
-  max-width: 1200px;
+  max-width: 100%;
   height: 100%;
-  padding: 15px 0;
+  padding: 0.9375em 0;
 }
 
 
@@ -1104,7 +1170,7 @@ button.submit-button:hover {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 20px;
+  padding: 1.25em;
   text-align: center;
 }
 
@@ -1112,7 +1178,7 @@ button.submit-button:hover {
   font-size: 2rem;
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.625em;
   transition: color 0.3s ease;
 }
 
@@ -1142,40 +1208,49 @@ button.submit-button:hover {
 }
 
 /* collection page */
+.collections-grid,
+.collections-row {
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  /* Ensure no overflow */
+  height: auto;
+  padding: 0;
+}
+
 
 .collections-grid {
-  display: flex;
-  flex-direction: column;
+  grid-template-rows: repeat(2, 1fr);
   margin: 2em auto;
 }
 
 .collections-row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 1400px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80vw;
+  max-width: 100%;
+  height: auto;
   margin: 4em auto;
 }
 
 .collection-thumbnail-box {
   background-color: black;
   box-shadow: rgb(0 0 0 / 20%) 0 0 1.5625em .5em;
-  width: 375px;
+  width: 100%;
+  height: auto;
   margin: 2em auto;
   padding: 1em;
   box-sizing: border-box;
-  /* Ensures padding doesn't affect the width/height calculation */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* Allows content to be spaced evenly */
 }
 
 .collections-title {
-  width: 93%;
+  width: 100%;
   height: auto;
-  max-width: 375px;
+  max-width: 100%;
   margin: 0 auto;
+  background-color: white;
+  padding: 0.725em;
 }
 
 .collections-container {
@@ -1195,6 +1270,7 @@ button.submit-button:hover {
   height: auto;
   margin: 0 auto;
   border: 0.2em solid white;
+  object-fit: cover;
 }
 
 .collections-button-grid {
@@ -1203,9 +1279,7 @@ button.submit-button:hover {
   justify-content: space-between;
   gap: 0;
   margin: 1em auto;
-  /* Add margin to space buttons evenly */
   padding: 0 1.5em;
-  /* Ensure no extra padding below buttons */
 }
 
 .collections-btn {
@@ -1226,7 +1300,7 @@ button.submit-button:hover {
 
 .collections-btn:hover {
   background-color: cyan;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.7);
+  box-shadow: 0.0625em 0.0625em 0.3125em rgba(0, 0, 0, 0.3), -0.125em -0.125em 0.3125em rgba(255, 255, 255, 0.7);
 }
 
 .collections-btn a {
@@ -1238,7 +1312,7 @@ button.submit-button:hover {
   width: 93%;
   height: auto;
   /* Let content determine height */
-  max-width: 375px;
+  max-width: 37.5vw;
   margin: 0 auto;
 }
 
@@ -1248,38 +1322,39 @@ button.submit-button:hover {
   line-height: 1.5;
   background-color: white;
   width: 100%;
-  padding: 2em 0 2em;
+  padding: 1em 0 1em;
 }
 
 #project-title h2 {
-  font-size: 2rem;
+  font-size: 2.3vw;
 }
 
 .mood-board h3,
 .author-bio-text h3,
 .pagespeed-grade-title h3,
 .grade-text .grade-title h3 {
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 .grade-text {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 2em;
 }
 
 #desktop-grade h3 {
-  font-size: 1rem;
+  font-size: 1.2vw;
 }
 
 #desktop-grade .grade-header h3,
 #desktop-grade p {
-  font-size: 1.2em;
+  font-size: 1.2vw;
 }
 
 .grade-item p {
-  font-size: 1em;
+  font-size: 1vw;
 }
 
 .author-bio-text {
@@ -1287,7 +1362,7 @@ button.submit-button:hover {
   max-width: 100%;
   margin: 2em auto 2em;
   height: auto;
-  padding: 10px;
+  padding: 0.625em;
   background-color: white;
 }
 
@@ -1296,9 +1371,8 @@ button.submit-button:hover {
 .grade-title {
   width: 100%;
   max-width: 100%;
-  margin: 2em auto 1em;
   height: auto;
-  padding: 10px;
+  padding: 0.625em;
   background-color: white;
 }
 
@@ -1306,13 +1380,20 @@ button.submit-button:hover {
   margin: 3em auto 0;
 }
 
+.grades {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
 .grade-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100vw;
   margin: 1em auto;
   display: grid;
-  grid-template-columns: repeat(5, minmax(60px, 1fr));
-  gap: 5px;
+  grid-template-columns: repeat(5, minmax(5vw, 1fr));
+  gap: 0.3125em;
   background-color: black;
 }
 
@@ -1324,16 +1405,16 @@ button.submit-button:hover {
 }
 
 .grade-header {
-  height: 5em;
+  height: auto;
   width: 100%;
-  max-width: 480px;
-  padding: 5px;
+  max-width: 100%;
+  padding: 0.3125em;
   background-color: white;
 }
 
 .grade-item {
-  padding: 5px;
-  height: 5em;
+  padding: 0.3125em;
+  height: auto;
   width: 100%;
   background-color: white;
 }
@@ -1341,7 +1422,7 @@ button.submit-button:hover {
 .pagespeed-container {
   width: 100%;
   height: auto;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -1358,6 +1439,7 @@ button.submit-button:hover {
   width: 93%;
   height: auto;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .cta-section,
@@ -1370,11 +1452,13 @@ button.submit-button:hover {
   width: 90%;
   height: auto;
   margin: 2em auto 0;
+  object-fit: cover;
 }
 
-.cta-section p,
-.author-bio p {
-  font-size: 2.2rem;
+.cta-section p {
+  font-size: 1.3vw;
+  width: 100%;
+  height: auto;
 }
 
 .author-bio {
@@ -1383,8 +1467,15 @@ button.submit-button:hover {
   text-align: center;
 }
 
+.aurtho-bio h2 {
+  font-size: 2vw;
+  width: 100%;
+  height: auto;
+}
+
 .author-bio img {
   width: 40vw;
+  object-fit: cover;
 }
 
 .hubspot,
@@ -1394,13 +1485,15 @@ button.submit-button:hover {
   gap: 1.5em;
   margin: 0 auto;
   width: 95%;
-  padding-bottom: 4em;
+  max-width: 95%;
+  height: auto;
 }
 
 .author-bio p {
   width: 100%;
-  font-size: 1.3rem;
-  padding: 10px;
+  font-size: 1.3vw;
+  padding: 0.3em;
+  font-weight: 600;
 }
 
 .casestudy-hr {
@@ -1415,30 +1508,38 @@ button.submit-button:hover {
 .list-items ul li {
   color: white;
   width: 60%;
-  margin-left: 100px;
-  line-height: 1.8;
+  margin: 0 auto;
+  line-height: 1.6;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.2vw;
 }
 
 .casestudy h3 {
   padding: 2em 2em 0 2em;
-  text-align: left;
-  width: 80%;
-  margin-left: 20px;
+  left: 1%;
+  margin: 0 auto 1em;
+  width: 100%;
+  height: auto;
 }
 
 .casestudy p {
-  font-size: 1.5rem;
-  text-align: left;
+  font-size: 1.5vw;
+  left: 1%;
+  margin: 0 auto 1em;
+  width: 100%;
+  height: auto;
 }
 
 .casestudy h3 {
-  font-size: 2rem;
+  font-size: 1.6vw;
+  left: 1%;
+  margin: 0 auto 1em;
+  width: 100%;
+  height: auto;
 }
 
 .list-items ul li {
-  padding-left: 20px;
+  padding-left: 1.25em;
   margin-top: 0.5em;
 }
 
@@ -1446,16 +1547,17 @@ button.submit-button:hover {
   margin-bottom: 1em;
 }
 
-.list-items ul li ul {}
-
 .list-items h3 {
-  font-size: 1.8rem;
-  margin-left: 100px;
-  margin-bottom: 1em;
+  font-size: 1.6vw;
+  left: 1%;
+  margin: 0 auto 1em;
+  width: 100%;
+  height: auto;
 }
 
 .list-items li {
   line-height: 1.6;
+  font-size: 1.5vw;
 }
 
 .explore-container {
@@ -1471,1950 +1573,228 @@ button.submit-button:hover {
   margin: 2em auto;
 }
 
-@media (max-width: 1024px) {
-  .nav-links ul li a {
-    font-size: 1.7vw;
-    justify-content: space-evenly;
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* Ensures tooltip is tied to the h4, but tooltip itself will be positioned relative to the container */
+  cursor: pointer;
+  /* Indicate it's interactive */
+}
+
+/* Target the h4 inside .tooltip specifically */
+.tooltip h4 {
+  position: relative;
+  display: inline-block;
+  /* Ensures tooltip only appears when hovering over the h4 */
+  cursor: pointer;
+  /* Indicate it's interactive */
+}
+
+/* Tooltip text */
+.tooltip-text {
+  visibility: hidden;
+  width: auto;
+  min-width: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  /* Position directly above the word */
+  left: 50%;
+  margin-left: -100px;
+  /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border: 2px solid #0BD6E2;
+  /* Cyan border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /* Optional: Shadow for more visibility */
+}
+
+/* Tooltip arrow */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  /* Bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  /* Center the arrow */
+  border-width: 5px;
+  border-style: solid;
+  border-color: #0BD6E2 transparent transparent transparent;
+  /* Cyan arrow */
+}
+
+/* Show the tooltip on hover over the h4 text */
+.tooltip h4:hover+.tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .collections-button-grid {
+    padding: 0 .5em;
+  }
+
+  .collections-btn {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0;
-  }
-
-  .main-title {
-    padding-top: 15vh;
-  }
-
-  .nav-logo {
-    padding-top: 1.5vh;
-  }
-
-  .black-border {
-    border: 3vh solid black;
-  }
-
-  html {
-    overflow-x: hidden;
-  }
-
-  .design-container {
-    padding: 0 2vw;
-    height: 34vh;
-  }
-
-  .headshot,
-  .headshot-animated {
     width: auto;
-    height: 40vh;
-    transition: opacity 0.5s ease;
-    padding: 0;
-  }
-
-
-  .headshot-animated {
-    padding: 0;
-  }
-
-  .coder-box h2,
-  .designer-box h2 {
-    font-size: 3vw;
-    padding: 0.5vh 0;
-  }
-
-  .coder-box h3,
-  .designer-box h3 {
-    font-size: 2vw;
-    width: 100%;
-  }
-
-  .designer-box,
-  .coder-box {
-    padding: 0 1.5vw;
-  }
-
-  .skills-grid {
-    width: 100%;
-    max-width: 90vw;
-  }
-
-  .skills-main {
-    width: 100%;
-    max-width: 90vw;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .skills h4 {
-    font-size: 2rem;
-    padding: .5vw;
-  }
-
-  .skills :hover {
-    font-size: 2.5rem;
-  }
-
-  .skills-label h3 {
-    font-size: 2.8rem;
-    padding: 1.5vw;
-  }
-
-  .skills-label :hover {
-    font-size: 3.2rem;
-  }
-
-  .skills {
-    padding: 2vw;
-  }
-
-  .skills-label {
-    padding: 1vw;
-  }
-
-  .canvas-skills-img img {
-    height: 43.5vh;
-    max-width: 100%;
-    border: 2vw solid black;
-  }
-
-  .canvas-skills-title h1 {
-    font-size: 4vw;
-    padding: 0;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    box-shadow: none;
-    padding: 0;
-  }
-
-  .nav-links ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  .nav-links ul li {
-    font-size: 2rem;
-    color: white;
-  }
-
-  .nav-links ul li a:hover {
-    background-color: cyan;
-    color: black;
-    transform: scale(1.05);
-    /* GPU-accelerated */
-    opacity: 0.9;
-    /* GPU-accelerated */
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-
-  .main-title {
-    padding-top: 5vh;
-  }
-
-  .nav-logo {
-    padding-top: 1.5vh;
-  }
-
-  .black-border {
-    border: 3vh solid black;
-  }
-
-  .about-me,
-  .black-container {
-    width: 960px;
-    max-width: 1200px;
-  }
-
-  .main-container {
-    width: 960px;
-    max-width: 1200px;
-    height: auto;
-  }
-
-  .resume,
-  .skills-black-container {
-    width: 100%;
-    max-width: 1200px;
-  }
-
-  .resume {
-    padding: 4em 0 1.35em;
+    font-size: 1rem;
+    padding: 0.225em .5em;
     background-color: white;
-    width: 100%;
+    border: 0.2em solid black;
+    border-radius: 2em;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 
-  .resume-border {
-    width: 100%;
-    margin: 2em auto;
-    border-top: 2em solid black;
-    border-bottom: 0em;
-    border-left: 2em solid black;
-    border-right: 2em solid black;
-  }
-
-  .resume-summary {
-    border: 0.5em solid white;
-    padding: 2em;
-  }
-
-  .grade-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    gap: 1em;
-  }
-
-  .hubspot {
-    width: 93%;
-    height: auto;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .hubspot img,
-  .grade-grid img {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-  }
-
-  .border-white {
-    border: 1em solid white;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    padding: 15px 0;
-  }
-
-  .border-black {
-    border: 1em solid black;
-    margin: 0 auto;
-    width: 95%;
-    height: auto;
-  }
-
-  .cta-section,
-  .author-bio {
-    max-width: 100vw;
-  }
-
-  .cta-section img,
-  .author-bio img {
-    width: 50vw;
-    height: auto;
-  }
-
-  .cta-section p,
-  .author-bio p {
-    font-size: 2.2rem;
-  }
-
-  .project-images {
-    width: 100%;
-  }
-
-  .skills h4 {
-    font-size: 2rem;
-    padding: 0.6em;
-  }
-
-  .skills:hover {
-    font-size: 2.5rem;
-    transform: scale(1.05);
-    /* GPU-accelerated */
-    opacity: 0.9;
-    /* GPU-accelerated */
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-
-  .skills-label h3 {
-    font-size: 2.8rem;
-    padding: 1.8em;
-  }
-
-  .skills-label:hover {
-    font-size: 3.2rem;
-    transform: scale(1.05);
-    /* GPU-accelerated */
-    opacity: 0.9;
-    /* GPU-accelerated */
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-
-  .skills {
-    padding: 2.4em;
-  }
-
-  .skills-label {
-    padding: 1.2em;
-  }
-
-  .canvas-skills-grid {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  .canvas-skills-img {
-    height: auto;
-    max-width: 100%;
-  }
-
-  .canvas-skills-img img {
-    height: auto;
-    max-width: 100%;
-    border-bottom: 2em solid black;
-    border-left: 2em solid black;
-    border-right: 2em solid black;
-
-  }
-
-  .greetings-label,
-  .canvas-skills-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1.5em solid black;
-    height: auto;
-    width: 90%;
-    margin: 2em auto 0;
-  }
-
-  .canvas-skills-title h1 {
-    font-size: 4rem;
-    padding: 0;
-  }
-
-  .resume h2,
-  .canvas-skills-title h2 {
-    font-size: 2.5rem;
-  }
-
-  .wireframe-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-  }
-
-  .wireframe-grid img {
-    width: 100%;
-    height: auto;
+  #side-nav {
+    right: 15vw;
   }
 
   .about-me {
-    margin-bottom: 7em;
-    padding-bottom: 0;
-  }
-
-  .author-bio-text p,
-  .pagespeed-grade-title h3,
-  .grade-text .grade-title h3 {
-    font-size: 1.5rem;
-  }
-
-  .grade-text,
-  .grade-container {
-    width: 380px;
-    max-width: 480px;
     margin: 0 auto;
-  }
-
-  #desktop-grade h3 {
-    font-size: 0.65rem;
-  }
-
-  #desktop-grade .grade-header h3,
-  #desktop-grade p {
-    font-size: 0.65rem;
-  }
-
-  .author-bio-text {
-    width: 90%;
-    max-width: 100%;
-    margin: 1em auto 0.5em;
-    height: auto;
-    padding: 5px;
-
-  }
-
-  .pagespeed-grade-title,
-  .grade-title {
-    width: 100%;
-    max-width: 100%;
-    margin: 1em auto 0.5em;
-    height: auto;
-    padding: 5px;
-  }
-
-  .author-bio-text,
-  .pagespeed-grade-title {
-    margin-top: 3em;
-  }
-
-  .grade-container {
-    width: 380px;
-    max-width: 480px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
-
-  }
-
-  .grade-header {
-    height: auto;
-    width: 100%;
-    max-width: 480px;
-    padding: 5px;
-  }
-
-  .grade-item {
-    padding: 5px;
-    height: auto;
-  }
-
-  .pagespeed-container {
-    width: 380px;
-    max-width: 480px;
-    margin: auto;
-  }
-
-  .mood-board,
-  .pagespeed-grade-img {
-    width: 100%;
-    max-width: 480px;
-    margin: auto;
-  }
-
-}
-
-@media (max-width: 768px) {
-  .hidden {
-    display: none;
-  }
-
-  #back-to-top {
-    bottom: 5px;
-    /* Adjust position for smaller screens */
-    left: 5px;
-    /* Adjust position for smaller screens */
-  }
-
-  /* Mobile-specific styles for the hamburger menu */
-  .hamburger-nav-links {
-    display: none;
-    /* Hidden by default on small screens */
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 80%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 10;
-    transform: translateX(100%);
-    /* Initially off-screen */
-    transition: transform 0.3s ease;
-    flex-direction: column;
-    padding-top: 60px;
-  }
-
-  /* Show the hamburger menu when active */
-  .hamburger-nav-links.active {
-    transform: translateX(0);
-    /* Slide in */
-  }
-
-  /* Show the menu button when active (hamburger menu is shown on small screens) */
-  .menu-toggle {
-    display: block;
-  }
-
-  /* Hide navbar links by default on mobile */
-  .hamburger-nav-links {
-    display: none;
-  }
-
-  /* Show the navbar links when active */
-  .hamburger-nav-links.active {
-    display: block;
-  }
-
-  .hamburger-nav-links ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .hamburger-nav-links ul li a {
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    transition: color 0.3s ease;
-  }
-
-  .hamburger-nav-links ul li a:hover {
-    color: cyan;
-  }
-
-  html {
-    overflow-x: hidden;
-  }
-
-  /* Hide desktop and show mobile */
-  .desktop-version {
-    display: none;
-    /* Hide desktop on mobile */
-  }
-
-  .mobile-version {
-    display: block;
-    /* Show mobile content */
-    padding: 2vh 5vw;
-  }
-
-  /* nav */
-  .nav-links ul li {
-    padding: 1vw;
-  }
-
-  .nav-links ul li a {
-    font-size: 2.2vw;
-  }
-
-  .nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15vw;
-    height: auto;
-    padding: 1vw 2vw;
-  }
-
-  .click-me {
-    margin-top: 2vh;
-    width: 30%;
-    font-size: 1rem;
-    padding: .625vw;
-    border-radius: 2em;
-    background-color: white;
-    color: black;
-  }
-
-  .click-me:hover {
-    background-color: cyan;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.7);
-    transition: ease-in-out 0.2s;
-  }
-
-  .button-grid {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0;
-    margin: 1em auto 4em;
-    gap: 0;
-  }
-
-  .mobile-version {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    height: 67vh;
-    /* Set to fill the viewport height */
-    padding: 0;
-    /* Remove extra padding */
-    width: 100vw;
-  }
-
-  /* Title Section */
-  .main-title {
-    height: 15vh;
-    padding: 12vh 0 0;
-    /* Adjust padding as needed */
-  }
-
-  .main-title h1 {
-    font-size: 5vw;
-    margin: 0;
-
-  }
-
-  /* Designer and Coder Sections */
-  .textbox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2vw;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-  }
-
-  .main-title {
-    background-image: url(/img/code-nobackground.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .designer-box {
-    padding-left: 15vw;
-  }
-
-  .coder-box {
-    padding-left: 3vw;
-  }
-
-  .designer-box,
-  .coder-box {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-  }
-
-  .designer-box h2,
-  .coder-box h2 {
-    font-size: 4vw;
-    width: 100%;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .designer-box h3,
-  .coder-box h3 {
-    font-size: 3vw;
-    margin: 0;
-    width: 100%;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  /* Headshot Image */
-  .headshot-container img {
-    width: 60vw;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    align-self: flex-end;
-    /* Aligns headshot to the bottom */
-  }
-
-  .outer-container {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    max-width: 50vw;
-    height: 25vh;
-    margin: 0 auto;
-  }
-
-  .section1 {
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    width: 25vw;
+    max-width: 75vw;
     position: relative;
-    height: 10vh;
+    padding-bottom: 10vh;
   }
 
-  .dots {
-    width: 40vw;
-    left: -20%;
-    height: 10vh;
-  }
-
-  .dots img {
-    width: 35vw;
-  }
-
-  .headshot-about {
-    top: 118%;
-    left: 30%;
-    width: 10vw;
-  }
-
-  .headshot-about img {
-    width: auto;
-    height: 20vh;
-  }
-
-  .portfolio-name {
-    display: flex;
-    padding: 25% 0;
-    justify-content: left;
-    align-items: center;
-    height: 5vh;
-  }
-
-  .portfolio-name img {
-    width: auto;
-    height: 10vh;
-  }
-
-  .greeting-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-left: 50px;
-    width: 100%;
-  }
-
-  .greetings-label {
-    display: flex;
-    background-color: white;
-    color: black;
-    width: 100%;
-    border-top: .625vh solid black;
-    border-right: .625vh solid black;
-    border-left: .625vh solid black;
-    margin-left: 2.1vw;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.1);
-  }
-
-  .greetings-label h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding: 0.5vw 2vw;
-    width: 100%;
-  }
-
-  .greetings {
-    width: 90%;
-    border-bottom: 0.16vw solid white;
-    border-left: 0.16vw solid white;
-    border-right: 0.16vw solid white;
-  }
-
-  .greetings p {
-    color: white;
-    font-family: tt norms pro, Arial, Helvetica, sans-serif;
-    font-weight: 250;
-    line-height: 1.4;
-    font-size: 1.3rem;
-    padding: 2vw;
-  }
-
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5vw;
-    margin: 20px;
-    max-width: 100%;
-    padding: 1vh 1vw;
-  }
-
-  .fun-facts-grid {
-    display: grid;
-    grid-template-rows: 0.4fr 3fr;
-    border: 3px solid white;
-  }
-
-  .facts-grid {
-    display: flex;
-    flex-direction: column;
-    width: 100%
-  }
-
-  .favorites-label h3 {
-    padding: 2.5vh 0;
-  }
-
-  .sub-labels {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-  }
-
-  .sub-labels h3 {
-    font-size: 1.5rem;
-    text-align: center;
-    color: black;
-  }
-
-  .my-favorites-grid {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid white;
-    padding: 0;
-  }
-
-  .inside-grid-favorites {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: first baseline;
-    padding: 0;
-  }
-
-  .favorites img {
-    width: 8vw;
-    padding: 2vh 0;
-  }
-
-  .favorites {
-    padding: 0;
-  }
-
-  .fun-facts {
-    display: flex;
-    flex-direction: column;
-    padding: 2vh;
-  }
-
-  .facts {
-    display: flex;
-    flex-direction: column;
-    padding: 1vh 0;
-  }
-
-  .check-mark img {
-    width: 10vw;
-    padding: 1vh;
-  }
-
-  .books {
-    padding-bottom: 5vh;
-  }
-
-  .quote {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid white;
-    justify-content: center;
-    align-items: center;
-    padding: 4vw;
-    margin-bottom: 4vh;
-  }
-
-  .quote img {
-    width: 4vw;
-  }
-
-  .quote p {
-    color: white;
-    font-size: 1.2rem;
-    font-style: italic;
-    text-align: center;
-    padding: 4vw;
-  }
-
-  /* Footer Adjustment */
-  footer {
-    padding-top: 0;
-    margin-top: 0;
-    padding-bottom: 15vh;
-  }
-
-  .footer-logo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 1em 0 0;
-  }
-
-  .footer-logo img {
-    width: 30%;
-  }
-
-  .social-media ul li a img {
-    width: 4vw;
-    padding: 1vh 0;
-  }
-
-  .footer-links ul li a {
-    font-size: 2.7vw;
-  }
-
-  .skills-grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skills-main {
-    width: 100%;
-    max-width: 90vw;
-  }
-
-  .black-container {
-    width: 100%;
-    max-width: 90vw;
-    padding-bottom: 5em;
-  }
-
-  .greetings-label {
-    width: 30%;
-    margin: 0 5vw;
-    padding: 1vh 0;
-    border-top: 0.4vh solid black;
-    border-right: 0.4vh solid black;
-    border-left: 0.4vh solid black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.1);
-    text-align: center;
-  }
-
-  .greetings {
-    width: 100%;
-    margin: 0 auto;
-    border-bottom: 0.16vw solid white;
-    border-left: 0.16vw solid white;
-    border-right: 0.16vw solid white;
-    padding-top: 1vh;
-  }
-
-  .greetings-label h2 {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0.5vw;
-  }
-
-  .resume {
-    padding: 2vh 0 2vh;
-    background-color: white;
-  }
-
-  .resume h2 {
-    font-size: 4.5vw;
-  }
-
-  .resume h3 {
-    font-size: 3.5vw;
-    padding: 2vw;
-  }
-
-  .casestudy p,
-  .resume-summary p {
-    color: white;
-    font-family: tt norms pro, Arial, Helvetica, sans-serif;
-    font-weight: 250;
-    line-height: 1.4;
-    padding: 3vw;
-    font-size: 1.2rem;
-  }
-
-  .skills-black-container {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    width: 100%;
-    max-width: 90vw;
-    max-height: 130vh;
-    padding: 3em;
-    /* Space for the inner border */
-  }
-
-  .skills h4 {
-    font-size: 1rem;
-    padding: 1vw;
-  }
-
-  .skills :hover {
-    font-size: 1.5rem;
-  }
-
-  .skills-label h3 {
-    font-size: 1.8rem;
-    padding: 1.5vw;
-  }
-
-  .skills-label :hover {
-    font-size: 2rem;
-  }
-
-  .skills {
-    padding: 1vw;
-  }
-
-  .skills-label {
-    padding: .5vw;
-  }
-
-  .canvas-skills-grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .canvas-skills-img img {
-    height: 30vh;
-    max-width: 100%;
-    border: 2vw solid black;
-  }
-
-  .canvas-skills-title {
-    border: 2vw solid black;
-    height: 10vh;
-    max-width: 100%;
-    margin-top: 2vh;
-  }
-
-  .canvas-skills-title h1 {
-    font-size: 6vw;
-    padding: 0;
-  }
-
-  form {
-    width: 90%;
-    height: auto;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .top-nav-links {
-    display: none;
-    /* Hide top navigation on small screens */
-  }
-
-  .author-bio {
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  /* projects */
-  .about-me,
-  .black-container {
-    width: 100%;
-    max-width: 100vw;
-    margin: 0 auto 0.5em;
-    position: relative;
-  }
-
-  .skills-black-container {
-    max-width: 95vw;
-  }
-
-  .resume-border {
-    width: 95%;
-    margin: 0 auto;
-    border-top: 1em solid black;
-    border-bottom: 0em;
-    border-left: 1em solid black;
-    border-right: 1em solid black;
-  }
-
-  .resume-summary {
-    border: 0.5em solid white;
-    padding: 2em;
-  }
-
-  .grade-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100vw;
-    gap: 1em;
-  }
-
-  .hubspot {
-    width: 668px;
-    height: auto;
-    max-width: 768px;
-    margin: 0 auto;
-  }
-
-  .project-images img,
-  .hubspot img,
-  .grade-grid img {
-    margin: 0 auto;
-    width: 93%;
-    height: auto;
-  }
-
-  .cta-section,
-  .author-bio {
-    max-width: 100vw;
-  }
-
-  .cta-section img,
-  .author-bio img {
-    width: 90%;
-    height: auto;
-  }
-
-  .cta-section p,
-  .author-bio p {
-    font-size: 2.2rem;
-  }
-
-  .canvas-skills-grid {
-    display: flex;
-    flex-direction: column;
-    max-width: 100vw;
-  }
-
-  .canvas-skills-img {
-    height: auto;
-    max-width: 100vw;
-  }
-
-  .canvas-skills-img img {
-    height: auto;
-    max-width: 100%;
-    border-bottom: 2em solid black;
-    border-left: 2em solid black;
-    border-right: 2em solid black;
-  }
-
-  .resume,
-  .greetings-label,
-  .canvas-skills-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1.5em solid black;
-    height: 15vh;
-    width: 100%;
-    margin: 2em auto 0;
-  }
-
-  .resume {
-    padding: 1em;
-  }
-
-  .canvas-skills-title h1 {
-    font-size: 2.2rem;
-    padding: 0;
-  }
-
-  .resume h2,
-  .canvas-skills-title h2 {
-    font-size: 2rem;
-
-  }
-
+  .resume-border,
   .project-images {
-    max-width: 100vw;
-    height: auto;
+    width: 65vw;
   }
 
-  .project-images img {
-    width: 100%;
-    height: auto;
-    border: 1em solid black;
-  }
-
-  .wireframe-grid {
+  .collections-grid,
+  .collections-row {
     display: flex;
     flex-direction: column;
-    width: 75%;
-    max-width: 768px;
-    margin: 0 auto;
-    gap: 2em;
-  }
-
-  .wireframe-grid img {
-    width: 100%;
-    max-width: 768px;
+    width: 80%;
+    max-width: 100%;
+    /* Ensure no overflow */
     height: auto;
-  }
-
-  .casestudy p,
-  .casestudy h3 {
-    padding: 0.5em 0;
-    text-align: left;
-  }
-
-  /* Hide desktop and show mobile */
-
-  .mobile-version {
-    display: block;
-    /* Show mobile content */
-    padding: 2.4em 3.375em;
-  }
-
-  .click-me {
-    margin: 0 auto;
-    width: auto;
-    padding: 0.5em 0;
-
-  }
-
-  .click-me a {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    padding: 0.2em 0.5em;
-  }
-
-  .mobile-version {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    height: 67vh;
-    /* Set to fill the viewport height */
-    padding: 0;
-    /* Remove extra padding */
-    width: 100vw;
-  }
-
-  /* Title Section */
-  .main-title {
-    height: 15vh;
-    padding: 8.1em 0 0;
-    /* Adjust padding as needed */
-  }
-
-  .main-title h1 {
-    font-size: 5vw;
-    margin: 0;
-  }
-
-  /* Designer and Coder Sections */
-  .textbox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.4em;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     padding: 0;
     margin: 0 auto;
   }
 
-  .main-title {
-    background-image: url(/img/code-nobackground.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .designer-box {
-    padding-left: 18em;
-  }
-
-  .coder-box {
-    padding-left: 3.6em;
-  }
-
-  .designer-box,
-  .coder-box {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-  }
-
-  .designer-box h2,
-  .coder-box h2 {
-    font-size: 4vw;
-    width: 100%;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .designer-box h3,
-  .coder-box h3 {
-    font-size: 3vw;
-    margin: 0;
-    width: 100%;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  /* Headshot Image */
-  .headshot-container img {
-    width: 60vw;
+  .collections {
     height: auto;
-    margin: 0;
-    padding: 0;
-    align-self: flex-end;
-    /* Aligns headshot to the bottom */
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 2em;
+  }
+
+  .collections-title {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
 
   .outer-container {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    max-width: 50vw;
-    height: 25vh;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    height: auto;
   }
 
   .section1 {
     display: grid;
     grid-template-rows: 1fr 3fr;
-    width: 25vw;
-    position: relative;
-    height: 10vh;
+    width: 100%;
+    height: auto;
+  }
+
+  .section2 {
+    display: flex;
+    padding-right: 3em;
   }
 
   .dots {
-    width: 40vw;
-    left: -20%;
-    height: 10vh;
-  }
-
-  .dots img {
-    width: 35vw;
+    width: 25vw;
+    left: -10%;
   }
 
   .headshot-about {
-    top: 118%;
-    left: 30%;
-    width: 10vw;
+    display: flex;
+    height: auto;
+    width: 25vw;
+    position: absolute;
+    left: -1%;
+    margin-top: 3em;
+    /*new*/
   }
 
-  .headshot-about img {
-    width: auto;
-    height: 20vh;
+  .about--me-container {
+    margin-top: 0.2em;
   }
 
   .portfolio-name {
-    display: flex;
-    padding: 25% 0;
-    justify-content: left;
-    align-items: center;
-    height: 5vh;
+    padding: 6em 0 1em;
+    width: 45vw;
   }
 
   .portfolio-name img {
-    width: auto;
-    height: 10vh;
-  }
-
-  .greeting-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-left: 50px;
     width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
-  .greetings {
-    width: 90%;
-    border-bottom: 0.192em solid white;
-    border-left: 0.192em solid white;
-    border-right: 0.192em solid white;
+  .greetings-label {
+    width: 20vw;
   }
 
-  .greetings p {
-    color: white;
-    font-family: tt norms pro, Arial, Helvetica, sans-serif;
-    font-weight: 250;
-    line-height: 1.4;
-    font-size: 1.3rem;
-    padding: 1.2em;
-  }
-
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.8em;
-    margin: 20px;
-    max-width: 100%;
-    padding: 1vh 1vw;
-  }
-
-  .fun-facts-grid {
-    display: grid;
-    grid-template-rows: 0.4fr 3fr;
-    border: 0.1875em solid white;
-  }
-
-  .facts-grid {
-    display: flex;
-    flex-direction: column;
-    width: 100%
-  }
-
-  .favorites-label h3 {
-    padding: 3em 0;
-  }
-
-  .sub-labels {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-  }
-
-  .sub-labels h3 {
-    font-size: 1.5rem;
-    text-align: center;
-    color: black;
-  }
-
-  .my-favorites-grid {
-    display: flex;
-    flex-direction: column;
-    border: 0.1875em solid white;
-    padding: 0;
-  }
-
+  .facts,
   .inside-grid-favorites {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: first baseline;
-    padding: 0;
-  }
-
-  .favorites img {
-    width: 8vw;
-    padding: 1.2em 0;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    gap: 3vw;
   }
 
   .favorites {
-    padding: 0;
-  }
-
-  .fun-facts {
     display: flex;
     flex-direction: column;
-    padding: 2.4em;
-  }
-
-  .facts {
-    display: flex;
-    flex-direction: column;
-    padding: 1.2em 0;
-  }
-
-  .check-mark img {
-    width: 10vw;
-    padding: 1.2em;
-  }
-
-  .books {
-    padding-bottom: 3.375em;
-  }
-
-  .quote {
-    display: flex;
-    flex-direction: column;
-    border: 0.1875em solid white;
-    justify-content: center;
-    align-items: center;
-    padding: 4.8em;
-    margin-bottom: 2.7em;
-  }
-
-  .quote img {
-    width: 4vw;
-  }
-
-  .quote p {
-    color: white;
-    font-size: 1.2rem;
-    font-style: italic;
-    text-align: center;
-    padding: 4.8em;
-  }
-
-  /* Footer Adjustment */
-  footer {
-    padding-top: 0;
-    margin-top: 0;
-    padding-bottom: 18em;
-  }
-
-  .footer-logo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 1em 0 0;
-  }
-
-  .footer-logo img {
-    width: 30%;
-  }
-
-  .social-media ul li a img {
-    width: 4vw;
-    padding: 1.2em 0;
-  }
-
-  .footer-links ul li a {
-    font-size: 2.7vw;
-  }
-
-  .skills-grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skills-main {
-    width: 100%;
-    max-width: 90vw;
-  }
-
-  .greetings {
-    width: 100%;
-    margin: 0 auto;
-    border-bottom: 0.192em solid white;
-    border-left: 0.192em solid white;
-    border-right: 0.192em solid white;
-    padding-top: 1.2em;
-  }
-
-  .resume-summary a {
-    text-decoration: none;
-    color: cyan;
-  }
-
-  .resume-summary h3 {
-    color: white;
-  }
-
-  .resume-summary {
-    max-width: 95vw;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .casestudy p,
-  .resume-summary ul li,
-  .resume-summary p {
-    line-height: 1.4;
-    padding: 0.5em;
-    font-size: 1.1rem;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-
-  .hubspot,
-  .grade-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    margin: 0 auto;
-    width: 95%;
-    padding-bottom: 4em;
-  }
-
-  .author-bio p {
-    width: 100%;
-    font-size: 1.3rem;
-    padding: 1em 0.5em;
-  }
-
-  .skills-black-container {
-    display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    width: 100%;
-    max-width: 100vw;
-    max-height: 130vh;
-    padding: 3em;
-    /* Space for the inner border */
+    gap: 3vw;
+    width: 80%;
+    height: 60%;
+    margin: 3vw auto;
+    border: 0.1vw solid white;
+    padding: 2vw 0;
   }
 
-  .skills h4 {
-    font-size: 1rem;
-    padding: 1.2em;
-  }
-
-  .skills:hover {
-    font-size: 1.5rem;
-  }
-
-  .skills-label h3 {
-    font-size: 1.8rem;
-    padding: 1.8em;
-  }
-
-  .skills-label:hover {
-    font-size: 2rem;
-  }
-
-  .skills {
-    padding: 1.2em;
-  }
-
-  .skills-label {
-    padding: 0.6em;
-  }
-
-  form {
-    width: 90%;
+  .favorites img {
+    width: 5vw;
     height: auto;
+    padding: 1vw 0;
+    object-fit: cover;
   }
 
-  .author-bio-text h3,
-  .pagespeed-grade-title h3,
-  .grade-text .grade-title h3 {
-    font-size: 1.5rem;
-  }
-
-  .grade-text,
-  .grade-container {
-    width: 680px;
-    max-width: 768px;
-    margin: 0 auto;
-  }
-
-  #desktop-grade h3 {
-    font-size: 0.65rem;
-  }
-
-  #desktop-grade .grade-header h3,
-  #desktop-grade p {
-    font-size: 0.65rem;
-  }
-
-  .pagespeed-grade-title,
-  .grade-title {
-    width: 100%;
-    max-width: 768px;
-    margin: 1em auto 0.5em;
-    height: auto;
-    padding: 5px;
-  }
-
-  .pagespeed-grade-title {
-    margin-top: 3em;
-  }
-
-  .grade-container {
-    width: 100%;
-    max-width: 768px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
-
-  }
-
-  .grade-header {
-    height: auto;
-    width: 100%;
-    max-width: 768px;
-    padding: 5px;
-  }
-
-  .grade-item {
-    padding: 5px;
-    height: auto;
-  }
-
-  .pagespeed-container {
-    width: 100%;
-    max-width: 768px;
-    margin: auto;
-  }
-
-  .mood-board,
-  .pagespeed-grade-img {
-    width: 100%;
-    max-width: 768px;
-    margin: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .hidden {
-    display: none;
-  }
-
-  .collections-row {
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  .canvas-skills-grid {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .canvas-skills-title .black-container {
-    margin: 1em 0;
-  }
-
-  .title {
-    height: auto;
-    border: 0.5em solid black;
-    margin: 0 auto;
-  }
-
-  .resume {
-    border: 0.5em solid black;
-    height: auto;
-  }
-
-  .resume h2 {
-    font-size: 1.5rem;
-    padding-bottom: 0.2 em;
-  }
-
-  #project-title {
-    background-color: white;
-    padding: 1em 0 0.5em;
-    border: 0.5em solid white;
-    margin: 1.5em auto;
+  .favorites-label {
+    height: 4vh;
     width: 100%;
   }
-
-
-  #project-title h2 {
-    font-size: 1.2rem;
-  }
-
-  .canvas-skills-title {
-    border: 0.5em solid black;
-    height: auto;
-    width: 100%;
-  }
-
-  .canvas-skills-title h1 {
-    font-size: 2.5rem;
-  }
-
-  .canvas-skills-title h2 {
-    font-size: 2rem;
-  }
-
-  .black-container {
-    margin: 1em 0;
-  }
-
-  .title {
-    height: auto;
-    border: 0.5em solid black;
-    margin: 0 auto;
-  }
-
-  .resume {
-    border: 0.5em solid black;
-    height: auto;
-  }
-
-  .resume h2 {
-    font-size: 1.5rem;
-    padding-bottom: 0.2 em;
-  }
-
-  #project-border {
-    border: 0.5em solid black;
-    background-color: white;
-    ;
-    height: auto;
-  }
-
-  .pagespeed-grade-title h3,
-  .grade-text .grade-title h3 {
-    font-size: 1.5rem;
-  }
-
-  .grade-text,
-  .grade-container {
-    width: 380px;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  #desktop-grade h3 {
-    font-size: 0.65rem;
-  }
-
-  #desktop-grade .grade-header h3,
-  #desktop-grade p {
-    font-size: 0.65rem;
-  }
-
-  .pagespeed-grade-title,
-  .grade-title {
-    width: 100%;
-    max-width: 100%;
-    margin: 1em auto 0.5em;
-    height: auto;
-    padding: 5px;
-  }
-
-  .pagespeed-grade-title {
-    margin-top: 3em;
-  }
-
-  .grade-container {
-    width: 380px;
-    max-width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
-
-  }
-
-  .grade-header {
-    height: auto;
-    width: 100%;
-    max-width: 100%;
-    padding: 5px;
-  }
-
-  .grade-item {
-    padding: 5px;
-    height: auto;
-  }
-
-  .pagespeed-container {
-    width: 380px;
-    max-width: 100%;
-    margin: auto;
-  }
-
-  .mood-board,
-  .pagespeed-grade-img {
-    width: 100%;
-    max-width: 480px;
-    margin: auto;
-  }
-
-  .pagespeed-grade-img img {
-    width: 93%;
-    max-width: 490px;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .wireframe-border-white,
-  .border-white {
-    border: 0.3em solid white;
-    margin: 0 auto;
-    width: 311px;
-    max-width: 480px;
-    height: auto;
-    padding: 7.5px 0;
-  }
-
-  .wireframe-border-black {
-    border: 0.2em solid black;
-    margin: 0 auto;
-  }
-
-  .wireframe-grid {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0;
-  }
-
-  #style-guide {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .project-images,
-  .style-guide {
-    width: 380px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .wireframe img,
-  .project-images img,
-  .style-guide img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .wireframe {
-    width: 380px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .wireframe img {
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
-  }
-
-  .resume-border {
-    width: 95%;
-    margin: 0 auto;
-    border-top: 0.5em solid black;
-    border-bottom: 0em;
-    border-left: 0.5em solid black;
-    border-right: 0.5em solid black;
-  }
-
-  .casestudy p,
-  .resume-summary ul li,
-  .resume-summary p {
-    font-size: 1rem;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-
-  .resume-summary ul li::before {
-    font-size: 1rem;
-  }
-
-  .list-items ul li {
-    width: 100%;
-    max-width: 768px;
-    padding-left: 1em;
-    font-size: 1rem;
-  }
-
-  .casestudy p,
-  .resume-summary h3,
-  .resume-summary ul li,
-  .resume-summary p {
-    font-size: 1rem;
-  }
-
-  .explore {
-    margin: 2em auto;
-  }
-
-  .cta-sub h3 {
-    padding-top: 0;
-    font-size: 1.3rem;
-  }
-
-  .explore-container {
-    width: 100%;
-    max-width: 768px;
-    gap: 1em;
-  }
-
-  .cta-section {
-    padding: 0.5em;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .cta-section p {
-    font-size: 1rem;
-    line-height: 1.3;
-  }
-
-
 
 }

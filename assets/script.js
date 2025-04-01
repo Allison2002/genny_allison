@@ -57,25 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-        // Show/Hide Back to Top and Side Navigation on scroll
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 200) {
-            backToTopButton.classList.remove("hidden");
-            sideNav.classList.remove("hidden");  // Make sure this is toggling correctly
-        } else {
-            backToTopButton.classList.add("hidden");
-            sideNav.classList.add("hidden");
-        }
-    });
-
-
-    // Back to Top Button and Side Navigation
+    // Show/Hide Back to Top and Side Navigation on scroll
     if (backToTopButton && sideNav) {
         // Initially hide both elements
         backToTopButton.classList.add("hidden");
         sideNav.classList.add("hidden");
 
-        // Show/Hide Back to Top and Side Navigation on scroll
         window.addEventListener("scroll", function () {
             if (window.scrollY > 200) {
                 backToTopButton.classList.remove("hidden");
@@ -93,4 +80,29 @@ document.addEventListener("DOMContentLoaded", function () {
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Tooltip functionality
+        const tooltips = document.querySelectorAll('.tooltip');
+        tooltips.forEach(tooltip => {
+            const tooltipText = tooltip.querySelector('.tooltip-text');
+            const tooltipH4 = tooltip.querySelector('h4');
+
+            tooltipH4.addEventListener('mouseenter', () => {
+                // Show tooltip when hovering over h4
+                tooltipText.style.visibility = 'visible';
+                tooltipText.style.opacity = '1';
+            });
+
+            tooltipH4.addEventListener('mouseleave', () => {
+                // Hide tooltip when mouse leaves h4
+                tooltipText.style.visibility = 'hidden';
+                tooltipText.style.opacity = '0';
+            });
+        });
+    });
+
+
+
+
 });
