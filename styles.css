@@ -35,7 +35,7 @@ body {
 
 
 /* links and buttons */
-a,
+
 .links,
 .links a {
   position: relative;
@@ -43,6 +43,11 @@ a,
   transition: color 0.3s ease;
   color: #00ffff;
   border-bottom: 1px solid currentColor;
+  text-shadow: 0 0 2px #000, 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+a {
+  color: #10d4d4;
   text-shadow: 0 0 2px #000, 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
