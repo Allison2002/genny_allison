@@ -47,8 +47,7 @@ body {
 }
 
 a {
-  color: #10d4d4;
-  text-shadow: 0 0 2px #000, 0 0 5px rgba(0, 0, 0, 0.7);
+  color: #007a99;
 }
 
 .links::after,
