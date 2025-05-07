@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Genny Allison</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link class="tab-logo" rel="icon" href="/img/white_favicon/favicon.ico" type="image/icon type">
-    <link rel="stylesheet" href="/styles.css" />
-    <script src="/assets/script.js"></script>
-  
+
+    <link 
+      rel="preload" 
+      href="/assets/fonts/TT-Norms-Pro-Regular.woff2"
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1746540357/apple-touch-icon_inwuoa.webp"
+      type="image/webp"
+    />
+
+    <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript><link rel="stylesheet" href="/styles.css"></noscript>
   </head>
+
   <body>
     <header>
-      <nav>
+      <nav role="navigation" aria-label="Main navigation">
         <div class="nav-logo">
           <a href="/index.html">
-            <img src="/img/allisonstock-logo.png" alt="Logo for Allison Stock Inc">
+            <img
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_240,dpr_auto,fl_lossy,fl_force_strip/v1746551086/allisonstock-white-nav-logo_tklcra.png"
+              alt="Logo for Allison Stock Inc"
+              width="240"
+              height="105"
+              loading="eager"
+              fetchpriority="high"
+              style="object-fit: cover;"
+              decoding="async"
+            />
           </a>
         </div>
-        <div class="menu-toggle">☰</div>
-        <!-- Top Navigation Links -->
+
+        <div class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">☰</div>
+
         <div class="nav-links">
           <ul>
             <li><a href="/index.html" class="links">My Home</a></li>
@@ -29,8 +54,8 @@
             <li><a href="/pages/contact.html" class="links">Contact Me</a></li>
           </ul>
         </div>
-        <!-- Hamburger Menu Links -->
-        <div class="hamburger-nav-links">
+
+        <div class="hamburger-nav-links" id="mobile-menu">
           <ul>
             <li><a href="/index.html" class="links">My Home</a></li>
             <li><a href="/pages/about.html" class="links">About Me</a></li>
@@ -42,6 +67,7 @@
         </div>
       </nav>
     </header>
-    <script src="/designer.js"></script>
+
+    <script src="/assets/script.js" defer></script>
   </body>
 </html>
