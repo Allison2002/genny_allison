@@ -35,11 +35,14 @@ body {
 
 
 /* links and buttons */
+a,
 .links,
 .links a {
   position: relative;
   text-decoration: none;
   transition: color 0.3s ease;
+  color: #00ffff;
+  border-bottom: 1px solid currentColor;
 }
 
 .links::after,
