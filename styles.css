@@ -47,20 +47,26 @@ body {
   text-shadow: 0 0 2px #000, 0 0 5px rgba(0, 0, 0, 0.75);
 }
 
-a {
-  color: #0BD6E2;
+.links a,
+.links,
+a,
+p a {
+  color: #0AB2C3;
+  /* slightly darker cyan than #0BD6E2 */
   text-shadow:
-    -0.5px -0.5px 0 #007a99,
-    0.5px -0.5px 0 #007a99,
-    -0.5px 0.5px 0 #007a99,
-    0.5px 0.5px 0 #007a99;
+    -0.5px -0.5px 0 #003f4d,
+    0.5px -0.5px 0 #003f4d,
+    -0.5px 0.5px 0 #003f4d,
+    0.5px 0.5px 0 #003f4d;
   text-decoration: underline;
   font-weight: 700;
 }
 
+p a :hover,
+p a:focus,
 a:hover,
 a:focus {
-  color: #8BE4ED;
+  color: #0BD6E2;
   text-shadow:
     -0.5px -0.5px 0 #007a99,
     0.5px -0.5px 0 #007a99,
@@ -69,9 +75,10 @@ a:focus {
   background-color: rgba(255, 255, 255, 0.05);
   outline: 2px solid #0BD6E2;
   text-decoration: none;
-  /* optional for clean hover */
 }
 
+.links:visited,
+.links a:visited,
 a:visited {
   color: #99eaff;
   text-shadow:
