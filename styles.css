@@ -41,13 +41,27 @@ body {
   position: relative;
   text-decoration: none;
   transition: color 0.3s ease;
-  color: #00ffff;
+  color: #0BD6E2;
   border-bottom: 1px solid currentColor;
-  text-shadow: 0 0 2px #000, 0 0 5px rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  text-shadow: 0 0 2px #000, 0 0 5px rgba(0, 0, 0, 0.75);
 }
 
 a {
   color: #007a99;
+}
+
+a:hover,
+a:focus {
+  color: #8BE4ED;
+  /* lighter blue or white */
+  background-color: rgba(255, 255, 255, 0.05);
+  outline: 2px solid #0BD6E2;
+  /* for keyboard users */
+}
+
+a:visited {
+  color: #99eaff;
 }
 
 .links::after,
