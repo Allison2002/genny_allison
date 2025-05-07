@@ -43,10 +43,7 @@ a,
   transition: color 0.3s ease;
   color: #00ffff;
   border-bottom: 1px solid currentColor;
-}
-
-a {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+  text-shadow: 0 0 2px #000, 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
 .links::after,
@@ -1118,7 +1115,7 @@ footer {
   font-size: 1.3rem;
   height: auto;
   min-height: 2rem;
-  padding: 0;
+  padding: 1em 0 2em;
 }
 
 /* Scroll Behavior and Transitions */
@@ -1332,6 +1329,7 @@ button.submit-button:hover {
 
 .hamburger-nav-links ul li a:hover {
   color: cyan;
+
   text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
 }
 
@@ -1895,7 +1893,7 @@ button.submit-button:hover {
     display: block;
     color: white;
     font-size: 2rem;
-    padding: 0.5em;
+    padding: 1em 1em 0.5em 0.5em;
     cursor: pointer;
     z-index: 20;
   }
