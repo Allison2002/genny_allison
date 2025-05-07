@@ -48,20 +48,37 @@ body {
 }
 
 a {
-  color: #007a99;
+  color: #0BD6E2;
+  text-shadow:
+    -0.5px -0.5px 0 #007a99,
+    0.5px -0.5px 0 #007a99,
+    -0.5px 0.5px 0 #007a99,
+    0.5px 0.5px 0 #007a99;
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 a:hover,
 a:focus {
   color: #8BE4ED;
-  /* lighter blue or white */
+  text-shadow:
+    -0.5px -0.5px 0 #007a99,
+    0.5px -0.5px 0 #007a99,
+    -0.5px 0.5px 0 #007a99,
+    0.5px 0.5px 0 #007a99;
   background-color: rgba(255, 255, 255, 0.05);
   outline: 2px solid #0BD6E2;
-  /* for keyboard users */
+  text-decoration: none;
+  /* optional for clean hover */
 }
 
 a:visited {
   color: #99eaff;
+  text-shadow:
+    -0.5px -0.5px 0 #007a99,
+    0.5px -0.5px 0 #007a99,
+    -0.5px 0.5px 0 #007a99,
+    0.5px 0.5px 0 #007a99;
 }
 
 .links::after,
