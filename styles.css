@@ -1497,14 +1497,13 @@ button.submit-button:hover {
   ;
 }
 
-.author-bio h2 {
-  font-size: 1.5rem;
+.author-bio-text h2 {
+  font-size: 1.8rem;
   width: 100%;
   height: auto;
 }
 
 .mood-board h3,
-.author-bio-text h3,
 .pagespeed-grade-title h3,
 .grade-text .grade-title h3 {
   font-size: 1.8rem;
@@ -1547,7 +1546,6 @@ button.submit-button:hover {
   color: #0BD6E2;
 }
 
-.author-bio h2,
 .author-bio p i,
 .author-bio p,
 .author-bio strong {
