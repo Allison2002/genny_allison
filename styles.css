@@ -764,13 +764,21 @@ footer {
   gap: 0;
 }
 
+.canvas-skills-img {
+  width: 33.4vw;
+  max-width: 40vw;
+  height: auto;
+  min-height: 3rem;
+  aspect-ratio: 1.77 / 1;
+}
+
 .canvas-skills-img img {
   height: 100%;
   width: 100%;
   border-bottom: 1em solid black;
-  border-right: 1em solid black;
-  border-left: .5em solid black;
+  border-right: .3em solid black;
   object-fit: cover;
+  aspect-ratio: inherit;
 }
 
 .canvas-skills-title {
@@ -779,8 +787,7 @@ footer {
   justify-content: center;
   align-items: center;
   border-bottom: 1em solid black;
-  border-right: 1em solid black;
-  border-left: .5em solid black;
+  border-left: .3em solid black;
   height: auto;
   width: 100%;
 }
@@ -1915,14 +1922,19 @@ button.submit-button:hover {
   }
 
   .canvas-skills-img {
-    width: 100%;
-    max-width: 100vw;
+    width: 768px;
+    max-width: 768px;
     height: auto;
-    aspect-ratio: 1.75 / 1;
-    border-top: 1em solid black;
-    border-right: 1em solid black;
-    border-left: 1em solid black;
-    background-color: black;
+    min-height: 3rem;
+    aspect-ratio: 1.707 / 1;
+  }
+
+  .canvas-skills-img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: inherit;
+    border: 0.5em solid white;
+    background-color: white;
   }
 
   .canvas-skills-title {
@@ -2250,4 +2262,22 @@ button.submit-button:hover {
     height: auto;
     min-height: 10rem;
   }
+
+
+  .canvas-skills-img {
+    width: 480px;
+    max-width: 480px;
+    height: auto;
+    min-height: 3rem;
+    aspect-ratio: 1.72 / 1;
+  }
+
+  .canvas-skills-img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: inherit;
+    border: 0.2em solid white;
+    background-color: white;
+  }
+
 }
