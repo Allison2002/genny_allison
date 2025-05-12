@@ -70,8 +70,7 @@ body.fonts-loaded h2 {
 @font-face {
   font-family: 'tt norms pro';
   src: url('/assets/fonts/TT-Norms-Pro-Regular.woff2') format('woff2'),
-    url('/assets/fonts/TT-Norms-Pro-Regular.woff2') format('woff'),
-    url('/assets/fonts/TT-Norms-Pro-Regular.woff2') format('truetype');
+    url('/assets/fonts/TT-Norms-Pro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -83,8 +82,7 @@ body.fonts-loaded h2 {
 @font-face {
   font-family: 'Helvetica';
   src: url('/assets/fonts/Helvetica.woff2') format('woff2'),
-    url('/assets/fonts/Helvetica.woff2') format('woff'),
-    url('/assets/fonts/Helvetica.woff2') format('truetype');
+    url('/assets/fonts/Helvetica-Font-Family2/Helvetica.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -96,11 +94,10 @@ body.fonts-loaded h2 {
 @font-face {
   font-family: 'Playfair Display';
   src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'),
-    url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff'),
-    url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('truetype');
+    url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   ascent-override: 90%;
   descent-override: 10%;
   line-gap-override: 0%;
