@@ -46,13 +46,6 @@ body {
   min-height: 1.5rem;
 }
 
-body.fonts-loaded h1,
-body.fonts-loaded h2 {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.3s ease-in;
-}
-
 body:not(.fonts-loaded) h1 {
   font-family: 'Playfair Display', Georgia, 'Times New Roman';
 }
@@ -61,15 +54,18 @@ body:not(.fonts-loaded) h2 {
   font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
 }
 
-body:not(.fonts-loaded) .canvas-skills-title {
+body:not(.fonts-loaded) h1,
+body:not(.fonts-loaded) h2 {
   visibility: hidden;
+  opacity: 0;
 }
 
-body.fonts-loaded .canvas-skills-title {
+body.fonts-loaded h1,
+body.fonts-loaded h2 {
   visibility: visible;
-  transition: visibility 0s ease-in, opacity 0.3s ease-in;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
 }
-
 
 @font-face {
   font-family: 'tt norms pro';
