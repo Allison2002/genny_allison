@@ -53,9 +53,12 @@ body.fonts-loaded h2 {
   transition: opacity 0.3s ease-in;
 }
 
-body:not(.fonts-loaded) h1,
-body:not(.fonts-loaded) h2 {
+body:not(.fonts-loaded) h1 {
   font-family: 'Playfair Display', Georgia, 'Times New Roman';
+}
+
+body:not(.fonts-loaded) h2 {
+  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
 }
 
 body:not(.fonts-loaded) .canvas-skills-title {
