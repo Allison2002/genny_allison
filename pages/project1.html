@@ -6,6 +6,7 @@
     <title>Genny Allison | Front-End Developer & AI Content Specialist | Tech Trends Project</title>
     <meta name="description" content="Explore Genny Allison's portfolio showcasing projects that merge creativity and code. From engaging animations to responsive designs, each project highlights her skills in UI/UX, front-end development, and client-focused web solutions. Discover the blend of artistry and functionality across a range of digital creations.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
     <link 
       rel="preload" 
       href="/assets/fonts/TT-Norms-Pro-Regular.woff2"
@@ -14,7 +15,31 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_2136,dpr_auto,fl_lossy,fl_force_strip/v1733410752/girlCoding_exzsbe.avif" as="image" type="image/avif" width="712" height="406" />
+    <link 
+      rel="preload" 
+      as="image" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_480,dpr_auto,fl_lossy,fl_force_strip/v1747014136/girlCoding-mobile_ggxuht.avif" 
+      type="image/avif" 
+      media="(max-width: 768px)"
+    >
+
+    <!-- Preload tablet image for screens between 769px and 1024px -->
+    <link 
+      rel="preload" 
+      as="image" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_768,dpr_auto,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif" 
+      type="image/avif" 
+      media="(min-width: 769px) and (max-width: 1024px)"
+    >
+
+    <!-- Preload desktop image for screens wider than 1024px -->
+    <link 
+      rel="preload" 
+      as="image" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1500,dpr_auto,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif" 
+      type="image/avif" 
+      media="(min-width: 1025px)"
+    >
 
     <link
       rel="icon"
@@ -26,8 +51,54 @@
     <noscript><link rel="stylesheet" href="/styles.css"></noscript>
 
     <script type="application/ld+json">
-  
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Tech Trends Project | Genny Allison",
+        "url": "https://tech-trends-blog.netlify.app",
+        "description": "Explore Genny Allison's portfolio showcasing projects that merge creativity and code. From engaging animations to responsive designs, each project highlights her skills in UI/UX, front-end development, and client-focused web solutions.",
+        "inLanguage": "en",
+        "author": {
+          "@type": "Person",
+          "name": "Genny Allison",
+          "url": "https://gennyallison.netlify.app",
+          "jobTitle": "Front-End Developer & AI Content Specialist",
+          "sameAs": [
+            "https://www.linkedin.com/in/genny-allison/",
+            "https://github.com/Allison2002"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Allison Stock Inc.",
+          "url": "https://gennyallison.netlify.app",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1746550616/allisonstock-black-logo_yalqqx.avif",
+            "width": 531,
+            "height": 255
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1500,dpr_auto,fl_lossy,fl_force_strip/v1747014432/welcome_to_tech_trends_project1_fsmzet.avif",
+          "width": 748,
+          "height": 400
+        },
+        "mainEntity": {
+          "@type": "CreativeWork",
+          "name": "Tech Trends Blog",
+          "about": [
+            "AI Content Creation",
+            "SEO Optimization",
+            "Web Performance",
+            "WCAG Accessibility",
+            "UI/UX Design"
+          ]
+        }
+      }
     </script>
+
   </head>
 
   <body>
@@ -38,29 +109,28 @@
       <div class="canvas-skills-grid">
         <div class="canvas-skills-img">
           <picture>
+            <!-- Mobile first -->
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_2136,dpr_auto,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_480,dpr_auto,fl_lossy,fl_force_strip/v1747014136/girlCoding-mobile_ggxuht.avif"
               media="(max-width: 768px)"
-              width="498" 
-              height="281"
+              type="image/avif"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_2136,dpr_auto,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_768,dpr_auto,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif"
               media="(max-width: 1024px)"
-              width="768"
-              height="437"
+              type="image/avif"
             />
             <img 
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_2136,dpr_auto,fl_lossy,fl_force_strip/v1747014136/girlCoding-mobile_ggxuht.avif"
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1500,dpr_auto,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif"
               alt="A woman coding on a laptop, symbolizing the integration of creativity and technology in web development"
-              width="480"
-              height="273"
-              style="object-fit: cover; asepct-ratio: 480 / 372"
+              width="498"
+              height="281"
+              style="object-fit: cover; aspect-ratio: 498 / 281; width: 100%; height: auto;"
               loading="eager"
               fetchpriority="high"
               importance="high"
               decoding="async"
-            >
+            />
           </picture>
         </div>
         <div class="canvas-skills-title">
