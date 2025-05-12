@@ -1541,7 +1541,7 @@ button.submit-button:hover {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 2em;
+  padding: 1em;
 }
 
 #desktop-grade2 h3,
@@ -1557,14 +1557,10 @@ button.submit-button:hover {
   word-break: break-all;
 }
 
-.grade-text {
-  padding: 1em;
-}
-
 .author-bio {
   width: 93%;
   max-width: 100%;
-  min-height: 3rem;
+  min-height: 5rem;
   margin: 2em auto 2em;
   height: auto;
   padding: 0;
@@ -1654,7 +1650,7 @@ button.submit-button:hover {
 .grade-img img,
 .mood-board img,
 .pagespeed-grade-img img {
-  width: 93%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   object-fit: cover;
@@ -1904,6 +1900,19 @@ button.submit-button:hover {
     display: flex;
   }
 
+  .border-white {
+    border: 0.5em solid white;
+    margin: 1em auto;
+    width: 95%;
+    max-width: 100%;
+    height: auto;
+    padding: 0.9375em 0;
+  }
+
+  .border-white img {
+    width: 95%;
+  }
+
   #projects {
     margin: 0 auto;
     width: 75%;
@@ -1996,6 +2005,10 @@ button.submit-button:hover {
   .canvas-skills-title h2 {
     font-size: 1.5rem;
     padding: 0 0 1em;
+  }
+
+  .grade-text {
+    padding: 0.5em;
   }
 
   .button-grid {
@@ -2123,14 +2136,14 @@ button.submit-button:hover {
 
   .cta-section,
   .author-bio {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
     min-height: 3rem;
   }
 
   .cta-section img,
   .author-bio img {
-    width: 95%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     object-fit: cover;
@@ -2150,12 +2163,13 @@ button.submit-button:hover {
     font-size: 1rem;
   }
 
-  .author-bio img {
-    margin: 2em auto;
+  .author-bio-text {
+    width: 98%;
   }
 
-  .author-bio-text {
-    width: 95%;
+  .list-items ul li {
+    color: white;
+    width: 75%;
   }
 
   .collections-grid,
@@ -2318,15 +2332,14 @@ button.submit-button:hover {
     max-width: 480px;
     height: auto;
     min-height: 3rem;
-    aspect-ratio: 1.72 / 1;
+    aspect-ratio: 1.79 / 1;
   }
 
   .canvas-skills-img img {
     width: 100%;
     height: auto;
     aspect-ratio: inherit;
-    border: 0.2em solid white;
-    background-color: white;
+    border: 0.4em solid white;
   }
 
   .hamburger-icon {
@@ -2334,6 +2347,19 @@ button.submit-button:hover {
     height: auto;
     min-height: 1rem;
     aspect-ratio: 1 / 1;
+  }
+
+  .border-white {
+    border: 0.2em solid white;
+    margin: 0.5em auto;
+    width: 96%;
+    max-width: 100%;
+    height: auto;
+    padding: 0.9375em 0;
+  }
+
+  .border-white img {
+    width: 96%;
   }
 
 }
