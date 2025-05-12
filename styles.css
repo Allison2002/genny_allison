@@ -2507,11 +2507,13 @@ button.submit-button:hover {
 
 
   .canvas-skills-img {
-    width: 480px;
     max-width: 480px;
     height: auto;
     min-height: 3rem;
     aspect-ratio: 1.79 / 1;
+    width: 468px;
+    overflow: hidden;
+    display: block;
   }
 
   .canvas-skills-img img {
