@@ -15,31 +15,18 @@
       crossorigin="anonymous"
     />
 
-    <link 
-      rel="preload" 
-      as="image" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_480,dpr_auto,fl_lossy,fl_force_strip/v1747014136/girlCoding-mobile_ggxuht.avif" 
-      type="image/avif" 
-      media="(max-width: 768px)"
-    >
 
-    <!-- Preload tablet image for screens between 769px and 1024px -->
-    <link 
-      rel="preload" 
-      as="image" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_768,dpr_auto,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif" 
-      type="image/avif" 
-      media="(min-width: 769px) and (max-width: 1024px)"
-    >
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif" as="image" type="image/avif" media="(min-width: 1200px)">
 
-    <!-- Preload desktop image for screens wider than 1024px -->
-    <link 
-      rel="preload" 
-      as="image" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1500,dpr_auto,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif" 
-      type="image/avif" 
-      media="(min-width: 1025px)"
-    >
+    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_480,dpr_auto,fl_lossy,fl_force_strip/v1747014136/girlCoding-mobile_ggxuht.avif" as="image" type="image/avif" media="(max-width: 480px)">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif" as="image" type="image/avif" media="(min-width: 1200px)">
+
+    <link rel="preload"href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1747049367/welcome_to_tech_trends_tablet_da4vul.avif" as="image" type="image/avif" media="(min-width: 481px) and (max-width: 1199px)">
+
+    <link rel="preload" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1500,dpr_auto,fl_lossy,fl_force_strip/v1747049370/welcome_to_tech_trends_mobile_z4ngfo.avif" as="image" type="image/avif" media="(max-width: 480px)">
 
     <link
       rel="icon"
@@ -109,19 +96,22 @@
       <div class="canvas-skills-grid">
         <div class="canvas-skills-img">
           <picture>
-            <!-- Mobile first -->
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_480,dpr_auto,fl_lossy,fl_force_strip/v1747014136/girlCoding-mobile_ggxuht.avif"
-              media="(max-width: 768px)"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_480,dpr_auto,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif"
               type="image/avif"
+              media="(min-width: 1200px)"
+              sizes="100vw"
+              fetchpriority="high"
             />
             <source
               srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_768,dpr_auto,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif"
-              media="(max-width: 1024px)"
               type="image/avif"
+              media="(min-width: 481px) and (max-width: 1199px)"
+              sizes="100vw"
             />
             <img 
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1500,dpr_auto,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif"
+            
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1500,dpr_auto,fl_lossy,fl_force_strip/v1747014136/girlCoding-mobile_ggxuht.avif"
               alt="A woman coding on a laptop, symbolizing the integration of creativity and technology in web development"
               width="498"
               height="281"
@@ -151,21 +141,29 @@
             <div class="resume-border">
               <div class="mood-board">
                 <div class="border-white">
-                  <img
-                    src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_1500,dpr_auto,fl_lossy,fl_force_strip/v1747014432/welcome_to_tech_trends_project1_fsmzet.avif"
-                    srcset="
-                      https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_320,dpr_auto,fl_lossy,fl_force_strip/v1747014432/welcome_to_tech_trends_project1_fsmzet.avif 320w,
-                      https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_480,dpr_auto,fl_lossy,fl_force_strip/v1747014432/welcome_to_tech_trends_project1_fsmzet.avif 480w,
-                      https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_940,dpr_auto,fl_lossy,fl_force_strip/v1747014432/welcome_to_tech_trends_project1_fsmzet.avif 940w
-                    "
-                    sizes="(max-width: 768px) 100vw, 748px"
-                    alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology visuals and the blog's name, highlighting AI-driven content creation and insights on emerging technology trends"
-                    width="748"
-                    height="400"
-                    style="aspect-ratio: 748 / 400; width: 500; height: 410; object-fit: cover; display: block;"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                <picture>
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_480,dpr_auto,fl_lossy,fl_force_strip/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif"
+                      media="(max-width: 768px)"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_768,dpr_auto,fl_lossy,fl_force_strip/v1747049367/welcome_to_tech_trends_tablet_da4vul.avif"
+                      media="(max-width: 1024px)"
+                      type="image/avif"
+                    />
+                    <img 
+                      src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1500,dpr_auto,fl_lossy,fl_force_strip/v1747049370/welcome_to_tech_trends_mobile_z4ngfo.avif"
+                      alt="ech Trends Blog Hero Image showcasing a modern, futuristic design with technology visuals and the blog's name, highlighting AI-driven content creation and insights on emerging technology trends"
+                      width="498"
+                      height="281"
+                      style="aspect-ratio: 748 / 400; width: 500; height: 410; object-fit: cover; display: block;"
+                      loading="eager"
+                      fetchpriority="high"
+                      importance="high"
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
