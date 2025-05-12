@@ -1016,7 +1016,7 @@ footer {
 }
 
 .resume-date h2 {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
   color: black;
   width: 100%;
   height: auto;
@@ -1591,7 +1591,7 @@ button.submit-button:hover {
 .mood-board h3,
 .pagespeed-grade-title h3,
 .grade-text .grade-title h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   height: auto;
   min-height: 1rem;
 }
@@ -2024,7 +2024,7 @@ author-img-wrapper {
     max-width: 768px;
     height: auto;
     min-height: 3rem;
-    aspect-ratio: 1.707 / 1;
+    aspect-ratio: 1.79 / 1;
   }
 
   .canvas-skills-img img {
@@ -2056,6 +2056,14 @@ author-img-wrapper {
 
   .grade-text {
     padding: 0.5em;
+  }
+
+  #project-title h2 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: black;
+    width: 100%;
+    height: auto;
+    min-height: 1rem;
   }
 
   .button-grid {
