@@ -1861,7 +1861,49 @@ button.submit-button:hover {
   display: none;
 }
 
+
 @media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+
+  /* Menu button */
+  .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    padding: 1em 1em 0.5em 0.5em;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .hamburger-icon {
+    width: 3.5vw;
+    height: auto;
+    min-height: 1rem;
+    aspect-ratio: 1 / 1;
+  }
+
+  .hamburger-nav-links {
+    display: flex;
+  }
+
+  .hamburger-nav-links {
+    display: none;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 80px;
+    width: 40%;
+    height: auto;
+    padding: 1em;
+    z-index: 100;
+  }
+
+  .hamburger-nav-links.active {
+    display: flex;
+  }
+
   #projects {
     margin: 0 auto;
     width: 75%;
@@ -1974,6 +2016,13 @@ button.submit-button:hover {
     padding: 1em 1em 0.5em 0.5em;
     cursor: pointer;
     z-index: 20;
+  }
+
+  .hamburger-icon {
+    width: 4.2vw;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    min-height: 1rem;
   }
 
   .hamburger-nav-links {
@@ -2278,6 +2327,13 @@ button.submit-button:hover {
     aspect-ratio: inherit;
     border: 0.2em solid white;
     background-color: white;
+  }
+
+  .hamburger-icon {
+    width: 6.4vw;
+    height: auto;
+    min-height: 1rem;
+    aspect-ratio: 1 / 1;
   }
 
 }
