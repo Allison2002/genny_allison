@@ -54,12 +54,6 @@ body:not(.fonts-loaded) h2 {
   font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
 }
 
-body:not(.fonts-loaded) h1,
-body:not(.fonts-loaded) h2 {
-  visibility: hidden;
-  opacity: 0;
-}
-
 body.fonts-loaded h1,
 body.fonts-loaded h2 {
   visibility: visible;
