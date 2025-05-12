@@ -58,6 +58,16 @@ body:not(.fonts-loaded) h2 {
   font-family: 'Playfair Display', Georgia, 'Times New Roman';
 }
 
+body:not(.fonts-loaded) .canvas-skills-title {
+  visibility: hidden;
+}
+
+body.fonts-loaded .canvas-skills-title {
+  visibility: visible;
+  transition: visibility 0s ease-in, opacity 0.3s ease-in;
+}
+
+
 @font-face {
   font-family: 'tt norms pro';
   src: url('/assets/fonts/TT-Norms-Pro-Regular.woff2') format('woff2'),
@@ -91,7 +101,7 @@ body:not(.fonts-loaded) h2 {
     url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.woff2') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
   ascent-override: 90%;
   descent-override: 10%;
   line-gap-override: 0%;
@@ -324,7 +334,7 @@ footer {
 .header {
   width: 100%;
   height: auto;
-  min-height: 5rem;
+  min-height: 14rem;
 }
 
 .main-title {
