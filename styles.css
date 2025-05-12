@@ -990,8 +990,8 @@ footer {
 
 .resume-border {
   border: .3vh solid white;
-  width: 45vw;
-  margin: 2em auto;
+  width: 95%;
+  margin: 1em auto;
 }
 
 .resume h2 {
@@ -1089,10 +1089,10 @@ footer {
   margin: 1.5em auto 0;
 }
 
-.border-white img {
-  width: 93%;
+.site-hero-img img {
+  width: 90%;
   height: auto;
-  padding: 1% 0;
+  padding: 1%;
   object-fit: cover;
   aspect-ratio: inherit;
   object-position: center;
@@ -1695,13 +1695,7 @@ button.submit-button:hover {
   max-width: 1200px;
   height: auto;
   margin: 0 auto;
-  padding: 1em;
-}
-
-author-img-wrapper {
-  padding: 0 1em;
-  box-sizing: border-box;
-  width: 92%;
+  padding: 0;
 }
 
 .author-bio {
@@ -1724,7 +1718,7 @@ author-img-wrapper {
 .grade-img img,
 .mood-board img,
 .pagespeed-grade-img img {
-  width: 100%;
+  width: 93%;
   height: auto;
   margin: 0 auto;
   object-fit: cover;
@@ -1904,6 +1898,26 @@ author-img-wrapper {
   display: none;
 }
 
+.wireframe,
+.site-hero-img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.wireframe-img img,
+.site-hero-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-sizing: border-box;
+  margin: 0 auto;
+  aspect-ratio: inherit;
+  padding: 0.2em 1em;
+}
+
 
 @media (max-width: 1024px) {
   .nav-links {
@@ -1956,8 +1970,23 @@ author-img-wrapper {
     padding: 0.9375em 0;
   }
 
-  .border-white img {
-    width: 95%;
+  .wireframe,
+  .site-hero-img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .wireframe-img img,
+  .site-hero-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin: 0 auto;
+    aspect-ratio: inherit;
   }
 
   #projects {
@@ -2027,6 +2056,19 @@ author-img-wrapper {
     aspect-ratio: 1.79 / 1;
   }
 
+  .mood-board {
+    padding: 0.2em;
+  }
+
+  .cta-section,
+  .author-bio,
+  .grade-img,
+  .project-images,
+  .mood-board,
+  .pagespeed-grade-img {
+    padding: 0.2em;
+  }
+
   .canvas-skills-img img {
     width: 100%;
     height: auto;
@@ -2056,6 +2098,11 @@ author-img-wrapper {
 
   .grade-text {
     padding: 0.5em;
+  }
+
+  .wireframe-img img,
+  .site-hero-img img {
+    padding: 0.2em;
   }
 
   #project-title h2 {
@@ -2125,6 +2172,24 @@ author-img-wrapper {
     max-width: 100vw;
   }
 
+  .site-hero-img {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
+  .site-hero-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin: 0 auto;
+    aspect-ratio: inherit;
+  }
+
   .headshot-container {
     align-items: last baseline;
   }
@@ -2180,7 +2245,7 @@ author-img-wrapper {
   }
 
   .resume-border {
-    width: 93%;
+    width: 95%;
     height: auto;
     min-height: 5rem;
   }
