@@ -11,14 +11,41 @@ html {
   overflow-x: hidden;
 }
 
-body {
+h1 {
   position: relative;
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
   letter-spacing: 0.078vw;
-
+  font-weight: 400;
+  line-height: 1;
+  font-kerning: normal;
+  font-feature-settings: 'kern';
 }
 
-/* tt norms pro font */
+h2 {
+  position: relative;
+  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.078vw;
+  font-weight: 400;
+  font-kerning: normal;
+  font-feature-settings: 'kern';
+}
+
+body {
+  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
+}
+
+body.fonts-loaded h1,
+body.fonts-loaded h2 {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in;
+}
+
+body:not(.fonts-loaded) h1,
+body:not(.fonts-loaded) h2 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman';
+}
+
 @font-face {
   font-family: 'tt norms pro';
   src: url('/assets/fonts/TT-Norms-Pro-Regular.woff2') format('woff2'),
@@ -29,10 +56,25 @@ body {
   font-display: swap;
 }
 
-body {
-  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/assets/fonts/Helvetica.woff2') format('woff2'),
+    url('/assets/fonts/Helvetica.woff2') format('woff'),
+    url('/assets/fonts/Helvetica.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'),
+    url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.woff2') format('woff'),
+    url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* links and buttons */
 
@@ -278,7 +320,7 @@ footer {
 
 .main-title h1 {
   text-align: center;
-  font-size: 3vw;
+  font-size: clamp(2rem, 3vw, 3rem);
   height: auto;
   min-height: 3rem;
 }
@@ -800,7 +842,7 @@ footer {
 }
 
 .canvas-skills-title h1 {
-  font-size: 4vw;
+  font-size: clamp(3.5rem, 4vw, 4rem);
   padding: 0;
   min-height: 3rem;
   height: auto;
@@ -1530,7 +1572,7 @@ button.submit-button:hover {
 }
 
 #project-title h2 {
-  font-size: clamp(1rem, 1.3rem, 1.8rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   ;
 }
 

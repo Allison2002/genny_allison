@@ -151,9 +151,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Font loading
   if (document.fonts) {
     Promise.all([
-      document.fonts.load('1em "Bebas Neue"'),
-      document.fonts.load('1em "Origin"'),
-      document.fonts.load('1em "Roboto"'),
+      document.fonts.load('1em "tt norms pro"'),
+      document.fonts.load('1em "Arial", sans-serif'),
+      document.fonts.load('1em "Helvetica"'),
+      document.fonts.load('1em "Playfair Display"')
     ]).then(() => {
       document.body.classList.add("fonts-loaded");
     });
