@@ -149,18 +149,14 @@ document.addEventListener("DOMContentLoaded", function () {
   lazySections.forEach((section) => observer.observe(section));
 
   // Font loading
-  if (document.fonts) {
     Promise.all([
-      document.fonts.load('1em "tt norms pro"'),
-      document.fonts.load('1em "Arial", sans-serif'),
-      document.fonts.load('1em "Helvetica"'),
-      document.fonts.load('1em "Playfair Display"')
-    ]).then(() => {
-      document.body.classList.add("fonts-loaded");
-    });
-  } else {
+    document.fonts.load('1em "Playfair Display"'),
+    document.fonts.load('1em "tt norms pro"'),
+    document.fonts.load('1em "Arial"'),
+  ]).then(() => {
     document.body.classList.add("fonts-loaded");
-  }
+  });
+
 
   // Tooltip hover and click support
   document.querySelectorAll(".tooltip").forEach((tooltip) => {
