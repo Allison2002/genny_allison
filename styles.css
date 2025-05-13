@@ -21,6 +21,20 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Base font setup */
+body,
+h1,
+h2 {
+  font-synthesis: none;
+  font-kerning: none;
+}
+
+body {
+  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
+  height: auto;
+  min-height: 1.5rem;
+}
+
 h1 {
   position: relative;
   font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -28,15 +42,6 @@ h1 {
   font-weight: 400;
   line-height: 1;
 }
-
-body,
-h1,
-h2 {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  font-synthesis: none;
-  font-kerning: none;
-}
-
 
 h2 {
   position: relative;
@@ -47,31 +52,60 @@ h2 {
   font-feature-settings: 'kern';
 }
 
-body {
-  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
-  height: auto;
-  min-height: 1.5rem;
-}
-
-body:not(.fonts-loaded) h1 {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman';
-}
-
-body:not(.fonts-loaded) h2 {
-  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
-}
-
+/* Fallback while fonts load */
 body:not(.fonts-loaded) h1 {
   font-family: Georgia, serif;
   font-size: clamp(3.5rem, 4vw, 4rem);
-  /* Match exactly */
+  /* matches final font */
 }
 
+body:not(.fonts-loaded) h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Once fonts are loaded, fade in */
 body.fonts-loaded h1,
 body.fonts-loaded h2 {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s ease-in;
+}
+
+/* Specific to hero title section */
+.canvas-skills-title h1,
+.canvas-skills-title h2 {
+  font-family: Georgia, serif;
+  /* fallback first */
+  font-size: clamp(3.5rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.2;
+  height: auto;
+  min-height: 4rem;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: none;
+}
+
+body.fonts-loaded .canvas-skills-title h1,
+body.fonts-loaded .canvas-skills-title h2 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+/* Font-face declarations */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'),
+    url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  ascent-override: 90%;
+  descent-override: 10%;
+  line-gap-override: 0%;
 }
 
 @font-face {
@@ -90,18 +124,6 @@ body.fonts-loaded h2 {
   font-family: 'Helvetica';
   src: url('/assets/fonts/Helvetica.woff2') format('woff2'),
     url('/assets/fonts/Helvetica-Font-Family2/Helvetica.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  ascent-override: 90%;
-  descent-override: 10%;
-  line-gap-override: 0%;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'),
-    url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
