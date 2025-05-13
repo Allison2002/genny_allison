@@ -27,11 +27,16 @@ h1 {
   letter-spacing: 0.078vw;
   font-weight: 400;
   line-height: 1;
-  font-kerning: normal;
-  font-feature-settings: 'kern';
-  height: auto;
-  min-height: 2.2rem;
 }
+
+body,
+h1,
+h2 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-synthesis: none;
+  font-kerning: none;
+}
+
 
 h2 {
   position: relative;
@@ -40,8 +45,6 @@ h2 {
   font-weight: 400;
   font-kerning: normal;
   font-feature-settings: 'kern';
-  height: auto;
-  min-height: 1.5rem;
 }
 
 body {
@@ -56,6 +59,12 @@ body:not(.fonts-loaded) h1 {
 
 body:not(.fonts-loaded) h2 {
   font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
+}
+
+body:not(.fonts-loaded) h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(3.5rem, 4vw, 4rem);
+  /* Match exactly */
 }
 
 body.fonts-loaded h1,
@@ -339,7 +348,7 @@ footer {
   text-align: center;
   font-size: clamp(2rem, 3vw, 3rem);
   height: auto;
-  min-height: 3rem;
+  min-height: 2.5rem;
 }
 
 .main-title a {
@@ -386,6 +395,8 @@ footer {
 
 .coder-box h2,
 .designer-box h2 {
+  height: auto;
+  min-height: 2rem;
   font-size: 2rem;
   padding: 0.8em 0;
   text-decoration: underline solid cyan;
@@ -563,7 +574,6 @@ img[fetchpriority="high"] {
   height: auto;
   max-width: 100vw;
   width: 100%;
-  min-height: 3rem;
   margin: 0 auto;
 }
 
@@ -571,16 +581,17 @@ img[fetchpriority="high"] {
   font-size: clamp(3.5rem, 4vw, 4rem);
   padding: 0;
   line-height: 1.2;
-  min-height: 2rem;
   height: auto;
+  min-height: 4rem;
 }
 
 .canvas-skills-title h2 {
   font-size: clamp(1.2rem, 2vw, 2rem);
   padding: 1vw 0;
   height: auto;
+  min-height: 1.5rem;
   line-height: 1.2;
-  min-height: 1rem;
+
 }
 
 /* about */
@@ -728,9 +739,11 @@ img[fetchpriority="high"] {
 }
 
 .greetings-label h2 {
-  font-size: 1.9vw;
+  font-size: 1.71rem;
   font-weight: bold;
   padding: 0.5vw;
+  height: auto;
+  min-height: 1.5rem;
 }
 
 .greetings {
@@ -747,6 +760,8 @@ img[fetchpriority="high"] {
   line-height: 1.4;
   font-size: 1.4rem;
   padding: 2vw;
+  height: auto;
+  min-height: 1rem;
 }
 
 .grid-container {
@@ -787,6 +802,8 @@ img[fetchpriority="high"] {
   font-size: 1.5vw;
   text-align: center;
   color: black;
+  height: auto;
+  min-height: 1rem;
 }
 
 .my-favorites-grid {
@@ -819,6 +836,8 @@ img[fetchpriority="high"] {
 .facts,
 .favorites p {
   color: white;
+  height: auto;
+  min-height: 1rem;
 }
 
 .fun-facts {
@@ -856,6 +875,7 @@ img[fetchpriority="high"] {
   text-align: center;
   width: 100%;
   height: auto;
+  min-height: 1rem;
 }
 
 .quote:last-child {
@@ -915,11 +935,13 @@ img[fetchpriority="high"] {
   padding: 2vw 2vw;
   width: 80%;
   height: auto;
+  min-height: 1rem;
   margin: 0 auto;
 }
 
 .skills-firstset :hover {
   font-size: 2.3vw;
+  height: auto;
   color: white;
 }
 
@@ -930,6 +952,7 @@ img[fetchpriority="high"] {
   padding: 2vw 3vw;
   width: 60%;
   height: auto;
+  min-height: 1rem;
   margin: 0 auto;
 }
 
@@ -1035,7 +1058,7 @@ img[fetchpriority="high"] {
   color: black;
   width: 100%;
   height: auto;
-  min-height: 1.5rem;
+  min-height: 2rem;
 }
 
 .background-color {
@@ -1044,7 +1067,7 @@ img[fetchpriority="high"] {
 
 .resume-date {
   width: 90%;
-  height: 100%;
+  height: auto;
   min-height: 3rem;
   margin: 0 auto;
   max-width: 90%;
@@ -1056,7 +1079,7 @@ img[fetchpriority="high"] {
   color: white;
   width: 100%;
   height: auto;
-  min-height: 1rem;
+  min-height: 2.5rem;
   color: black;
 }
 
@@ -1088,7 +1111,6 @@ img[fetchpriority="high"] {
 .resume-summary h2 {
   width: 100%;
   height: auto;
-  min-height: 1.5rem;
   padding-top: 4rem;
   font-size: clamp(1rem, 1.2rem, 1.8rem);
 }
@@ -1097,6 +1119,7 @@ img[fetchpriority="high"] {
 .resume-summary h3 {
   color: white;
   min-height: 2rem;
+  height: auto;
   width: 100%;
   max-width: 100vw;
   padding: 1em 1em 0.5em;
@@ -1111,6 +1134,7 @@ img[fetchpriority="high"] {
   font-size: clamp(1rem, 1.30rem, 1.8rem);
   min-height: 1rem;
   width: 100%;
+  height: auto;
   max-width: 100vw;
   padding: 1em;
 }
@@ -1385,6 +1409,7 @@ form {
   border-radius: 0.3125em;
   border: 0.0625em solid #B0B0B0;
   font-size: 1rem;
+  height: auto;
 }
 
 textarea {
@@ -1621,7 +1646,8 @@ button.submit-button:hover {
 
 #project-title h2 {
   font-size: clamp(1rem, 2vw, 2rem);
-  ;
+  height: auto;
+  width: 100%;
 }
 
 .author-bio-text h2 {
@@ -1644,7 +1670,7 @@ button.submit-button:hover {
 .grade-text .grade-title h3 {
   font-size: 1.5rem;
   height: auto;
-  min-height: 1rem;
+  min-height: 1.7rem;
   width: 100%;
   color: black;
 }
@@ -2146,6 +2172,7 @@ button.submit-button:hover {
   .canvas-skills-title h2 {
     font-size: 1.5rem;
     padding: 0 0 1em;
+    height: 3.3rem;
   }
 
   #projects {
@@ -2192,8 +2219,7 @@ button.submit-button:hover {
     font-size: clamp(1.5rem, 2vw, 2rem);
     color: black;
     width: 100%;
-    height: auto;
-    min-height: 1rem;
+    height: 2rem;
   }
 
   .button-grid {
@@ -2287,6 +2313,7 @@ button.submit-button:hover {
   .coder-box h2,
   .designer-box h2 {
     font-size: 1.5rem;
+    height: 1.5rem;
   }
 
   .coder-box h3,
@@ -2361,6 +2388,7 @@ button.submit-button:hover {
 
   .author-bio h2 {
     font-size: 1.3rem;
+    height: 1.3rem;
   }
 
   .author-bio p {
@@ -2462,6 +2490,7 @@ button.submit-button:hover {
 
   .greetings-label h2 {
     font-size: 1.2rem;
+    height: 1.2rem;
   }
 
   .facts,
