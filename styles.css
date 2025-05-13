@@ -227,20 +227,21 @@ nav {
   display: flex;
   flex-grow: 1;
   justify-content: center;
+  height: auto;
+  min-height: 2rem;
   /* Centers the links */
 }
 
 .nav-links ul {
   display: flex;
   gap: 2vw;
-  /* Adjust spacing between links as needed */
   list-style-type: none;
+  min-height: 1.5rem;
 }
 
 .nav-links ul li {
   list-style-type: none;
   padding: 1.8rem;
-
 }
 
 .nav-links ul li a {
@@ -635,6 +636,7 @@ img[fetchpriority="high"] {
   padding-bottom: 10rem;
   height: auto;
   min-height: 50rem;
+  contain: layout;
 }
 
 .skills-main {
@@ -1115,6 +1117,7 @@ img[fetchpriority="high"] {
   height: auto;
   min-height: 2.5rem;
   color: black;
+  line-height: 1.2;
 }
 
 #resume-border {
@@ -2036,6 +2039,11 @@ button.submit-button:hover {
   max-width: 1200px;
   height: auto;
   margin: 0 auto;
+}
+
+.site-hero-img {
+  aspect-ratio: 1.95 / 1;
+  min-height: clamp(10rem, 30vw, 12rem);
 }
 
 .wireframe-img img,
