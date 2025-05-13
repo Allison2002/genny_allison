@@ -169,28 +169,28 @@
           display: flex;
           flex-direction: column;
           width: 100%;
+          max-width: 100vw;
           height: auto;
-          min-height: 10rem;
           align-items: center;
           justify-content: space-between;
           min-height: clamp(300px, 40vh, 500px);
         }
 
         .canvas-skills-img {
-          flex: 1;
           width: 100%;
-          max-width: 768px;
+          height: auto;
+          min-height: 5rem;
+          max-width: 100vw;
           margin-bottom: 1rem;
           background-color: black;
           aspect-ratio: 1.79 / 1;
-          
+          border: 1em solid black;
+          min-height: 5rem;
         }
 
         .canvas-skills-img img {
-          width: 768px;
-          max-width: 768px;
+          width: 100%;
           height: auto;
-          min-height: 3rem;
           aspect-ratio: inherit;
         }
 
@@ -219,22 +219,23 @@
         }
         
         .canvas-skills-img {
-          flex: 1;
+          display: flex;
+          flex-diretion: column;
           width: 100%;
-          max-width: 768px;
-          margin-bottom: 1rem;
-          background-color: black;
+          height: auto;
+          min-height: 5rem;
+          max-width: 100vw;
           aspect-ratio: 1.79 / 1;
-          border-bottom: 0.5em solid black;
-          border-left: .3em solid black;
-          border-right: .3em solid black;
+          border-bottom: 1em solid black;
+          border-left: .2em solid black;
+          border-right: .2em solid black;
         }
 
         .canvas-skills-img img {
+          display: block;
           width: 100%;
           height: auto;
           aspect-ratio: inherit;
-          
         }
 
         .canvas-skills-title {
@@ -304,14 +305,14 @@
         <div class="canvas-skills-img">
           <picture>
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_488,c_fill,fl_lossy,fl_force_strip,dpr_auto/v1747014137/girlCoding-desktop_qjepoe.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,dpr_auto/v1747014137/girlCoding-desktop_qjepoe.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
               fetchpriority="high"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_477,c_fill,fl_lossy,fl_force_strip,dpr_auto/v1747014135/girlCoding-tablet_uund2i.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,dpr_auto/v1747014135/girlCoding-tablet_uund2i.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
