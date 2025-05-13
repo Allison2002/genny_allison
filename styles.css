@@ -319,14 +319,6 @@ footer {
   transform: scale(1.1);
 }
 
-/* home page */
-
-header {
-  width: 100%;
-  height: auto;
-  min-height: clamp(18rem, 30vh, 37rem);
-}
-
 .main-title {
   display: flex;
   margin: 0 auto;
@@ -1066,7 +1058,7 @@ header {
   object-position: center;
 }
 
-.hidden {
+.hamburger-icon {
   display: none;
 }
 
@@ -1922,6 +1914,7 @@ button.submit-button:hover {
   }
 
   .hamburger-icon {
+    display: flex;
     width: 3.5vw;
     height: auto;
     min-height: 1rem;
@@ -2002,9 +1995,7 @@ button.submit-button:hover {
 }
 
 @media (max-width: 768px) {
-  header {
-    min-height: 37rem;
-  }
+
 
   .nav-logo {
     height: calc(200px / 2.38);
@@ -2095,6 +2086,7 @@ button.submit-button:hover {
   }
 
   .hamburger-icon {
+    display: flex;
     width: 4.2vw;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -2395,7 +2387,7 @@ button.submit-button:hover {
 
 @media (max-width: 480px) {
   header {
-    min-height: 26.6rem;
+    min-height: 5rem;
   }
 
   #projects {
