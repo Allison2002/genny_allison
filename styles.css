@@ -345,6 +345,10 @@ footer {
 }
 
 .main-title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   font-size: clamp(2rem, 3vw, 3rem);
   height: auto;
@@ -578,6 +582,10 @@ img[fetchpriority="high"] {
 }
 
 .canvas-skills-title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-size: clamp(3.5rem, 4vw, 4rem);
   padding: 0;
   line-height: 1.2;
@@ -586,7 +594,7 @@ img[fetchpriority="high"] {
 }
 
 .canvas-skills-title h2 {
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-size: clamp(1.2rem, 3vw, 4rem);
   padding: 1vw 0;
   height: auto;
   min-height: 1.5rem;
@@ -1636,7 +1644,12 @@ button.submit-button:hover {
 }
 
 #project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: auto;
+  min-height: 3rem;
   margin: 1em auto 2em;
   line-height: 1.5;
   background-color: white;
@@ -1648,12 +1661,14 @@ button.submit-button:hover {
   font-size: clamp(1rem, 2vw, 2rem);
   height: auto;
   width: 100%;
+  min-height: 1rem;
 }
 
 .author-bio-text h2 {
   font-size: 1.8rem;
   width: 100%;
   height: auto;
+  min-height: 1.5rem;
 }
 
 .mood-board,
@@ -2157,6 +2172,7 @@ button.submit-button:hover {
   }
 
   .canvas-skills-title {
+
     width: 85%;
     max-width: 85vw;
     height: auto;
@@ -2165,14 +2181,17 @@ button.submit-button:hover {
   }
 
   .canvas-skills-title h1 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
     padding: 1em 0 0;
+    height: auto;
+    min-height: 1.5rem;
   }
 
   .canvas-skills-title h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
     padding: 0 0 1em;
-    height: 3.3rem;
+    height: auto;
+    min-height: 1.125rem;
   }
 
   #projects {
@@ -2219,7 +2238,8 @@ button.submit-button:hover {
     font-size: clamp(1.5rem, 2vw, 2rem);
     color: black;
     width: 100%;
-    height: 2rem;
+    height: auto;
+    min-height: 1.5rem;
   }
 
   .button-grid {
@@ -2312,13 +2332,15 @@ button.submit-button:hover {
 
   .coder-box h2,
   .designer-box h2 {
-    font-size: 1.5rem;
-    height: 1.5rem;
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    height: auto;
   }
 
   .coder-box h3,
   .designer-box h3 {
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.5vw, 1rem);
+    height: auto;
+    min-height: 1rem;
   }
 
   #nav {
@@ -2387,12 +2409,16 @@ button.submit-button:hover {
   }
 
   .author-bio h2 {
-    font-size: 1.3rem;
-    height: 1.3rem;
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    height: auto;
+    min-height: 1rem;
   }
+
 
   .author-bio p {
     font-size: 1rem;
+    height: auto;
+    min-height: 1rem;
   }
 
   .author-bio-text {
@@ -2436,6 +2462,7 @@ button.submit-button:hover {
     grid-template-columns: repeat(2, 1fr);
     max-width: 100%;
     height: auto;
+    min-height: 10rem;
   }
 
   .section1 {
@@ -2482,15 +2509,19 @@ button.submit-button:hover {
 
   .greetings p {
     font-size: 1rem;
+    height: auto;
+    min-height: 1rem;
   }
 
   .greetings-label {
     width: 20vw;
+    height: auto;
   }
 
   .greetings-label h2 {
-    font-size: 1.2rem;
-    height: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    height: auto;
+    min-height: 1rem;
   }
 
   .facts,
