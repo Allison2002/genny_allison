@@ -2794,7 +2794,7 @@ main#projects.about-me {
   .header {
     aspect-ratio: 1.18 / 1;
     height: auto;
-    min-height: clamp(5rem, 8rem, 11rem);
+    min-height: clamp(5rem, 13rem, 18rem);
     contain: layout paint;
     overflow: hidden;
   }
@@ -2870,12 +2870,12 @@ main#projects.about-me {
 
   .canvas-skills-title h1 {
     padding: 0.5em 0 0.5em;
-    min-height: 1.7rem;
+    min-height: 2.5rem;
   }
 
   .canvas-skills-title h2 {
     padding: 0.5em 0 0.5em;
-    min-height: 1.5rem;
+    min-height: 2rem;
   }
 
   .canvas-skills-title {
