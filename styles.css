@@ -68,7 +68,6 @@ body.fonts-loaded h1,
 body.fonts-loaded h2 {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease-in;
 }
 
 /* Specific to hero title section */
@@ -153,7 +152,7 @@ body.fonts-loaded section#the-design {
     url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
   ascent-override: 90%;
   descent-override: 10%;
   line-gap-override: 0%;
@@ -165,7 +164,7 @@ body.fonts-loaded section#the-design {
     url('/assets/fonts/TT-Norms-Pro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
   ascent-override: 90%;
   descent-override: 10%;
   line-gap-override: 0%;
@@ -177,7 +176,7 @@ body.fonts-loaded section#the-design {
     url('/assets/fonts/Helvetica-Font-Family2/Helvetica.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
   ascent-override: 90%;
   descent-override: 10%;
   line-gap-override: 0%;
@@ -2871,20 +2870,30 @@ main#projects.about-me {
 
   .canvas-skills-title h1 {
     padding: 0.5em 0 0.5em;
+    min-height: 1.7rem;
   }
 
   .canvas-skills-title h2 {
     padding: 0.5em 0 0.5em;
+    min-height: 1.5rem;
   }
 
   .canvas-skills-title {
-    min-height: clamp(4rem, 7vh, 10rem);
+    min-height: 2.12rem;
+    /* ensures space for h1 + h2 on mobile */
   }
 
   .canvas-skills-title h1,
   .canvas-skills-title h2 {
+    visibility: visible;
+    opacity: 1;
     transition: none;
-    min-height: 3.5rem;
+    min-height: 2rem;
+  }
+
+  body.fonts-loaded .canvas-skills-title h1,
+  body.fonts-loaded .canvas-skills-title h2 {
+    transition: none;
   }
 
   .canvas-skills-img {
@@ -2897,6 +2906,11 @@ main#projects.about-me {
     height: auto;
     aspect-ratio: 1.79 / 1;
     object-fit: cover;
+    min-height: 10rem;
+  }
+
+  .canvas-skills-grid {
+    min-height: 12rem;
   }
 
   #projects {
