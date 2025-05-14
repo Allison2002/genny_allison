@@ -606,7 +606,8 @@ footer {
 .canvas-skills-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  min-height: clamp(16.5rem, 35vh, 38rem);
+  min-height: 30rem;
+  aspect-ratio: auto;
   width: 100%;
   max-width: 100vw;
   height: auto;
@@ -2324,7 +2325,7 @@ main#projects.about-me {
     height: auto;
     align-items: center;
     justify-content: space-between;
-    min-height: clamp(300px, 40vh, 500px);
+    min-height: 30rem;
   }
 
   .canvas-skills-img {
