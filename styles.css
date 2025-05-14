@@ -82,7 +82,7 @@ body.fonts-loaded h2 {
   min-height: rem;
   text-align: center;
   visibility: hidden;
-  opacity: 0;
+  opacity: 1;
   transition: none;
 }
 
@@ -107,7 +107,7 @@ body.fonts-loaded .canvas-skills-title h2 {
 .resume-summary h2,
 .resume-summary h3 {
   visibility: hidden;
-  opacity: 0;
+  opacity: 1;
   transition: none;
 }
 
@@ -121,7 +121,7 @@ body.fonts-loaded .resume-summary h3 {
 h1,
 h2,
 h3 {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease-in;
 }
 
@@ -2791,6 +2791,14 @@ main#projects.about-me {
 }
 
 @media (max-width: 480px) {
+
+  h1,
+  h2,
+  h3 {
+    transition: none !important;
+    opacity: 1 !important;
+  }
+
   .header {
     aspect-ratio: 1.18 / 1;
     height: auto;
@@ -2843,7 +2851,7 @@ main#projects.about-me {
     flex-direction: column;
     width: 100%;
     height: auto;
-    min-height: 13.875rem;
+    min-height: 15.375rem;
     max-width: 100vw;
     aspect-ratio: 1.79 / 1;
     border-bottom: 1em solid black;
@@ -2852,29 +2860,30 @@ main#projects.about-me {
   }
 
   .canvas-skills-img img {
-    display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: inherit;
+    aspect-ratio: 442 / 246;
     object-fit: cover;
-    min-height: 13.875rem;
+    display: block;
   }
 
   .canvas-skills-title {
     width: 90%;
     max-width: 90vw;
+    min-height: 5rem;
+    padding-top: 0.5rem;
     height: auto;
     margin: 0.5em auto;
     border-top: 0.5em solid black;
   }
 
   .canvas-skills-title h1 {
-    padding: 0.5em 0 0.5em;
+    padding: 0.5em 0 0.2em;
     min-height: 2.5rem;
   }
 
   .canvas-skills-title h2 {
-    padding: 0.5em 0 0.5em;
+    padding: 0.2em 0 0.5em;
     min-height: 2rem;
   }
 
@@ -2885,28 +2894,17 @@ main#projects.about-me {
 
   .canvas-skills-title h1,
   .canvas-skills-title h2 {
-    visibility: visible;
-    opacity: 1;
-    transition: none;
-    min-height: 2rem;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: none !important;
+    min-height: 3rem;
+    font-size: clamp(2rem, 5vw, 2.25rem);
   }
+
 
   body.fonts-loaded .canvas-skills-title h1,
   body.fonts-loaded .canvas-skills-title h2 {
     transition: none;
-  }
-
-  .canvas-skills-img {
-    min-height: clamp(13rem, 28vh, 17.3125rem);
-    /* Already applied, good */
-  }
-
-  .canvas-skills-img img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1.79 / 1;
-    object-fit: cover;
-    min-height: 10rem;
   }
 
   .canvas-skills-grid {
