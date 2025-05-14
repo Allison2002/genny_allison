@@ -80,7 +80,7 @@ body.fonts-loaded h2 {
   font-weight: 400;
   line-height: 1.2;
   height: auto;
-  min-height: 4rem;
+  min-height: rem;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -122,17 +122,14 @@ body.fonts-loaded .resume-summary h3 {
 h1,
 h2,
 h3 {
-  visibility: hidden;
   opacity: 0;
-  transition: none;
+  transition: opacity 0.3s ease-in;
 }
 
 body.fonts-loaded h1,
 body.fonts-loaded h2,
 body.fonts-loaded h3 {
-  visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease-in;
 }
 
 
@@ -416,7 +413,7 @@ footer {
   text-align: center;
   font-size: clamp(2rem, 3vw, 3rem);
   height: auto;
-  min-height: 2.5rem;
+  min-height: 2rem;
 }
 
 .main-title a {
@@ -663,6 +660,7 @@ img[fetchpriority="high"] {
   padding: 0;
   line-height: 1.2;
   height: auto;
+  min-height: 3rem;
 }
 
 .canvas-skills-title h2 {
@@ -670,6 +668,7 @@ img[fetchpriority="high"] {
   padding: 0.2em 0;
   height: auto;
   line-height: 1.2;
+  min-height: 1rem;
 
 }
 
@@ -1198,6 +1197,7 @@ img[fetchpriority="high"] {
   height: auto;
   padding-top: 4rem;
   font-size: clamp(1rem, 1.2rem, 1.8rem);
+  min-height: 1rem;
 }
 
 .resume-summary h2,
@@ -1745,7 +1745,7 @@ button.submit-button:hover {
   font-size: clamp(1rem, 2vw, 2rem);
   height: auto;
   width: 100%;
-  min-height: 1rem;
+  min-height: 1.2rem;
 }
 
 .author-bio-text h2 {
@@ -2293,12 +2293,14 @@ button.submit-button:hover {
     font-size: clamp(1.5rem, 4vw, 3rem);
     padding: 1em 0 0;
     height: auto;
+    min-height: 1.5rem;
   }
 
   .canvas-skills-title h2 {
     font-size: clamp(1.125rem, 3vw, 3.5rem);
     padding: 0.4em 0 1em;
     height: auto;
+    min-height: 1rem;
   }
 
   .mood-board,
@@ -2700,6 +2702,10 @@ button.submit-button:hover {
 }
 
 @media (max-width: 480px) {
+  .about-me {
+    min-height: clamp(8rem, 17vh, 30rem);
+  }
+
   .canvas-skills-img {
     display: flex;
     flex-direction: column;
@@ -2726,6 +2732,17 @@ button.submit-button:hover {
     height: auto;
     margin: 0.5em auto;
     border-top: 0.5em solid black;
+    min-height: 2.5rem;
+  }
+
+  .canvas-skills-title h1 {
+    min-height: 1.5rem;
+    padding: 0.5em 0 0.5em;
+  }
+
+  .canvas-skills-title h2 {
+    min-height: 1rem;
+    padding: 0.5em 0 0.5em;
   }
 
   #projects {
@@ -2767,6 +2784,16 @@ button.submit-button:hover {
     width: 100%;
     height: auto;
     min-height: 5rem;
+  }
+
+  .resume-summary p {
+    min-height: 1rem;
+    height: auto;
+  }
+
+  .resume-summary {
+    height: auto;
+    min-height: 8rem;
   }
 
 
