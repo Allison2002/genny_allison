@@ -132,6 +132,19 @@ body.fonts-loaded h3 {
   opacity: 1;
 }
 
+main.about-me,
+section#the-design {
+  visibility: hidden;
+  opacity: 0;
+  transition: none;
+}
+
+body.fonts-loaded main.about-me,
+body.fonts-loaded section#the-design {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
 
 /* Font-face declarations */
 @font-face {
@@ -435,6 +448,10 @@ footer {
   min-height: 30rem;
 }
 
+#the-design h3,
+#the-design p {
+  min-height: 1.5rem;
+}
 
 .coder-container {
   position: relative;
@@ -681,9 +698,14 @@ img[fetchpriority="high"] {
   position: relative;
   padding-bottom: 10rem;
   height: auto;
-  min-height: clamp(20rem, 80vh, 80rem);
+  overflow: hidden;
+  min-height: 100vh;
   contain: layout;
   overflow: hidden;
+}
+
+main#projects.about-me {
+  display: flow-root;
 }
 
 .skills-main {
@@ -1133,6 +1155,8 @@ img[fetchpriority="high"] {
 .resume-border {
   border: .3vh solid white;
   width: 95%;
+  height: auto;
+  min-height: 0.3rem;
   margin: 1em auto;
 }
 
@@ -1174,7 +1198,7 @@ img[fetchpriority="high"] {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 6rem;
+  min-height: 5rem;
 }
 
 .resume-summary {
@@ -1265,6 +1289,11 @@ img[fetchpriority="high"] {
   border-radius: 0.25rem;
   cursor: pointer;
   transition: opacity 0.3s ease;
+}
+
+#side-nav {
+  contain: layout paint;
+  will-change: transform;
 }
 
 #back-to-top {
@@ -1555,6 +1584,7 @@ button.submit-button:hover {
   margin: 30px auto;
   width: 95%;
   max-width: 100%;
+  min-height: 0.2rem;
   height: auto;
   padding: 0.9375em 0;
 }
@@ -1755,6 +1785,30 @@ button.submit-button:hover {
   min-height: 1.5rem;
 }
 
+#the-grade {
+  min-height: clamp(30rem, 60vh, 90rem);
+  contain: layout;
+  overflow: hidden;
+  aspect-ratio: 1 / 1.6;
+}
+
+main#projects.about-me {
+  contain: layout paint;
+  overflow: hidden;
+}
+
+.pagespeed-grade-title,
+.grade-title,
+.grade-text,
+.grade-container h3,
+.grade-container p {
+  min-height: 2rem;
+}
+
+.grade-container {
+  min-height: 35rem;
+}
+
 .mood-board,
 .grade-text,
 .grade-title {
@@ -1762,7 +1816,6 @@ button.submit-button:hover {
   justify-content: center;
   align-items: center;
   height: auto;
-  min-height: 5rem;
   width: 100%;
   max-width: 100vw;
 }
@@ -1772,7 +1825,7 @@ button.submit-button:hover {
 .grade-text .grade-title h3 {
   font-size: 1.5rem;
   height: auto;
-  min-height: 1.7rem;
+  min-height: 1.2rem;
   width: 100%;
   color: black;
   margin: 0 auto;
@@ -1811,10 +1864,7 @@ button.submit-button:hover {
 
 .pagespeed-grade-title,
 .grade-title {
-  width: 90%;
-  max-width: 90vw;
   height: auto;
-  min-height: 2rem;
   padding: 0.625em;
   background-color: white;
 }
@@ -1911,6 +1961,7 @@ button.submit-button:hover {
   height: auto;
   margin: 0 auto;
   object-fit: cover;
+  min-height: 5rem;
 }
 
 .cta-section p {
@@ -1941,7 +1992,6 @@ button.submit-button:hover {
 .resume-border,
 .wireframe,
 .casestudy {
-  width: 100%;
   height: auto;
   min-height: 8rem;
 }
@@ -2131,6 +2181,11 @@ button.submit-button:hover {
 
 
 @media (max-width: 1024px) {
+  main#projects.about-me {
+    min-height: 5000px;
+    /* A safe lower boundary */
+  }
+
   .nav-links {
     display: none;
   }
@@ -2180,6 +2235,7 @@ button.submit-button:hover {
     max-width: 100%;
     height: auto;
     padding: 0.9375em 0;
+
   }
 
   .wireframe,
@@ -2293,14 +2349,14 @@ button.submit-button:hover {
     font-size: clamp(1.5rem, 4vw, 3rem);
     padding: 1em 0 0;
     height: auto;
-    min-height: 1.5rem;
+    min-height: 2.5rem;
   }
 
   .canvas-skills-title h2 {
     font-size: clamp(1.125rem, 3vw, 3.5rem);
     padding: 0.4em 0 1em;
     height: auto;
-    min-height: 1rem;
+    min-height: 1.5rem;
   }
 
   .mood-board,
