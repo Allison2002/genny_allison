@@ -445,7 +445,7 @@ footer {
 
 #the-design {
   contain: layout paint;
-  min-height: 30rem;
+  min-height: 100vh;
 }
 
 #the-design h3,
@@ -698,7 +698,6 @@ img[fetchpriority="high"] {
   position: relative;
   padding-bottom: 10rem;
   height: auto;
-  overflow: hidden;
   min-height: 100vh;
   contain: layout;
   overflow: hidden;
@@ -1795,6 +1794,8 @@ button.submit-button:hover {
 main#projects.about-me {
   contain: layout paint;
   overflow: hidden;
+  min-height: 100vh;
+  height: auto;
 }
 
 .pagespeed-grade-title,
@@ -1989,11 +1990,23 @@ main#projects.about-me {
 }
 
 .mood-board,
-.resume-border,
-.wireframe,
-.casestudy {
+.resume-border {
   height: auto;
   min-height: 8rem;
+}
+
+.casestudy {
+  height: auto;
+  min-height: 100vh;
+  contain: layout;
+  overflow: hidden;
+}
+
+.wireframe {
+  min-height: 100vh;
+  height: auto;
+  contain: layout;
+  overflow: hidden;
 }
 
 .casestudy-hr {
@@ -2764,10 +2777,37 @@ main#projects.about-me {
 @media (max-width: 480px) {
   .header {
     aspect-ratio: 1.18 / 1;
+    height: auto;
+    min-height: clamp(20rem, 55vh, 26rem);
+    contain: layout paint;
+    overflow: hidden;
   }
 
   .about-me {
     min-height: clamp(8rem, 17vh, 30rem);
+    contain: layout;
+    overflow: hidden;
+  }
+
+  .about-me {
+    margin: 0 auto;
+    max-width: 90vw;
+    width: 90%;
+    position: relative;
+    padding-bottom: 10rem;
+    height: auto;
+    min-height: 100vh;
+    contain: layout;
+    overflow: hidden;
+  }
+
+  main#projects.about-me {
+    display: flow-root;
+  }
+
+  .design {
+    contain: layout paint;
+    min-height: 40rem;
   }
 
   .canvas-skills-img {
