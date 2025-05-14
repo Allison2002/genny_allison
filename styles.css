@@ -1276,19 +1276,39 @@ main#projects.about-me {
   display: none;
 }
 
-#back-to-top,
-#side-nav {
+#back-to-top {
   position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  /* Ensure it’s on the left side */
   z-index: 999;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: none;
+  border: 0.0825em solid cyan;
   background-color: black;
   color: white;
   border-radius: 0.25rem;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
+
+#side-nav {
+  position: fixed;
+  bottom: 1rem;
+  right: max(1rem, env(safe-area-inset-right));
+  /* This is correct */
+  z-index: 999;
+  width: auto;
+  min-width: 6rem;
+  min-height: 4rem;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.25rem;
+  contain: layout paint;
+  will-change: transform;
+}
+
 
 #side-nav {
   contain: layout paint;
@@ -1351,22 +1371,6 @@ main#projects.about-me {
   background-color: cyan;
   color: black;
   transform: scale(1.05);
-}
-
-/* Back-to-top button */
-#back-to-top {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  z-index: 999;
-  padding: .5em;
-  font-size: 1rem;
-  border: 0.0825em solid cyan;
-  background-color: black;
-  color: white;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
 }
 
 /* Custom styling for project buttons */
@@ -2359,7 +2363,7 @@ main#projects.about-me {
     height: auto;
     margin: 0.5em auto;
     border-top: 0.5em solid black;
-    min-height: 3rem;
+    min-height: clamp(13rem, 28vh, 17.3125rem);
   }
 
   .canvas-skills-title h1 {
@@ -2808,6 +2812,14 @@ main#projects.about-me {
   .design {
     contain: layout paint;
     min-height: 40rem;
+  }
+
+  .casestudy p {
+    font-size: 1.4rem;
+    left: 1%;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
   }
 
   .canvas-skills-img {
