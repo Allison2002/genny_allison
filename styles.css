@@ -604,11 +604,12 @@ footer {
   transform: translateY(0);
 }
 
-header {
-  width: 100%;
-  max-width: 100vw;
-  height: auto;
+.header {
+  min-height: clamp(17rem, 50vh, 35rem);
+  aspect-ratio: 5.39 / 1;
   contain: layout paint;
+  overflow: hidden;
+
 }
 
 .canvas-skills-grid {
@@ -618,7 +619,6 @@ header {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 14rem;
   gap: 0;
 }
 
@@ -2283,6 +2283,10 @@ main#projects.about-me {
 }
 
 @media (max-width: 768px) {
+  .header {
+    aspect-ratio: 1.27 / 1;
+  }
+
   .nav-logo {
     height: calc(200px / 2.38);
     aspect-ratio: 2.38;
@@ -2304,7 +2308,7 @@ main#projects.about-me {
   }
 
   header {
-    min-height: 5rem;
+    min-height: 1.2rem;
   }
 
   .canvas-skills-grid {
@@ -2758,6 +2762,10 @@ main#projects.about-me {
 }
 
 @media (max-width: 480px) {
+  .header {
+    aspect-ratio: 1.18 / 1;
+  }
+
   .about-me {
     min-height: clamp(8rem, 17vh, 30rem);
   }
