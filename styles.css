@@ -102,9 +102,15 @@ body:not(.fonts-loaded) h3 {
   font-size: clamp(1rem, 2vw, 2rem)
 }
 
-body.fonts-loaded .canvas-skills-title h1,
-body.fonts-loaded .canvas-skills-title h2 {
+body.fonts-loaded .canvas-skills-title h1 {
   font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .3s ease-in
+}
+
+body.fonts-loaded .canvas-skills-title h2 {
+  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
   visibility: visible;
   opacity: 1;
   transition: opacity .3s ease-in
