@@ -2345,7 +2345,7 @@ main#projects.about-me {
     height: auto;
     align-items: center;
     justify-content: space-between;
-    min-height: clamp(39.375rem, 40.4375rem, 45.93m);
+    min-height: clamp(31.93rem, 32rem, 42.187rem);
   }
 
   .canvas-skills-img {
@@ -2368,22 +2368,25 @@ main#projects.about-me {
   .canvas-skills-title {
     width: 85%;
     max-width: 85vw;
+    max-height: 12.5rem;
+    min-height: 12.5rem;
     height: auto;
     margin: 0.5em auto;
     border: 0.8em solid black;
-    min-height: 19.875rem;
   }
 
   .canvas-skills-title h1 {
+    font-size: clamp(1.5rem, 2.5rem, 3rem);
     padding: 1em 0 0;
     height: auto;
-    min-height: clamp(5.20rem, 6.56rem, 10.18rem);
+    min-height: 6.5rem;
   }
 
   .canvas-skills-title h2 {
     padding: 0.4em 0 1em;
     height: auto;
-    min-height: 5.18rem;
+    min-height: 5.06rem;
+    font-size: 2rem;
   }
 
   .mood-board,
@@ -2427,7 +2430,7 @@ main#projects.about-me {
   .pagespeed-grade-title,
   #project-title {
     height: auto;
-    margin: 0.2em 1em 1em;
+    margin: 0.2em auto 1em;
     line-height: 1.5;
     background-color: white;
     width: 95%;
@@ -2846,6 +2849,7 @@ main#projects.about-me {
     border-bottom: .2em solid black;
     border-left: 0.2em solid black;
     border-right: 0.2em solid black;
+    aspect-ratio: 360 / 209;
   }
 
   .canvas-skills-img img {
@@ -2854,6 +2858,7 @@ main#projects.about-me {
     aspect-ratio: inherit;
     object-fit: cover;
     display: block;
+    aspect-ratio: inherit;
   }
 
   .canvas-skills-title {
@@ -2865,11 +2870,13 @@ main#projects.about-me {
     visibility: visible !important;
     height: auto;
     border: 0.5em solid black;
+    min-height: 7.95rem;
+    max-height: 10rem;
   }
 
   .canvas-skills-title h1 {
     padding: 0.2em 0 0.2em;
-    min-height: 3.2rem;
+    min-height: 4.75rem;
     height: auto;
   }
 
@@ -2880,9 +2887,7 @@ main#projects.about-me {
     height: auto;
   }
 
-  .canvas-skills-title {
-    min-height: 22.1875rem;
-  }
+  .canvas-skills-title {}
 
   .canvas-skills-title h1,
   .canvas-skills-title h2 {
@@ -2898,7 +2903,7 @@ main#projects.about-me {
   }
 
   .canvas-skills-grid {
-    min-height: 22.1875rem;
+    min-height: 27.375rem;
     height: auto;
   }
 
