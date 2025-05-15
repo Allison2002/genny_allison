@@ -148,16 +148,6 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   lazySections.forEach((section) => observer.observe(section));
 
-  // Font loading
-    Promise.all([
-    document.fonts.load('1em "Playfair Display"'),
-    document.fonts.load('1em "tt norms pro"'),
-    document.fonts.load('1em "Arial"'),
-  ]).then(() => {
-    document.body.classList.add("fonts-loaded");
-  });
-
-
   // Tooltip hover and click support
   document.querySelectorAll(".tooltip").forEach((tooltip) => {
     const tip = tooltip.querySelector(".tooltip-text");
