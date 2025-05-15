@@ -2870,19 +2870,19 @@ main#projects.about-me {
 
   .canvas-skills-title h1 {
     padding: 0.2em 0 0.2em;
-    min-height: 2.64rem;
+    min-height: 3.2rem;
     height: auto;
   }
 
   .canvas-skills-title h2 {
     font-size: 1.5rem;
     padding: 0.2em 0 0.2em;
-    min-height: 3rem;
+    min-height: 3.2rem;
     height: auto;
   }
 
   .canvas-skills-title {
-    min-height: 6.5rem;
+    min-height: 22.1875rem;
   }
 
   .canvas-skills-title h1,
@@ -2899,7 +2899,7 @@ main#projects.about-me {
   }
 
   .canvas-skills-grid {
-    min-height: 28.75rem;
+    min-height: 22.1875rem;
     height: auto;
   }
 
