@@ -523,7 +523,7 @@ footer {
   max-width: 100vw;
   gap: 0;
   height: auto;
-  min-height: clamp(22.125rem, 22.3125rem, 35.9rem)
+  min-height: clamp(15rem, 22.3125rem, 35.9rem)
 }
 
 .canvas-skills-img {
@@ -607,9 +607,8 @@ img[fetchpriority=high] {
   overflow: hidden
 }
 
-main#projects.about-me {
-  contain: layout;
-  min-height: clamp(20rem, 80vh, 120rem);
+#about-me {
+  min-height: clamp(40rem, 85vh, 95rem);
 }
 
 #projects {
@@ -2228,7 +2227,6 @@ button.submit-button:hover {
     height: auto;
     align-items: center;
     justify-content: space-between;
-    min-height: 33rem;
   }
 
   .canvas-skills-img {
@@ -2307,7 +2305,6 @@ button.submit-button:hover {
     height: auto;
     align-items: center;
     justify-content: space-between;
-    min-height: 33rem;
   }
 
   .canvas-skills-img {
@@ -2795,7 +2792,7 @@ button.submit-button:hover {
   }
 
   .canvas-skills-img {
-    min-height: auto;
+    min-height: 178px;
     object-fit: cover;
     width: 100%;
     max-width: 100vw;
@@ -2844,12 +2841,6 @@ button.submit-button:hover {
     opacity: 1 !important;
     visibility: visible !important;
     transition: none !important
-  }
-
-
-  .canvas-skills-grid {
-
-    height: auto
   }
 
   #projects {
