@@ -1,76 +1,71 @@
 :root {
-  --font-fallback-sans: 1em "Arial", sans-serif;
+  --font-fallback-sans: 1em "Arial", sans-serif
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0
 }
 
 body,
 html {
   width: 100%;
   height: auto;
-  overflow-x: hidden;
+  overflow-x: hidden
 }
 
 html {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased
 }
 
-/* Base font setup */
 body,
 h1,
 h2 {
   font-synthesis: none;
-  font-kerning: none;
+  font-kerning: none
 }
 
 body {
   font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
   height: auto;
-  min-height: 1.5rem;
+  min-height: 1.5rem
 }
 
 h1 {
   position: relative;
   font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  letter-spacing: 0.078vw;
+  letter-spacing: .078vw;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1
 }
 
 h2 {
   position: relative;
   font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
-  letter-spacing: 0.078vw;
+  letter-spacing: .078vw;
   font-weight: 400;
   font-kerning: normal;
-  font-feature-settings: 'kern';
+  font-feature-settings: 'kern'
 }
 
-/* Fallback while fonts load */
 body:not(.fonts-loaded) h1 {
   font-family: Georgia, serif;
-  font-size: clamp(3.5rem, 4vw, 4rem);
-  /* matches final font */
+  font-size: clamp(3.5rem, 4vw, 4rem)
 }
 
 body:not(.fonts-loaded) h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif
 }
 
-/* Once fonts are loaded, fade in */
 body.fonts-loaded h1,
 body.fonts-loaded h2 {
   visibility: visible;
-  opacity: 1;
+  opacity: 1
 }
 
-/* Specific to hero title section */
 .canvas-skills-title h1,
 .canvas-skills-title h2 {
   font-family: Georgia, serif;
@@ -80,31 +75,31 @@ body.fonts-loaded h2 {
   text-align: center;
   visibility: hidden;
   opacity: 1;
-  transition: none;
+  transition: none
 }
 
 .canvas-skills-title {
-  min-height: 6.79rem;
+  min-height: 6.79rem
 }
 
 .canvas-skills-title h1 {
   font-size: clamp(2rem, 3rem, 4rem);
-  min-height: 3.59rem;
+  min-height: 3.59rem
 }
 
 .canvas-skills-title h2 {
   font-size: clamp(1.8rem, 2.5rem, 4rem);
-  min-height: 3.2rem;
+  min-height: 3.2rem
 }
 
 body:not(.fonts-loaded) h2 {
   font-family: Arial, sans-serif;
-  font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+  font-size: clamp(1.2rem, 2.5vw, 2.5rem)
 }
 
 body:not(.fonts-loaded) h3 {
   font-family: Arial, sans-serif;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1rem, 2vw, 2rem)
 }
 
 body.fonts-loaded .canvas-skills-title h1,
@@ -112,176 +107,154 @@ body.fonts-loaded .canvas-skills-title h2 {
   font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease-in;
+  transition: opacity .3s ease-in
 }
 
 .resume-summary h2,
 .resume-summary h3 {
   visibility: hidden;
   opacity: 1;
-  transition: none;
+  transition: none
 }
 
 body.fonts-loaded .resume-summary h2,
 body.fonts-loaded .resume-summary h3 {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease-in;
+  transition: opacity .3s ease-in
 }
 
 h1,
 h2,
 h3 {
   opacity: 1;
-  transition: opacity 0.3s ease-in;
+  transition: opacity .3s ease-in
 }
 
 body.fonts-loaded h1,
 body.fonts-loaded h2,
 body.fonts-loaded h3 {
-  opacity: 1;
+  opacity: 1
 }
 
 main.about-me,
 section#the-design {
   visibility: hidden;
   opacity: 0;
-  transition: none;
+  transition: none
 }
 
 body.fonts-loaded main.about-me,
 body.fonts-loaded section#the-design {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease-in;
+  transition: opacity .3s ease-in
 }
 
-/* Font-face declarations */
 @font-face {
   font-family: 'Playfair Display';
-  src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'),
-    url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
+  src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'), url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: optional;
   ascent-override: 90%;
   descent-override: 10%;
-  line-gap-override: 0%;
+  line-gap-override: 0%
 }
 
 @font-face {
   font-family: 'tt norms pro';
-  src: url('/assets/fonts/TT-Norms-Pro-Regular.woff2') format('woff2'),
-    url('/assets/fonts/TT-Norms-Pro-Regular.ttf') format('truetype');
-  font-weight: normal;
+  src: url('/assets/fonts/TT-Norms-Pro-Regular.woff2') format('woff2'), url('/assets/fonts/TT-Norms-Pro-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: optional;
   ascent-override: 90%;
   descent-override: 10%;
-  line-gap-override: 0%;
+  line-gap-override: 0%
 }
 
 @font-face {
-  font-family: 'Helvetica';
-  src: url('/assets/fonts/Helvetica.woff2') format('woff2'),
-    url('/assets/fonts/Helvetica-Font-Family2/Helvetica.ttf') format('truetype');
-  font-weight: normal;
+  font-family: Helvetica;
+  src: url('/assets/fonts/Helvetica.woff2') format('woff2'), url('/assets/fonts/Helvetica-Font-Family2/Helvetica.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: optional;
   ascent-override: 90%;
   descent-override: 10%;
-  line-gap-override: 0%;
+  line-gap-override: 0%
 }
-
-/* links and buttons */
 
 .links,
 .links a,
-p a,
-a {
-  color: #00ffff;
-  /* Very high contrast on black */
-  text-shadow:
-    0 0 1px #003f4d,
-    /* optional subtle glow */
-    0 0 2px #003f4d;
+a,
+p a {
+  color: #0ff;
+  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d;
   font-weight: 700;
-  text-decoration: underline;
+  text-decoration: underline
 }
 
-.links:visited,
 .links a:visited,
-p a:visited,
-a:visited {
+.links:visited,
+a:visited,
+p a:visited {
   color: #8be4ed;
-  /* soft blue still readable on black */
-  text-shadow:
-    0 0 1px #003f4d,
-    0 0 2px #003f4d;
+  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
 }
 
-.links:focus,
 .links a:focus,
-p a:focus,
-.links:hover,
 .links a:hover,
-p a:hover,
+.links:focus,
+.links:hover,
+a:focus,
 a:hover,
-a:focus {
+p a:focus,
+p a:hover {
   color: #0bd6e2;
-  /* slightly brighter on hover */
-  text-shadow:
-    0 0 2px #1a1d9e,
-    /* glow effect that passes */
-    0 0 4px #1a1d9e;
+  text-shadow: 0 0 2px #1a1d9e, 0 0 4px #1a1d9e;
   outline: 2px solid #0bd6e2;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.05);
-  /* optional light contrast bump */
+  background-color: rgba(255, 255, 255, .05);
   border-radius: 3px;
-  padding: 0 2px;
+  padding: 0 2px
 }
 
-.p a::after,
 .a::after,
+.links a::after,
 .links::after,
-.links a::after {
+.p a::after {
   content: '';
   position: absolute;
   left: 5%;
-  bottom: -0.1vw;
-  /* Adjust this value for desired spacing */
-  height: 0.28vh;
+  bottom: -.1vw;
+  height: .28vh;
   width: 90%;
   transform: scaleX(0);
-  transition: transform 0.3s ease;
+  transition: transform .3s ease
 }
 
-.links:hover::after,
-.links a:hover::after {
-  transform: scaleX(1);
+.links a:hover::after,
+.links:hover::after {
+  transform: scaleX(1)
 }
 
-.links::after,
-.links a::after {
-  background: cyan;
-  /* Underline color */
+.links a::after,
+.links::after {
+  background: #0ff
 }
 
 #back-to-top:hover {
-  background-color: cyan;
-  color: black;
+  background-color: #0ff;
+  color: #000
 }
 
-/* nav styling */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* Ensures logo stays to the left */
   width: 100%;
   max-width: 100vw;
-  background-color: black;
+  background-color: #000
 }
 
 .nav-links {
@@ -289,33 +262,32 @@ nav {
   flex-grow: 1;
   justify-content: center;
   height: auto;
-  min-height: 2rem;
-  /* Centers the links */
+  min-height: 2rem
 }
 
 .nav-links ul {
   display: flex;
   gap: 2vw;
   list-style-type: none;
-  min-height: 1.5rem;
+  min-height: 1.5rem
 }
 
 .nav-links ul li {
   list-style-type: none;
-  padding: 1.8rem;
+  padding: 1.8rem
 }
 
 .nav-links ul li a {
   text-decoration: none;
   font-size: clamp(1rem, 1.2vw, 1.25rem);
-  color: white;
+  color: #fff;
   width: 100%;
-  height: auto;
+  height: auto
 }
 
 .nav-logo {
   display: flex;
-  aspect-ratio: 2.38 / 1;
+  aspect-ratio: 2.38/1;
   height: 80px;
   width: auto;
   max-height: 80px;
@@ -323,14 +295,14 @@ nav {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  padding-left: 1em;
+  padding-left: 1em
 }
 
 .nav-logo img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: contain
 }
 
 .footer-logo {
@@ -343,7 +315,7 @@ nav {
   width: 40vw;
   max-width: 40vw;
   padding: 2em 0;
-  aspect-ratio: 2.077 / 1;
+  aspect-ratio: 2.077/1
 }
 
 .footer-logo img {
@@ -351,11 +323,11 @@ nav {
   height: auto;
   display: block;
   object-fit: contain;
-  aspect-ratio: inherit;
+  aspect-ratio: inherit
 }
 
 .footer-links ul li {
-  padding: 1em;
+  padding: 1em
 }
 
 footer {
@@ -363,34 +335,34 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #000;
   padding: 2em 0;
-  margin-top: -4em;
+  margin-top: -4em
 }
 
-.social-media ul,
-.footer-links ul {
+.footer-links ul,
+.social-media ul {
   display: flex;
   gap: 2vw;
   justify-content: center;
   width: 100%;
-  height: auto;
+  height: auto
 }
 
-.social-media ul li,
-.footer-links ul li {
+.footer-links ul li,
+.social-media ul li {
   list-style: none;
-  padding: 1vw;
+  padding: 1vw
 }
 
 .social-media .footer-links {
-  display: flex;
+  display: flex
 }
 
 .footer-links ul li a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: white;
+  color: #fff
 }
 
 .social-media ul {
@@ -398,22 +370,22 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1.5em;
-  padding: 1em 0;
+  padding: 1em 0
 }
 
 .social-media ul li {
-  list-style: none;
+  list-style: none
 }
 
 .social-media ul li img {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  transition: transform 0.3s ease;
+  transition: transform .3s ease
 }
 
 .social-media ul li img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 
 .main-title {
@@ -425,7 +397,7 @@ footer {
   min-height: 5rem;
   padding: 6em 0 1em;
   justify-content: center;
-  text-align: center;
+  text-align: center
 }
 
 .main-title h1 {
@@ -436,13 +408,13 @@ footer {
   text-align: center;
   font-size: clamp(2rem, 3vw, 3rem);
   height: auto;
-  min-height: 2rem;
+  min-height: 2rem
 }
 
 .main-title a {
   text-decoration: none;
-  color: black;
-  text-decoration: underline solid cyan;
+  color: #000;
+  text-decoration: underline solid cyan
 }
 
 .design-container {
@@ -450,17 +422,17 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   max-width: 100%;
   padding: 0 5rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 #the-design {
   contain: layout paint;
-  min-height: 100vh;
+  min-height: 100vh
 }
 
 #the-design h3,
 #the-design p {
-  min-height: 1.5rem;
+  min-height: 1.5rem
 }
 
 .coder-container {
@@ -469,26 +441,24 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 .headshot-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Changed from 'end' to 'center' to center images */
   text-align: center;
   width: 100%;
   height: auto;
-  position: relative;
-  /* To stack images on top of each other */
+  position: relative
 }
 
 .headshot-container img {
   width: 100%;
   height: auto;
   padding-bottom: 4rem;
-  object-fit: cover;
+  object-fit: cover
 }
 
 .coder-box h2,
@@ -496,8 +466,8 @@ footer {
   height: auto;
   min-height: 2rem;
   font-size: 2rem;
-  padding: 0.8em 0;
-  text-decoration: underline solid cyan;
+  padding: .8em 0;
+  text-decoration: underline solid cyan
 }
 
 .designer-box {
@@ -506,20 +476,19 @@ footer {
   justify-content: center;
   width: 100%;
   z-index: 5;
-  padding: 1em;
+  padding: 1em
 }
 
 .coder-box {
   position: relative;
   z-index: 2;
-  /* Ensure text remains on top */
-  padding: 1em;
+  padding: 1em
 }
 
 .coder-box,
 .designer-box {
   max-width: 20vw;
-  text-align: center;
+  text-align: center
 }
 
 .code-img {
@@ -527,91 +496,86 @@ footer {
   bottom: -10%;
   opacity: 0;
   transform: translateY(50%);
-  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition: transform .6s ease, opacity .6s ease;
   z-index: 1;
   padding-left: 8rem;
-  padding-bottom: 4rem;
+  padding-bottom: 4rem
 }
 
 .code-img img {
   width: 40vw;
   height: auto;
-  transition: transform 0.6s ease, opacity 0.6s ease;
-  object-fit: cover;
+  transition: transform .6s ease, opacity .6s ease;
+  object-fit: cover
 }
 
 .coder-box {
-  padding: 1em;
+  padding: 1em
 }
 
-.design-container a,
-.coder-box a {
+.coder-box a,
+.design-container a {
   text-decoration: none;
-  color: black;
-  width: 100%;
+  color: #000;
+  width: 100%
 }
 
 .coder-box h3,
 .designer-box h3 {
   font-size: 1.4rem;
-  padding-top: 0.5em;
+  padding-top: .5em
 }
-
-/* Animation Setup */
 
 .animation-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center
 }
 
 .headshot,
 .headshot-animated {
   width: 100%;
-  transition: opacity 0.5s ease;
+  transition: opacity .5s ease
 }
 
 .headshot-animated {
   position: absolute;
-  opacity: 0;
+  opacity: 0
 }
 
 .headshot-animation .headshot {
   margin: 0 auto;
-  opacity: 1;
+  opacity: 1
 }
 
-.design-container,
-.coder-container {
+.coder-container,
+.design-container {
   flex: 1 1 100%;
-  /* Flex-grow: 1, Flex-shrink: 1, Flex-basis: 25vw */
   max-width: 100%;
-  /* Prevent overflow */
-  min-width: 15vw;
-  /* Maintain minimum size for readability */
+  min-width: 15vw
 }
 
 .designer-box:hover~.headshot-container .headshot {
-  opacity: 0;
+  opacity: 0
 }
 
 .designer-box:hover~.headshot-container .headshot-animated {
   opacity: 1;
-  animation: bounceIn 0.6s ease forwards;
+  animation: bounceIn .6s ease forwards
 }
 
 .designer-box:hover .headshot {
-  opacity: 0;
+  opacity: 0
 }
 
 .designer-box:hover .headshot-animated {
   opacity: 1;
-  animation: bounceIn 0.6s ease forwards;
+  animation: bounceIn .6s ease forwards
 }
 
 .coder-box:hover+.code-img {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0)
 }
 
 .canvas-skills-grid {
@@ -622,20 +586,20 @@ footer {
   max-width: 100vw;
   gap: 0;
   height: auto;
-  min-height: clamp(22.125rem, 22.3125rem, 35.9rem);
+  min-height: clamp(22.125rem, 22.3125rem, 35.9rem)
 }
 
 .canvas-skills-img {
-  border-top: 1em solid black;
-  border-bottom: 1em solid black;
-  border-left: 1em solid black;
-  border-right: 0.5em solid black;
+  border-top: 1em solid #000;
+  border-bottom: 1em solid #000;
+  border-left: 1em solid #000;
+  border-right: .5em solid #000;
   height: auto;
   max-width: 100vw;
   width: 100%;
   margin: 0 auto;
   min-height: unset;
-  object-fit: cover;
+  object-fit: cover
 }
 
 .canvas-skills-img img {
@@ -643,29 +607,28 @@ footer {
   height: 100%;
   object-fit: cover;
   display: block;
-  content: layout paint;
+  content: layout paint
 }
 
-img[fetchpriority="high"] {
+img[fetchpriority=high] {
   contain: layout paint;
-  content-visibility: auto;
+  content-visibility: auto
 }
-
 
 .canvas-skills-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1em solid black;
-  border-bottom: 1em solid black;
-  border-left: 0.5em solid black;
-  border-right: 1em solid black;
+  border-top: 1em solid #000;
+  border-bottom: 1em solid #000;
+  border-left: .5em solid #000;
+  border-right: 1em solid #000;
   height: auto;
   max-width: 100vw;
   width: 100%;
   margin: 0 auto;
-  min-height: unset;
+  min-height: unset
 }
 
 .canvas-skills-title h1 {
@@ -676,19 +639,16 @@ img[fetchpriority="high"] {
   padding: 0;
   line-height: 1.2;
   height: auto;
-  min-height: 3.5rem;
+  min-height: 3.5rem
 }
 
 .canvas-skills-title h2 {
   font-size: clamp(1.2rem, 2rem, 4rem);
-  padding: 0.2em 0;
+  padding: .2em 0;
   height: auto;
   line-height: 1.2;
-  min-height: 1.3rem;
-
+  min-height: 1.3rem
 }
-
-/* about */
 
 .about-me {
   margin: 0 auto;
@@ -699,11 +659,11 @@ img[fetchpriority="high"] {
   height: auto;
   min-height: 100vh;
   contain: layout;
-  overflow: hidden;
+  overflow: hidden
 }
 
 main#projects.about-me {
-  display: flow-root;
+  display: flow-root
 }
 
 .skills-main {
@@ -713,7 +673,7 @@ main#projects.about-me {
   position: relative;
   padding-bottom: 10vh;
   margin-top: 4vh;
-  padding-bottom: 10vh;
+  padding-bottom: 10vh
 }
 
 .black-container {
@@ -721,25 +681,25 @@ main#projects.about-me {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #000;
   width: 100%;
   max-width: 100vw;
   height: auto;
   min-height: 10rem;
   margin: 1em auto 0;
   border-radius: .225vw;
-  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.4), inset 0 0 0.625em rgba(255, 255, 255, 0.1);
+  box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1)
 }
 
 #about-me-black-container {
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .main-container {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 100vh;
+  min-height: 100vh
 }
 
 .skills-black-container {
@@ -747,45 +707,45 @@ main#projects.about-me {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #000;
   margin: 0 auto;
   height: auto;
   max-height: 100%;
   padding: 3em;
-  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.4), inset 0 0 0.625em rgba(255, 255, 255, 0.1);
-  max-width: 80vw;
+  box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1);
+  max-width: 80vw
 }
 
 .outer-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 100%;
-  height: auto;
+  height: auto
 }
 
 .section1 {
   display: grid;
   grid-template-rows: 1fr 3fr;
   width: 100%;
-  height: auto;
+  height: auto
 }
 
 .section2 {
   display: flex;
-  padding-right: 3vw;
+  padding-right: 3vw
 }
 
 .dots {
   width: 15vw;
   height: auto;
   position: absolute;
-  left: -10%;
+  left: -10%
 }
 
 .dots img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: cover
 }
 
 .headshot-about {
@@ -794,30 +754,30 @@ main#projects.about-me {
   width: 20vw;
   position: absolute;
   left: -2%;
-  margin-top: 0.3em;
+  margin-top: .3em
 }
 
 .headshot-about img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: cover
 }
 
 .about--me-container {
-  margin-top: -3.2em;
+  margin-top: -3.2em
 }
 
 .portfolio-name {
   display: flex;
   padding: 6.3em 0 1em;
   width: 30vw;
-  height: auto;
+  height: auto
 }
 
 .portfolio-name img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: cover
 }
 
 .greeting-container {
@@ -825,46 +785,46 @@ main#projects.about-me {
   flex-direction: column;
   text-align: center;
   margin-left: 50px;
-  width: 100%;
+  width: 100%
 }
 
 .greetings-label {
   display: flex;
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   width: 15vw;
-  border-top: .625vh solid black;
-  border-right: .625vh solid black;
-  border-left: .625vh solid black;
+  border-top: .625vh solid #000;
+  border-right: .625vh solid #000;
+  border-left: .625vh solid #000;
   margin-left: 1.999rem;
   text-align: center;
-  box-shadow: 0 0.25vw 0.5vw rgba(0, 0, 0, 0.4), inset 0 0 0.625vw rgba(255, 255, 255, 0.1);
+  box-shadow: 0 .25vw .5vw rgba(0, 0, 0, .4), inset 0 0 .625vw rgba(255, 255, 255, .1)
 }
 
 .greetings-label h2 {
   font-size: 1.71rem;
-  font-weight: bold;
-  padding: 0.5vw;
+  font-weight: 700;
+  padding: .5vw;
   height: auto;
-  min-height: 1.5rem;
+  min-height: 1.5rem
 }
 
 .greetings {
   width: 90%;
-  border-bottom: 0.16vw solid white;
-  border-left: 0.16vw solid white;
-  border-right: 0.16vw solid white;
+  border-bottom: .16vw solid #fff;
+  border-left: .16vw solid #fff;
+  border-right: .16vw solid #fff
 }
 
 .greetings p {
-  color: white;
+  color: #fff;
   font-family: tt norms pro, Arial, Helvetica, sans-serif;
   font-weight: 250;
   line-height: 1.4;
   font-size: 1.4rem;
   padding: 2vw;
   height: auto;
-  min-height: 1rem;
+  min-height: 1rem
 }
 
 .grid-container {
@@ -873,13 +833,13 @@ main#projects.about-me {
   gap: 1.5vw;
   margin: 1.25vw;
   max-width: 100%;
-  padding: 1vh 1vw;
+  padding: 1vh 1vw
 }
 
 .fun-facts-grid {
   display: grid;
   grid-template-rows: 0.4fr 3fr;
-  border: .155vw solid white;
+  border: .155vw solid #fff
 }
 
 .facts-grid {
@@ -891,56 +851,56 @@ main#projects.about-me {
 
 .favorites-label {
   height: 8vh;
-  width: 100%;
+  width: 100%
 }
 
 .sub-labels {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: #fff
 }
 
 .sub-labels h3 {
   font-size: 1.5vw;
   text-align: center;
-  color: black;
+  color: #000;
   height: auto;
-  min-height: 1rem;
+  min-height: 1rem
 }
 
 .my-favorites-grid {
   display: grid;
   grid-template-rows: 0.4fr 3fr;
   gap: .5vw;
-  border: .155vw solid white;
+  border: .155vw solid #fff
 }
 
 .inside-grid-favorites {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .favorites {
   width: 5vw;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .favorites img {
   width: 100%;
   height: auto;
   padding: 2vh 0;
-  object-fit: cover;
+  object-fit: cover
 }
 
 .facts,
 .favorites p {
-  color: white;
+  color: #fff;
   height: auto;
-  min-height: 1rem;
+  min-height: 1rem
 }
 
 .fun-facts {
@@ -949,7 +909,7 @@ main#projects.about-me {
   width: 100%;
   max-width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .facts {
@@ -958,7 +918,7 @@ main#projects.about-me {
   width: 100%;
   max-width: 100%;
   height: auto;
-  padding: 2vw;
+  padding: 2vw
 }
 
 .check-mark-text {
@@ -968,100 +928,98 @@ main#projects.about-me {
   width: 100%;
   height: auto;
   margin-top: 1vh;
-  padding: 0 .7vw;
+  padding: 0 .7vw
 }
 
 .quote p {
-  color: white;
+  color: #fff;
   font-size: 1.6vw;
   font-style: italic;
   text-align: center;
   width: 100%;
   height: auto;
-  min-height: 1rem;
+  min-height: 1rem
 }
 
 .quote:last-child {
-  padding-bottom: 1vw;
+  padding-bottom: 1vw
 }
 
 .check-mark {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center
 }
 
 .check-mark img {
   width: 5vw;
   height: auto;
-  object-fit: cover;
+  object-fit: cover
 }
 
 .quote {
   display: flex;
   flex-direction: column;
-  border: 0.16vw solid white;
+  border: .16vw solid #fff;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: auto
 }
 
 .quote img {
   width: 3vw;
   height: auto;
   padding-top: 1vw;
-  object-fit: cover;
+  object-fit: cover
 }
 
-
-/*  skills */
 .skills-black {
-  margin-top: 4vh;
+  margin-top: 4vh
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
-  background-color: black;
+  background-color: #000;
   padding: 1vw 2vw;
   width: 100%;
   height: auto;
-  min-height: 10rem;
+  min-height: 10rem
 }
 
 .skills-firstset h4 {
   font-size: 2vw;
   color: #a6a6a6;
-  transition: font-size 0.3s ease, color 0.3s ease;
+  transition: font-size .3s ease, color .3s ease;
   padding: 2vw 2vw;
   width: 80%;
   height: auto;
   min-height: 1rem;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .skills-firstset :hover {
   font-size: 2.3vw;
   height: auto;
-  color: white;
+  color: #fff
 }
 
 .skills-secondset h4 {
   font-size: 2.4vw;
   color: #a6a6a6;
-  transition: font-size 0.3s ease, color 0.3s ease;
+  transition: font-size .3s ease, color .3s ease;
   padding: 2vw 3vw;
   width: 60%;
   height: auto;
   min-height: 1rem;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .skills-secondset :hover {
   font-size: 2vw;
-  color: white;
+  color: #fff
 }
 
 .skills1 {
@@ -1069,105 +1027,103 @@ main#projects.about-me {
   justify-content: flex-end;
   align-content: center;
   text-align: end;
-  padding: 2vw 1vw;
+  padding: 2vw 1vw
 }
 
 .skills2 {
   display: flex;
   justify-content: flex-start;
   align-content: center;
-  text-align: center;
+  text-align: center
 }
 
 .skills3 {
   display: flex;
   justify-content: flex-end;
   text-align: end;
-  padding: 2vw;
+  padding: 2vw
 }
 
 .skills4 {
   display: flex;
-  padding-left: 0px;
-  padding: 2vw;
+  padding-left: 0;
+  padding: 2vw
 }
 
 .skills6 {
   display: flex;
   padding-left: 6.77vw;
-  padding: 2vw;
+  padding: 2vw
 }
 
 .skills8 {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 2vw;
+  padding: 2vw
 }
 
 .skills9 {
   display: flex;
-  padding: 2vw;
+  padding: 2vw
 }
 
 .skills10 {
   display: flex;
   text-align: start;
   justify-content: flex-start;
-  padding: 2vw;
+  padding: 2vw
 }
 
 .skills12 {
   display: flex;
   text-align: center;
-  padding: 2vw;
-
+  padding: 2vw
 }
 
 .skills14 {
   display: flex;
   text-align: start;
   align-content: flex-start;
-  padding: 2vw;
+  padding: 2vw
 }
 
 .skills17 {
   display: flex;
   text-align: end;
-  padding: 2vw;
+  padding: 2vw
 }
 
 .skills18 {
   display: flex;
   text-align: start;
   justify-content: flex-start;
-  padding: 2vw;
+  padding: 2vw
 }
 
-/* resume page  */
 .resume {
   padding: 6vh 0 2vh;
-  background-color: white;
+  background-color: #fff
 }
 
 .resume-border {
-  border: .3vh solid white;
+  border: .3vh solid #fff;
   width: 95%;
   height: auto;
-  min-height: 0.3rem;
-  margin: 1em auto;
+  min-height: .3rem;
+  margin: 1em auto
 }
 
 .resume h2 {
   font-size: 2vw;
-  color: black;
+  color: #000;
   width: 100%;
   height: auto;
-  min-height: 2rem;
+  min-height: 2rem
 }
 
 .background-color {
-  background-color: black;
+  background-color: #000
 }
 
 .resume-date {
@@ -1176,43 +1132,43 @@ main#projects.about-me {
   min-height: 2rem;
   margin: 0 auto;
   max-width: 90%;
-  padding: 0;
+  padding: 0
 }
 
 .resume-date h2 {
   font-size: clamp(1.5rem, 2.5vw, 3rem);
-  color: white;
+  color: #fff;
   width: 100%;
   height: auto;
-  color: black;
-  line-height: 1.2;
+  color: #000;
+  line-height: 1.2
 }
 
 #resume-border {
-  padding-bottom: 0;
+  padding-bottom: 0
 }
 
 #description {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 5rem;
+  min-height: 5rem
 }
 
 .resume-summary {
   width: 100%;
   height: auto;
   min-height: 10rem;
-  padding: 2em 1em;
+  padding: 2em 1em
 }
 
 .resume-summary a {
   text-decoration: none;
-  color: cyan;
+  color: #0ff;
   height: auto;
   min-height: 1rem;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100vw
 }
 
 .resume-summary h2 {
@@ -1220,38 +1176,37 @@ main#projects.about-me {
   height: auto;
   padding-top: 4rem;
   font-size: clamp(1rem, 1.2rem, 1.8rem);
-  min-height: 1rem;
+  min-height: 1rem
 }
 
 .resume-summary h2,
 .resume-summary h3 {
-  color: white;
+  color: #fff;
   min-height: 2rem;
   height: auto;
   width: 100%;
   max-width: 100vw;
-  padding: 1em 1em 0.5em;
+  padding: 1em 1em .5em
 }
 
 .resume-summary p {
-  color: white;
+  color: #fff;
   font-family: tt norms pro, Arial, Helvetica, sans-serif;
   font-weight: 250;
   line-height: 1.5;
   padding: 1.25em 3em;
-  font-size: clamp(1rem, 1.30rem, 1.8rem);
+  font-size: clamp(1rem, 1.3rem, 1.8rem);
   min-height: 1rem;
   width: 100%;
   height: auto;
   max-width: 100vw;
-  padding: 0.2em;
+  padding: .2em
 }
 
 .education {
-  margin-top: 10vh;
+  margin-top: 10vh
 }
 
-/* projects */
 .project-images {
   display: flex;
   justify-content: center;
@@ -1259,8 +1214,8 @@ main#projects.about-me {
   width: 93%;
   height: auto;
   min-height: 3rem;
-  aspect-ratio: 16 / 9;
-  margin: 1.5em auto 0;
+  aspect-ratio: 16/9;
+  margin: 1.5em auto 0
 }
 
 .site-hero-img img {
@@ -1269,27 +1224,26 @@ main#projects.about-me {
   padding: 1%;
   object-fit: cover;
   aspect-ratio: inherit;
-  object-position: center;
+  object-position: center
 }
 
 .hamburger-icon {
-  display: none;
+  display: none
 }
 
 #back-to-top {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
-  /* Ensure it’s on the left side */
   z-index: 999;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
   font-size: 1rem;
-  border: 0.0825em solid cyan;
-  background-color: black;
-  color: white;
-  border-radius: 0.25rem;
+  border: .0825em solid #0ff;
+  background-color: #000;
+  color: #fff;
+  border-radius: .25rem;
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease
 }
 
 #side-nav {
@@ -1300,18 +1254,17 @@ main#projects.about-me {
   width: auto;
   min-width: 6rem;
   min-height: 7rem;
-  padding: 0.5rem 1rem;
-  background-color: black;
-  color: white;
-  border-radius: 0.25rem;
+  padding: .5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: .25rem;
   contain: layout paint;
-  will-change: transform;
+  will-change: transform
 }
-
 
 #back-to-top {
   bottom: 1rem;
-  left: 1rem;
+  left: 1rem
 }
 
 #side-nav {
@@ -1320,56 +1273,54 @@ main#projects.about-me {
   width: auto;
   min-width: 6rem;
   min-height: 16.4rem;
-  contain: layout;
+  contain: layout
 }
 
 #side-nav {
-  right: max(1rem, env(safe-area-inset-right));
+  right: max(1rem, env(safe-area-inset-right))
 }
-
 
 #side-nav ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0
 }
 
 #side-nav ul li {
-  margin: 5% 0;
+  margin: 5% 0
 }
 
 #side-nav ul li a {
   display: block;
   padding: .5em;
-  background-color: black;
-  color: white;
-  border: 0.0825em solid cyan;
-  border-radius: 0.3125em;
+  background-color: #000;
+  color: #fff;
+  border: .0825em solid #0ff;
+  border-radius: .3125em;
   font-size: 1rem;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color .3s, color .3s;
   width: auto;
-  text-align: center;
+  text-align: center
 }
 
 #side-nav li {
-  margin: 0.25rem 0;
+  margin: .25rem 0;
   height: auto;
-  min-height: 1.3rem;
+  min-height: 1.3rem
 }
 
 #side-nav a {
-  color: white;
-  text-decoration: none;
+  color: #fff;
+  text-decoration: none
 }
 
 #side-nav li a:hover {
-  background-color: cyan;
-  color: black;
-  transform: scale(1.05);
+  background-color: #0ff;
+  color: #000;
+  transform: scale(1.05)
 }
 
-/* Custom styling for project buttons */
 .click-me {
   display: flex;
   justify-content: center;
@@ -1383,22 +1334,22 @@ main#projects.about-me {
   text-decoration: none;
   cursor: pointer;
   padding: .5em;
-  border: 0.0825em solid cyan;
-  background-color: black;
-  color: white;
-  border-radius: 0.25rem;
-  transition: opacity 0.3s ease;
+  border: .0825em solid #0ff;
+  background-color: #000;
+  color: #fff;
+  border-radius: .25rem;
+  transition: opacity .3s ease
 }
 
 .click-me:hover {
   background-color: gray;
-  box-shadow: 0.0225em 0.0225em 0.0125em rgba(0, 0, 0, 0.3), -0.125em -0.125em 0.3125em rgba(255, 255, 255, 0.7);
-  color: white;
+  box-shadow: .0225em .0225em .0125em rgba(0, 0, 0, .3), -.125em -.125em .3125em rgba(255, 255, 255, .7);
+  color: #fff
 }
 
 .click-me a {
   text-decoration: none;
-  color: white;
+  color: #fff
 }
 
 .project-link {
@@ -1406,7 +1357,7 @@ main#projects.about-me {
   height: auto;
   min-height: 5rem;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100vw
 }
 
 .project-links .explore-container .click-me {
@@ -1414,7 +1365,7 @@ main#projects.about-me {
   height: auto;
   min-height: 1rem;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100vw
 }
 
 .takeme-text {
@@ -1422,43 +1373,39 @@ main#projects.about-me {
   max-width: 100vw;
   height: auto;
   margin: 1em auto;
-  min-height: 1rem;
+  min-height: 1rem
 }
 
 .takeme-text h3 {
-  color: cyan;
+  color: #0ff;
   font-weight: 700;
   font-size: 1.3rem;
   text-decoration: underline cyan;
   height: auto;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100vw
 }
 
-/* Scroll Behavior and Transitions */
 #back-to-top:hover {
-  background-color: cyan;
-  color: black;
-  transform: scale(1.1);
+  background-color: #0ff;
+  color: #000;
+  transform: scale(1.1)
 }
 
 .skills-text {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.5rem)
 }
 
-.skills-text:hover,
 .skills-text.hover,
-.skills-text:active {
-  color: white;
+.skills-text:active,
+.skills-text:hover {
+  color: #fff;
   font-size: clamp(1.2rem, 2.3vw, 1.7rem);
-  text-shadow: 0.5em 0.5em 1em rgba(11, 214, 226, 0.8),
-    0.125em 0.125em 0.5em rgba(11, 214, 226, 0.6),
-    0.375em 0.375em 1.25em rgba(11, 214, 226, 0.4);
+  text-shadow: .5em .5em 1em rgba(11, 214, 226, .8), .125em .125em .5em rgba(11, 214, 226, .6), .375em .375em 1.25em rgba(11, 214, 226, .4)
 }
 
-
 .skills-text {
-  cursor: pointer;
+  cursor: pointer
 }
 
 .button-grid {
@@ -1469,29 +1416,28 @@ main#projects.about-me {
   margin: 0 auto;
   padding-bottom: 2em;
   gap: 1em;
-  min-height: 2rem;
+  min-height: 2rem
 }
 
-/* contact page */
 .contact-form-container {
   width: 100%;
   margin: 2em auto;
-  text-align: left;
+  text-align: left
 }
 
 .contact-form-container form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1em
 }
 
 .contact-form-container input,
 .contact-form-container textarea {
   width: 100%;
-  padding: 0.75em;
-  border: 0.0625em solid #B0B0B0;
-  border-radius: 0.3125em;
-  font-size: 1rem;
+  padding: .75em;
+  border: .0625em solid #b0b0b0;
+  border-radius: .3125em;
+  font-size: 1rem
 }
 
 form {
@@ -1500,167 +1446,149 @@ form {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  background-color: #F2F7FA;
-  /* Match contact form background */
+  background-color: #f2f7fa;
   width: 60%;
-  box-shadow: 0px 0.25em 0.5em rgba(0, 0, 0, 0.1);
-  /* Softer shadow */
-  border-radius: 0.5em;
-  /* Smooth rounded corners */
-  color: #1A1D9E;
-  /* Consistent text color */
+  box-shadow: 0 .25em .5em rgba(0, 0, 0, .1);
+  border-radius: .5em;
+  color: #1a1d9e
 }
 
 .form-sect label {
   font-size: 1rem;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em
 }
 
 .form-sect {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5em
 }
 
 .form-sect input,
-.form-sect textarea,
-.form-sect select {
+.form-sect select,
+.form-sect textarea {
   width: 100%;
-  padding: 0.75em;
-  border-radius: 0.3125em;
-  border: 0.0625em solid #B0B0B0;
+  padding: .75em;
+  border-radius: .3125em;
+  border: .0625em solid #b0b0b0;
   font-size: 1rem;
-  height: auto;
+  height: auto
 }
 
 textarea {
   resize: vertical;
-  height: 12.5vh;
+  height: 12.5vh
 }
 
 button.submit-button {
   width: 100%;
-  padding: 0.75em;
-  background-color: black;
-  color: white;
+  padding: .75em;
+  background-color: #000;
+  color: #fff;
   border: none;
-  border-radius: 0.3125em;
+  border-radius: .3125em;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color .3s ease
 }
 
 button.submit-button:hover {
-  background-color: #0BD6E2;
+  background-color: #0bd6e2
 }
 
-/* Default display */
 .desktop-version {
-  display: block;
+  display: block
 }
 
 .mobile-version {
-  display: none;
+  display: none
 }
 
 .hubspot {
   width: 93%;
   height: auto;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
-.hubspot img,
-.grade-grid img {
+.grade-grid img,
+.hubspot img {
   margin: 0 auto;
   width: 93%;
   height: auto;
-  object-fit: cover;
+  object-fit: cover
 }
 
-/* borders */
 .border-white {
-  border: 1em solid white;
+  border: 1em solid #fff;
   margin: 30px auto;
   width: 95%;
   max-width: 100%;
-  min-height: 0.2rem;
+  min-height: .2rem;
   height: auto;
-  padding: 0.9375em 0;
+  padding: .9375em 0
 }
 
 .collections-border-white {
-  border: 1em solid white;
+  border: 1em solid #fff;
   margin: 1.875em auto;
   width: 95%;
   max-width: 100%;
   height: 100%;
-  padding: 0.9375em 0;
+  padding: .9375em 0
 }
-
 
 .hamburger-nav-links {
   display: none;
-  /* Initially hidden */
   position: fixed;
   top: 0;
   right: 0;
   width: 80%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, .9);
   z-index: 10;
   transform: translateX(100%);
-  /* Initially off-screen */
-  transition: transform 0.3s ease;
+  transition: transform .3s ease;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 60px
 }
 
-/* Show the hamburger menu when active */
 .hamburger-nav-links.active {
-  transform: translateX(0);
+  transform: translateX(0)
 }
 
-/* Nav links inside the hamburger menu */
 .hamburger-nav-links ul {
   display: flex;
   flex-direction: column;
   gap: 1em;
   padding: 1.25em;
-  text-align: center;
+  text-align: center
 }
 
 .hamburger-nav-links ul li a {
   font-size: 2rem;
-  color: white;
+  color: #fff;
   text-decoration: underline solid cyan;
-  padding: 0.625em;
+  padding: .625em;
   border-bottom: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color .3s ease, text-decoration .3s ease
 }
 
 .hamburger-nav-links ul li a:hover {
-  color: cyan;
-
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+  color: #0ff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .5)
 }
 
-
-
-/* collection page */
 .collections-grid,
 .collections-row {
   display: grid;
   width: 100%;
   max-width: 100%;
-  /* Ensure no overflow */
   height: auto;
-  padding: 0;
+  padding: 0
 }
-
 
 .collections-grid {
   grid-template-rows: repeat(2, 1fr);
-  margin: 2em auto;
+  margin: 2em auto
 }
 
 .collections-row {
@@ -1668,11 +1596,11 @@ button.submit-button:hover {
   width: 80vw;
   max-width: 100%;
   height: auto;
-  margin: 4em auto;
+  margin: 4em auto
 }
 
 .collection-thumbnail-box {
-  background-color: black;
+  background-color: #000;
   box-shadow: rgb(0 0 0 / 20%) 0 0 1.5625em .5em;
   width: 100%;
   height: auto;
@@ -1680,7 +1608,7 @@ button.submit-button:hover {
   padding: 1em;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-direction: column
 }
 
 .collections-title {
@@ -1688,15 +1616,14 @@ button.submit-button:hover {
   height: auto;
   max-width: 100%;
   margin: 0 auto;
-  background-color: white;
-  padding: 0.725em;
+  background-color: #fff;
+  padding: .725em
 }
 
 .collections-container {
   width: 100%;
   height: auto;
-  /* Let the content define the height */
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .collections-thumbnail {
@@ -1708,8 +1635,8 @@ button.submit-button:hover {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  border: 0.2em solid white;
-  object-fit: cover;
+  border: .2em solid #fff;
+  object-fit: cover
 }
 
 .collections-button-grid {
@@ -1718,7 +1645,7 @@ button.submit-button:hover {
   justify-content: space-between;
   gap: 0;
   margin: 1em auto;
-  padding: 0 1.5em;
+  padding: 0 1.5em
 }
 
 .collections-btn {
@@ -1727,32 +1654,31 @@ button.submit-button:hover {
   align-items: center;
   width: auto;
   font-size: 1rem;
-  padding: 0.5em 1em;
-  background-color: white;
-  border: 0.2em solid black;
+  padding: .5em 1em;
+  background-color: #fff;
+  border: .2em solid #000;
   border-radius: 2em;
-  color: black;
+  color: #000;
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform .3s ease
 }
 
 .collections-btn:hover {
-  background-color: cyan;
-  box-shadow: 0.0625em 0.0625em 0.3125em rgba(0, 0, 0, 0.3), -0.125em -0.125em 0.3125em rgba(255, 255, 255, 0.7);
+  background-color: #0ff;
+  box-shadow: .0625em .0625em .3125em rgba(0, 0, 0, .3), -.125em -.125em .3125em rgba(255, 255, 255, .7)
 }
 
 .collections-btn a {
   text-decoration: none;
-  color: black;
+  color: #000
 }
 
 .collections-title {
   width: 93%;
   height: auto;
-  /* Let content determine height */
   max-width: 37.5vw;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 #project-title {
@@ -1764,78 +1690,77 @@ button.submit-button:hover {
   min-height: 4rem;
   margin: 1em auto 2em;
   line-height: 1.5;
-  background-color: white;
+  background-color: #fff;
   width: 95%;
-  padding: 1em 0;
+  padding: 1em 0
 }
 
 #project-title h2 {
   font-size: clamp(1rem, 2vw, 2rem);
   height: auto;
   width: 100%;
-  min-height: 1.2rem;
+  min-height: 1.2rem
 }
 
 .author-bio-text h2 {
   font-size: 1.8rem;
   width: 100%;
   height: auto;
-  min-height: 1.5rem;
+  min-height: 1.5rem
 }
 
 main#projects.about-me {
   contain: layout paint;
   overflow: hidden;
   min-height: 100vh;
-  height: auto;
+  height: auto
 }
 
-.pagespeed-grade-title,
-.grade-title,
-.grade-text,
 .grade-container h3,
-.grade-container p {
-  min-height: 2rem;
+.grade-container p,
+.grade-text,
+.grade-title,
+.pagespeed-grade-title {
+  min-height: 2rem
 }
 
 .grade-container {
-  min-height: 35rem;
+  min-height: 35rem
 }
 
-.mood-board,
 .grade-text,
-.grade-title {
+.grade-title,
+.mood-board {
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100vw
 }
 
+.grade-text .grade-title h3,
 .mood-board h3,
-.pagespeed-grade-title h3,
-.grade-text .grade-title h3 {
+.pagespeed-grade-title h3 {
   font-size: 1.5rem;
   height: auto;
   min-height: 1.2rem;
   width: 100%;
-  color: black;
-  margin: 0 auto;
+  color: #000;
+  margin: 0 auto
 }
-
 
 .grade-text {
   width: 100%;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em
 }
 
-#desktop-grade2 h3,
-#desktop-grade1 h3 {
-  font-size: 1rem;
+#desktop-grade1 h3,
+#desktop-grade2 h3 {
+  font-size: 1rem
 }
 
 .grade-container h3,
@@ -1843,38 +1768,37 @@ main#projects.about-me {
   font-size: clamp(1rem, 1.3vw, 1.25rem);
   line-height: 1.4;
   text-align: center;
-  word-break: break-all;
+  word-break: break-all
 }
 
-.author-bio p i,
 .author-bio p,
+.author-bio p i,
 .author-bio strong {
-  color: white;
+  color: #fff;
   font-size: 1.2rem;
-  line-height: 1.4;
+  line-height: 1.4
 }
 
-
-.pagespeed-grade-title,
-.grade-title {
+.grade-title,
+.pagespeed-grade-title {
   height: auto;
-  padding: 0.625em;
-  background-color: white;
+  padding: .625em;
+  background-color: #fff
 }
 
 .pagespeed-grade-title {
-  margin: 1em auto;
+  margin: 1em auto
 }
 
 .pagespeed-container {
-  margin: 1em auto;
+  margin: 1em auto
 }
 
 .grades {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 100%;
+  max-width: 100%
 }
 
 .grade-container {
@@ -1883,56 +1807,56 @@ main#projects.about-me {
   margin: 1em auto;
   display: grid;
   grid-template-columns: repeat(5, minmax(5vw, 1fr));
-  gap: 0.3125em;
-  background-color: black;
+  gap: .3125em;
+  background-color: #000
 }
 
 .grade-header,
 .grade-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center
 }
 
 .grade-header {
   height: auto;
   width: 100%;
   max-width: 100%;
-  padding: 0.3125em;
-  background-color: white;
+  padding: .3125em;
+  background-color: #fff
 }
 
 .grade-item {
-  padding: 0.3125em;
+  padding: .3125em;
   height: auto;
   width: 100%;
-  background-color: white;
+  background-color: #fff
 }
 
 .pagespeed-container {
   width: 100%;
   height: auto;
   max-width: 100vw;
-  min-height: 10rem;
+  min-height: 10rem
 }
 
-.cta-section,
 .author-bio,
+.cta-section,
 .grade-img,
-.project-images,
 .mood-board,
-.pagespeed-grade-img {
+.pagespeed-grade-img,
+.project-images {
   width: 100%;
   max-width: 1200px;
   height: auto;
   margin: 0 auto;
-  padding: 0;
+  padding: 0
 }
 
 .author-bio {
-  background-color: black;
-  color: #0BD6E2;
-  min-height: 10rem;
+  background-color: #000;
+  color: #0bd6e2;
+  min-height: 10rem
 }
 
 .author-bio img {
@@ -1942,80 +1866,80 @@ main#projects.about-me {
   object-fit: cover;
   padding: 0 1em;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .cta-section img,
-.project-img img,
 .grade-img img,
 .mood-board img,
-.pagespeed-grade-img img {
+.pagespeed-grade-img img,
+.project-img img {
   width: 93%;
   height: auto;
   margin: 0 auto;
   object-fit: cover;
-  min-height: 5rem;
+  min-height: 5rem
 }
 
 .cta-section p {
   font-size: 1.3rem;
   width: 100%;
-  height: auto;
+  height: auto
 }
 
-.hubspot,
-.grade-grid {
+.grade-grid,
+.hubspot {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
   margin: 0 auto;
   width: 95%;
   max-width: 95%;
-  height: auto;
+  height: auto
 }
 
 .author-bio p {
   width: 100%;
   font-size: 1.3rem;
-  padding: 0.3em;
-  font-weight: 600;
+  padding: .3em;
+  font-weight: 600
 }
 
 .mood-board,
 .resume-border {
   height: auto;
-  min-height: 8rem;
+  min-height: 8rem
 }
 
 .casestudy {
   height: auto;
   contain: layout;
-  overflow: hidden;
+  overflow: hidden
 }
 
 .wireframe {
   min-height: 100vh;
   height: auto;
   contain: layout;
-  overflow: hidden;
+  overflow: hidden
 }
 
 .casestudy-hr {
   margin: 2em auto 2em;
-  width: 80%;
+  width: 80%
 }
 
 .list-items {
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .list-items ul li {
-  color: white;
+  color: #fff;
   width: 60%;
   margin: 0 auto;
   line-height: 1.6;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.2rem
 }
 
 .casestudy h3 {
@@ -2023,7 +1947,7 @@ main#projects.about-me {
   left: 1%;
   margin: 0 auto 1em;
   width: 100%;
-  height: auto;
+  height: auto
 }
 
 .casestudy p {
@@ -2031,7 +1955,7 @@ main#projects.about-me {
   left: 1%;
   margin: 0 auto 1em;
   width: 100%;
-  height: auto;
+  height: auto
 }
 
 .casestudy h3 {
@@ -2039,16 +1963,16 @@ main#projects.about-me {
   left: 1%;
   margin: 0 auto 1em;
   width: 100%;
-  height: auto;
+  height: auto
 }
 
 .list-items ul li {
   padding-left: 1.25em;
-  margin-top: 0.5em;
+  margin-top: .5em
 }
 
 .list-items ul li {
-  margin-bottom: 1em;
+  margin-bottom: 1em
 }
 
 .list-items h3 {
@@ -2056,12 +1980,12 @@ main#projects.about-me {
   left: 1%;
   margin: 0 auto 1em;
   width: 100%;
-  height: auto;
+  height: auto
 }
 
 .list-items li {
   line-height: 1.6;
-  font-size: 1.3rem;
+  font-size: 1.3rem
 }
 
 .explore-container {
@@ -2070,40 +1994,38 @@ main#projects.about-me {
   margin: 2em auto;
   height: auto;
   width: 95%;
-  background-color: white;
+  background-color: #fff
 }
 
 .project-links .explore-container .click-me {
-  margin: 2em auto;
+  margin: 2em auto
 }
 
-/* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .tooltip h4 {
   position: relative;
   display: inline-block;
-  cursor: pointer;
+  cursor: pointer
 }
 
-.tooltip:hover .tooltip-text,
-.tooltip:focus .tooltip-text {
+.tooltip:focus .tooltip-text,
+.tooltip:hover .tooltip-text {
   visibility: visible;
-  opacity: 1;
+  opacity: 1
 }
 
 .tooltip-text {
   transform: translateY(-100%);
   z-index: 1000;
   top: auto;
-  bottom: auto;
+  bottom: auto
 }
 
-/* Tooltip text */
 .tooltip-text {
   position: absolute;
   bottom: 100%;
@@ -2111,10 +2033,9 @@ main#projects.about-me {
   transform: translateX(-50%);
   background-color: #333;
   color: #fff;
-  border: 0.125em solid #0BD6E2;
-  /* Cyan border */
-  box-shadow: 0 0 0.3125em rgba(0, 0, 0, 0.5);
-  padding: 0.5em;
+  border: .125em solid #0bd6e2;
+  box-shadow: 0 0 .3125em rgba(0, 0, 0, .5);
+  padding: .5em;
   border-radius: 4px;
   white-space: normal;
   width: max-content;
@@ -2122,49 +2043,44 @@ main#projects.about-me {
   z-index: 10;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease
 }
 
-/* Tooltip arrow */
 .tooltip-text::after {
   content: "";
   position: absolute;
   top: 100%;
-  /* Bottom of the tooltip */
   left: 50%;
-  margin-left: -0.3125em;
-  /* Center the arrow */
-  border-width: 0.3125em;
+  margin-left: -.3125em;
+  border-width: .3125em;
   border-style: solid;
-  border-color: #0BD6E2 transparent transparent transparent;
-  /* Cyan arrow */
+  border-color: #0bd6e2 transparent transparent transparent
 }
 
-/* Show the tooltip on hover over the h4 text */
 .tooltip:hover .tooltip-text {
   visibility: visible;
-  opacity: 1;
+  opacity: 1
 }
 
 .hidden {
-  display: none;
+  display: none
 }
 
-.wireframe,
-.site-hero-img {
+.site-hero-img,
+.wireframe {
   width: 100%;
   max-width: 1200px;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .site-hero-img {
-  aspect-ratio: 1.95 / 1;
-  min-height: clamp(10rem, 30vw, 12rem);
+  aspect-ratio: 1.95/1;
+  min-height: clamp(10rem, 30vw, 12rem)
 }
 
-.wireframe-img img,
-.site-hero-img img {
+.site-hero-img img,
+.wireframe-img img {
   display: block;
   width: 100%;
   height: auto;
@@ -2172,36 +2088,33 @@ main#projects.about-me {
   box-sizing: border-box;
   margin: 0 auto;
   aspect-ratio: inherit;
-  padding: 0.2em 1em;
+  padding: .2em 1em
 }
 
 .wireframe-img {
-  min-height: 20rem;
+  min-height: 20rem
 }
 
 .site-hero-img {
-  min-height: 5rem;
+  min-height: 5rem
 }
 
-
-@media (max-width: 1024px) {
+@media (max-width:1024px) {
   main#projects.about-me {
-    min-height: 5000px;
-    /* A safe lower boundary */
+    min-height: 5000px
   }
 
   .nav-links {
-    display: none;
+    display: none
   }
 
-  /* Menu button */
   .menu-toggle {
     display: block;
-    color: white;
+    color: #fff;
     font-size: 2rem;
-    padding: 1em 1em 0.5em 0.5em;
+    padding: 1em 1em .5em .5em;
     cursor: pointer;
-    z-index: 20;
+    z-index: 20
   }
 
   .hamburger-icon {
@@ -2209,56 +2122,55 @@ main#projects.about-me {
     width: 3.5vw;
     height: auto;
     min-height: 1rem;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1
   }
 
   .hamburger-nav-links {
-    display: flex;
+    display: flex
   }
 
   .hamburger-nav-links {
     display: none;
     flex-direction: column;
-    background: black;
+    background: #000;
     position: absolute;
     top: 80px;
     width: 40%;
     height: auto;
     padding: 1em;
-    z-index: 100;
+    z-index: 100
   }
 
   .hamburger-nav-links.active {
-    display: flex;
+    display: flex
   }
 
   .border-white {
-    border: 0.5em solid white;
+    border: .5em solid #fff;
     margin: 1em auto;
     width: 95%;
     max-width: 100%;
     height: auto;
-    padding: 0.9375em 0;
-
+    padding: .9375em 0
   }
 
-  .wireframe,
-  .site-hero-img {
+  .site-hero-img,
+  .wireframe {
     width: 100%;
     max-width: 1200px;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
-  .wireframe-img img,
-  .site-hero-img img {
+  .site-hero-img img,
+  .wireframe-img img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
     box-sizing: border-box;
     margin: 0 auto;
-    aspect-ratio: inherit;
+    aspect-ratio: inherit
   }
 
   #projects {
@@ -2269,24 +2181,24 @@ main#projects.about-me {
     padding-bottom: 3rem;
     height: auto;
     min-height: 10rem;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
   .resume-border {
     width: 93%;
     height: auto;
-    min-height: 5rem;
+    min-height: 5rem
   }
 
   .author-bio img {
     width: 93%;
     max-width: 93vw;
     height: auto;
-    min-height: 5rem;
+    min-height: 5rem
   }
 
   .side-nav {
-    min-height: 6rem;
+    min-height: 6rem
   }
 
   .canvas-skills-grid {
@@ -2294,13 +2206,13 @@ main#projects.about-me {
     min-height: clamp(10rem, 15.375rem, 22.3125);
     width: 100%;
     max-width: 100vw;
-    height: auto;
+    height: auto
   }
 
   .canvas-skills-img {
     max-height: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: cover
   }
 
   .canvas-skills-title {
@@ -2308,33 +2220,33 @@ main#projects.about-me {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .nav-logo {
     height: calc(200px / 2.38);
     aspect-ratio: 2.38;
     width: auto;
     max-height: 105px;
     padding-left: 1em;
-    overflow: hidden;
+    overflow: hidden
   }
 
   .nav-logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    display: block;
+    display: block
   }
 
   .nav-links {
-    display: none;
+    display: none
   }
 
   head {
-    min-height: 1.2rem;
+    min-height: 1.2rem
   }
 
   .canvas-skills-grid {
@@ -2345,7 +2257,7 @@ main#projects.about-me {
     height: auto;
     align-items: center;
     justify-content: space-between;
-    min-height: clamp(31.93rem, 32rem, 42.187rem);
+    min-height: clamp(31.93rem, 32rem, 42.187rem)
   }
 
   .canvas-skills-img {
@@ -2355,14 +2267,14 @@ main#projects.about-me {
     max-width: 100vw;
     height: auto;
     min-height: clamp(16.375rem, 17.125rem, 26.56rem);
-    contain: layout paint;
+    contain: layout paint
   }
 
   .canvas-skills-img img {
     width: 100%;
     height: auto;
     aspect-ratio: inherit;
-    border: 0.2em solid black;
+    border: .2em solid #000
   }
 
   .canvas-skills-title {
@@ -2371,31 +2283,31 @@ main#projects.about-me {
     max-height: 12.5rem;
     min-height: 12.5rem;
     height: auto;
-    margin: 0.5em auto;
-    border: 0.8em solid black;
+    margin: .5em auto;
+    border: .8em solid #000
   }
 
   .canvas-skills-title h1 {
     font-size: clamp(1.5rem, 2.5rem, 3rem);
     padding: 1em 0 0;
     height: auto;
-    min-height: 6.5rem;
+    min-height: 6.5rem
   }
 
   .canvas-skills-title h2 {
-    padding: 0.4em 0 1em;
+    padding: .4em 0 1em;
     height: auto;
     min-height: 5.06rem;
-    font-size: 2rem;
+    font-size: 2rem
   }
 
+  .casestudy,
   .mood-board,
   .resume-border,
-  .wireframe,
-  .casestudy {
+  .wireframe {
     width: 100%;
     height: auto;
-    min-height: 5rem;
+    min-height: 5rem
   }
 
   #projects {
@@ -2403,114 +2315,113 @@ main#projects.about-me {
     max-width: 85vw;
     height: auto;
     min-height: 100vh;
-    contain: layout;
+    contain: layout
   }
 
   .mood-board {
-    padding: 0.2em;
+    padding: .2em
   }
 
-  .cta-section,
   .author-bio,
+  .cta-section,
   .grade-img,
-  .project-images,
-  .mood-board {
-    padding: 0.2em;
+  .mood-board,
+  .project-images {
+    padding: .2em
   }
 
   .grade-text {
-    padding: 0.5em;
+    padding: .5em
   }
 
-  .wireframe-img img,
-  .site-hero-img img {
-    padding: 0.2em;
+  .site-hero-img img,
+  .wireframe-img img {
+    padding: .2em
   }
 
-  .pagespeed-grade-title,
-  #project-title {
+  #project-title,
+  .pagespeed-grade-title {
     height: auto;
-    margin: 0.2em auto 1em;
+    margin: .2em auto 1em;
     line-height: 1.5;
-    background-color: white;
+    background-color: #fff;
     width: 95%;
     max-width: 95vw;
-    padding: 0;
+    padding: 0
   }
 
   #project-title h2 {
     font-size: clamp(1.5rem, 2vw, 2rem);
-    color: black;
+    color: #000;
     width: 100%;
     height: auto;
-    min-height: 1.5rem;
+    min-height: 1.5rem
   }
 
   .button-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
   }
 
   .click-me {
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
-  /* Menu button */
   .menu-toggle {
     display: block;
-    color: white;
+    color: #fff;
     font-size: 2rem;
-    padding: 1em 1em 0.5em 0.5em;
+    padding: 1em 1em .5em .5em;
     cursor: pointer;
-    z-index: 20;
+    z-index: 20
   }
 
   .hamburger-icon {
     display: flex;
     width: 4.2vw;
     height: auto;
-    aspect-ratio: 1 / 1;
-    min-height: 1rem;
+    aspect-ratio: 1/1;
+    min-height: 1rem
   }
 
   .hamburger-nav-links {
-    display: flex;
+    display: flex
   }
 
   .hamburger-nav-links {
     display: none;
     flex-direction: column;
-    background: black;
+    background: #000;
     position: absolute;
     top: 80px;
     width: 40%;
     height: auto;
     padding: 1em;
-    z-index: 100;
+    z-index: 100
   }
 
   .hamburger-nav-links.active {
-    display: flex;
+    display: flex
   }
 
   .click-me a {
-    font-size: 1rem;
+    font-size: 1rem
   }
 
   .design {
     height: auto;
     min-height: 65rem;
     width: 100%;
-    max-width: 100vw;
+    max-width: 100vw
   }
 
-  .designer-box,
   .coder-box,
   .coder-container,
-  .design-container {
+  .design-container,
+  .designer-box {
     width: 100%;
-    max-width: 100vw;
+    max-width: 100vw
   }
 
   .site-hero-img {
@@ -2518,7 +2429,7 @@ main#projects.about-me {
     max-width: 768px;
     height: auto;
     margin: 0 auto;
-    padding: 0;
+    padding: 0
   }
 
   .site-hero-img img {
@@ -2528,48 +2439,48 @@ main#projects.about-me {
     object-fit: cover;
     box-sizing: border-box;
     margin: 0 auto;
-    aspect-ratio: inherit;
+    aspect-ratio: inherit
   }
 
   .headshot-container {
-    align-items: last baseline;
+    align-items: last baseline
   }
 
-  .headshot-container img,
   .headshot img,
-  .headshot-animated img {
-    padding: 0;
+  .headshot-animated img,
+  .headshot-container img {
+    padding: 0
   }
 
   .coder-box h2,
   .designer-box h2 {
     font-size: clamp(1.125rem, 2vw, 1.5rem);
-    height: auto;
+    height: auto
   }
 
   .coder-box h3,
   .designer-box h3 {
     font-size: clamp(1rem, 1.5vw, 1rem);
     height: auto;
-    min-height: 1rem;
+    min-height: 1rem
   }
 
   #nav {
     margin-top: 0;
-    padding: 0;
+    padding: 0
   }
 
   .footer-links ul li a {
-    font-size: 1rem;
+    font-size: 1rem
   }
 
   .tooltip:hover .tooltip-text {
     visibility: visible;
-    opacity: 1;
+    opacity: 1
   }
 
   .collections-button-grid {
-    padding: 0 .5em;
+    padding: 0 .5em
   }
 
   .collections-btn {
@@ -2578,66 +2489,65 @@ main#projects.about-me {
     align-items: center;
     width: auto;
     font-size: 2rem;
-    padding: 0.225em .5em;
-    background-color: white;
-    border: 0.2em solid black;
+    padding: .225em .5em;
+    background-color: #fff;
+    border: .2em solid #000;
     border-radius: 2em;
-    color: black;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform .3s ease
   }
 
   .resume-border {
     width: 95%;
     max-width: 95%;
     height: auto;
-    min-height: 20rem;
+    min-height: 20rem
   }
 
   .takeme-text {
-    margin: 2em auto 0;
+    margin: 2em auto 0
   }
 
-  .cta-section,
-  .author-bio {
+  .author-bio,
+  .cta-section {
     max-width: 100%;
     height: auto;
-    min-height: 10rem;
+    min-height: 10rem
   }
 
-  .cta-section img,
-  .author-bio img {
+  .author-bio img,
+  .cta-section img {
     width: 100%;
     height: auto;
     margin: 0 auto;
     object-fit: cover;
-    aspect-ratio: inherit;
+    aspect-ratio: inherit
   }
-
 
   .author-bio-text,
   .cta-section img {
-    margin: 1em auto;
+    margin: 1em auto
   }
 
   .author-bio h2 {
     font-size: clamp(1.1rem, 2vw, 1.3rem);
-    height: auto;
+    height: auto
   }
 
   .author-bio p {
     font-size: 1rem;
-    height: auto;
+    height: auto
   }
 
   .author-bio-text {
-    width: 98%;
+    width: 98%
   }
 
   .list-items ul li {
-    color: white;
-    width: 75%;
+    color: #fff;
+    width: 75%
   }
 
   .collections-grid,
@@ -2646,25 +2556,24 @@ main#projects.about-me {
     flex-direction: column;
     width: 80%;
     max-width: 100%;
-    /* Ensure no overflow */
     height: auto;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
   .collections {
     height: auto;
-    width: 100%;
+    width: 100%
   }
 
   footer {
-    margin-top: 2em;
+    margin-top: 2em
   }
 
   .collections-title {
     width: 100%;
     height: auto;
-    max-width: 100%;
+    max-width: 100%
   }
 
   .outer-container {
@@ -2672,24 +2581,24 @@ main#projects.about-me {
     grid-template-columns: repeat(2, 1fr);
     max-width: 100%;
     height: auto;
-    min-height: 10rem;
+    min-height: 10rem
   }
 
   .section1 {
     display: grid;
     grid-template-rows: 1fr 3fr;
     width: 100%;
-    height: auto;
+    height: auto
   }
 
   .section2 {
     display: flex;
-    padding-right: 3em;
+    padding-right: 3em
   }
 
   .dots {
     width: 25vw;
-    left: -10%;
+    left: -10%
   }
 
   .headshot-about {
@@ -2698,40 +2607,39 @@ main#projects.about-me {
     width: 25vw;
     position: absolute;
     left: -1%;
-    margin-top: 3em;
-    /*new*/
+    margin-top: 3em
   }
 
   .about--me-container {
-    margin-top: 0.2em;
+    margin-top: .2em
   }
 
   .portfolio-name {
     padding: 6em 0 1em;
-    width: 35vw;
+    width: 35vw
   }
 
   .portfolio-name img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: cover
   }
 
   .greetings p {
     font-size: 1rem;
     height: auto;
-    min-height: 1rem;
+    min-height: 1rem
   }
 
   .greetings-label {
     width: 20vw;
-    height: auto;
+    height: auto
   }
 
   .greetings-label h2 {
     font-size: clamp(1rem, 2vw, 1.2rem);
     height: auto;
-    min-height: 1rem;
+    min-height: 1rem
   }
 
   .facts,
@@ -2743,7 +2651,7 @@ main#projects.about-me {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    gap: 3vw;
+    gap: 3vw
   }
 
   .favorites {
@@ -2755,49 +2663,48 @@ main#projects.about-me {
     width: 80%;
     height: 60%;
     margin: 3vw auto;
-    border: 0.1vw solid white;
-    padding: 2vw 0;
+    border: .1vw solid #fff;
+    padding: 2vw 0
   }
 
   .favorites img {
     width: 5vw;
     height: auto;
     padding: 1vw 0;
-    object-fit: cover;
+    object-fit: cover
   }
 
   .favorites-label {
     height: 4vh;
-    width: 100%;
+    width: 100%
   }
 
   .footer-links {
-    margin-left: 1em;
+    margin-left: 1em
   }
 
   .footer-links ul {
     display: flex;
-    justify-content: center;
+    justify-content: center
   }
 
   .footer-links ul li a {
-    font-size: 0.9rem;
-    margin: 0 auto;
+    font-size: .9rem;
+    margin: 0 auto
   }
 
   .side-nav {
-    min-height: 17.5rem;
+    min-height: 17.5rem
   }
-
 }
 
-@media (max-width: 480px) {
+@media (max-width:480px) {
 
   h1,
   h2,
   h3 {
     transition: none !important;
-    opacity: 1 !important;
+    opacity: 1 !important
   }
 
   .about-me {
@@ -2809,22 +2716,22 @@ main#projects.about-me {
     height: auto;
     min-height: 100vh;
     contain: layout;
-    overflow: hidden;
+    overflow: hidden
   }
 
   main#projects.about-me {
-    display: flow-root;
+    display: flow-root
   }
 
   .design {
     contain: layout paint;
-    min-height: 40rem;
+    min-height: 40rem
   }
 
   .side-nav {
     min-height: 15.5rem;
     height: auto;
-    aspect-ratio: 63 / 124;
+    aspect-ratio: 63/124
   }
 
   .casestudy p {
@@ -2832,11 +2739,11 @@ main#projects.about-me {
     left: 1%;
     margin: 0 auto;
     width: 100%;
-    height: auto;
+    height: auto
   }
 
   .takeme-text {
-    margin: 4em auto 0;
+    margin: 4em auto 0
   }
 
   .canvas-skills-img {
@@ -2846,10 +2753,10 @@ main#projects.about-me {
     width: 100%;
     max-width: 100vw;
     height: 16.92rem;
-    border-bottom: .2em solid black;
-    border-left: 0.2em solid black;
-    border-right: 0.2em solid black;
-    aspect-ratio: 360 / 209;
+    border-bottom: .2em solid #000;
+    border-left: .2em solid #000;
+    border-right: .2em solid #000;
+    aspect-ratio: 360/209
   }
 
   .canvas-skills-img img {
@@ -2858,116 +2765,113 @@ main#projects.about-me {
     aspect-ratio: inherit;
     object-fit: cover;
     display: block;
-    aspect-ratio: inherit;
+    aspect-ratio: inherit
   }
 
   .canvas-skills-title {
     width: 90%;
     max-width: 90vw;
-    margin: 0.25em 0;
+    margin: .25em 0;
     transition: none !important;
     opacity: 1 !important;
     visibility: visible !important;
     height: auto;
-    border: 0.5em solid black;
+    border: .5em solid #000;
     min-height: 7.95rem;
-    max-height: 10rem;
+    max-height: 10rem
   }
 
   .canvas-skills-title h1 {
-    padding: 0.2em 0 0.2em;
+    padding: .2em 0 .2em;
     min-height: 4.75rem;
-    height: auto;
+    height: auto
   }
 
   .canvas-skills-title h2 {
     font-size: 1.5rem;
-    padding: 0.2em 0 0.2em;
+    padding: .2em 0 .2em;
     min-height: 3.2rem;
-    height: auto;
+    height: auto
   }
-
-  .canvas-skills-title {}
 
   .canvas-skills-title h1,
   .canvas-skills-title h2 {
     opacity: 1 !important;
     visibility: visible !important;
-    transition: none !important;
+    transition: none !important
   }
-
 
   body.fonts-loaded .canvas-skills-title h1,
   body.fonts-loaded .canvas-skills-title h2 {
-    transition: none;
+    transition: none
   }
 
   .canvas-skills-grid {
     min-height: 27.375rem;
-    height: auto;
+    height: auto
   }
 
   #projects {
     width: 90%;
     height: auto;
-    max-width: 90vw;
+    max-width: 90vw
   }
 
   .black-container {
     width: 100%;
     max-width: 100vw;
     height: auto;
-    min-height: 10rem;
+    min-height: 10rem
   }
 
   .hamburger-icon {
     width: 6.4vw;
     height: auto;
     min-height: 1rem;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1
   }
 
   .border-white {
-    border: 0.2em solid white;
-    margin: 0.5em auto;
+    border: .2em solid #fff;
+    margin: .5em auto;
     width: 96%;
     max-width: 100%;
     height: auto;
-    padding: 0.9375em 0;
+    padding: .9375em 0
   }
 
   .border-white img {
-    width: 96%;
+    width: 96%
   }
 
+  .casestudy,
   .mood-board,
   .resume-border,
-  .wireframe,
-  .casestudy {
+  .wireframe {
     width: 100%;
     height: auto;
-    min-height: 5rem;
+    min-height: 5rem
   }
 
   .resume-summary p {
-    min-height: 0.9rem;
+    min-height: .9rem;
     height: auto;
-    line-height: 1.28;
+    line-height: 1.28
   }
 
   .resume-summary {
     height: auto;
-    min-height: 8rem;
+    min-height: 8rem
   }
 
   .project-links {
     min-height: 10rem;
-    height: auto;
+    height: auto
   }
 
   .button-grid {
     padding: 3em 0 2em;
     height: auto;
-    min-height: 4rem;
+    min-height: 4rem
   }
 }
