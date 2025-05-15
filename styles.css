@@ -757,7 +757,7 @@ main#projects.about-me {
 
 .greetings p {
   color: #fff;
-  font-family: tt norms pro, Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 250;
   line-height: 1.4;
   font-size: 1.4rem;
@@ -1130,7 +1130,7 @@ main#projects.about-me {
 
 .resume-summary p {
   color: #fff;
-  font-family: tt norms pro, Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 250;
   line-height: 1.5;
   padding: 1.25em 3em;
