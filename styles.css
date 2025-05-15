@@ -356,9 +356,16 @@ footer {
 }
 
 #the-design {
+  min-height: clamp(660px, 80vh, 960px);
   contain: layout paint;
-  min-height: 100vh
+  height: auto;
 }
+
+.design {
+  min-height: clamp(40rem, 60vh, 80rem);
+  height: auto;
+}
+
 
 #the-design h3,
 #the-design p {
@@ -529,7 +536,8 @@ footer {
   width: 100%;
   margin: 0 auto;
   min-height: unset;
-  object-fit: cover
+  object-fit: cover;
+  aspect-ratio: 1.79/1;
 }
 
 .canvas-skills-img img {
@@ -537,7 +545,8 @@ footer {
   height: 100%;
   object-fit: cover;
   display: block;
-  content: layout paint
+  content: layout paint;
+  aspect-ratio: inherit;
 }
 
 img[fetchpriority=high] {
@@ -599,9 +608,12 @@ img[fetchpriority=high] {
 }
 
 main#projects.about-me {
-  display: flow-root;
-  height: auto;
-  min-height: 100vh;
+  contain: layout;
+  min-height: clamp(20rem, 80vh, 120rem);
+}
+
+#projects {
+  min-height: clamp(680px, 82vh, 980px);
 }
 
 .skills-main {
@@ -623,7 +635,7 @@ main#projects.about-me {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 100vh;
+  min-height: clamp(640px, 77.7vh, 940px);
   margin: 1em auto 0;
   border-radius: .225vw;
   box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1)
@@ -637,7 +649,7 @@ main#projects.about-me {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 100vh
+  min-height: clamp(620px, 74.7vh, 900px);
 }
 
 .skills-black-container {
@@ -1090,7 +1102,6 @@ main#projects.about-me {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 119.75rem;
 }
 
 .resume-summary {
@@ -1139,34 +1150,6 @@ main#projects.about-me {
   height: auto;
   max-width: 100vw;
   padding: .2em
-}
-
-#resume-part1 {
-  min-height: 68rem;
-}
-
-#resume-part2 {
-  min-height: 62.68rem;
-}
-
-#section1 {
-  min-height: 81.43
-}
-
-#section2 {
-  min-height: 76.125
-}
-
-#section3 {
-  min-height: 19.5rem;
-}
-
-#section4 {
-  min-height: 58.125;
-}
-
-#section4 {
-  min-height: 426rem;
 }
 
 .education {
@@ -1225,7 +1208,7 @@ main#projects.about-me {
   color: #fff;
   border-radius: .25rem;
   contain: layout paint;
-  will-change: transform
+  will-change: transform;
 }
 
 #back-to-top {
@@ -1681,13 +1664,6 @@ button.submit-button:hover {
   min-height: 1.5rem
 }
 
-main#projects.about-me {
-  contain: layout paint;
-  overflow: hidden;
-  min-height: 100vh;
-  height: auto
-}
-
 .grade-container p {
   min-height: 2rem;
 }
@@ -1706,6 +1682,30 @@ main#projects.about-me {
 
 .grade-container {
   min-height: 35rem
+}
+
+#resume-part1 {
+  min-height: clamp(38rem, 75vh, 68rem);
+}
+
+#resume-part2 {
+  min-height: clamp(36rem, 72vh, 62.68rem);
+}
+
+#section1 {
+  min-height: clamp(42rem, 84vh, 81.43rem);
+}
+
+#section2 {
+  min-height: clamp(39rem, 78vh, 76.125rem);
+}
+
+#section3 {
+  min-height: clamp(10rem, 25vh, 19.5rem);
+}
+
+#section4 {
+  min-height: clamp(30rem, 90vh, 58.125rem);
 }
 
 .grade-text,
@@ -1917,10 +1917,10 @@ main#projects.about-me {
 }
 
 .wireframe {
-  min-height: 100vh;
+  min-height: clamp(700px, 88.3vh, 1100px);
   height: auto;
   contain: layout;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .casestudy-hr {
@@ -2090,18 +2090,11 @@ main#projects.about-me {
   padding: .2em 1em
 }
 
-.wireframe-img {
-  min-height: 20rem
-}
-
 .site-hero-img {
   min-height: 5rem
 }
 
 @media (max-width:1024px) {
-  main#projects.about-me {
-    min-height: 5000px
-  }
 
   .nav-links {
     display: none
@@ -2178,9 +2171,9 @@ main#projects.about-me {
     max-width: 75vw;
     position: relative;
     padding-bottom: 3rem;
+    margin: 0 auto;
     height: auto;
-    min-height: 10rem;
-    margin: 0 auto
+    contain: layout;
   }
 
   .resume-border {
@@ -2201,8 +2194,7 @@ main#projects.about-me {
   }
 
   .canvas-skills-grid {
-    grid-template-columns: 2fr 2fr;
-    min-height: clamp(10rem, 15.375rem, 22.3125);
+    grid-template-columns: 1fr 3fr;
     width: 100%;
     max-width: 100vw;
     height: auto
@@ -2211,7 +2203,8 @@ main#projects.about-me {
   .canvas-skills-img {
     max-height: 100%;
     height: auto;
-    object-fit: cover
+    object-fit: cover;
+    aspect-ratio: 1.79/1;
   }
 
   .canvas-skills-title {
@@ -2219,7 +2212,65 @@ main#projects.about-me {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+  }
+
+
+}
+
+@media (max-width: 940px) {
+
+  .canvas-skills-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 33rem;
+  }
+
+  .canvas-skills-img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    contain: layout paint;
+    aspect-ratio: 1.79/1;
+  }
+
+  .canvas-skills-img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: inherit;
+    border: .2em solid #000;
+    min-height: 17.5rem;
+  }
+
+  .canvas-skills-title {
+    width: 85%;
+    max-width: 85vw;
+    max-height: 12.5rem;
+    min-height: 12.5rem;
+    height: auto;
+    margin: .5em auto;
+    border: .8em solid #000
+  }
+
+  .canvas-skills-title h1 {
+    font-size: clamp(1.5rem, 2.5rem, 3rem);
+    padding: 1em 0 0;
+    height: auto;
+    min-height: 6.5rem
+  }
+
+  .canvas-skills-title h2 {
+    padding: .4em 0 1em;
+    height: auto;
+    min-height: 5rem;
+    font-size: 2rem
   }
 }
 
@@ -2248,11 +2299,6 @@ main#projects.about-me {
     min-height: 1.2rem
   }
 
-  .about-me {
-    min-height: 2389rem;
-    overflow: hidden;
-  }
-
   .canvas-skills-grid {
     display: flex;
     flex-direction: column;
@@ -2270,7 +2316,8 @@ main#projects.about-me {
     width: 100%;
     max-width: 100vw;
     height: auto;
-    contain: layout paint
+    contain: layout paint;
+    aspect-ratio: 1.79/1;
   }
 
   .canvas-skills-img img {
@@ -2317,7 +2364,6 @@ main#projects.about-me {
     width: 85%;
     max-width: 85vw;
     height: auto;
-    min-height: 100vh;
     contain: layout
   }
 
@@ -2412,13 +2458,6 @@ main#projects.about-me {
     font-size: 1rem
   }
 
-  .design {
-    height: auto;
-    min-height: 65rem;
-    width: 100%;
-    max-width: 100vw
-  }
-
   .coder-box,
   .coder-container,
   .design-container,
@@ -2445,38 +2484,6 @@ main#projects.about-me {
     aspect-ratio: inherit
   }
 
-  #resume-part1 {
-    min-height: 68rem;
-  }
-
-  #resume-part2 {
-    min-height: 320rem;
-  }
-
-
-  #resume-part3 {
-    min-height: 21.68rem;
-  }
-
-  #resume-part3 {
-    min-height: 320rem;
-  }
-
-  #section1 {
-    min-height: 80.94rem;
-  }
-
-  #section2 {
-    min-height: 332rem;
-  }
-
-  #section3 {
-    min-height: 333rem;
-  }
-
-  #section4 {
-    min-height: 426rem;
-  }
 
   .education {
     margin-top: 10vh;
@@ -2546,7 +2553,11 @@ main#projects.about-me {
   }
 
   .takeme-text {
-    margin: 2em auto 0
+    margin: 2em auto;
+  }
+
+  .takeme-text h3 {
+    margin: 0 auto 1em;
   }
 
   .author-bio,
@@ -2760,15 +2771,9 @@ main#projects.about-me {
     overflow: hidden
   }
 
-  main#projects.about-me {
-    display: flow-root;
-    height: auto;
-    min-height: 100vh;
-  }
-
   .design {
     contain: layout paint;
-    min-height: 40rem
+    height: auto;
   }
 
   .side-nav {
@@ -2790,16 +2795,16 @@ main#projects.about-me {
   }
 
   .canvas-skills-img {
-    min-height: 16.92rem;
+    min-height: auto;
     object-fit: cover;
-    display: block;
     width: 100%;
     max-width: 100vw;
-    height: 16.92rem;
+    height: auto;
     border-bottom: .2em solid #000;
     border-left: .2em solid #000;
     border-right: .2em solid #000;
-    aspect-ratio: 360/209
+    aspect-ratio: 1.79/1;
+
   }
 
   .canvas-skills-img img {
@@ -2807,8 +2812,6 @@ main#projects.about-me {
     height: auto;
     aspect-ratio: inherit;
     object-fit: cover;
-    display: block;
-    aspect-ratio: inherit
   }
 
   .canvas-skills-title {
@@ -2845,7 +2848,7 @@ main#projects.about-me {
 
 
   .canvas-skills-grid {
-    min-height: 29.25rem;
+
     height: auto
   }
 
@@ -2888,7 +2891,6 @@ main#projects.about-me {
   .wireframe {
     width: 100%;
     height: auto;
-    min-height: 5rem
   }
 
   .resume-summary p {
