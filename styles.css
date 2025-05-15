@@ -1,6 +1,34 @@
-:root {
-  --font-fallback-sans: 1em "Arial", sans-serif
+@font-face {
+  font-family: 'Georgia';
+  src: url("/assets/fonts/georgia.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("/assets/fonts/SegoeUI.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+html {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
 
 * {
   box-sizing: border-box;
@@ -28,42 +56,33 @@ h2 {
   font-kerning: none
 }
 
-body {
-  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
-  height: auto;
-  min-height: 1.5rem
-}
-
-h1 {
-  position: relative;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  letter-spacing: .078vw;
+body,
+p,
+li,
+input,
+textarea {
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  line-height: 1
+  line-height: 1.5;
 }
 
-h2 {
-  position: relative;
-  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
-  letter-spacing: .078vw;
+h1,
+.canvas-skills-title h1 {
+  font-family: "Georgia", "Times New Roman", Times, serif;
   font-weight: 400;
-  font-kerning: normal;
-  font-feature-settings: 'kern'
+  line-height: 1.2;
+  letter-spacing: 0.05em;
 }
 
-body:not(.fonts-loaded) h1 {
-  font-family: Georgia, serif;
-  font-size: clamp(3.5rem, 4vw, 4rem)
-}
 
-body:not(.fonts-loaded) h2 {
-  font-family: Arial, Helvetica, sans-serif
-}
-
-body.fonts-loaded h1,
-body.fonts-loaded h2 {
-  visibility: visible;
-  opacity: 1
+h2,
+h3,
+nav,
+.btn,
+label {
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 .canvas-skills-title h1,
@@ -73,9 +92,6 @@ body.fonts-loaded h2 {
   line-height: 1.2;
   height: auto;
   text-align: center;
-  visibility: hidden;
-  opacity: 1;
-  transition: none
 }
 
 .canvas-skills-title {
@@ -92,102 +108,12 @@ body.fonts-loaded h2 {
   min-height: 3.2rem
 }
 
-body:not(.fonts-loaded) h2 {
-  font-family: Arial, sans-serif;
-  font-size: clamp(1.2rem, 2.5vw, 2.5rem)
-}
-
-body:not(.fonts-loaded) h3 {
-  font-family: Arial, sans-serif;
-  font-size: clamp(1rem, 2vw, 2rem)
-}
-
-body.fonts-loaded .canvas-skills-title h1 {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  visibility: visible;
-  opacity: 1;
-  transition: opacity .3s ease-in
-}
-
-body.fonts-loaded .canvas-skills-title h2 {
-  font-family: 'tt norms pro', Arial, Helvetica, sans-serif;
-  visibility: visible;
-  opacity: 1;
-  transition: opacity .3s ease-in
-}
-
-.resume-summary h2,
-.resume-summary h3 {
-  visibility: hidden;
-  opacity: 1;
-  transition: none
-}
-
-body.fonts-loaded .resume-summary h2,
-body.fonts-loaded .resume-summary h3 {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity .3s ease-in
-}
 
 h1,
 h2,
 h3 {
   opacity: 1;
   transition: opacity .3s ease-in
-}
-
-body.fonts-loaded h1,
-body.fonts-loaded h2,
-body.fonts-loaded h3 {
-  opacity: 1
-}
-
-main.about-me,
-section#the-design {
-  visibility: hidden;
-  opacity: 0;
-  transition: none
-}
-
-body.fonts-loaded main.about-me,
-body.fonts-loaded section#the-design {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity .3s ease-in
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'), url('/assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: optional;
-  ascent-override: 90%;
-  descent-override: 10%;
-  line-gap-override: 0%
-}
-
-@font-face {
-  font-family: 'tt norms pro';
-  src: url('/assets/fonts/TT-Norms-Pro-Regular.woff2') format('woff2'), url('/assets/fonts/TT-Norms-Pro-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: optional;
-  ascent-override: 90%;
-  descent-override: 10%;
-  line-gap-override: 0%
-}
-
-@font-face {
-  font-family: Helvetica;
-  src: url('/assets/fonts/Helvetica.woff2') format('woff2'), url('/assets/fonts/Helvetica-Font-Family2/Helvetica.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: optional;
-  ascent-override: 90%;
-  descent-override: 10%;
-  line-gap-override: 0%
 }
 
 .links,
@@ -654,6 +580,13 @@ img[fetchpriority=high] {
   height: auto;
   line-height: 1.2;
   min-height: 1.3rem
+}
+
+.canvas-skills-title h1,
+.canvas-skills-title h2 {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
 }
 
 .about-me {
@@ -2806,10 +2739,6 @@ main#projects.about-me {
     transition: none !important
   }
 
-  body.fonts-loaded .canvas-skills-title h1,
-  body.fonts-loaded .canvas-skills-title h2 {
-    transition: none
-  }
 
   .canvas-skills-grid {
     min-height: 29.25rem;
