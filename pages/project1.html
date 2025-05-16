@@ -7,64 +7,56 @@
     <meta name="description" content="Explore Genny Allison's portfolio showcasing projects that merge creativity and code. From engaging animations to responsive designs, each project highlights her skills in UI/UX, front-end development, and client-focused web solutions. Discover the blend of artistry and functionality across a range of digital creations.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <!-- Girl Coding Image (LCP for screens ≤ 940px) -->
+    <!-- Girl Coding Image - Mobile (≤ 480px) -->
     <link 
       rel="preload" 
       as="image" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_360,h_202,fl_lossy,fl_force_strip/v1733410752/girlCoding_exzsbe.avif" 
+      href="/img/girlCoding-mobile.avif"
       type="image/avif"
-      media="(max-width: 940px)" 
-      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_360,h_202,fl_lossy,fl_force_strip/v1733410752/girlCoding_exzsbe.avif 360w" 
-      imagesizes="100vw" 
+      media="(max-width: 480px)" 
       fetchpriority="high"
     />
 
-    <!-- Girl Coding Image (Tablet 481px–1199px) -->
+    <!-- Girl Coding Image - Tablet (481px–1199px) -->
     <link 
       rel="preload" 
       as="image" 
       href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_768,h_432,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif" 
       type="image/avif"
       media="(min-width: 481px) and (max-width: 1199px)" 
-      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_768,h_432,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif 768w" 
-      imagesizes="100vw" 
-      fetchpriority="auto"
+      fetchpriority="high"
     />
 
-    <!-- Girl Coding Image (Desktop ≥ 1200px) -->
+    <!-- Girl Coding Image - Desktop (≥ 1200px) -->
     <link 
       rel="preload" 
       as="image" 
       href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_1200,h_670,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif" 
       type="image/avif"
       media="(min-width: 1200px)" 
-      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_1200,h_670,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif 1200w" 
-      imagesizes="100vw" 
-      fetchpriority="auto"
+      fetchpriority="high"
     />
 
-    <!-- Welcome to Tech Trends (LCP for screens ≥ 941px) -->
+    <!-- Welcome to Tech Trends - Desktop (≥ 1200px) -->
     <link 
       rel="preload" 
       as="image" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_1200,h_670,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif" 
       type="image/avif"
       media="(min-width: 1200px)" 
-      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif 1200w"
-      imagesizes="100vw"
       fetchpriority="high"
     />
 
+    <!-- Welcome to Tech Trends - Tablet (941px–1199px) -->
     <link 
       rel="preload" 
       as="image" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049367/welcome_to_tech_trends_tablet_da4vul.avif" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_768,h_432,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049367/welcome_to_tech_trends_tablet_da4vul.avif" 
       type="image/avif"
       media="(min-width: 941px) and (max-width: 1199px)" 
-      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049367/welcome_to_tech_trends_tablet_da4vul.avif 768w"
-      imagesizes="100vw"
       fetchpriority="high"
     />
+
 
     <link 
       rel="preload" 
@@ -147,32 +139,43 @@
     </section>  
     <div class="canvas-skills-grid">
       <div class="canvas-skills-img">
-        <picture>
+        <!-- MOBILE IMAGE (used ≤940px) -->
+        <img 
+          src="/img/girlCoding-mobile.avif"
+          width="468"
+          height="262"
+          class="only-mobile"
+          alt="A woman coding on a laptop, symbolizing the integration of creativity and technology in web development"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+          style="object-fit: cover; aspect-ratio: 1.786 / 1;"
+        />
+
+        <!-- DESKTOP IMAGE (picture tag for >940px) -->
+        <picture class="not-mobile">
           <source
             srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_1200,h_670,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif"
-            type="image/avif"
             media="(min-width: 1200px)"
-            sizes="100vw"
-            fetchpriority="high"
+            type="image/avif"
           />
           <source
             srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_768,h_432,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif"
+            media="(min-width: 941px)"
             type="image/avif"
-            media="(min-width: 481px) and (max-width: 1199px)"
-            sizes="100vw"
           />
           <img 
-            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_360,h_202,fl_lossy,fl_force_strip/v1733410752/girlCoding_exzsbe.avif"
+            src="/img/girlCoding-mobile.avif" 
             alt="A woman coding on a laptop, symbolizing the integration of creativity and technology in web development"
             width="468"
             height="262"
             loading="eager"
-            fetchpriority="high"
             decoding="async"
             style="object-fit: cover; aspect-ratio: 1.786 / 1;"
           />
         </picture>
       </div>
+
       <div class="canvas-skills-title">
         <h1>a canvas of code:</h1>
         <h2>showcasing the craft</h2>
