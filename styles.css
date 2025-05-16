@@ -496,6 +496,7 @@ footer {
 .canvas-skills-grid {
   display: grid;
   grid-template-columns: 2fr 3fr;
+  min-height: clamp(500px, 80vh, 1000px);
   align-items: stretch;
   width: 100%;
   max-width: 100vw;
@@ -551,7 +552,6 @@ img[fetchpriority=high] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  visibility: visible;
   opacity: 1;
 }
 
@@ -581,6 +581,7 @@ img[fetchpriority=high] {
   max-width: 52vw;
   width: 52%;
   height: auto;
+  min-height: unset;
   position: relative;
   padding-bottom: 10rem;
   contain: layout;
@@ -2071,9 +2072,11 @@ button.submit-button:hover {
   .canvas-skills-grid {
     grid-template-columns: 1fr 3fr;
     width: 100%;
-    max-width: 100vw;
     height: auto;
     align-items: stretch;
+    min-height: 22rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .canvas-skills-img {
@@ -2093,41 +2096,44 @@ button.submit-button:hover {
 
 @media (max-width: 940px) {
   .canvas-skills-grid {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     width: 100%;
     max-width: 100vw;
     height: auto;
-    align-items: center;
-    justify-content: space-between;
     align-items: stretch;
+    margin: 0 auto;
+    min-height: auto;
+  }
+
+  .canvas-skills-img,
+  .canvas-skills-title {
+    height: auto;
+    min-height: auto;
   }
 
   .canvas-skills-img {
-    object-fit: cover;
     display: block;
     width: 100%;
     max-width: 100vw;
-    height: 100%;
-    contain: layout paint;
     aspect-ratio: 1.786 / 1;
-    border: .2em solid #000;
+    min-height: 14rem;
+    object-fit: cover;
+    contain: layout paint;
+    border: 0.2em solid #000;
   }
 
   .canvas-skills-img img {
     width: 100%;
     height: 100%;
-    aspect-ratio: 1.786 / 1;
     object-fit: cover;
     display: block;
+    aspect-ratio: 1.786 / 1;
   }
 
   .canvas-skills-title {
     width: 85%;
     max-width: 85vw;
     max-height: 12.5rem;
-    min-height: 12.5rem;
-    height: auto;
     margin: .5em auto;
     border: .8em solid #000
   }
@@ -2136,13 +2142,11 @@ button.submit-button:hover {
     font-size: clamp(1.5rem, 2.5rem, 3rem);
     padding: 1em 0 0;
     height: auto;
-    min-height: 6.5rem
   }
 
   .canvas-skills-title h2 {
     padding: .4em 0 1em;
     height: auto;
-    min-height: 5rem;
     font-size: 2rem
   }
 }
@@ -2166,62 +2170,6 @@ button.submit-button:hover {
 
   .nav-links {
     display: none
-  }
-
-  head {
-    min-height: 1.2rem
-  }
-
-  .canvas-skills-grid {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    align-items: center;
-    justify-content: space-between;
-    align-items: stretch;
-  }
-
-  .canvas-skills-img {
-    object-fit: cover;
-    display: block;
-    width: 100%;
-    max-width: 100vw;
-    height: 100%;
-    aspect-ratio: 762 / 426;
-    border: .2em solid #000;
-  }
-
-  .canvas-skills-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .canvas-skills-title {
-    width: 85%;
-    max-width: 85vw;
-    max-height: 12.5rem;
-    min-height: 12.5rem;
-    height: auto;
-    margin: .5em auto;
-    border: .8em solid #000
-  }
-
-  .canvas-skills-title h1 {
-    font-size: clamp(1.5rem, 2.5rem, 3rem);
-    padding: 1em 0 0;
-    height: auto;
-    min-height: 6.5rem
-  }
-
-  .canvas-skills-title h2 {
-    padding: .4em 0 1em;
-    height: auto;
-    min-height: 5rem;
-    font-size: 2rem
   }
 
   .casestudy,
@@ -2620,6 +2568,13 @@ button.submit-button:hover {
 }
 
 @media (max-width:480px) {
+  .about-me {
+    height: auto;
+    min-height: unset;
+    contain: layout;
+    overflow: hidden;
+    padding: 0.2em;
+  }
 
   .design {
     contain: layout paint;
@@ -2632,6 +2587,37 @@ button.submit-button:hover {
     aspect-ratio: 63/124;
   }
 
+  .canvas-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 480vw;
+    min-height: 43.75;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .canvas-skills-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    aspect-ratio: 1.786 / 1;
+    min-height: 15rem;
+  }
+
+  .canvas-skills-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: inherit;
+    min-height: 15rem;
+  }
+
+  .canvas-skills-title {
+    min-height: 7.5rem;
+  }
+
   .casestudy p {
     font-size: 1.4rem;
     left: 1%;
@@ -2642,56 +2628,6 @@ button.submit-button:hover {
 
   .takeme-text {
     margin: 4em auto 0
-  }
-
-  .canvas-skills-grid {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    align-items: stretch;
-  }
-
-  .canvas-skills-img {
-    width: 100%;
-    max-width: 100vw;
-    height: 100%;
-    border-bottom: .2em solid #000;
-    border-left: .2em solid #000;
-    border-right: .2em solid #000;
-    aspect-ratio: 1.786 / 1;
-  }
-
-  .canvas-skills-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    aspect-ratio: inherit;
-  }
-
-  .canvas-skills-title {
-    width: 90%;
-    max-width: 90vw;
-    margin: .25em 0;
-    padding: 0.3em;
-    height: auto;
-    max-height: 140px;
-    border: .5em solid #000;
-  }
-
-  .canvas-skills-title h1 {
-    padding: 0;
-    height: auto;
-  }
-
-  .canvas-skills-title h2 {
-    font-size: 2rem;
-    padding: 0;
-    height: auto;
   }
 
   #projects {

@@ -7,42 +7,63 @@
     <meta name="description" content="Explore Genny Allison's portfolio showcasing projects that merge creativity and code. From engaging animations to responsive designs, each project highlights her skills in UI/UX, front-end development, and client-focused web solutions. Discover the blend of artistry and functionality across a range of digital creations.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-        <!-- Preload second image (LCP on desktop ≥941px) -->
+    <!-- Girl Coding Image (LCP for screens ≤ 940px) -->
     <link 
       rel="preload" 
-      href="/img/welcome_to_tech_trends_mobile.avif" 
       as="image" 
-      type="image/avif" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_360,h_202,fl_lossy,fl_force_strip/v1733410752/girlCoding_exzsbe.avif" 
+      type="image/avif"
+      media="(max-width: 940px)" 
+      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_360,h_202,fl_lossy,fl_force_strip/v1733410752/girlCoding_exzsbe.avif 360w" 
+      imagesizes="100vw" 
       fetchpriority="high"
-      media="(min-width: 941px)"
-    >
-
-    <!-- Preload first image (LCP on mobile ≤940px) -->
-    <link 
-      rel="preload" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_360,h_202,c_fill/v1714816017/girlCoding_xd9edr.avif"
-      as="image" 
-      type="image/avif" 
-      fetchpriority="high"
-      media="(max-width: 940px)"
-    >
-
-    <!-- Tablet (481px–1199px) -->
-    <link 
-      rel="preload" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,,dpr_auto,c_fill,g_auto/v1747049367/welcome_to_tech_trends_tablet_da4vul.avif" 
-      as="image" 
-      type="image/avif" 
-      media="(min-width: 481px) and (max-width: 1199px)" 
     />
 
-    <!-- Desktop (≥1200px) -->
+    <!-- Girl Coding Image (Tablet 481px–1199px) -->
     <link 
       rel="preload" 
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,,dpr_auto,c_fill,g_auto/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif" 
       as="image" 
-      type="image/avif" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_768,h_432,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif" 
+      type="image/avif"
+      media="(min-width: 481px) and (max-width: 1199px)" 
+      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_768,h_432,fl_lossy,fl_force_strip/v1747014135/girlCoding-tablet_uund2i.avif 768w" 
+      imagesizes="100vw" 
+      fetchpriority="auto"
+    />
+
+    <!-- Girl Coding Image (Desktop ≥ 1200px) -->
+    <link 
+      rel="preload" 
+      as="image" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_1200,h_670,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif" 
+      type="image/avif"
       media="(min-width: 1200px)" 
+      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_1200,h_670,fl_lossy,fl_force_strip/v1747014137/girlCoding-desktop_qjepoe.avif 1200w" 
+      imagesizes="100vw" 
+      fetchpriority="auto"
+    />
+
+    <!-- Welcome to Tech Trends (LCP for screens ≥ 941px) -->
+    <link 
+      rel="preload" 
+      as="image" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif" 
+      type="image/avif"
+      media="(min-width: 1200px)" 
+      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif 1200w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+
+    <link 
+      rel="preload" 
+      as="image" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049367/welcome_to_tech_trends_tablet_da4vul.avif" 
+      type="image/avif"
+      media="(min-width: 941px) and (max-width: 1199px)" 
+      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049367/welcome_to_tech_trends_tablet_da4vul.avif 768w"
+      imagesizes="100vw"
+      fetchpriority="high"
     />
 
     <link 
@@ -140,16 +161,16 @@
             media="(min-width: 481px) and (max-width: 1199px)"
             sizes="100vw"
           />
-          <img
-            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_360,h_202,c_fill/v1714816017/girlCoding_xd9edr.avif"
-            alt="A woman coding on a laptop, symbolizing the integration of creativity and technology"
+          <img 
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_80,w_360,h_202,fl_lossy,fl_force_strip/v1733410752/girlCoding_exzsbe.avif"
+            alt="A woman coding on a laptop, symbolizing the integration of creativity and technology in web development"
             width="468"
             height="262"
             loading="eager"
             fetchpriority="high"
             decoding="async"
-            style="object-fit: cover; aspect-ratio: 16/9;"
-          >
+            style="object-fit: cover; aspect-ratio: 1.786 / 1;"
+          />
         </picture>
       </div>
       <div class="canvas-skills-title">
@@ -1158,7 +1179,7 @@
       <button class="back-to-top" id="back-to-top" class="hidden">back to top</button>
     </div>
     <div id="footer"></div>
-    <script src="/assets/script.js"></script>
+    <script src="/assets/script.js" defer></script>
   </body>
 </html>      
       
