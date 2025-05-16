@@ -55,6 +55,19 @@ h2 {
   font-kerning: none
 }
 
+h1 {
+  line-height: 1.5;
+}
+
+h2 {
+  line-height: 1.3;
+}
+
+h3,
+p {
+  line-height: 1.2;
+}
+
 body,
 p,
 li,
@@ -62,14 +75,12 @@ input,
 textarea {
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  line-height: 1.5;
 }
 
 h1,
 .canvas-skills-title h1 {
   font-family: "Georgia", "Times New Roman", Times, serif;
   font-weight: 400;
-  line-height: 1.2;
   letter-spacing: 0.05em;
 }
 
@@ -87,20 +98,8 @@ label {
 .canvas-skills-title h2 {
   font-family: Georgia, serif;
   font-weight: 400;
-  line-height: 1.2;
   height: auto;
   text-align: center;
-}
-
-.canvas-skills-title {
-  min-height: 6.79rem
-}
-
-h1,
-h2,
-h3 {
-  opacity: 1;
-  transition: opacity .3s ease-in
 }
 
 .links,
@@ -149,7 +148,8 @@ p a:hover {
   height: .28vh;
   width: 90%;
   transform: scaleX(0);
-  transition: transform .3s ease
+  transition: transform .3s ease;
+  will-change: transform;
 }
 
 .links a:hover::after,
@@ -181,14 +181,12 @@ nav {
   flex-grow: 1;
   justify-content: center;
   height: auto;
-  min-height: 2rem
 }
 
 .nav-links ul {
   display: flex;
   gap: 2vw;
   list-style-type: none;
-  min-height: 1.5rem
 }
 
 .nav-links ul li {
@@ -313,7 +311,6 @@ footer {
   width: 100%;
   max-width: 100%;
   height: auto;
-  min-height: 5rem;
   padding: 6em 0 1em;
   justify-content: center;
   text-align: center
@@ -327,7 +324,6 @@ footer {
   text-align: center;
   font-size: clamp(2rem, 3vw, 3rem);
   height: auto;
-  min-height: 2rem
 }
 
 .main-title a {
@@ -353,12 +349,6 @@ footer {
 .design {
   min-height: clamp(40rem, 60vh, 80rem);
   height: auto;
-}
-
-
-#the-design h3,
-#the-design p {
-  min-height: 1.5rem
 }
 
 .coder-container {
@@ -390,7 +380,6 @@ footer {
 .coder-box h2,
 .designer-box h2 {
   height: auto;
-  min-height: 2rem;
   font-size: 2rem;
   padding: .8em 0;
   text-decoration: underline solid cyan
@@ -512,8 +501,6 @@ footer {
   max-width: 100vw;
   gap: 0;
   height: auto;
-  min-height: clamp(15rem, 22.3125rem, 35.9rem);
-  contain: layout paint;
 }
 
 .canvas-skills-img {
@@ -525,9 +512,8 @@ footer {
   max-width: 100vw;
   width: 100%;
   margin: 0 auto;
-  min-height: clamp(17.5rem, 21.31rem, 32.25rem);
   object-fit: cover;
-  aspect-ratio: 474 / 280;
+  aspect-ratio: 360 / 202;
 }
 
 .canvas-skills-img img {
@@ -535,13 +521,11 @@ footer {
   height: 100%;
   object-fit: cover;
   display: block;
-  content: layout paint;
-  aspect-ratio: inherit;
 }
 
 img[fetchpriority=high] {
   contain: layout paint;
-  content-visibility: auto
+  content-visibility: auto;
 }
 
 .canvas-skills-title {
@@ -549,6 +533,7 @@ img[fetchpriority=high] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0.5em;
   border-top: 1em solid #000;
   border-bottom: 1em solid #000;
   border-left: .5em solid #000;
@@ -557,7 +542,6 @@ img[fetchpriority=high] {
   max-width: 100vw;
   width: 100%;
   margin: 0 auto;
-  min-height: unset
 }
 
 .canvas-skills-title h1,
@@ -568,41 +552,17 @@ img[fetchpriority=high] {
   flex-direction: column;
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease-in;
 }
 
 .canvas-skills-title h1 {
   padding: 0;
-  font-size: clamp(2rem, 3rem, 4rem);
-  min-height: 3.59rem;
-  line-height: 1.2;
+  font-size: clamp(2rem, 4rem, 5rem);
 }
 
 .canvas-skills-title h2 {
-  font-size: clamp(1.8rem, 2.5rem, 4rem);
-  min-height: 3.2rem;
+  font-size: clamp(1.8rem, 3rem, 4rem);
   padding: .2em 0;
   height: auto;
-  line-height: 1.2;
-}
-
-.about-me {
-  margin: 0 auto;
-  max-width: 50vw;
-  width: 50%;
-  position: relative;
-  padding-bottom: 10rem;
-  height: auto;
-  contain: layout;
-  overflow: hidden
-}
-
-#about-me {
-  min-height: clamp(40rem, 85vh, 95rem);
-}
-
-#projects {
-  min-height: clamp(680px, 82vh, 980px);
 }
 
 .skills-main {
@@ -615,6 +575,18 @@ img[fetchpriority=high] {
   padding-bottom: 10vh
 }
 
+.about-me {
+  margin: 0 auto;
+  max-width: 52vw;
+  width: 52%;
+  height: auto;
+  position: relative;
+  padding-bottom: 10rem;
+  contain: layout;
+  overflow: hidden;
+  padding: 0.2em;
+}
+
 .black-container {
   display: flex;
   text-align: center;
@@ -624,7 +596,6 @@ img[fetchpriority=high] {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: clamp(640px, 77.7vh, 940px);
   margin: 1em auto 0;
   border-radius: .225vw;
   box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1)
@@ -638,7 +609,6 @@ img[fetchpriority=high] {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: clamp(620px, 74.7vh, 900px);
 }
 
 .skills-black-container {
@@ -745,7 +715,6 @@ img[fetchpriority=high] {
   font-weight: 700;
   padding: .5vw;
   height: auto;
-  min-height: 1.5rem
 }
 
 .greetings {
@@ -759,11 +728,9 @@ img[fetchpriority=high] {
   color: #fff;
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 250;
-  line-height: 1.4;
   font-size: 1.4rem;
   padding: 2vw;
   height: auto;
-  min-height: 1rem
 }
 
 .grid-container {
@@ -805,7 +772,6 @@ img[fetchpriority=high] {
   text-align: center;
   color: #000;
   height: auto;
-  min-height: 1rem
 }
 
 .my-favorites-grid {
@@ -839,7 +805,6 @@ img[fetchpriority=high] {
 .favorites p {
   color: #fff;
   height: auto;
-  min-height: 1rem
 }
 
 .fun-facts {
@@ -877,7 +842,6 @@ img[fetchpriority=high] {
   text-align: center;
   width: 100%;
   height: auto;
-  min-height: 1rem
 }
 
 .quote:last-child {
@@ -925,7 +889,6 @@ img[fetchpriority=high] {
   padding: 1vw 2vw;
   width: 100%;
   height: auto;
-  min-height: 10rem
 }
 
 .skills-firstset h4 {
@@ -935,7 +898,6 @@ img[fetchpriority=high] {
   padding: 2vw 2vw;
   width: 80%;
   height: auto;
-  min-height: 1rem;
   margin: 0 auto
 }
 
@@ -952,7 +914,6 @@ img[fetchpriority=high] {
   padding: 2vw 3vw;
   width: 60%;
   height: auto;
-  min-height: 1rem;
   margin: 0 auto
 }
 
@@ -1049,7 +1010,6 @@ img[fetchpriority=high] {
   border: .3vh solid #fff;
   width: 95%;
   height: auto;
-  min-height: .3rem;
   margin: 1em auto
 }
 
@@ -1058,7 +1018,6 @@ img[fetchpriority=high] {
   color: #000;
   width: 100%;
   height: auto;
-  min-height: 2rem
 }
 
 .background-color {
@@ -1080,7 +1039,6 @@ img[fetchpriority=high] {
   width: 100%;
   height: auto;
   color: #000;
-  line-height: 1.2
 }
 
 #resume-border {
@@ -1096,15 +1054,13 @@ img[fetchpriority=high] {
 .resume-summary {
   width: 100%;
   height: auto;
-  min-height: 10rem;
-  padding: 2em 1em
+  padding: 2em 1em;
 }
 
 .resume-summary a {
   text-decoration: none;
   color: #0ff;
   height: auto;
-  min-height: 1rem;
   width: 100%;
   max-width: 100vw
 }
@@ -1114,13 +1070,11 @@ img[fetchpriority=high] {
   height: auto;
   padding-top: 4rem;
   font-size: clamp(1rem, 1.2rem, 1.8rem);
-  min-height: 6.75rem;
 }
 
 .resume-summary h2,
 .resume-summary h3 {
   color: #fff;
-  min-height: 2rem;
   height: auto;
   width: 100%;
   max-width: 100vw;
@@ -1131,10 +1085,8 @@ img[fetchpriority=high] {
   color: #fff;
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 250;
-  line-height: 1.5;
   padding: 1.25em 3em;
   font-size: clamp(1rem, 1.3rem, 1.8rem);
-  min-height: 1rem;
   width: 100%;
   height: auto;
   max-width: 100vw;
@@ -1151,7 +1103,6 @@ img[fetchpriority=high] {
   align-items: center;
   width: 93%;
   height: auto;
-  min-height: 3rem;
   aspect-ratio: 16/9;
   margin: 1.5em auto 0
 }
@@ -1210,7 +1161,6 @@ img[fetchpriority=high] {
   right: 1rem;
   width: auto;
   min-width: 6rem;
-  min-height: 16.4rem;
   contain: layout
 }
 
@@ -1245,12 +1195,12 @@ img[fetchpriority=high] {
 #side-nav li {
   margin: .25rem 0;
   height: auto;
-  min-height: 1.3rem
 }
 
 #side-nav a {
   color: #fff;
-  text-decoration: none
+  text-decoration: none;
+  line-height: 1.2;
 }
 
 #side-nav li a:hover {
@@ -1266,7 +1216,6 @@ img[fetchpriority=high] {
   margin: 2em auto;
   width: auto;
   height: auto;
-  min-height: 2.8125rem;
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
@@ -1288,21 +1237,13 @@ img[fetchpriority=high] {
 .click-me a {
   text-decoration: none;
   color: #fff;
-  min-height: 1.65rem;
 }
 
-.project-link {
-  min-height: 2rem;
-  height: auto;
-  min-height: 5rem;
-  width: 100%;
-  max-width: 100vw
-}
-
-.project-links .explore-container .click-me {
+.project-links,
+.explore-container,
+.click-me {
   margin: 2em auto;
   height: auto;
-  min-height: 1rem;
   width: 100%;
   max-width: 100vw
 }
@@ -1312,7 +1253,6 @@ img[fetchpriority=high] {
   max-width: 100vw;
   height: auto;
   margin: 1em auto;
-  min-height: 1.95rem;
 }
 
 .takeme-text h3 {
@@ -1323,7 +1263,6 @@ img[fetchpriority=high] {
   height: auto;
   width: 100%;
   max-width: 100vw;
-  min-height: 1.95rem;
 }
 
 #back-to-top:hover {
@@ -1356,7 +1295,6 @@ img[fetchpriority=high] {
   margin: 0 auto;
   padding-bottom: 2em;
   gap: 1em;
-  min-height: 2rem
 }
 
 .contact-form-container {
@@ -1457,16 +1395,11 @@ button.submit-button:hover {
   object-fit: cover
 }
 
-.hubspot img {
-  min-height: 31.36rem;
-}
-
 .border-white {
   border: 1em solid #fff;
   margin: 30px auto;
   width: 95%;
   max-width: 100%;
-  min-height: .2rem;
   height: auto;
   padding: .9375em 0
 }
@@ -1631,54 +1564,30 @@ button.submit-button:hover {
   align-items: center;
   flex-direction: column;
   height: auto;
-  min-height: 5.06rem;
   margin: 1em auto 2em;
-  line-height: 1.5;
   background-color: #fff;
   width: 98%;
-  padding: 1em 0
+  padding: 1em;
 }
 
 #project-title h2 {
   font-size: clamp(1rem, 2vw, 2rem);
   height: auto;
   width: 100%;
-  min-height: 1.5rem
 }
 
 .author-bio-text h2 {
   font-size: 1.8rem;
   width: 100%;
   height: auto;
-  min-height: 1.5rem
-}
-
-.grade-container p {
-  min-height: 2rem;
 }
 
 .grade-text {
   min-height: 42.5rem;
 }
 
-.pagespeed-grade-title {
-  min-height: 2rem
-}
-
-.grade-title {
-  min-height: 2.25rem;
-}
-
 .grade-container {
   min-height: 35rem
-}
-
-#resume-part1 {
-  min-height: clamp(38rem, 75vh, 68rem);
-}
-
-#resume-part2 {
-  min-height: clamp(36rem, 72vh, 62.68rem);
 }
 
 #section1 {
@@ -1709,11 +1618,9 @@ button.submit-button:hover {
 }
 
 .grade-text .grade-title h3,
-.mood-board h3,
 .pagespeed-grade-title h3 {
   font-size: 1.5rem;
   height: auto;
-  min-height: 1.2rem;
   width: 100%;
   color: #000;
   margin: 0 auto
@@ -1729,17 +1636,14 @@ button.submit-button:hover {
 
 .grade-container h3 {
   font-size: clamp(1rem, 1.1rem, 2.3rem);
-  min-height: 3.08rem;
 }
 
 .grade-container p {
   font-size: clamp(1.2rem, 1.5rem, 2rem);
-  min-height: 2.09rem;
 }
 
 .grade-container h3,
 .grade-container p {
-  line-height: 1.4;
   text-align: center;
   word-break: break-all
 }
@@ -1749,7 +1653,6 @@ button.submit-button:hover {
 .author-bio strong {
   color: #fff;
   font-size: 1.2rem;
-  line-height: 1.4
 }
 
 .grade-title,
@@ -1810,7 +1713,7 @@ button.submit-button:hover {
   width: 100%;
   height: auto;
   max-width: 100vw;
-  min-height: 10rem
+  min-height: clamp(68rem, 92.63rem, 142rem);
 }
 
 .author-bio,
@@ -1829,7 +1732,6 @@ button.submit-button:hover {
 .author-bio {
   background-color: #000;
   color: #0bd6e2;
-  min-height: 10rem
 }
 
 .author-bio img {
@@ -1840,7 +1742,6 @@ button.submit-button:hover {
   padding: 0 1em;
   box-sizing: border-box;
   margin: 0 auto;
-  min-height: 11.625;
 }
 
 .cta-section img,
@@ -1854,25 +1755,11 @@ button.submit-button:hover {
   object-fit: cover;
 }
 
-#moodboard-img img {
-  min-height: 20.75;
-}
-
-#past-meets-future-img img {
-  min-height: 28.93;
-}
-
-#cute-robot-img img {
-  min-height: 17.18rem;
-}
-
-.wireframe-img img,
-.pagespeed-grade-img img {
-  min-height: unset;
-}
-
 .grade-img img {
-  min-height: 21.375rem;
+  aspect-ratio: 1.16 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .cta-section p {
@@ -1925,7 +1812,7 @@ button.submit-button:hover {
   color: #fff;
   width: 60%;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.2;
   text-align: left;
   font-size: 1.2rem
 }
@@ -1972,7 +1859,7 @@ button.submit-button:hover {
 }
 
 .list-items li {
-  line-height: 1.6;
+  line-height: 1.2;
   font-size: 1.3rem
 }
 
@@ -2064,7 +1951,6 @@ button.submit-button:hover {
 
 .site-hero-img {
   aspect-ratio: 1.95/1;
-  min-height: clamp(13.625rem, 20.31vw, 33.75rem)
 }
 
 .site-hero-img img,
@@ -2079,8 +1965,17 @@ button.submit-button:hover {
   padding: .2em 1em
 }
 
-.site-hero-img {
-  min-height: 5rem
+@media (max-width: 1200px) {
+  .canvas-skills-title h1 {
+    padding: 0;
+    font-size: clamp(1.2rem, 3rem, 34rem);
+  }
+
+  .canvas-skills-title h2 {
+    font-size: clamp(1.2rem, 2.5rem, 3rem);
+    padding: .2em 0;
+    height: auto;
+  }
 }
 
 @media (max-width:1024px) {
@@ -2168,7 +2063,6 @@ button.submit-button:hover {
   .resume-border {
     width: 93%;
     height: auto;
-    min-height: 5rem
   }
 
   .author-bio img {
@@ -2186,29 +2080,25 @@ button.submit-button:hover {
     grid-template-columns: 1fr 3fr;
     width: 100%;
     max-width: 100vw;
-    height: auto
+    height: auto;
   }
 
   .canvas-skills-img {
     max-height: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 580 / 325;
+    aspect-ratio: 1.786 / 1;
   }
 
   .canvas-skills-title {
-    min-height: unset;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
-
 }
 
 @media (max-width: 940px) {
-
   .canvas-skills-grid {
     display: flex;
     flex-direction: column;
@@ -2226,15 +2116,16 @@ button.submit-button:hover {
     max-width: 100vw;
     height: 100%;
     contain: layout paint;
-    aspect-ratio: 910 / 489;
+    aspect-ratio: 1.786 / 1;
+    border: .2em solid #000;
   }
 
   .canvas-skills-img img {
     width: 100%;
     height: 100%;
-    aspect-ratio: inherit;
-    border: .2em solid #000;
-    min-height: 17.5rem;
+    aspect-ratio: 1.786 / 1;
+    object-fit: cover;
+    display: block;
   }
 
   .canvas-skills-title {
@@ -2303,16 +2194,15 @@ button.submit-button:hover {
     width: 100%;
     max-width: 100vw;
     height: 100%;
-    contain: layout paint;
-    aspect-ratio: 768 / 437;
+    aspect-ratio: 762 / 426;
+    border: .2em solid #000;
   }
 
   .canvas-skills-img img {
     width: 100%;
     height: 100%;
-    aspect-ratio: inherit;
-    border: .2em solid #000;
-    min-height: 17.5rem;
+    object-fit: cover;
+    display: block;
   }
 
   .canvas-skills-title {
@@ -2379,7 +2269,6 @@ button.submit-button:hover {
   .pagespeed-grade-title {
     height: auto;
     margin: .2em auto 1em;
-    line-height: 1.5;
     background-color: #fff;
     width: 95%;
     max-width: 95vw;
@@ -2391,7 +2280,6 @@ button.submit-button:hover {
     color: #000;
     width: 100%;
     height: auto;
-    min-height: 1.5rem
   }
 
   .button-grid {
@@ -2650,7 +2538,7 @@ button.submit-button:hover {
     margin-top: 3em
   }
 
-  .about--me-container {
+  .about-me-container {
     margin-top: .2em
   }
 
@@ -2668,7 +2556,6 @@ button.submit-button:hover {
   .greetings p {
     font-size: 1rem;
     height: auto;
-    min-height: 1rem
   }
 
   .greetings-label {
@@ -2679,7 +2566,6 @@ button.submit-button:hover {
   .greetings-label h2 {
     font-size: clamp(1rem, 2vw, 1.2rem);
     height: auto;
-    min-height: 1rem
   }
 
   .facts,
@@ -2740,24 +2626,6 @@ button.submit-button:hover {
 
 @media (max-width:480px) {
 
-  h1,
-  h2,
-  h3 {
-    transition: none !important;
-    opacity: 1 !important
-  }
-
-  .about-me {
-    margin: 0 auto;
-    max-width: 90vw;
-    width: 90%;
-    position: relative;
-    padding-bottom: 10rem;
-    height: auto;
-    contain: layout;
-    overflow: hidden
-  }
-
   .design {
     contain: layout paint;
     height: auto;
@@ -2766,7 +2634,7 @@ button.submit-button:hover {
   .side-nav {
     min-height: 15.5rem;
     height: auto;
-    aspect-ratio: 63/124
+    aspect-ratio: 63/124;
   }
 
   .casestudy p {
@@ -2781,56 +2649,53 @@ button.submit-button:hover {
     margin: 4em auto 0
   }
 
-  .canvas-skills-img {
-    min-height: 178px;
-    object-fit: cover;
+  .canvas-skills-grid {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 100vw;
     height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .canvas-skills-img {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
     border-bottom: .2em solid #000;
     border-left: .2em solid #000;
     border-right: .2em solid #000;
-    aspect-ratio: 474 / 280;
-
+    aspect-ratio: 1.786 / 1;
   }
 
   .canvas-skills-img img {
     width: 100%;
-    height: auto;
-    aspect-ratio: inherit;
+    height: 100%;
     object-fit: cover;
+    display: block;
+    aspect-ratio: inherit;
   }
 
   .canvas-skills-title {
     width: 90%;
     max-width: 90vw;
     margin: .25em 0;
-    transition: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+    padding: 0.3em;
     height: auto;
+    max-height: 140px;
     border: .5em solid #000;
-    min-height: 11.8125rem
   }
 
   .canvas-skills-title h1 {
-    padding: .2em 0 .2em;
-    min-height: 4.75rem;
-    height: auto
+    padding: 0;
+    height: auto;
   }
 
   .canvas-skills-title h2 {
-    font-size: 1.5rem;
-    padding: .2em 0 .2em;
-    min-height: 3.09rem;
-    height: auto
-  }
-
-  .canvas-skills-title h1,
-  .canvas-skills-title h2 {
-    opacity: 1 !important;
-    visibility: visible !important;
-    transition: none !important
+    font-size: 2rem;
+    padding: 0;
+    height: auto;
   }
 
   #projects {
@@ -2843,13 +2708,11 @@ button.submit-button:hover {
     width: 100%;
     max-width: 100vw;
     height: auto;
-    min-height: 10rem
   }
 
   .hamburger-icon {
     width: 6.4vw;
     height: auto;
-    min-height: 1rem;
     aspect-ratio: 1/1
   }
 
@@ -2862,10 +2725,6 @@ button.submit-button:hover {
     padding: .9375em 0
   }
 
-  .border-white img {
-    width: 96%
-  }
-
   .casestudy,
   .mood-board,
   .resume-border,
@@ -2874,25 +2733,8 @@ button.submit-button:hover {
     height: auto;
   }
 
-  .resume-summary p {
-    min-height: unset;
-    height: auto;
-    line-height: 1.28
-  }
-
-  .resume-summary {
-    height: auto;
-  }
-
-
-  .project-links {
-    min-height: 10rem;
-    height: auto
-  }
-
   .button-grid {
     padding: 3em 0 2em;
     height: auto;
-    min-height: 4rem
   }
 }
