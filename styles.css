@@ -521,13 +521,13 @@ footer {
   border-bottom: 1em solid #000;
   border-left: 1em solid #000;
   border-right: .5em solid #000;
-  height: auto;
+  height: 100%;
   max-width: 100vw;
   width: 100%;
   margin: 0 auto;
-  min-height: clamp(17rem, 50vh, 275px);
+  min-height: clamp(17.5rem, 21.31rem, 32.25rem);
   object-fit: cover;
-  aspect-ratio: 1.786 / 1;
+  aspect-ratio: 474 / 280;
 }
 
 .canvas-skills-img img {
@@ -1635,7 +1635,7 @@ button.submit-button:hover {
   margin: 1em auto 2em;
   line-height: 1.5;
   background-color: #fff;
-  width: 95%;
+  width: 98%;
   padding: 1em 0
 }
 
@@ -2191,9 +2191,9 @@ button.submit-button:hover {
 
   .canvas-skills-img {
     max-height: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    aspect-ratio: 1.786 / 1;
+    aspect-ratio: 580 / 325;
   }
 
   .canvas-skills-title {
@@ -2224,14 +2224,14 @@ button.submit-button:hover {
     display: block;
     width: 100%;
     max-width: 100vw;
-    height: auto;
+    height: 100%;
     contain: layout paint;
-    aspect-ratio: 1.786 / 1;
+    aspect-ratio: 910 / 489;
   }
 
   .canvas-skills-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
     aspect-ratio: inherit;
     border: .2em solid #000;
     min-height: 17.5rem;
@@ -2302,14 +2302,14 @@ button.submit-button:hover {
     display: block;
     width: 100%;
     max-width: 100vw;
-    height: auto;
+    height: 100%;
     contain: layout paint;
-    aspect-ratio: 1.786 / 1;
+    aspect-ratio: 768 / 437;
   }
 
   .canvas-skills-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
     aspect-ratio: inherit;
     border: .2em solid #000;
     min-height: 17.5rem;
@@ -2790,7 +2790,7 @@ button.submit-button:hover {
     border-bottom: .2em solid #000;
     border-left: .2em solid #000;
     border-right: .2em solid #000;
-    aspect-ratio: 1.786 / 1;
+    aspect-ratio: 474 / 280;
 
   }
 
