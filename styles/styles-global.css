@@ -704,7 +704,8 @@ button.submit-button:hover {
     max-width: 100vw;
     height: auto;
     align-items: stretch;
-    aspect-ratio: 1.186 / 1;
+    aspect-ratio: auto !important;
+    min-height: 40rem;
   }
 
   .canvas-skills-img {
@@ -716,8 +717,8 @@ button.submit-button:hover {
     width: 100%;
     margin: 0 auto;
     object-fit: cover;
-    aspect-ratio: 186 / 85;
-    flex: 3;
+    aspect-ratio: 916 / 490;
+    flex: 1;
     overflow: hidden;
   }
 
@@ -747,7 +748,7 @@ button.submit-button:hover {
     max-width: 100vw;
     width: 100%;
     margin: 0 auto;
-    flex: 2;
+    flex: 1;
     height: auto;
   }
 
@@ -794,7 +795,7 @@ button.submit-button:hover {
   }
 
   .canvas-skills-img {
-    aspect-ratio: 16 / 9186 / 85;
+    aspect-ratio: 744 / 340;
   }
 
   .canvas-skills-img img {
@@ -861,6 +862,14 @@ button.submit-button:hover {
     padding: 0
   }
 
+  .canvas-skills-grid {
+    height: auto;
+    min-height: 33.5rem;
+    width: 100%;
+    max-width: 100vw;
+    aspect-ratio: auto !important;
+  }
+
   .footer-links ul li a {
     font-size: 1rem
   }
@@ -914,7 +923,10 @@ button.submit-button:hover {
     flex-direction: column;
     width: 100%;
     max-width: 100vw;
+    height: auto;
     align-items: stretch;
+    min-height: 41rem;
+    aspect-ratio: auto !important;
   }
 
   .canvas-skills-img {
@@ -922,7 +934,7 @@ button.submit-button:hover {
     width: 100%;
     overflow: hidden;
     background-color: #000;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 656 / 350;
   }
 
   .canvas-skills-title {
@@ -941,7 +953,7 @@ button.submit-button:hover {
   .side-nav {
     min-height: 15.5rem;
     height: auto;
-    aspect-ratio: 63/124;
+    aspect-ratio: 456/238;
   }
 
   h1,
@@ -970,6 +982,20 @@ button.submit-button:hover {
     height: auto;
   }
 
+  .canvas-skills-grid {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 483px;
+    aspect-ratio: auto !important;
+  }
+
+  .canvas-skills-img {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    aspect-ratio: 480/295;
+  }
 
   .canvas-skills-title h1,
   .canvas-skills-title h2 {
