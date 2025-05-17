@@ -65,9 +65,14 @@
       type="image/webp"
     />
 
-    <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-    <noscript><link rel="stylesheet" href="/assets/styles.css"></noscript>
+    <link rel="preload" href="/styles/styles-global.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+    <noscript><link rel="stylesheet" href="/styles/styles.css"></noscript>
+
+    <noscript><link rel="stylesheet" href="/styles/styles-global.css"></noscript>
 
     <script type="application/ld+json">
       {
@@ -127,14 +132,16 @@
         <!-- Image used ONLY on screens ≤ 940px -->
         <img 
           src="/img/girlCoding-mobile.avif"
-          width="468"
-          height="262"
-          class="only-mobile"
           alt="A woman coding on a laptop, symbolizing the integration of creativity and technology in web development"
+          class="only-mobile"
+          width="468" 
+          height="262"
           loading="eager"
-          decoding="async"
           fetchpriority="high"
-          style="object-fit: cover; aspect-ratio: 1.786 / 1;"
+          decoding="async"
+          alt="A woman coding on a laptop"
+          style="aspect-ratio: 1.786 / 1; object-fit: cover;"
+          class="only-mobile"
         />
 
         <!-- Responsive image for screens ≥ 941px -->
