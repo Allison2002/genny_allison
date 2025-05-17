@@ -15,8 +15,20 @@
       href="/img/white_favicon/favicon.ico"
       type="image/icon type"
     />
-    <link rel="stylesheet" href="/styles.css" />
-    <link href="https://fonts.cdnfonts.com/css/tt-norms-pro" rel="stylesheet" />
+
+    <link rel="preload" href="/styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="preload" href="/styles/styles-global.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript><link rel="stylesheet" href="/styles/styles.css"></noscript>
+
+    <noscript><link rel="stylesheet" href="/styles/styles-global.css"></noscript>
+
+
+    <noscript><link rel="stylesheet" href="/styles/styles.css"></noscript>
+
+    <noscript><link rel="stylesheet" href="/styles/styles-global.css"></noscript>
+
   </head>
   <body>
     <section>
