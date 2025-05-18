@@ -1296,8 +1296,6 @@ textarea {
     margin-top: 10vh;
   }
 
-
-
   .tooltip:hover .tooltip-text {
     visibility: visible;
     opacity: 1
