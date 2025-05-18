@@ -133,25 +133,21 @@
           <img
             src="/img/welcome_to_tech_trends_mobile.avif"
             width="480"
-            height="284"
+            height="293"
             alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology visuals..."
-            style="object-fit: cover; width: 100%; height: auto; aspect-ratio: 480 / 284"
+            style="object-fit: cover; width: 100%; height: auto; aspect-ratio: 480 / 293"
             fetchpriority="high"
             decoding="async"
             loading="eager"
           />
         </picture>
-
       </div>
-
       <div class="canvas-skills-title">
         <h1>a canvas of code:</h1>
         <h2>showcasing the craft</h2>
       </div>
     </div>
-
     <main class="about-me" id="projects">
-        <!--resume-->        
       <div class="black-container">
         <div class="main-container">
           <section id="description">
@@ -350,7 +346,7 @@
                   </div>
                   <div class="pagespeed-grade-img">
                     <div class="border-white">
-                      <div class="border-black">
+                      <div class="border-black" id="pagespeed-img-1">
                         <picture>
                           <source
                             srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-start-desktop_cbbbqf.avif"
@@ -383,7 +379,7 @@
                   </div>
                   <div class="pagespeed-grade-img">
                     <div class="border-white">
-                      <div class="border-black">
+                      <div class="border-black" id="pagespeed-img-2">
                         <picture>
                           <source
                             srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-finish-desktop_dctwrz.avif"
@@ -461,7 +457,7 @@
                 </div>
                 <div class="pagespeed-grade-img">
                   <div class="border-white">
-                    <div class="border-black">
+                    <div class="border-black" id="pagespeed-img-3">
                       <picture>
                         <source
                           srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-start-mobile_beu2ct.avif"
@@ -494,7 +490,7 @@
                 </div>
                 <div class="pagespeed-grade-img">
                   <div class="border-white">
-                    <div class="border-black">
+                    <div class="border-black" id="pagespeed-img-4">
                       <picture>
                         <source
                           srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916682/tech-trends-finish-mobile_ca3hzy.avif"
@@ -565,91 +561,59 @@
               </div>
             </div>
           </section>
-          <section id="the-author" id="section4">
-            <div class="resume-border" >
-              <div class="border-white">
-                <div class="border-black">
-                  <div class="author-bio">
-                    <div class="author-img-wrapper">
-                      <picture>
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
-                          type="image/avif"
-                          media="(min-width: 1200px)"
-                          sizes="100vw"
-                        />
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
-                          type="image/avif"
-                          media="(min-width: 481px) and (max-width: 1199px)"
-                          sizes="100vw"
-                        />
-                        <img 
-                          src="/img/allisonstock-black-logo-mobile.avif"
-                          alt="Photo of Genny Allison, the web developer and AI content specialist"
-                          width="376"
-                          height="164"
-                          loading="lazy"
-                          fetchpriority="auto"
-                          style="object-fit: cover;aspect-ratio: 376 / 164; width: 100%; height: auto;"
-                          decoding="async" 
-                        />
-                      </picture> 
+          <section id="contact">
+            <article class="resume-border" id="section4" >
+              <div class="resume-border" >
+                <div class="border-white">
+                  <div class="border-black">
+                    <div class="author-bio">
+                      <div class="author-img-wrapper">
+                        <picture> 
+                          <source
+                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
+                            type="image/avif"
+                            media="(min-width: 1200px)"
+                            sizes="100vw"
+                          />
+                          <source
+                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
+                            type="image/avif"
+                            media="(min-width: 481px) and (max-width: 1199px)"
+                            sizes="100vw"
+                          />
+                          <img 
+                            src="/img/allisonstock-black-logo-mobile.avif"
+                            alt="Photo of Genny Allison, the web developer and AI content specialist"
+                            width="376"
+                            height="164"
+                            loading="lazy"
+                            fetchpriority="auto"
+                            style="object-fit: cover;aspect-ratio: 376 / 164; width: 100%; height: auto;"
+                            decoding="async" 
+                          />
+                        </picture> 
+                      </div>
+                      
+                      <div class="author-bio-text">
+                        <h2>Partner with an AI Content Specialist & Web Developer</h2>
+                        <p><i>Looking for someone who can combine creativity,<br> cutting-edge AI tools, and technical expertise to build<br> stunning web platforms and engaging content?<br> You've come to the right place.</i></p>
+                        <p>At <strong>Allison Stock Inc.</strong>, I specialize in AI-powered content creation and web development using tools like ChatGPT, Midjourney, Figma, and Uizard. My portfolio showcases my ability to integrate AI solutions seamlessly into modern web design, delivering high-performing, SEO-optimized websites and content tailored to today's digital demands.</p>
+                        <p>
+                          <a href="https://www.linkedin.com/in/genny-allison/" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label="Visit Genny Allison's LinkedIn on a new tab">Connect with me on LinkedIn
+                          </a>, 
+                          <a href="https://gennyallison.netlify.app"
+                            target="_blank" 
+                            rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"
+                            >explore my portfolio</a>, or visit my <a href="/pages/contact.html">contact page</a> to see how I can help bring your vision to life.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="resume-border">  
-              <div class="resume-summary" id="resume-part3">
-                <div class="author-bio-text">
-                  <p>
-                    <i>Curious about your website's performance?
-                    </i>
-                  </p> 
-                  <p>
-                    <i>Visit
-                      <a
-                        href="https://website.grader.com/?__hstc=20629287.7b5da137d6ae3b82197a3c1b6c098d04.1731428252014.1732338211911.1732940777826.11&__hssc=20629287.5.1732940777826&__hsfp=2673780978"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Visit Website Grader on a new tab"
-                      >
-                      Page Speed Insights
-                    </a>
-                      or
-                    <a
-                      href="https://website.grader.com/?__hstc=20629287.7b5da137d6ae3b82197a3c1b6c098d04.1731428252014.1732338211911.1732940777826.11&__hssc=20629287.5.1732940777826&__hsfp=2673780978"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Visit Website Grader on a new tab"
-                      >Hubspot
-                    </a>
-                      to check your site's grade.
-                    </i>
-                  </p>
-                  <p>
-                    <i> If you're not happy with the
-                    results,<br>
-                      <a
-                        href="/pages/contact.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Open Contact page"
-                        >
-                        reach out to me
-                      </a>.
-                    </i>
-                  </p>
-                  <p>
-                    <i> 
-                      Together, we can optimize your site for better
-                    performance and results.
-                    </i>
-                  </p>
-                </div>
-              </div>
-            </div>
+            </article>
           </section>
           <section id="the-design">
             <div class="article-global-container" id="design">
@@ -769,7 +733,7 @@
             <div class="resume-border"> 
               <div class="wireframe-grid">
                 <div class="wireframe">
-                  <div class="wireframe-img">
+                  <div class="wireframe-img" id="wireframe-img-1">
                     <div class="border-white">
                       <div class="border-black">
                         <picture>
@@ -802,7 +766,7 @@
                   </div>
                 </div>
                 <div class="wireframe">
-                  <div class="wireframe-img">
+                  <div class="wireframe-img" id="wireframe-img-2">
                     <div class="border-white">
                       <div class="border-black">
                         <picture>
@@ -835,7 +799,7 @@
                   </div>
                 </div>
                 <div class="wireframe">
-                  <div class="wireframe-img">
+                  <div class="wireframe-img" id="wireframe-img-3">
                     <div class="border-white">
                       <div class="border-black">
                         <picture>
@@ -1043,49 +1007,52 @@
           </section>
           <section id="contact">
             <article class="resume-border" id="section4" >
-              <div class="border-white">
-                <div class="border-black">
-                  <div class="author-bio">
-                    <div class="author-img-wrapper">
-                      <picture> 
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
-                          type="image/avif"
-                          media="(min-width: 1200px)"
-                          sizes="100vw"
-                        />
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
-                          type="image/avif"
-                          media="(min-width: 481px) and (max-width: 1199px)"
-                          sizes="100vw"
-                        />
-                        <img 
-                          src="/img/allisonstock-black-logo-mobile.avif"
-                          alt="Photo of Genny Allison, the web developer and AI content specialist"
-                          width="376"
-                          height="164"
-                          loading="lazy"
-                          fetchpriority="auto"
-                          style="object-fit: cover;aspect-ratio: 376 / 164; width: 100%; height: auto;"
-                          decoding="async" 
-                        />
-                      </picture> 
-                    </div>
-                    <div class="author-bio-text">
-                      <h2>Partner with an AI Content Specialist & Web Developer</h2>
-                      <p><i>Looking for someone who can combine creativity,<br> cutting-edge AI tools, and technical expertise to build<br> stunning web platforms and engaging content?<br> You've come to the right place.</i></p>
-                      <p>At <strong>Allison Stock Inc.</strong>, I specialize in AI-powered content creation and web development using tools like ChatGPT, Midjourney, Figma, and Uizard. My portfolio showcases my ability to integrate AI solutions seamlessly into modern web design, delivering high-performing, SEO-optimized websites and content tailored to today's digital demands.</p>
-                      <p>
-                        <a href="https://www.linkedin.com/in/genny-allison/" 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          aria-label="Visit Genny Allison's LinkedIn on a new tab">Connect with me on LinkedIn
-                        </a>, 
-                        <a href="https://gennyallison.netlify.app"
-                          target="_blank" 
-                          rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"
-                          >explore my portfolio</a>, or visit my <a href="/pages/contact.html">contact page</a> to see how I can help bring your vision to life.</p>
+              <div class="resume-border" >
+                <div class="border-white">
+                  <div class="border-black">
+                    <div class="author-bio">
+                      <div class="author-img-wrapper">
+                        <picture> 
+                          <source
+                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
+                            type="image/avif"
+                            media="(min-width: 1200px)"
+                            sizes="100vw"
+                          />
+                          <source
+                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
+                            type="image/avif"
+                            media="(min-width: 481px) and (max-width: 1199px)"
+                            sizes="100vw"
+                          />
+                          <img 
+                            src="/img/allisonstock-black-logo-mobile.avif"
+                            alt="Photo of Genny Allison, the web developer and AI content specialist"
+                            width="376"
+                            height="164"
+                            loading="lazy"
+                            fetchpriority="auto"
+                            style="object-fit: cover;aspect-ratio: 376 / 164; width: 100%; height: auto;"
+                            decoding="async" 
+                          />
+                        </picture> 
+                      </div>
+
+                      <div class="author-bio-text">
+                        <h2>Partner with an AI Content Specialist & Web Developer</h2>
+                        <p><i>Looking for someone who can combine creativity,<br> cutting-edge AI tools, and technical expertise to build<br> stunning web platforms and engaging content?<br> You've come to the right place.</i></p>
+                        <p>At <strong>Allison Stock Inc.</strong>, I specialize in AI-powered content creation and web development using tools like ChatGPT, Midjourney, Figma, and Uizard. My portfolio showcases my ability to integrate AI solutions seamlessly into modern web design, delivering high-performing, SEO-optimized websites and content tailored to today's digital demands.</p>
+                        <p>
+                          <a href="https://www.linkedin.com/in/genny-allison/" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label="Visit Genny Allison's LinkedIn on a new tab">Connect with me on LinkedIn
+                          </a>, 
+                          <a href="https://gennyallison.netlify.app"
+                            target="_blank" 
+                            rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"
+                            >explore my portfolio</a>, or visit my <a href="/pages/contact.html">contact page</a> to see how I can help bring your vision to life.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
