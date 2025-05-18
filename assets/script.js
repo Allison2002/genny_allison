@@ -193,4 +193,14 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!tooltip.contains(e.target)) hideTip();
     });
   });
+  if ('fonts' in document) {
+    Promise.all([
+      document.fonts.load('1em Georgia'),
+      document.fonts.load('1em Segoe UI')
+    ]).then(() => {
+      document.body.classList.add('fonts-loaded');
+    });
+  } else {
+    document.body.classList.add('fonts-loaded');
+  }
 });

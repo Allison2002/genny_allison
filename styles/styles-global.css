@@ -105,6 +105,26 @@ label {
   letter-spacing: 0.02em;
 }
 
+body:not(.fonts-loaded) .canvas-skills-title,
+body:not(.fonts-loaded) h1,
+body:not(.fonts-loaded) h2,
+body:not(.fonts-loaded) p {
+  opacity: 0;
+}
+
+body.fonts-loaded .canvas-skills-title,
+body.fonts-loaded h1,
+body.fonts-loaded h2,
+body.fonts-loaded p {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  will-change: opacity;
+}
+
+
+
+
+
 .links,
 .links a,
 a,
