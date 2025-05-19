@@ -132,6 +132,14 @@
     text-align: center;
   }
 
+  .author-bio-container {
+    background-color: #000;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 51rem;
+  }
+
   .author-bio-container img {
     display: block;
     width: 100%;
@@ -140,6 +148,7 @@
     padding: 0 1em;
     box-sizing: border-box;
     margin: 0 auto;
+    min-height: 632 / 275;
   }
 
   #grade-table-img1,
@@ -158,10 +167,11 @@
   #pagespeed-grade-img3,
   #pagespeed-grade-img4,
   .project-img {
-    width: 90%;
-    max-width: 90vw;
+    width: 100%;
+    max-width: 100vw;
     height: auto;
     padding: 0.02em;
+    margin: 1em auto 2em;
   }
 
   #grade-table-img1 img,
@@ -180,7 +190,7 @@
   .project-img img,
   #grade-img img {
     display: block;
-    width: 90%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     box-sizing: border-box;
@@ -231,15 +241,15 @@
   }
 
   #wireframe-img1 img {
-    aspect-ratio: 585 / 1985;
+    aspect-ratio: 628 / 2137;
   }
 
   #wireframe-img3 img {
-    aspect-ratio: 585 / 1990;
+    aspect-ratio: 628 / 1450;
   }
 
   #wireframe-img2 {
-    aspect-ratio: 585 / 1057;
+    aspect-ratio: 628 / 1137;
   }
 
   .cute-robot img {

@@ -273,6 +273,7 @@ nav {
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  background-color: #000;
 }
 
 .nav-logo img {
@@ -302,6 +303,7 @@ nav {
   min-height: 20rem;
   contain: layout;
   aspect-ratio: 1492 / 333;
+  background-color: #000;
 }
 
 .canvas-skills-grid img {
@@ -324,6 +326,7 @@ img[fetchpriority=high] {
 }
 
 .canvas-skills-title {
+  background-color: white;
   border: 1em solid #000;
   border-left: 0.5em solid #000;
   flex: 3;
@@ -358,10 +361,6 @@ img[fetchpriority=high] {
   line-height: 1.4;
 }
 
-.desktop-version {
-  display: block
-}
-
 .footer-logo {
   display: flex;
   justify-content: center;
@@ -372,6 +371,7 @@ img[fetchpriority=high] {
   max-width: 40vw;
   padding: 2em 0;
   aspect-ratio: 2.077/1;
+  background-color: #000;
 }
 
 .footer-logo img {
@@ -427,6 +427,10 @@ footer {
   align-items: center;
   gap: 1.5em;
   padding: 1em 0
+}
+
+.social-media {
+  background-color: #000;
 }
 
 .social-media ul li {
@@ -839,6 +843,18 @@ button.submit-button:hover {
 }
 
 @media (max-width:768px) {
+  .fancy-border-img {
+    border: 1em solid white;
+    outline: 0.2em solid white;
+    outline-offset: 1.5em;
+    padding: 1em;
+    width: 96%;
+    max-width: 96vw;
+    height: auto;
+    max-height: auto;
+    margin: 3em auto 3em;
+  }
+
   .canvas-skills-grid {
     aspect-ratio: 768 / 800;
   }
