@@ -106,7 +106,12 @@ label {
 
 body.fonts-loading .about-me {
   opacity: 0;
-  pointer-events: none;
+  min-height: 100vh;
+  position: relative;
+}
+
+body.fonts-loaded .about-me {
+  visibility: visible;
 }
 
 body.fonts-loaded {
