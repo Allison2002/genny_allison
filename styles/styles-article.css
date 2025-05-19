@@ -59,10 +59,6 @@
     line-height: 1.34
   }
 
-  .grade-container {
-    min-height: 35rem
-  }
-
   #section1 {
     min-height: clamp(42rem, 84vh, 81.43rem);
   }
@@ -79,7 +75,6 @@
     min-height: clamp(30rem, 90vh, 58.125rem);
   }
 
-  .grade-table,
   .grade-title,
   .article-global-container {
     display: flex;
@@ -90,35 +85,12 @@
     max-width: 100vw
   }
 
-  .grade-table .grade-title h3,
   .pagespeed-grade-title h3 {
     font-size: 1.5rem;
     height: auto;
     width: 100%;
     color: #000;
     margin: 0 auto
-  }
-
-  .grade-table {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 1em
-  }
-
-  .grade-container h3 {
-    font-size: clamp(1rem, 1.1rem, 2.3rem);
-  }
-
-  .grade-container p {
-    font-size: clamp(1.2rem, 1.5rem, 2rem);
-  }
-
-  .grade-container h3,
-  .grade-container p {
-    text-align: center;
-    word-break: break-all
   }
 
   .author-bio p,
@@ -148,38 +120,6 @@
     flex-direction: column;
     width: 100%;
     max-width: 100%
-  }
-
-  .grade-container {
-    width: 100%;
-    max-width: 100vw;
-    margin: 1em auto;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(5vw, 1fr));
-    gap: .3125em;
-    background-color: #000
-  }
-
-  .grade-header,
-  .grade-item {
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
-
-  .grade-header {
-    height: auto;
-    width: 100%;
-    max-width: 100%;
-    padding: .3125em;
-    background-color: #fff
-  }
-
-  .grade-item {
-    padding: .3125em;
-    height: auto;
-    width: 100%;
-    background-color: #fff
   }
 
   .pagespeed-container {
@@ -218,9 +158,8 @@
     width: 100%;
     max-width: 100vw;
     height: auto;
-    min-height: auto;
     margin: 0 auto;
-    padding: 0.01em;
+    padding: 0.02em;
   }
 
   .grade-table img,
@@ -242,6 +181,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     aspect-ratio: inherit;
+    padding: 0.02em;
   }
 
   .gradie-img {
@@ -423,7 +363,6 @@
     max-width: 100vw;
     contain: paint;
     overflow: hidden;
-    min-height: auto;
     padding: 0.2em;
     margin: 0 auto;
   }
@@ -493,9 +432,6 @@
       padding: .2em;
     }
 
-    .grade-table {
-      padding: .5em;
-    }
 
     #project-title,
     .pagespeed-grade-title {
@@ -618,10 +554,6 @@
       width: 75%;
       min-height: 1rem;
     }
-
-    #projects {
-      min-height: auto;
-    }
   }
 
   @media (max-width: 680px) {
@@ -662,7 +594,6 @@
     #projects {
       width: 90%;
       height: auto;
-      min-height: auto;
       contain: layout;
       max-width: 90vw;
       padding: 0.1em;
