@@ -1,7 +1,7 @@
   #projects {
     margin: 0 auto;
-    width: 52%;
-    max-width: 52vw;
+    width: 54%;
+    max-width: 54vw;
     position: relative;
     padding: 10rem 0 10rem;
     margin: 0 auto;
@@ -59,10 +59,6 @@
     line-height: 1.34
   }
 
-  .grade-text {
-    min-height: 42.5rem;
-  }
-
   .grade-container {
     min-height: 35rem
   }
@@ -83,7 +79,7 @@
     min-height: clamp(30rem, 90vh, 58.125rem);
   }
 
-  .grade-text,
+  .grade-table,
   .grade-title,
   .article-global-container {
     display: flex;
@@ -94,7 +90,7 @@
     max-width: 100vw
   }
 
-  .grade-text .grade-title h3,
+  .grade-table .grade-title h3,
   .pagespeed-grade-title h3 {
     font-size: 1.5rem;
     height: auto;
@@ -103,7 +99,7 @@
     margin: 0 auto
   }
 
-  .grade-text {
+  .grade-table {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -208,6 +204,7 @@
     margin: 0 auto;
   }
 
+  .grade-table,
   .author-img-wrapper,
   .wireframe-img,
   .hubspot,
@@ -226,6 +223,7 @@
     padding: 0.01em;
   }
 
+  .grade-table img,
   .author-img-wrapper img,
   .wireframe-img img,
   .hubspot img,
@@ -261,6 +259,10 @@
 
   #pagespeed-img-4 {
     aspect-ratio: 625 / 518;
+  }
+
+  #grade-table {
+    aspect-ratio: 694 / 543;
   }
 
   .hubspot {
@@ -430,33 +432,20 @@
     display: none
   }
 
-  @media (max-width: 1200px) {
-    .canvas-skills-title h1 {
-      padding: 0;
-      font-size: clamp(1.2rem, 3rem, 34rem);
-    }
-
-    .canvas-skills-title h2 {
-      font-size: clamp(1.2rem, 2.5rem, 3rem);
-      padding: .2em 0;
-      height: auto;
-    }
-  }
-
   @media (max-width:1024px) {
     #projects {
-      margin: 0 auto;
       width: 75%;
       max-width: 75vw;
-      position: relative;
-      padding-bottom: 3rem;
-      margin: 0 auto;
       height: auto;
+      margin: 0 auto 2em;
+      aspect-ratio: auto;
+      padding: 5rem 0 5rem;
       contain: layout;
     }
 
     .resume-border {
       width: 93%;
+      max-width: 93vw;
       height: auto;
     }
 
@@ -466,8 +455,17 @@
       height: auto;
       min-height: 5rem
     }
+  }
 
-
+  @media (max-width: 940px) {
+    #projects {
+      width: 75%;
+      max-width: 75vw;
+      height: auto;
+      margin: 0 auto 2em;
+      aspect-ratio: auto;
+      contain: layout;
+    }
   }
 
   @media (max-width:768px) {
@@ -481,8 +479,6 @@
     #projects {
       width: 85%;
       max-width: 85vw;
-      height: auto;
-      contain: layout
     }
 
     .article-global-container {
@@ -497,7 +493,7 @@
       padding: .2em;
     }
 
-    .grade-text {
+    .grade-table {
       padding: .5em;
     }
 
@@ -628,8 +624,19 @@
     }
   }
 
+  @media (max-width: 680px) {
+    #projects {
+      width: 90%;
+      max-width: 90vw;
+    }
+  }
 
   @media (max-width:480px) {
+    #grade-table img {
+      width: 96%;
+      max-width: 96vw;
+    }
+
     .design {
       contain: layout paint;
       height: auto;
