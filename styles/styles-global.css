@@ -302,7 +302,7 @@ nav {
   box-sizing: border-box;
   min-height: 20rem;
   contain: layout;
-  aspect-ratio: 1492 / 333;
+  overflow: hidden;
   background-color: #000;
 }
 
@@ -310,14 +310,15 @@ nav {
   display: block;
   width: 100%;
   height: auto;
+  overflow: hidden;
+  background-color: #000;
+  min-height: 20rem;
   object-fit: cover;
-  box-sizing: border-box;
   margin: 0 auto;
   border: 1em solid #000;
   border-right: 0.5em solid #000;
-  flex: 1;
-  min-height: 20rem;
-  aspect-ratio: 609 / 333;
+  flex: 1 1 50%;
+  min-height: clamp(18rem, 40vw, 28rem);
 }
 
 img[fetchpriority=high] {
@@ -337,6 +338,8 @@ img[fetchpriority=high] {
   padding: 1rem;
   width: 100%;
   max-width: 100vw;
+  height: auto;
+  max-height: 100%;
   line-height: 1.4;
   min-height: 20rem;
 }
@@ -379,7 +382,8 @@ img[fetchpriority=high] {
   height: auto;
   display: block;
   object-fit: contain;
-  aspect-ratio: inherit
+  aspect-ratio: inherit;
+  background-color: #000;
 }
 
 .footer-links ul li {
@@ -441,8 +445,10 @@ footer {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  transition: transform .3s ease
+  transition: transform .3s ease;
+  background-color: #000;
 }
+
 
 .social-media ul li img:hover {
   transform: scale(1.1)
@@ -804,14 +810,18 @@ button.submit-button:hover {
     height: auto;
     width: 100%;
     max-width: 100vw;
-    aspect-ratio: 940 / 819;
     min-height: clamp(20rem, 45vh, 60rem);
+    margin: 0 auto;
   }
 
   .canvas-skills-grid img {
-    min-height: 24.875rem;
-    aspect-ratio: 940 / 508;
     border: 1em solid black;
+    min-height: 14rem;
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    background-color: #000;
   }
 
   img[fetchpriority=high] {
@@ -856,12 +866,7 @@ button.submit-button:hover {
   }
 
   .canvas-skills-grid {
-    aspect-ratio: 768 / 800;
-  }
-
-  .cavnas-skills-grid img {
-    min-height: 25rem;
-    border: 1em solid black;
+    min-height: clamp(15rem, 40vh, 50rem);
   }
 
   .canvas-skills-title {
@@ -969,30 +974,37 @@ button.submit-button:hover {
 }
 
 @media (max-width: 680px) {
-  .canvas-skills-grid {
-    aspect-ratio: 680 / 640;
-  }
 
   .canvas-skills-grid img {
     min-height: 22rem;
-    aspect-ratio: 680 / 381;
   }
 
   .canvas-skills-title {
     padding: 0;
-    height: auto;
+    height: 180px;
     min-height: 15rem;
-    max-height: 200px;
+    max-height: 180px;
+    width: 90%;
+    max-width: 90vw;
+    margin: 1em auto;
+
   }
 
   .canvas-skills-title h1 {
     padding: 0;
-    line-height: 1.2;
+    line-height: 1.5;
+    font-size: 3rem;
   }
 
   .canvas-skills-title h2 {
     padding: 0;
-    line-height: 1.1;
+    line-height: 1.3;
+    font-size: 2.5rem;
+  }
+
+  .project-title {
+    width: 80%;
+    max-width: 80vw;
   }
 
 }
@@ -1037,7 +1049,6 @@ button.submit-button:hover {
 
   .canvas-skills-grid {
     min-height: 38rem;
-    aspect-ratio: 480 / 670;
   }
 
   .canvas-skills-title {

@@ -149,6 +149,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     min-height: 632 / 275;
+    background-color: #000;
   }
 
   #grade-table-img1,
@@ -197,6 +198,7 @@
     aspect-ratio: inherit;
     padding: 0.02em;
     margin: 1.5em auto;
+    background-color: #000;
   }
 
   .gradie-img img {
@@ -245,11 +247,11 @@
   }
 
   #wireframe-img3 img {
-    aspect-ratio: 628 / 1450;
+    aspect-ratio: 628 / 1137;
   }
 
   #wireframe-img2 {
-    aspect-ratio: 628 / 1137;
+    aspect-ratio: 628 / 1057;
   }
 
   .cute-robot img {
@@ -346,28 +348,6 @@
     margin: 2em auto
   }
 
-  .site-hero-img {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    margin: 0 auto
-  }
-
-  .site-hero-img {
-    aspect-ratio: 1.95/1;
-  }
-
-  .site-hero-img img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    box-sizing: border-box;
-    margin: 0 auto;
-    aspect-ratio: inherit;
-    padding: .2em 1em
-  }
-
   .hidden {
     display: none
   }
@@ -440,25 +420,6 @@
       height: auto;
     }
 
-
-    .site-hero-img {
-      width: 100%;
-      max-width: 768px;
-      height: auto;
-      margin: 0 auto;
-      padding: 0
-    }
-
-    .site-hero-img img {
-      display: block;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      box-sizing: border-box;
-      margin: 0 auto;
-      aspect-ratio: inherit
-    }
-
     .education {
       margin-top: 10vh;
     }
@@ -510,7 +471,8 @@
 
     .author-bio-text,
     .cta-section img {
-      margin: 1em auto
+      margin: 1em auto;
+      background-color: #000;
     }
 
     .author-bio-text h2 {
