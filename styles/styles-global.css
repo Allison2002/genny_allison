@@ -610,7 +610,6 @@ footer {
 
 .resume-date h2 {
   font-size: clamp(1.5rem, 2.5vw, 3rem);
-  color: #fff;
   width: 100%;
   height: auto;
   color: #000;
