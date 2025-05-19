@@ -8,7 +8,14 @@
     overflow-x: hidden;
     contain: layout;
     background-color: #000;
-    box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1)
+    box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1);
+    min-height: 100vh;
+    contain: layout;
+  }
+
+  body:not(.fonts-loaded) #projects>* {
+    visibility: hidden;
+    position: absolute;
   }
 
   #the-design {

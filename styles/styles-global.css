@@ -307,6 +307,7 @@ nav {
   border-right: 0.5em solid #000;
   flex: 1;
   min-height: 20rem;
+  aspect-ratio: 585 / 320;
 }
 
 img[fetchpriority=high] {
@@ -782,8 +783,6 @@ button.submit-button:hover {
   .hamburger-nav-links.active {
     display: flex
   }
-
-
 }
 
 @media (max-width: 940px) {
@@ -794,11 +793,13 @@ button.submit-button:hover {
     width: 100%;
     max-width: 100vw;
     aspect-ratio: 940 / 819;
+    min-height: clamp(20rem, 45vh, 60rem);
   }
 
   .canvas-skills-grid img {
     min-height: 24.875rem;
     aspect-ratio: 940 / 508;
+    border: 1em solid black;
   }
 
   img[fetchpriority=high] {
@@ -836,6 +837,7 @@ button.submit-button:hover {
 
   .cavnas-skills-grid img {
     min-height: 25rem;
+    border: 1em solid black;
   }
 
   .canvas-skills-title {
@@ -1005,7 +1007,8 @@ button.submit-button:hover {
 
   .cavnas-skills-grid img {
     min-height: 100%;
-    aspect-ratio: 456 / 368;
+    aspect-ratio: 480 / 352;
+    border: 1em solid black;
   }
 
   .canvas-skills-grid {
