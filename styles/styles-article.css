@@ -1,5 +1,6 @@
   #projects {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: start;
     margin: 5em auto 5em;
@@ -18,6 +19,7 @@
   body:not(.fonts-loaded) #projects>* {
     visibility: hidden;
     position: absolute;
+    width: 100%;
   }
 
   #the-design {
