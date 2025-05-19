@@ -857,8 +857,6 @@ button.submit-button:hover {
 }
 
 @media (max-width:768px) {
-  .canvas-skills-grid {}
-
   .cavnas-skills-grid img {
     min-height: 25rem;
     aspect-ratio: 740 / 399;
@@ -969,8 +967,6 @@ button.submit-button:hover {
 }
 
 @media (max-width: 680px) {
-  .canvas-skills-grid {}
-
   .canvas-skills-grid img {
     min-height: 22rem;
     aspect-ratio: 680 / 381;
