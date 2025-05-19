@@ -104,6 +104,11 @@ label {
   letter-spacing: 0.02em;
 }
 
+body.fonts-loading .about-me {
+  opacity: 0;
+  pointer-events: none;
+}
+
 body.fonts-loaded {
   font-family: 'Segoe UI', system-ui, sans-serif;
 }
