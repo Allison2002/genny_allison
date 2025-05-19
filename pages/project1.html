@@ -111,38 +111,33 @@
         <div id="nav"></div>
       </section> 
       <div class="canvas-skills-grid">
-        <div class="canvas-skills-img">
-          <!-- Responsive image for screens ≥ 941px -->
-          <picture>
-            <!-- Desktop (≥ 941px) -->
-            <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/w_auto,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif"
-              type="image/avif"
-              media="(min-width: 941px)"
-              sizes="100vw"
-              fetchpriority="high"
-            />
-
-            <!-- Tablet (681px–940px) -->
-            <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/w_auto,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
-              type="image/avif"
-              media="(min-width: 681px)"
-            />
-
-            <!-- Mobile fallback -->
-            <img
-              src="/img/welcome_to_tech_trends_mobile.avif"
-              width="480"
-              height="284"
-              alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology visuals..."
-              style="object-fit: cover; width: 100%; height: auto; aspect-ratio: 480 / 284"
-              fetchpriority="high"
-              decoding="async"
-              loading="eager"
-            />
-          </picture>
-        </div>
+        <picture>
+          <source
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/w_auto,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif"
+            type="image/avif"
+            media="(min-width: 941px)"
+            sizes="(min-width: 941px) 40vw, 100vw"
+            fetchpriority="high"
+          />
+          <source
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/w_auto,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
+            type="image/avif"
+            media="(min-width: 681px) and (max-width: 940px)"
+            sizes="100vw"
+          />
+          <img
+            src="/img/welcome_to_tech_trends_mobile.avif"
+            srcset="/img/welcome_to_tech_trends_mobile.avif 564w"
+            sizes="100vw"
+            width="564"
+            height="334"
+            alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology visuals..."
+            style="object-fit: cover; width: 100%; height: auto; aspect-ratio: 564 / 334"
+            fetchpriority="high"
+            decoding="async"
+            loading="eager"
+          />
+        </picture>
         <div class="canvas-skills-title">
           <h1>a canvas of code:</h1>
           <h2>showcasing the craft</h2>
@@ -150,383 +145,225 @@
       </div>
     </header>
     <main class="about-me" id="projects">
-      <div class="black-container">
-        <div class="main-container">
-          <section id="description">
-            <div class="article-global-container">
+      <section id="description">
+        <div class="border-white" id="resume-border">
+          <div class="resume-date" id="project-title">
+            <h2>project 1 | the website</h2>
+            <h2>tech trends</h2>
+          </div>
+        </div>
+        <article class="resume-border" id="section1">  
+          <div class="resume-summary" id="resume-part1">
+            <h2>
+              AI Content Creator & SEO Specialist Portfolio Project
+            </h2>
+            <p>
+              Tech Trends Blog merges creative content with cutting-edge web development. Using powerful tools like <strong>ChatGPT</strong>, <strong>Midjourney</strong>, and <strong>Relume.io</strong>, I’ve built a platform that delivers the latest in technology trends while ensuring a fast, user-friendly experience, optimized for SEO and performance across all devices.
+            </p>
+            <p>
+              The blog’s structure blends modern web development techniques with AI-driven content creation, optimizing for both <strong>SEO</strong> and <strong>performance</strong>. This approach provides seamless content delivery and <strong>user-centric designs</strong>, while incorporating innovative visuals and interactive elements enhanced by AI.
+            </p>
+            <p>
+              From concept to execution, AI tools like <strong>ChatGPT</strong>, <strong>Midjourney</strong>, <strong>Relume.io</strong>, and <strong>Uizard</strong> played a pivotal role in shaping both the design and content. Articles were generated with the precision of AI assistance, while custom visuals, inspired by <strong>Photoshop</strong> and <strong>Canva</strong>, add a bold, professional touch. The layout was meticulously crafted using <strong>Figma</strong> and <strong>Relume.io</strong>, ensuring a focus on user experience and <strong>accessibility</strong>.
+            </p>
+            <p>
+              Hosted on <strong>Netlify</strong>, Tech Trends Blog stands as a testament to the integration of <strong>AI content creation</strong> and modern <strong>web development</strong>, blending creativity, functionality, and technology to engage and inform technology enthusiasts.
+            </p>
+          </div>
+          <div class="project-links">
+            <div class="takeme-text">
+              <h3>take me to the</h3>
+            </div>
+            <div class="button-grid">
+              <button class="click-me">
+                <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">design decoded</a>
+              </button>
+              <button class="click-me">  
+                <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
+              </button>
+            </div> 
+          </div>
+        </article> 
+      </section>
+      <section id="the-grade">
+        <div class="border-white" id="resume-border">
+          <div class="resume-date" id="project-title">
+            <h2>project 1 | the grade</h2>
+          </div>
+        </div>
+        <div class="resume-border">           
+          <div class="border-white">
+            <div class="border-black">
+              <div class="border-black">
+                <div class="grade-img">
+                  <picture>
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1743469949/seo-grade_mmztmf.avif"
+                      type="image/avif"
+                      media="(min-width: 1200px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1743469949/seo-grade_mmztmf.avif"
+                      type="image/avif"
+                      media="(min-width: 481px) and (max-width: 1199px)"
+                      sizes="100vw"
+                    />
+                    <img 
+                      src="/img/seo-grade-mobile.avif"
+                      alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology visuals and the blog's name, highlighting AI-driven content creation and insights on emerging technology trends"
+                      alt="Tech Trends Blog SEO grade result showing performance and optimization"
+                      width="350"
+                      height="302"
+                      style="aspect-ratio: 1.16 / 1; object-fit: cover; width: 93%; height: auto; display: block;"
+                      loading="lazy"
+                      fetchpriority="auto"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <article class="resume-border" id="section2">  
+          <div class="resume-summary" id="resume-part2"> 
+            <p>
+              These results highlight the powerful synergy between AI-driven solutions and a developer’s vision, demonstrating how technology can enhance accessibility, functionality, and performance. They reflect my dedication to building websites that are not only fast and accessible but also strategically designed to meet user needs and boost engagement.
+            </p>
+            <p>
+              I see this milestone not as the end of the journey, but as a stepping stone toward mastering web development and SEO strategies. Every project is an opportunity to refine my skills and continue delivering impactful solutions for clients and users alike.
+            </p>
+            <div class="list-items">
+              <ul>
+                <li>Optimizing image sizes to balance speed and quality.</li>
+                <li>Refining code to eliminate inefficiencies and streamline functionality.</li>
+                <li>Structuring content effectively to improve readability and SEO performance.</li>
+                <li>Implementing techniques to enhance load times, reduce blocking resources, and perfect Core Web Vitals.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-links">
+            <div class="takeme-text">
+              <h3>take me to the</h3>
+            </div>
+            <div class="button-grid">
+              <div class="click-me">
+                <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">design decoded</a>
+              </div>
+              <div class="click-me">  
+                <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
+              </div>
+            </div> 
+          </div>
+        </article> 
+        <div class="border-white" id="resume-border">
+          <div class="resume-date" id="project-title">
+            <h2>the grade: desktop</h2>
+            <h2><i>page speed insights</i></h2>
+          </div>
+        </div>
+        <div class="resume-border">
+          <div class="border-white">
+            <div class="border-black">
+              <div class="border-black">
+                <div class="grade-table" id="grade-table">
+                  <picture>
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747614027/desktop-grades_kretmv.avif"
+                      type="image/avif"
+                      media="(min-width: 1200px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747614880/desktop-grade-tablet_koy6mo.avif"
+                      type="image/avif"
+                      media="(min-width: 481px) and (max-width: 1199px)"
+                      sizes="100vw"
+                    />
+                    <img 
+                      src="/img/desktop-grade-mobile.avif"
+                      alt="Tech Trends Blog SEO grade result showing performance before optimization"
+                      width="409"
+                      height="344"
+                      style="aspect-ratio: 409 / 344; height: auto; object-fit: cover; display: block; width: 96%; "
+                      loading="lazy"
+                    fetchpriority="auto"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="resume-border">
+          <div class="grade-text">
+            <div class="pagespeed-container">
               <div class="border-white" id="resume-border">
                 <div class="resume-date" id="project-title">
-                  <h2>project 1 | the website</h2>
-                  <h2>tech trends</h2>
-                </div>
-              </div>
-            </div>
-            <article class="resume-border" id="section1">  
-              <div class="resume-summary" id="resume-part1">
-                <h2>
-                  AI Content Creator & SEO Specialist Portfolio Project
-                </h2>
-                <p>
-                  Tech Trends Blog merges creative content with cutting-edge web development. Using powerful tools like <strong>ChatGPT</strong>, <strong>Midjourney</strong>, and <strong>Relume.io</strong>, I’ve built a platform that delivers the latest in technology trends while ensuring a fast, user-friendly experience, optimized for SEO and performance across all devices.
-                </p>
-                <p>
-                  The blog’s structure blends modern web development techniques with AI-driven content creation, optimizing for both <strong>SEO</strong> and <strong>performance</strong>. This approach provides seamless content delivery and <strong>user-centric designs</strong>, while incorporating innovative visuals and interactive elements enhanced by AI.
-                </p>
-                <p>
-                  From concept to execution, AI tools like <strong>ChatGPT</strong>, <strong>Midjourney</strong>, <strong>Relume.io</strong>, and <strong>Uizard</strong> played a pivotal role in shaping both the design and content. Articles were generated with the precision of AI assistance, while custom visuals, inspired by <strong>Photoshop</strong> and <strong>Canva</strong>, add a bold, professional touch. The layout was meticulously crafted using <strong>Figma</strong> and <strong>Relume.io</strong>, ensuring a focus on user experience and <strong>accessibility</strong>.
-                </p>
-                <p>
-                  Hosted on <strong>Netlify</strong>, Tech Trends Blog stands as a testament to the integration of <strong>AI content creation</strong> and modern <strong>web development</strong>, blending creativity, functionality, and technology to engage and inform technology enthusiasts.
-                </p>
-              </div>
-              <div class="project-links">
-                <div class="takeme-text">
-                  <h3>take me to the</h3>
-                </div>
-                <div class="button-grid">
-                  <div class="click-me">
-                    <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">design decoded</a>
-                  </div>
-                  <div class="click-me">  
-                    <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                  </div>
-                </div> 
-              </div>
-            </article> 
-          </section>
-          <section id="the-grade">
-            <div class="article-global-container">
-              <div class="border-white" id="resume-border">
-                <div class="resume-date" id="project-title">
-                  <h2>project 1 | the grade</h2>
-                </div>
-              </div>
-            </div>
-            <div class="resume-border">           
-              <div class="border-white">
-                <div class="border-black">
-                  <div class="border-black">
-                    <div class="grade-img">
-                      <picture>
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1743469949/seo-grade_mmztmf.avif"
-                          type="image/avif"
-                          media="(min-width: 1200px)"
-                          sizes="100vw"
-                        />
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1743469949/seo-grade_mmztmf.avif"
-                          type="image/avif"
-                          media="(min-width: 481px) and (max-width: 1199px)"
-                          sizes="100vw"
-                        />
-                        <img 
-                          src="/img/seo-grade-mobile.avif"
-                          alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology visuals and the blog's name, highlighting AI-driven content creation and insights on emerging technology trends"
-                          alt="Tech Trends Blog SEO grade result showing performance and optimization"
-                          width="350"
-                          height="302"
-                          style="aspect-ratio: 1.16 / 1; object-fit: cover; width: 93%; height: auto; display: block;"
-                          loading="lazy"
-                          fetchpriority="auto"
-                          decoding="async"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <article class="resume-border" id="section2">  
-              <div class="resume-summary" id="resume-part2"> 
-                <p>
-                  These results highlight the powerful synergy between AI-driven solutions and a developer’s vision, demonstrating how technology can enhance accessibility, functionality, and performance. They reflect my dedication to building websites that are not only fast and accessible but also strategically designed to meet user needs and boost engagement.
-                </p>
-                <p>
-                  I see this milestone not as the end of the journey, but as a stepping stone toward mastering web development and SEO strategies. Every project is an opportunity to refine my skills and continue delivering impactful solutions for clients and users alike.
-                </p>
-                <div class="list-items">
-                  <ul>
-                    <li>Optimizing image sizes to balance speed and quality.</li>
-                    <li>Refining code to eliminate inefficiencies and streamline functionality.</li>
-                    <li>Structuring content effectively to improve readability and SEO performance.</li>
-                    <li>Implementing techniques to enhance load times, reduce blocking resources, and perfect Core Web Vitals.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project-links">
-                <div class="takeme-text">
-                  <h3>take me to the</h3>
-                </div>
-                <div class="button-grid">
-                  <div class="click-me">
-                    <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">design decoded</a>
-                  </div>
-                  <div class="click-me">  
-                    <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                  </div>
-                </div> 
-              </div>
-            </article> 
-            <div class="article-global-container">
-              <div class="border-white" id="resume-border">
-                <div class="resume-date" id="project-title">
-                  <h2>the grade: desktop</h2>
-                  <h2><i>page speed insights</i></h2>
-                </div>
-              </div>
-            </div>
-            <div class="resume-border">
-              <div class="border-white">
-                <div class="border-black">
-                  <div class="border-black">
-                    <div class="grade-table" id="grade-table">
-                      <picture>
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747614027/desktop-grades_kretmv.avif"
-                          type="image/avif"
-                          media="(min-width: 1200px)"
-                          sizes="100vw"
-                        />
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747614880/desktop-grade-tablet_koy6mo.avif"
-                          type="image/avif"
-                          media="(min-width: 481px) and (max-width: 1199px)"
-                          sizes="100vw"
-                        />
-                        <img 
-                          src="/img/desktop-grade-mobile.avif"
-                          alt="Tech Trends Blog SEO grade result showing performance before optimization"
-                          width="409"
-                          height="344"
-                          style="aspect-ratio: 409 / 344; height: auto; object-fit: cover; display: block; width: 96%; "
-                          loading="lazy"
-                        fetchpriority="auto"
-                          decoding="async"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="resume-border">
-              <div class="grade-text">
-                <div class="pagespeed-container">
-                  <div class="pagespeed-grade-title">
-                    <h3>where we started</h3>
-                  </div>
-                  <div class="pagespeed-grade-img">
-                    <div class="border-white">
-                      <div class="border-black" id="pagespeed-img-1">
-                        <picture>
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-start-desktop_cbbbqf.avif"
-                            type="image/avif"
-                            media="(min-width: 1200px)"
-                            sizes="100vw"
-                          />
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-start-desktop_cbbbqf.avif"
-                            type="image/avif"
-                            media="(min-width: 481px) and (max-width: 1199px)"
-                            sizes="100vw"
-                          />
-                          <img 
-                            src="/img/tech-trends-start-desktop-mobile.avif"
-                            alt="Tech Trends Blog SEO grade result showing performance before optimization"
-                            width="342"
-                            height="362"
-                            style="aspect-ratio: 342 / 362; width: 93%; height: auto; object-fit: cover; display: block; "
-                            loading="lazy"
-                          fetchpriority="auto"
-                            decoding="async"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pagespeed-grade-title">
-                    <h3>where we finished</h3>
-                  </div>
-                  <div class="pagespeed-grade-img">
-                    <div class="border-white">
-                      <div class="border-black" id="pagespeed-img-2">
-                        <picture>
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-finish-desktop_dctwrz.avif"
-                            type="image/avif"
-                            media="(min-width: 1200px)"
-                            sizes="100vw"
-                          />
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-finish-desktop_dctwrz.avif"
-                            type="image/avif"
-                            media="(min-width: 481px) and (max-width: 1199px)"
-                            sizes="100vw"
-                          />
-                          <img 
-                            src="/img/tech-trends-finish-desktop-mobile.avif"
-                            alt="Tech Trends Blog SEO grade result showing performance after optimization"
-                            width="342"
-                            height="362"
-                            style="aspect-ratio: 342 / 362; width: 93%; height: auto; object-fit: cover; display: block;"
-                            loading="lazy"
-                          fetchpriority="auto"
-                            decoding="async"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>  
-            </div>
-            <div class="article-global-container">
-              <div class="border-white" id="resume-border">
-                <div class="resume-date" id="project-title">
-                  <h2>the grade: mobile</h2>
-                  <h2>page speed insights</h2>
-                </div>
-              </div>
-            </div>
-            <div class="resume-border">
-              <div class="border-white">
-                <div class="border-black">
-                  <div class="border-black">
-                    <div class="grade-table" id="grade-table">
-                      <picture>
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747614027/mobile-grades_upcfff.avif"
-                          type="image/avif"
-                          media="(min-width: 1200px)"
-                          sizes="100vw"
-                        />
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747614880/mobile-grade-tablet_xbb08y.avif"
-                          type="image/avif"
-                          media="(min-width: 481px) and (max-width: 1199px)"
-                          sizes="100vw"
-                        />
-                        <img 
-                          src="/img/mobile-grade-mobile.avif"
-                          alt="Tech Trends Blog SEO grade result showing performance before optimization"
-                          width="405"
-                          height="344"
-                          style="aspect-ratio: 409 / 344; width: 96%; height: auto; object-fit: cover; display: block; "
-                          loading="lazy"
-                        fetchpriority="auto"
-                          decoding="async"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="resume-border">
-              <div class="pagespeed-container">
-                <div class="pagespeed-grade-title">
                   <h3>where we started</h3>
                 </div>
-                <div class="pagespeed-grade-img">
-                  <div class="border-white">
-                    <div class="border-black" id="pagespeed-img-3">
-                      <picture>
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-start-mobile_beu2ct.avif"
-                          type="image/avif"
-                          media="(min-width: 1200px)"
-                          sizes="100vw"
-                        />
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-start-mobile_beu2ct.avif"
-                          type="image/avif"
-                          media="(min-width: 481px) and (max-width: 1199px)"
-                          sizes="100vw"
-                        />
-                        <img 
-                          src="/img/tech-trends-start-mobile-mobile.avif"
-                          alt="Tech Trends Blog SEO grade result showing performance before optimization"
-                          width="356"
-                          height="362"
-                          loading="lazy"
-                          fetchpriority="auto"
-                          style="object-fit: cover; aspect-ratio: 356 / 362; width: 93%; height: auto;"
-                          decoding="async"
-                        />
-                      </picture>
-                    </div>
+              </div>
+              <div class="pagespeed-grade-img">
+                <div class="border-white">
+                  <div class="border-black" id="pagespeed-img-1">
+                    <picture>
+                      <source
+                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-start-desktop_cbbbqf.avif"
+                        type="image/avif"
+                        media="(min-width: 1200px)"
+                        sizes="100vw"
+                      />
+                      <source
+                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-start-desktop_cbbbqf.avif"
+                        type="image/avif"
+                        media="(min-width: 481px) and (max-width: 1199px)"
+                        sizes="100vw"
+                      />
+                      <img 
+                        src="/img/tech-trends-start-desktop-mobile.avif"
+                        alt="Tech Trends Blog SEO grade result showing performance before optimization"
+                        width="342"
+                        height="362"
+                        style="aspect-ratio: 342 / 362; width: 93%; height: auto; object-fit: cover; display: block; "
+                        loading="lazy"
+                      fetchpriority="auto"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                 </div>
-                <div class="pagespeed-grade-title">
+              </div>
+              <div class="border-white" id="resume-border">
+                <div class="resume-date" id="project-title">
                   <h3>where we finished</h3>
                 </div>
-                <div class="pagespeed-grade-img">
-                  <div class="border-white">
-                    <div class="border-black" id="pagespeed-img-4">
-                      <picture>
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916682/tech-trends-finish-mobile_ca3hzy.avif"
-                          type="image/avif"
-                          media="(min-width: 1200px)"
-                          sizes="100vw"
-                        />
-                        <source
-                          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916682/tech-trends-finish-mobile_ca3hzy.avif"
-                          type="image/avif"
-                          media="(min-width: 481px) and (max-width: 1199px)"
-                          sizes="100vw"
-                        />
-                        <img 
-                          src="/img/tech-trends-finish-mobile-mobile.avif"
-                          alt="Tech Trends Blog SEO grade result showing performance before optimization"
-                          width="356"
-                          height="378"
-                          style="aspect-ratio: 356 / 378; width: 93%; height: auto; object-fit: cover; display: block;"
-                          loading="lazy"
-                          fetchpriority="auto"
-                          decoding="async"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
-            <div class="resume-border" >
-              <div class="article-global-container">
-                <div class="border-white" id="resume-border">
-                  <div class="resume-date" id="project-title">
-                    <h2>the grade:</h2>
-                    <h2>hubspot</h2>
-                  </div>
-                </div>
-              </div>  
-              <div class="hubspot">
+              <div class="pagespeed-grade-img">
                 <div class="border-white">
-                  <div class="border-black">
+                  <div class="border-black" id="pagespeed-img-2">
                     <picture>
                       <source
-                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1732986926/hubspot-grade_hnuolf.avif"
+                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-finish-desktop_dctwrz.avif"
                         type="image/avif"
                         media="(min-width: 1200px)"
                         sizes="100vw"
                       />
                       <source
-                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1732986926/hubspot-grade_hnuolf.avif"
+                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-finish-desktop_dctwrz.avif"
                         type="image/avif"
                         media="(min-width: 481px) and (max-width: 1199px)"
                         sizes="100vw"
                       />
                       <img 
-                        src="/img/hubspot-grade-mobile.avif"
-                        alt="HubSpot grade showing SEO performance score for Tech Trends Blog"
-                        width="338"
-                        height="482"
+                        src="/img/tech-trends-finish-desktop-mobile.avif"
+                        alt="Tech Trends Blog SEO grade result showing performance after optimization"
+                        width="342"
+                        height="362"
+                        style="aspect-ratio: 342 / 362; width: 93%; height: auto; object-fit: cover; display: block;"
                         loading="lazy"
-                          fetchpriority="auto"
-                        style="object-fit: cover; aspect-ratio: 338 / 482; width: 93%; height: auto;"
+                      fetchpriority="auto"
                         decoding="async"
                       />
                     </picture>
@@ -534,507 +371,619 @@
                 </div>
               </div>
             </div>
-          </section>
-          <section id="cta-section">
-            <article class="resume-border" id="section4" >
-              <div class="resume-border" >
-                <div class="border-white">
-                  <div class="border-black">
-                    <div class="author-bio">
-                      <div class="author-img-wrapper">
-                        <picture> 
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
-                            type="image/avif"
-                            media="(min-width: 1200px)"
-                            sizes="100vw"
-                          />
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
-                            type="image/avif"
-                            media="(min-width: 481px) and (max-width: 1199px)"
-                            sizes="100vw"
-                          />
-                          <img 
-                            src="/img/allisonstock-black-logo-mobile.avif"
-                            alt="Photo of Genny Allison, the web developer and AI content specialist"
-                            width="376"
-                            height="164"
-                            loading="lazy"
-                            fetchpriority="auto"
-                            style="object-fit: cover;aspect-ratio: 376 / 164; width: 100%; height: auto;"
-                            decoding="async" 
-                          />
-                        </picture> 
-                      </div>
-                      
-                      <div class="author-bio-text">
-                        <h2>Partner with an AI Content Specialist & Web Developer</h2>
-                        <p><i>Looking for someone who can combine creativity,<br> cutting-edge AI tools, and technical expertise to build<br> stunning web platforms and engaging content?<br> You've come to the right place.</i></p>
-                        <p>At <strong>Allison Stock Inc.</strong>, I specialize in AI-powered content creation and web development using tools like ChatGPT, Midjourney, Figma, and Uizard. My portfolio showcases my ability to integrate AI solutions seamlessly into modern web design, delivering high-performing, SEO-optimized websites and content tailored to today's digital demands.</p>
-                        <p>
-                          <a href="https://www.linkedin.com/in/genny-allison/" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            aria-label="Visit Genny Allison's LinkedIn on a new tab">Connect with me on LinkedIn
-                          </a>, 
-                          <a href="https://gennyallison.netlify.app"
-                            target="_blank" 
-                            rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"
-                            >explore my portfolio</a>, or visit my <a href="/pages/contact.html">contact page</a> to see how I can help bring your vision to life.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </section>
-          <section id="the-design">
-            <div class="article-global-container" id="design">
-              <div class="border-white" id="resume-border">
-                <div class="resume-date" id="project-title">
-                  <h2>project 1 | the design</h2>
-                  <h2>inspiration meets innovation</h2>
+          </div>  
+        </div>
+        <div class="border-white" id="resume-border">
+          <div class="resume-date" id="project-title">
+            <h2>the grade: mobile</h2>
+            <h2>page speed insights</h2>
+          </div>
+        </div>
+        <div class="resume-border">
+          <div class="border-white">
+            <div class="border-black">
+              <div class="border-black">
+                <div class="grade-table" id="grade-table">
+                  <picture>
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747614027/mobile-grades_upcfff.avif"
+                      type="image/avif"
+                      media="(min-width: 1200px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747614880/mobile-grade-tablet_xbb08y.avif"
+                      type="image/avif"
+                      media="(min-width: 481px) and (max-width: 1199px)"
+                      sizes="100vw"
+                    />
+                    <img 
+                      src="/img/mobile-grade-mobile.avif"
+                      alt="Tech Trends Blog SEO grade result showing performance before optimization"
+                      width="405"
+                      height="344"
+                      style="aspect-ratio: 409 / 344; width: 96%; height: auto; object-fit: cover; display: block; "
+                      loading="lazy"
+                    fetchpriority="auto"
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
-            <div class="resume-border">
-              <div class="mood-board" id="moodboard-img">
-                <div class="border-white">
-                  <div class="border-black">
-                    <picture>
-                      <source
-                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742918096/website-design-tech-trends_xbwosg.avif"
-                        type="image/avif"
-                        media="(min-width: 1200px)"
-                        sizes="100vw"
-                      />
-                      <source
-                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742918096/website-design-tech-trends_xbwosg.avif"
-                        type="image/avif"
-                        media="(min-width: 481px) and (max-width: 1199px)"
-                        sizes="100vw"
-                      />
-                      <img 
-                        src="/img/website-design-tech-trends-mobile.avif"
-                        alt="Website design concept for Tech Trends Blog, featuring a blend of modern and futuristic design elements that reflect the blog's focus on cutting-edge technology."
-                        width="350"
-                        height="293"
-                        loading="lazy"
-                        fetchpriority="auto"
-                        style="object-fit: cover;aspect-ratio: 350 / 293; width: 93%; height: auto;"
-                        decoding="async"     
-                        />
-                    </picture>
-                  </div>
+          </div>
+        </div>
+        <div class="resume-border">
+          <div class="pagespeed-container">
+            <div class="border-white" id="resume-border">
+                <div class="resume-date" id="project-title">
+                  <h3>where we started</h3>
                 </div>
               </div>
-              <div class="project-links">
-                <div class="takeme-text">
-                  <h3>take me to the</h3>
+            <div class="pagespeed-grade-img">
+              <div class="border-white">
+                <div class="border-black" id="pagespeed-img-3">
+                  <picture>
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-start-mobile_beu2ct.avif"
+                      type="image/avif"
+                      media="(min-width: 1200px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916681/tech-trends-start-mobile_beu2ct.avif"
+                      type="image/avif"
+                      media="(min-width: 481px) and (max-width: 1199px)"
+                      sizes="100vw"
+                    />
+                    <img 
+                      src="/img/tech-trends-start-mobile-mobile.avif"
+                      alt="Tech Trends Blog SEO grade result showing performance before optimization"
+                      width="356"
+                      height="362"
+                      loading="lazy"
+                      fetchpriority="auto"
+                      style="object-fit: cover; aspect-ratio: 356 / 362; width: 93%; height: auto;"
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
-                <div class="button-grid">
-                  <div class="click-me">
-                    <a href="https://tech-trends-blog.netlify.app" target="_blank"
-                      rel="noopener noreferrer">design decoded</a>
-                  </div>
-                  <div class="click-me">  
-                    <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                  </div>
-                </div> 
+              </div>
+            </div>
+            <div class="border-white" id="grade-titles">
+              <div class="resume-date" id="project-title">
+                <h3>where we finished</h3>
+              </div>
+            </div>
+            <div class="pagespeed-grade-img">
+              <div class="border-white"id="pagespeed-img-4">
+                <picture>
+                  <source
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916682/tech-trends-finish-mobile_ca3hzy.avif"
+                    type="image/avif"
+                    media="(min-width: 1200px)"
+                    sizes="100vw"
+                  />
+                  <source
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742916682/tech-trends-finish-mobile_ca3hzy.avif"
+                    type="image/avif"
+                    media="(min-width: 481px) and (max-width: 1199px)"
+                    sizes="100vw"
+                  />
+                  <img 
+                    src="/img/tech-trends-finish-mobile-mobile.avif"
+                    alt="Tech Trends Blog SEO grade result showing performance before optimization"
+                    width="356"
+                    height="378"
+                    style="aspect-ratio: 356 / 378; width: 93%; height: auto; object-fit: cover; display: block;"
+                    loading="lazy"
+                    fetchpriority="auto"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="resume-border" >
+          <div class="border-white" id="resume-border">
+            <div class="resume-date" id="project-title">
+              <h2>the grade:</h2>
+              <h2>hubspot</h2>
+            </div>
+          </div>
+          <div class="hubspot">
+            <div class="border-white">
+              <picture>
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1732986926/hubspot-grade_hnuolf.avif"
+                  type="image/avif"
+                  media="(min-width: 1200px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1732986926/hubspot-grade_hnuolf.avif"
+                  type="image/avif"
+                  media="(min-width: 481px) and (max-width: 1199px)"
+                  sizes="100vw"
+                />
+                <img 
+                  src="/img/hubspot-grade-mobile.avif"
+                  alt="HubSpot grade showing SEO performance score for Tech Trends Blog"
+                  width="338"
+                  height="482"
+                  loading="lazy"
+                    fetchpriority="auto"
+                  style="object-fit: cover; aspect-ratio: 338 / 482; width: 93%; height: auto;"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cta-section" id="section4">
+        <div class="resume-border" >
+          <div class="border-white">
+            <div class="author-bio">
+              <picture> 
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
+                  type="image/avif"
+                  media="(min-width: 1200px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
+                  type="image/avif"
+                  media="(min-width: 481px) and (max-width: 1199px)"
+                  sizes="100vw"
+                />
+                <img 
+                  src="/img/allisonstock-black-logo-mobile.avif"
+                  alt="Photo of Genny Allison, the web developer and AI content specialist"
+                  width="376"
+                  height="164"
+                  loading="lazy"
+                  fetchpriority="auto"
+                  style="object-fit: cover;aspect-ratio: 376 / 164; width: 100%; height: auto;"
+                  decoding="async" 
+                />
+              </picture> 
+            </div>
+          </div>
+          <div class="author-bio-text">
+            <h2>Partner with an AI Content Specialist & Web Developer</h2>
+            <p><i>Looking for someone who can combine creativity,<br> cutting-edge AI tools, and technical expertise to build<br> stunning web platforms and engaging content?<br> You've come to the right place.</i></p>
+            <p>At <strong>Allison Stock Inc.</strong>, I specialize in AI-powered content creation and web development using tools like ChatGPT, Midjourney, Figma, and Uizard. My portfolio showcases my ability to integrate AI solutions seamlessly into modern web design, delivering high-performing, SEO-optimized websites and content tailored to today's digital demands.</p>
+            <p>
+              <a href="https://www.linkedin.com/in/genny-allison/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Visit Genny Allison's LinkedIn on a new tab">Connect with me on LinkedIn
+              </a>, 
+              <a href="https://gennyallison.netlify.app"
+                target="_blank" 
+                rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"
+                >explore my portfolio</a>, or visit my <a href="/pages/contact.html">contact page</a> to see how I can help bring your vision to life.</p>
+          </div>
+        </div>
+      </section>
+      <section id="the-design">
+        <div class="border-white" id="resume-border">
+          <div class="resume-date" id="project-title">
+            <h2>project 1 | the design</h2>
+            <h2>inspiration meets innovation</h2>
+          </div>
+        </div>
+        <div class="resume-border">
+          <div class="mood-board" id="moodboard-img">
+            <div class="border-white">
+              <picture>
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742918096/website-design-tech-trends_xbwosg.avif"
+                  type="image/avif"
+                  media="(min-width: 1200px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742918096/website-design-tech-trends_xbwosg.avif"
+                  type="image/avif"
+                  media="(min-width: 481px) and (max-width: 1199px)"
+                  sizes="100vw"
+                />
+                <img 
+                  src="/img/website-design-tech-trends-mobile.avif"
+                  alt="Website design concept for Tech Trends Blog, featuring a blend of modern and futuristic design elements that reflect the blog's focus on cutting-edge technology."
+                  width="350"
+                  height="293"
+                  loading="lazy"
+                  fetchpriority="auto"
+                  style="object-fit: cover;aspect-ratio: 350 / 293; width: 93%; height: auto;"
+                  decoding="async"     
+                  />
+              </picture>
+            </div>
+          </div>
+          <div class="project-links">
+            <div class="takeme-text">
+              <h3>take me to the</h3>
+            </div>
+            <div class="button-grid">
+              <div class="click-me">
+                <a href="https://tech-trends-blog.netlify.app" target="_blank"
+                  rel="noopener noreferrer">design decoded</a>
+              </div>
+              <div class="click-me">  
+                <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
+              </div>
+            </div> 
+          </div>
+        </div>  
+        <div class="border-white" id="resume-border">
+          <div class="resume-date" id="project-title">
+            <h2>project 1 | the design</h2>
+            <h2>past meets future</h2>
+          </div>
+        </div>
+        <div class="resume-border">             
+          <div class="past-meets-future" id="past-meets-future-img">
+            <div class="border-white">
+              <picture>
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747144506/past-meets-future_pmafy7.avif"
+                  type="image/avif"
+                  media="(min-width: 1200px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747144506/past-meets-future_pmafy7.avif"
+                  type="image/avif"
+                  media="(min-width: 481px) and (max-width: 1199px)"
+                  sizes="100vw"
+                />
+                <img 
+                  src="/img/past-meets-future-mobile.avif"
+                  alt="A design concept for Tech Trends Blog, merging past and future elements with modern and futuristic visuals."
+                  width="350"
+                  height="409"
+                  loading="lazy"
+                  fetchpriority="auto"
+                  style="object-fit: cover;aspect-ratio: 350 / 409; width: 93%; height: auto;"
+                  decoding="async" 
+                  />
+              </picture>
+            </div>
+          </div>
+          <div class="project-links">
+            <div class="takeme-text">
+              <h3>take me to the</h3>
+            </div>
+            <div class="button-grid">
+              <div class="click-me">
+                <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">design decoded</a>
+              </div>
+              <div class="click-me">  
+                <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="border-white" id="wireframe">
+          <div class="resume-date" id="project-title">
+            <h2>project 1 | the frame</h2>
+          </div>
+        </div>
+        <div class="resume-border"> 
+          <div class="wireframe-grid">
+            <div class="wireframe-img" id="wireframe-img-1">
+              <div class="border-white">
+                <picture>
+                  <source
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742921918/homepage-wireframe-tech-trends_s2lkfs.avif"
+                    type="image/avif"
+                    media="(min-width: 1200px)"
+                    sizes="100vw"
+                  />
+                  <source
+                    srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742921918/homepage-wireframe-tech-trends_s2lkfs.avif"
+                    type="image/avif"
+                    media="(min-width: 481px) and (max-width: 1199px)"
+                    sizes="100vw"
+                  />
+                  <img 
+                    src="/img/homepage-wireframe-tech-trends-mobile.avif"
+                    alt="Wireframe of the homepage layout for Tech Trends Blog"
+                    object-fit="cover"
+                    width="337"
+                    height="1146"
+                    loading="lazy"
+                    fetchpriority="auto"
+                    style="object-fit: cover;aspect-ratio: 337 / 1146; width: 93%; height: auto;"
+                    decoding="async" 
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="wireframe-img" id="wireframe-img-2">
+              <div class="border-white">
+                <div class="border-black">
+                  <picture>
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747145733/category-wireframe-tech-trends_ughnnv.avif"
+                      type="image/avif"
+                      media="(min-width: 1200px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747145733/category-wireframe-tech-trends_ughnnv.avif"
+                      type="image/avif"
+                      media="(min-width: 481px) and (max-width: 1199px)"
+                      sizes="100vw"
+                    />
+                    <img 
+                      src="/img/category-wireframe-tech-trends-mobile.avif"
+                      alt="Wireframe of the homepage layout for Tech Trends Blog"
+                      object-fit="cover"
+                      width="337"
+                      height="609"
+                      loading="lazy"
+                      fetchpriority="auto"
+                      style="object-fit: cover;aspect-ratio: 337 / 609; width: 93%; height: auto;"
+                      decoding="sync"   
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="wireframe-img" id="wireframe-img-3">
+              <div class="border-white">
+                <div class="border-black">
+                  <picture>
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742921918/article-wireframe-tech-trends_mz3vf6.avif"
+                      type="image/avif"
+                      media="(min-width: 1200px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742921918/article-wireframe-tech-trends_mz3vf6.avif"
+                      type="image/avif"
+                      media="(min-width: 481px) and (max-width: 1199px)"
+                      sizes="100vw"
+                    />
+                    <img 
+                      src="/img/article-wireframe-tech-trends-mobile.avif"
+                      alt="Wireframe of the article page layout for Tech Trends Blog"
+                      object-fit="cover"
+                      width="337"
+                      height="1146"
+                      loading="lazy"
+                      fetchpriority="auto"
+                      style="object-fit: cover;aspect-ratio: 337 / 1146;width: 93%; height: auto;"
+                      decoding="async" 
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-links">
+            <div class="takeme-text">
+              <h3>take me to the</h3>
+            </div>
+            <div class="button-grid">
+              <div class="click-me">
+                <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">design decoded</a>
+              </div>
+              <div class="click-me">  
+                <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="border-white" id="casestudy">
+          <div class="resume-date" id="project-title">
+            <h2>Project 3 | The Case Study</h2>
+          </div>
+        </div>
+        <div class="resume-border">             
+          <div class="cute-robot" id="cute-robot-img">
+            <div class="border-white">
+              <picture>
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747002518/tech_trends_welcome_cute_robot_cfl5q5.avif"
+                  type="image/avif"
+                  media="(min-width: 1200px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747002518/tech_trends_welcome_cute_robot_cfl5q5.avif"
+                  type="image/avif"
+                  media="(min-width: 481px) and (max-width: 1199px)"
+                  sizes="100vw"
+                />
+                <img 
+                  src="/img/tech-trends-welcome-cute-robot-mobile.avif"
+                  alt="Tech Trends Blog Hero Image showcasing a modern, AI-powered platform for technology insights"
+                  object-fit="cover"
+                  width="377"
+                  height="243"
+                  loading="lazy"
+                  fetchpriority="auto"
+                  style="object-fit: cover;aspect-ratio: 377 / 243; width: 100%; height: auto;"
+                  decoding="async"
+                />
+              </picture> 
+            </div>
+          </div>
+        </div>
+        <article class="resume-border" id="section3">   
+          <div class="resume-summary casestudy-container" id="resume-part4">
+            <div class="casestudy">
+              <p><strong>Case Study:</strong> Tech Trends Blog</p>
+              <p><strong>Role:</strong> Full-Stack Developer, AI Content Creator, SEO Specialist</p>
+              <p><strong>Website:</strong> <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">Tech Trends Blog</a></p>
+              <p><strong>GitHub Repository:</strong> <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">View the Code</a></p>
+            </div>
+            <hr class="casestudy-hr">
+            <div class="casestudy">
+                <h3>Introduction</h3>
+                <p>Tech Trends Blog is a dynamic platform that showcases the integration of <strong>AI-driven content creation</strong>, <strong>SEO expertise</strong>, and <strong>web development skills</strong>. Designed to highlight emerging technology trends, the project demonstrates my ability to create engaging and high-performance websites that balance creativity with functionality.</p>
+                <p>Throughout this project, I refined my skills as an <strong>AI Content Specialist</strong> and <strong>SEO Specialist</strong>, achieving top performance metrics and seamless user experiences. The site is WCAG-compliant and reflects my ability to craft content and platforms that resonate with a wide audience.</p>
+            </div>
+            <hr class="casestudy-hr">
+            <div class="list-items">
+                <h3>Objectives</h3>
+                <ul>
+                    <li>Develop a modern, responsive blog to spotlight advancements in technology.</li>
+                    <li>Utilize AI tools to create compelling content and visuals.</li>
+                    <li>Achieve top SEO performance, accessibility standards, and user engagement.</li>
+                </ul>
+            </div>
+            <hr class="casestudy-hr">
+            <div class="list-items">
+                <h3>The Role of AI</h3>
+                <p>AI tools played a crucial role in every aspect of this project, enabling me to streamline workflows, enhance creativity, and deliver high-quality results:</p>
+                <ul>
+                    <li><strong>ChatGPT:</strong> Generated article drafts, headlines, and meta descriptions, which were refined for tone, clarity, and SEO relevance.</li>
+                    <li><strong>MidJourney and DALL-E:</strong> Created vibrant visuals for hero banners and article imagery, giving the blog a bold, futuristic aesthetic.</li>
+                    <li><strong>Canva:</strong> Enhanced and styled graphics for a polished, professional look.</li>
+                    <li><strong>Relume.io and Uizard:</strong> Provided UI/UX insights to help shape a user-friendly layout.</li>
+                </ul>
+            </div>
+            <hr class="casestudy-hr">
+            <div class="list-items">
+                <h3>SEO Optimization</h3>
+                <p>SEO was essential for the blog's success. Here's how it was integrated:</p>
+                <ul>
+                    <li><strong>Google Search Console</strong>: Managed indexing, verified mobile usability, and optimized structured data for rich results.</li>
+                    <li><strong>SEMrush</strong> and <strong>Ahrefs</strong>: Conducted in-depth keyword research and optimized content for high-value terms.</li>
+                    <li><strong>PageSpeed Insights</strong>: Achieved a perfect 100/100 score on both mobile and desktop, optimizing for performance.</li>
+                </ul>
+            </div>
+            <hr class="casestudy-hr">
+            <div class="list-items">
+                <h3>Content Creation and Engagement</h3>
+                <p>Each article was meticulously crafted to engage readers and highlight emerging tech trends. AI tools sped up the writing process, while my editorial oversight ensured top-quality, audience-focused content:</p>
+                <ul>
+                    <li>Increased time-on-page by 30%, indicating stronger reader engagement.</li>
+                    <li>Improved click-through rates by 25% through optimized headlines and meta descriptions.</li>
+                </ul>
+            </div>
+            <hr class="casestudy-hr">
+            <div class="list-items">
+                <h3>Development Process</h3>
+                <ul>
+                    <li><strong>Technology Stack:</strong> HTML, CSS, JavaScript, hosted on Netlify for efficient deployment.</li>
+                    <li><strong>Performance Optimization:</strong> Implemented lazy loading, preloaded resources, and optimized file formats for fast loading.</li>
+                    <li><strong>Accessibility Compliance:</strong> Designed with WCAG standards, using semantic HTML and ARIA roles for better user experience.</li>
+                    <li><strong>Responsive Design:</strong> Adopted a mobile-first approach to ensure consistent functionality across all devices.</li>
+                </ul>
+            </div>
+            <hr class="casestudy-hr">
+            <div class="list-items">
+                <h3>Key Results</h3>
+                <ul>
+                    <li><strong>Performance:</strong> Achieved a perfect PageSpeed score of 100/100 and an LCP of 1.6 seconds.</li>
+                    <li><strong>Accessibility:</strong> Achieved a 95% accessibility score by refining contrast ratios and semantic HTML.</li>
+                    <li><strong>SEO:</strong> Increased search rankings with high-value keywords and structured data integration.</li>
+                </ul>
+            </div>
+            <hr class="casestudy-hr">
+            <div class="list-items">
+                <h3>Challenges and Solutions</h3>
+                <ul>
+                    <li><strong>Challenge:</strong> Slow load times due to large hero images.
+                      <ul>
+                          <li><strong>Solution:</strong> Optimized image sizes and used device-specific resolutions for faster loading.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Challenge:</strong> Visual layout shifts during loading.
+                        <ul>
+                            <li><strong>Solution:</strong> Preloaded fonts and defined image dimensions to reduce layout shifts.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr class="casestudy-hr">
+            <div class="list-items">
+                <h3>Outcome</h3>
+                <p>The Tech Trends Blog is a testament to the synergy of AI-driven content creation and web development. The project demonstrates:</p>
+                <ul>
+                    <li><strong>AI Content Creation:</strong> Producing engaging, high-quality articles and visuals using AI tools.</li>
+                    <li><strong>SEO Expertise:</strong> Achieving top rankings with carefully researched keywords and structured data.</li>
+                    <li><strong>UI/UX Design:</strong> Creating an intuitive, futuristic platform focused on user experience.</li>
+                </ul>
+            </div>
+            <div class="list-items">
+              <p>
+                This case study showcases my ability to create high-performing websites and content, positioning me as a valuable asset for roles like AI Content Specialist, SEO Specialist, and Digital Journalist.
+              </p>
+            </div>
+          </div>
+          <div class="project-links">
+            <div class="takeme-text">
+              <h3>take me to the</h3>
+            </div>
+            <div class="button-grid">
+              <div class="click-me">
+                <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">design decoded</a>
+              </div>
+              <div class="click-me">  
+                <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
               </div>
             </div>  
-            <div class="article-global-container">
-              <div class="border-white" id="resume-border">
-                <div class="resume-date" id="project-title">
-                  <h2>project 1 | the design</h2>
-                  <h2>past meets future</h2>
-                </div>
-              </div>
+          </div>
+        </article>
+      </section>
+      <section id="contact">
+        <div class="resume-border" >
+          <div class="border-white">
+            <div class="author-bio">
+              <picture> 
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
+                  type="image/avif"
+                  media="(min-width: 1200px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
+                  type="image/avif"
+                  media="(min-width: 481px) and (max-width: 1199px)"
+                  sizes="100vw"
+                />
+                <img 
+                  src="/img/allisonstock-black-logo-mobile.avif"
+                  alt="Photo of Genny Allison, the web developer and AI content specialist"
+                  width="376"
+                  height="164"
+                  loading="lazy"
+                  fetchpriority="auto"
+                  style="object-fit: cover;aspect-ratio: 376 / 164; width: 100%; height: auto;"
+                  decoding="async" 
+                />
+              </picture> 
             </div>
-            <div class="resume-border">             
-              <div class="past-meets-future" id="past-meets-future-img">
-                <div class="border-white">
-                  <div class="border-black">
-                    <picture>
-                      <source
-                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747144506/past-meets-future_pmafy7.avif"
-                        type="image/avif"
-                        media="(min-width: 1200px)"
-                        sizes="100vw"
-                      />
-                      <source
-                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747144506/past-meets-future_pmafy7.avif"
-                        type="image/avif"
-                        media="(min-width: 481px) and (max-width: 1199px)"
-                        sizes="100vw"
-                      />
-                      <img 
-                        src="/img/past-meets-future-mobile.avif"
-                        alt="A design concept for Tech Trends Blog, merging past and future elements with modern and futuristic visuals."
-                        width="350"
-                        height="409"
-                        loading="lazy"
-                        fetchpriority="auto"
-                        style="object-fit: cover;aspect-ratio: 350 / 409; width: 93%; height: auto;"
-                        decoding="async" 
-                        />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="project-links">
-                <div class="takeme-text">
-                  <h3>take me to the</h3>
-                </div>
-                <div class="button-grid">
-                  <div class="click-me">
-                    <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">design decoded</a>
-                  </div>
-                  <div class="click-me">  
-                    <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                  </div>
-                </div> 
-              </div>
-            </div>
-            <div class="article-global-container" id="wireframe">
-              <div class="border-white" id="resume-border">
-                <div class="resume-date" id="project-title">
-                  <h2>project 1 | the frame</h2>
-                </div>
-              </div>
-            </div>
-            <div class="resume-border"> 
-              <div class="wireframe-grid">
-                <div class="wireframe">
-                  <div class="wireframe-img" id="wireframe-img-1">
-                    <div class="border-white">
-                      <div class="border-black">
-                        <picture>
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742921918/homepage-wireframe-tech-trends_s2lkfs.avif"
-                            type="image/avif"
-                            media="(min-width: 1200px)"
-                            sizes="100vw"
-                          />
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742921918/homepage-wireframe-tech-trends_s2lkfs.avif"
-                            type="image/avif"
-                            media="(min-width: 481px) and (max-width: 1199px)"
-                            sizes="100vw"
-                          />
-                          <img 
-                            src="/img/homepage-wireframe-tech-trends-mobile.avif"
-                            alt="Wireframe of the homepage layout for Tech Trends Blog"
-                            object-fit="cover"
-                            width="337"
-                            height="1146"
-                            loading="lazy"
-                            fetchpriority="auto"
-                            style="object-fit: cover;aspect-ratio: 337 / 1146; width: 93%; height: auto;"
-                            decoding="async" 
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wireframe">
-                  <div class="wireframe-img" id="wireframe-img-2">
-                    <div class="border-white">
-                      <div class="border-black">
-                        <picture>
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747145733/category-wireframe-tech-trends_ughnnv.avif"
-                            type="image/avif"
-                            media="(min-width: 1200px)"
-                            sizes="100vw"
-                          />
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747145733/category-wireframe-tech-trends_ughnnv.avif"
-                            type="image/avif"
-                            media="(min-width: 481px) and (max-width: 1199px)"
-                            sizes="100vw"
-                          />
-                          <img 
-                            src="/img/category-wireframe-tech-trends-mobile.avif"
-                            alt="Wireframe of the homepage layout for Tech Trends Blog"
-                            object-fit="cover"
-                            width="337"
-                            height="609"
-                            loading="lazy"
-                            fetchpriority="auto"
-                            style="object-fit: cover;aspect-ratio: 337 / 609; width: 93%; height: auto;"
-                            decoding="sync"   
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wireframe">
-                  <div class="wireframe-img" id="wireframe-img-3">
-                    <div class="border-white">
-                      <div class="border-black">
-                        <picture>
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742921918/article-wireframe-tech-trends_mz3vf6.avif"
-                            type="image/avif"
-                            media="(min-width: 1200px)"
-                            sizes="100vw"
-                          />
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1742921918/article-wireframe-tech-trends_mz3vf6.avif"
-                            type="image/avif"
-                            media="(min-width: 481px) and (max-width: 1199px)"
-                            sizes="100vw"
-                          />
-                          <img 
-                            src="/img/article-wireframe-tech-trends-mobile.avif"
-                            alt="Wireframe of the article page layout for Tech Trends Blog"
-                            object-fit="cover"
-                            width="337"
-                            height="1146"
-                            loading="lazy"
-                            fetchpriority="auto"
-                            style="object-fit: cover;aspect-ratio: 337 / 1146;width: 93%; height: auto;"
-                            decoding="async" 
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="project-links">
-                <div class="takeme-text">
-                  <h3>take me to the</h3>
-                </div>
-                <div class="button-grid">
-                  <div class="click-me">
-                    <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">design decoded</a>
-                  </div>
-                  <div class="click-me">  
-                    <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                  </div>
-                </div> 
-              </div>
-            </div>
-            <div class="article-global-container" id="casestudy">
-              <div class="border-white" id="resume-border">
-                <div class="resume-date" id="project-title">
-                  <h2>Project 3 | The Case Study</h2>
-                </div>
-              </div>
-            </div>
-            <div class="resume-border">             
-              <div class="cute-robot" id="cute-robot-img">
-                <div class="border-white">
-                  <div class="border-black">
-                    <picture>
-                      <source
-                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747002518/tech_trends_welcome_cute_robot_cfl5q5.avif"
-                        type="image/avif"
-                        media="(min-width: 1200px)"
-                        sizes="100vw"
-                      />
-                      <source
-                        srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1747002518/tech_trends_welcome_cute_robot_cfl5q5.avif"
-                        type="image/avif"
-                        media="(min-width: 481px) and (max-width: 1199px)"
-                        sizes="100vw"
-                      />
-                      <img 
-                        src="/img/tech-trends-welcome-cute-robot-mobile.avif"
-                        alt="Tech Trends Blog Hero Image showcasing a modern, AI-powered platform for technology insights"
-                        object-fit="cover"
-                        width="377"
-                        height="243"
-                        loading="lazy"
-                        fetchpriority="auto"
-                        style="object-fit: cover;aspect-ratio: 377 / 243; width: 100%; height: auto;"
-                        decoding="async"
-                      />
-                    </picture> 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <article class="resume-border" id="section3">   
-              <div class="resume-summary casestudy-container" id="resume-part4">
-                <div class="casestudy">
-                  <p><strong>Case Study:</strong> Tech Trends Blog</p>
-                  <p><strong>Role:</strong> Full-Stack Developer, AI Content Creator, SEO Specialist</p>
-                  <p><strong>Website:</strong> <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">Tech Trends Blog</a></p>
-                  <p><strong>GitHub Repository:</strong> <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">View the Code</a></p>
-                </div>
-                <hr class="casestudy-hr">
-                <div class="casestudy">
-                    <h3>Introduction</h3>
-                    <p>Tech Trends Blog is a dynamic platform that showcases the integration of <strong>AI-driven content creation</strong>, <strong>SEO expertise</strong>, and <strong>web development skills</strong>. Designed to highlight emerging technology trends, the project demonstrates my ability to create engaging and high-performance websites that balance creativity with functionality.</p>
-                    <p>Throughout this project, I refined my skills as an <strong>AI Content Specialist</strong> and <strong>SEO Specialist</strong>, achieving top performance metrics and seamless user experiences. The site is WCAG-compliant and reflects my ability to craft content and platforms that resonate with a wide audience.</p>
-                </div>
-                <hr class="casestudy-hr">
-                <div class="list-items">
-                    <h3>Objectives</h3>
-                    <ul>
-                        <li>Develop a modern, responsive blog to spotlight advancements in technology.</li>
-                        <li>Utilize AI tools to create compelling content and visuals.</li>
-                        <li>Achieve top SEO performance, accessibility standards, and user engagement.</li>
-                    </ul>
-                </div>
-                <hr class="casestudy-hr">
-                <div class="list-items">
-                    <h3>The Role of AI</h3>
-                    <p>AI tools played a crucial role in every aspect of this project, enabling me to streamline workflows, enhance creativity, and deliver high-quality results:</p>
-                    <ul>
-                        <li><strong>ChatGPT:</strong> Generated article drafts, headlines, and meta descriptions, which were refined for tone, clarity, and SEO relevance.</li>
-                        <li><strong>MidJourney and DALL-E:</strong> Created vibrant visuals for hero banners and article imagery, giving the blog a bold, futuristic aesthetic.</li>
-                        <li><strong>Canva:</strong> Enhanced and styled graphics for a polished, professional look.</li>
-                        <li><strong>Relume.io and Uizard:</strong> Provided UI/UX insights to help shape a user-friendly layout.</li>
-                    </ul>
-                </div>
-                <hr class="casestudy-hr">
-                <div class="list-items">
-                    <h3>SEO Optimization</h3>
-                    <p>SEO was essential for the blog's success. Here's how it was integrated:</p>
-                    <ul>
-                        <li><strong>Google Search Console</strong>: Managed indexing, verified mobile usability, and optimized structured data for rich results.</li>
-                        <li><strong>SEMrush</strong> and <strong>Ahrefs</strong>: Conducted in-depth keyword research and optimized content for high-value terms.</li>
-                        <li><strong>PageSpeed Insights</strong>: Achieved a perfect 100/100 score on both mobile and desktop, optimizing for performance.</li>
-                    </ul>
-                </div>
-                <hr class="casestudy-hr">
-                <div class="list-items">
-                    <h3>Content Creation and Engagement</h3>
-                    <p>Each article was meticulously crafted to engage readers and highlight emerging tech trends. AI tools sped up the writing process, while my editorial oversight ensured top-quality, audience-focused content:</p>
-                    <ul>
-                        <li>Increased time-on-page by 30%, indicating stronger reader engagement.</li>
-                        <li>Improved click-through rates by 25% through optimized headlines and meta descriptions.</li>
-                    </ul>
-                </div>
-                <hr class="casestudy-hr">
-                <div class="list-items">
-                    <h3>Development Process</h3>
-                    <ul>
-                        <li><strong>Technology Stack:</strong> HTML, CSS, JavaScript, hosted on Netlify for efficient deployment.</li>
-                        <li><strong>Performance Optimization:</strong> Implemented lazy loading, preloaded resources, and optimized file formats for fast loading.</li>
-                        <li><strong>Accessibility Compliance:</strong> Designed with WCAG standards, using semantic HTML and ARIA roles for better user experience.</li>
-                        <li><strong>Responsive Design:</strong> Adopted a mobile-first approach to ensure consistent functionality across all devices.</li>
-                    </ul>
-                </div>
-                <hr class="casestudy-hr">
-                <div class="list-items">
-                    <h3>Key Results</h3>
-                    <ul>
-                        <li><strong>Performance:</strong> Achieved a perfect PageSpeed score of 100/100 and an LCP of 1.6 seconds.</li>
-                        <li><strong>Accessibility:</strong> Achieved a 95% accessibility score by refining contrast ratios and semantic HTML.</li>
-                        <li><strong>SEO:</strong> Increased search rankings with high-value keywords and structured data integration.</li>
-                    </ul>
-                </div>
-                <hr class="casestudy-hr">
-                <div class="list-items">
-                    <h3>Challenges and Solutions</h3>
-                    <ul>
-                        <li><strong>Challenge:</strong> Slow load times due to large hero images.
-                          <ul>
-                              <li><strong>Solution:</strong> Optimized image sizes and used device-specific resolutions for faster loading.</li>
-                          </ul>
-                        </li>
-                        <li><strong>Challenge:</strong> Visual layout shifts during loading.
-                            <ul>
-                                <li><strong>Solution:</strong> Preloaded fonts and defined image dimensions to reduce layout shifts.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <hr class="casestudy-hr">
-                <div class="list-items">
-                    <h3>Outcome</h3>
-                    <p>The Tech Trends Blog is a testament to the synergy of AI-driven content creation and web development. The project demonstrates:</p>
-                    <ul>
-                        <li><strong>AI Content Creation:</strong> Producing engaging, high-quality articles and visuals using AI tools.</li>
-                        <li><strong>SEO Expertise:</strong> Achieving top rankings with carefully researched keywords and structured data.</li>
-                        <li><strong>UI/UX Design:</strong> Creating an intuitive, futuristic platform focused on user experience.</li>
-                    </ul>
-                </div>
-                <div class="list-items">
-                  <p>
-                    This case study showcases my ability to create high-performing websites and content, positioning me as a valuable asset for roles like AI Content Specialist, SEO Specialist, and Digital Journalist.
-                  </p>
-                </div>
-              </div>
-              <div class="project-links">
-                <div class="takeme-text">
-                  <h3>take me to the</h3>
-                </div>
-                <div class="button-grid">
-                  <div class="click-me">
-                    <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">design decoded</a>
-                  </div>
-                  <div class="click-me">  
-                    <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                  </div>
-                </div>  
-              </div>
-            </article>
-          </section>
-          <section id="contact">
-            <article class="resume-border" id="section4" >
-              <div class="resume-border" >
-                <div class="border-white">
-                  <div class="border-black">
-                    <div class="author-bio">
-                      <div class="author-img-wrapper">
-                        <picture> 
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
-                            type="image/avif"
-                            media="(min-width: 1200px)"
-                            sizes="100vw"
-                          />
-                          <source
-                            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,w_auto,dpr_auto,c_fill,g_auto/v1746550616/allisonstock-black-logo_yalqqx.avif"
-                            type="image/avif"
-                            media="(min-width: 481px) and (max-width: 1199px)"
-                            sizes="100vw"
-                          />
-                          <img 
-                            src="/img/allisonstock-black-logo-mobile.avif"
-                            alt="Photo of Genny Allison, the web developer and AI content specialist"
-                            width="376"
-                            height="164"
-                            loading="lazy"
-                            fetchpriority="auto"
-                            style="object-fit: cover;aspect-ratio: 376 / 164; width: 100%; height: auto;"
-                            decoding="async" 
-                          />
-                        </picture> 
-                      </div>
-
-                      <div class="author-bio-text">
-                        <h2>Partner with an AI Content Specialist & Web Developer</h2>
-                        <p><i>Looking for someone who can combine creativity,<br> cutting-edge AI tools, and technical expertise to build<br> stunning web platforms and engaging content?<br> You've come to the right place.</i></p>
-                        <p>At <strong>Allison Stock Inc.</strong>, I specialize in AI-powered content creation and web development using tools like ChatGPT, Midjourney, Figma, and Uizard. My portfolio showcases my ability to integrate AI solutions seamlessly into modern web design, delivering high-performing, SEO-optimized websites and content tailored to today's digital demands.</p>
-                        <p>
-                          <a href="https://www.linkedin.com/in/genny-allison/" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            aria-label="Visit Genny Allison's LinkedIn on a new tab">Connect with me on LinkedIn
-                          </a>, 
-                          <a href="https://gennyallison.netlify.app"
-                            target="_blank" 
-                            rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"
-                            >explore my portfolio</a>, or visit my <a href="/pages/contact.html">contact page</a> to see how I can help bring your vision to life.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </section>
+          </div>
+          <div class="author-bio-text">
+            <h2>Partner with an AI Content Specialist & Web Developer</h2>
+            <p><i>Looking for someone who can combine creativity,<br> cutting-edge AI tools, and technical expertise to build<br> stunning web platforms and engaging content?<br> You've come to the right place.</i></p>
+            <p>At <strong>Allison Stock Inc.</strong>, I specialize in AI-powered content creation and web development using tools like ChatGPT, Midjourney, Figma, and Uizard. My portfolio showcases my ability to integrate AI solutions seamlessly into modern web design, delivering high-performing, SEO-optimized websites and content tailored to today's digital demands.</p>
+            <p>
+              <a href="https://www.linkedin.com/in/genny-allison/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Visit Genny Allison's LinkedIn on a new tab">Connect with me on LinkedIn
+              </a>, 
+              <a href="https://gennyallison.netlify.app"
+                target="_blank" 
+                rel="noopener noreferrer" aria-label="Visit Genny Allison's professional portfolio on a new tab"
+                >explore my portfolio</a>, or visit my <a href="/pages/contact.html">contact page</a> to see how I can help bring your vision to life.</p>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
     <div id="side-nav" class="hidden">
       <ul>
@@ -1045,7 +994,6 @@
         <li><a href="#casestudy">the case study</a></li>
         <li><a href="#contact">the contact me</a></li>
       </ul>
-      
     </div>
     <div>
       <button class="back-to-top" id="back-to-top" class="hidden">back to top</button>

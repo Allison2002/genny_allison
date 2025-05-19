@@ -247,7 +247,6 @@ nav {
   padding: 1em 0;
 }
 
-
 .canvas-skills-title h1,
 .canvas-skills-title h2 {
   font-family: Georgia, serif;
@@ -269,17 +268,7 @@ nav {
 
 }
 
-.canvas-skills-img {
-  border: 1em solid #000;
-  border-right: 0.5em solid #000;
-  flex: 2;
-  overflow: hidden;
-  padding: 0.01em;
-  width: 100%;
-  max-width: 100vw;
-}
-
-.canvas-skills-img img {
+.canvas-skills-grid img {
   display: block;
   width: 100%;
   height: auto;
@@ -287,6 +276,8 @@ nav {
   box-sizing: border-box;
   margin: 0 auto;
   aspect-ratio: 564 / 334;
+  border: 1em solid #000;
+  border-right: 0.5em solid #000;
 }
 
 img[fetchpriority=high] {
@@ -417,24 +408,20 @@ footer {
   transform: scale(1.1)
 }
 
-.black-container {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-  width: 100%;
-  max-width: 100vw;
-  height: auto;
-  margin: 1em auto 0;
-  border-radius: .225vw;
-  box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1)
-}
-
-.main-container {
-  width: 100%;
-  max-width: 100vw;
-  height: auto;
+.fancy-border {
+  background: #fff;
+  box-shadow:
+    0 0 0 1em #011,
+    /* outer black */
+    0 0 0 2em #fff,
+    /* white buffer */
+    0 0 0 3em #011;
+  /* final black */
+  padding: 2em;
+  margin: 1.875em auto;
+  width: 95%;
+  max-width: 100%;
+  height: 100%;
 }
 
 .hamburger-icon {
@@ -537,7 +524,7 @@ footer {
   margin: 2em auto;
   width: auto;
   height: auto;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
@@ -588,13 +575,6 @@ footer {
 #resume-border {
   padding-bottom: 0
 }
-
-#description {
-  width: 100%;
-  max-width: 100vw;
-  height: auto;
-}
-
 
 .resume-date {
   width: 90%;
@@ -812,7 +792,7 @@ button.submit-button:hover {
     flex-direction: column;
   }
 
-  .canvas-skills-img img {
+  .canvas-skills-grid img {
     aspect-ratio: 907 / 510;
   }
 
@@ -823,6 +803,9 @@ button.submit-button:hover {
 
   .canvas-skills-title {
     flex: 1;
+    width: 90%;
+    max-width: 90vw;
+    margin: 1em auto;
   }
 
   .canvas-skills-title h1 {
@@ -946,6 +929,9 @@ button.submit-button:hover {
 }
 
 @media (max-width: 680px) {
+  .canvas-skills-grid img {
+    aspect-ratio: 655 / 388;
+  }
 
   .resume-summary {
     min-height: auto;
@@ -955,8 +941,12 @@ button.submit-button:hover {
 @media (max-width:480px) {
 
   .canvas-skills-grid {
-    min-height: 16rem;
-    aspect-ratio: 480 / 483;
+    aspect-ratio: 480 / 480;
+    min-height: 27.5rem;
+  }
+
+  .canvas-skills-grid img {
+    aspect-ratio: 455 / 269;
   }
 
   .side-nav {
@@ -1002,6 +992,9 @@ button.submit-button:hover {
   .canvas-skills-title {
     height: auto;
     min-height: 11.62rem;
+    width: 90%;
+    max-width: 90vw;
+    margin: 1em auto;
   }
 
   .canvas-skills-title h1,
