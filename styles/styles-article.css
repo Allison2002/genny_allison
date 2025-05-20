@@ -377,62 +377,174 @@
     }
 
     #grade-img {
-      min-height: 21.56rem;
+      min-height: 29.70rem;
     }
 
     #pagespeed-grade-img2,
     #pagespeed-grade-img1 {
-      min-height: 40rem;
+      min-height: 36.49rem;
     }
 
     #pagespeed-grade-img3 {
-      min-height: 26.5rem;
+      min-height: 36.4375rem;
     }
 
     #pagespeed-grade-img4 {
-      min-height: 26.875rem;
+      min-height: 36.033rem;
     }
 
     #grade-table-img1 {
-      min-height: 21.625rem;
+      min-height: 29.8125rem;
     }
 
     #grade-table-img2 {
-      min-height: 22.125rem;
+      min-height: 33.2rem;
     }
 
     #hubspot {
-      min-height: 36.625rem;
+      min-height: 50.4375rem;
     }
 
     .author-bio-container {
-      min-height: 11rem;
+      min-height: 15.533rem;
     }
 
     #mood-board {
-      min-height: 19.93rem;
+      min-height: 28.088rem;
     }
 
     #past-meets-future {
-      min-height: 27.75rem;
+      min-height: 39.075rem;
     }
 
-    #woreframe-img3,
+    #wireframe-img3,
     #wireframe-img1 {
-      min-height: 89.5rem;
+      min-height: 125.9375rem;
     }
 
     #wireframe-img2 {
-      min-height: 47rem;
+      min-height: 66.965rem;
       height: auto;
     }
 
     #cute-robot {
-      min-height: 18.4375rem;
+      min-height: 25.409rem;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 940px) {
+    #grade-img {
+      min-height: 27rem;
+    }
+
+    #pagespeed-grade-img2,
+    #pagespeed-grade-img1 {
+      min-height: 33.205rem;
+    }
+
+    #pagespeed-grade-img3 {
+      min-height: 33.205rem;
+    }
+
+    #pagespeed-grade-img4 {
+      min-height: 32.789rem;
+    }
+
+    #grade-table-img1 {
+      min-height: 27.13rem;
+    }
+
+    #grade-table-img2 {
+      min-height: 27.131rem;
+    }
+
+    #hubspot {
+      min-height: 45.875rem;
+    }
+
+    .author-bio-container {
+      min-height: 13.97rem;
+    }
+
+    #mood-board {
+      min-height: 25.414rem;
+    }
+
+    #past-meets-future {
+      min-height: 35.35rem;
+    }
+
+    #wireframe-img3,
+    #wireframe-img1 {
+      min-height: 113.944rem;
+    }
+
+    #wireframe-img2 {
+      min-height: 60.58rem;
+      height: auto;
+    }
+
+    #cute-robot {
+      min-height: 23.123rem;
     }
   }
 
   @media (max-width:768px) {
+
+    #grade-img {
+      min-height: 23.93rem;
+    }
+
+    #pagespeed-grade-img2,
+    #pagespeed-grade-img1 {
+      min-height: 29.375rem;
+    }
+
+    #pagespeed-grade-img3 {
+      min-height: 29.407rem;
+    }
+
+    #pagespeed-grade-img4 {
+      min-height: 29.03rem;
+    }
+
+    #grade-table-img1 {
+      min-height: 24 rem;
+    }
+
+    #grade-table-img2 {
+      min-height: 24rem;
+    }
+
+    #hubspot {
+      min-height: 40.645rem;
+    }
+
+    .author-bio-container {
+      min-height: 13.09rem;
+    }
+
+    #mood-board {
+      min-height: 23.89rem;
+    }
+
+    #past-meets-future {
+      min-height: 33.24rem;
+    }
+
+    #wireframe-img3,
+    #wireframe-img1 {
+      min-height: 107.13rem;
+    }
+
+    #wireframe-img2 {
+      min-height: 56.98rem;
+      height: auto;
+    }
+
+    #cute-robot {
+      min-height: 20.48rem;
+    }
 
     .article-global-container,
     .resume-border {
@@ -581,6 +693,10 @@
       max-width: 85vw;
     }
 
+    #grade-img {
+      min-height: 23.93
+    }
+
     #pagespeed-grade-img2,
     #pagespeed-grade-img1 {
       min-height: 40rem;
@@ -618,7 +734,7 @@
       min-height: 27.3125rem;
     }
 
-    #woreframe-img3,
+    #wireframe-img3,
     #wireframe-img1 {
       min-height: 96.875rem;
     }
