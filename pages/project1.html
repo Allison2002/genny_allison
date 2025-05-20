@@ -9,43 +9,42 @@
 
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
 
-    <!-- Desktop image preload (≥ 941px) -->
+    <!-- Preload for Desktop (≥ 941px, uses 30vw so preload 1200w for LCP) -->
     <link
       rel="preload"
       as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/w_571,h_352,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/w_1200,h_720,f_avif,q_auto,c_fill,g_auto/v1/image.avif"
       type="image/avif"
       media="(min-width: 941px)"
       fetchpriority="high"
     />
 
-    <!-- Tablet image preload (681px–940px) -->
+    <!-- Preload for Tablet (681px–940px, uses 100vw) -->
     <link
       rel="preload"
       as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/w_940,h_542,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/w_940,h_542,f_avif,q_auto,c_fill,g_auto/v1/image.avif"
       type="image/avif"
       media="(min-width: 681px) and (max-width: 940px)"
     />
 
-    <!-- Small mobile image preload (481px–680px) -->
+    <!-- Preload for Small Mobile (481px–680px) -->
     <link
       rel="preload"
       as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/w_680,h_469,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/w_680,h_469,f_avif,q_auto,c_fill,g_auto/v1/image.avif"
       type="image/avif"
       media="(min-width: 481px) and (max-width: 680px)"
     />
 
-    <!-- Fallback image preload (≤ 480px) -->
+    <!-- Preload for Mobile Default (≤ 480px) -->
     <link
       rel="preload"
       as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/w_480,h_360,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747755941/welcome_to_tech_trends_mobile_c2odp7.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/w_480,h_360,f_avif,q_auto,c_fill,g_auto/v1/image.avif"
       type="image/avif"
       media="(max-width: 480px)"
     />
-
 
     <link rel="preload" href="/assets/fonts/georgia.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/assets/fonts/SegoeUI.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -118,45 +117,27 @@
     <header>
       <div id="nav"></div>
       <div class="canvas-skills-grid">
-        <picture>
-          <!-- Desktop (≥ 941px) -->
-          <source
-            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/w_571,h_352,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747049366/welcome_to_tech_trends_desktop_kd0jdv.avif"
-            type="image/avif"
-            media="(min-width: 941px)"
-            sizes="(min-width: 941px) 30vw, 100vw"
-            fetchpriority="high"
-          />
-          
-          <!-- Tablet (681px–940px) -->
-          <source
-            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/w_940,h_542,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
-            type="image/avif"
-            media="(min-width: 681px) and (max-width: 940px)"
-            sizes="100vw"
-          />
-          
-          <!-- Mobile mid (481px–680px) — ideally a separate file, not tablet -->
-          <source
-            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/w_680,h_469,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
-            type="image/avif"
-            media="(min-width: 481px) and (max-width: 680px)"
-            sizes="100vw"
-          />
+        <img
+          src="https://res.cloudinary.com/dnptzisuf/image/upload/w_960,h_720,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
+          srcset="
+            https://res.cloudinary.com/dnptzisuf/image/upload/w_480,h_360,f_avif,q_auto,c_fill,g_auto/v1/image.avif 480w,
+            https://res.cloudinary.com/dnptzisuf/image/upload/w_680,h_469,f_avif,q_auto,c_fill,g_auto/v1/image.avif 680w,
+            https://res.cloudinary.com/dnptzisuf/image/upload/w_940,h_542,f_avif,q_auto,c_fill,g_auto/v1/image.avif 940w,
+            https://res.cloudinary.com/dnptzisuf/image/upload/w_1200,h_720,f_avif,q_auto,c_fill,g_auto/v1/image.avif 1200w
+          "
+          sizes="(max-width: 480px) 100vw,
+                (max-width: 680px) 100vw,
+                (max-width: 940px) 100vw,
+                30vw"
+          width="480"
+          height="360"
+          alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology visuals..."
+          fetchpriority="high"
+          decoding="async"
+          loading="eager"
+          style="object-fit: cover; width: 100%; height: auto;"
+        />
 
-          <!-- Mobile default (≤ 480px) -->
-          <img
-            src="https://res.cloudinary.com/dnptzisuf/image/upload/w_480,h_360,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1747755941/welcome_to_tech_trends_mobile_c2odp7.avif"
-            sizes="100vw"
-            width="480"
-            height="360"
-            alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology visuals..."
-            style="object-fit: cover; width: 100%; height: auto;"
-            fetchpriority="high"
-            decoding="async"
-            loading="eager"
-          />
-        </picture>
         <div class="canvas-skills-title">
           <h1>a canvas of code:</h1>
           <h2>showcasing the craft</h2>
@@ -223,7 +204,7 @@
               alt="Tech Trends Blog SEO grade result showing performance and optimization"
               width="303"
               height="262"
-              style="object-fit: cover; width: 90%; height: auto; display: block;"
+              style="object-fit: cover;"
               loading="lazy"
               fetchpriority="auto"
               decoding="async"
@@ -282,9 +263,9 @@
               alt="Tech Trends Blog SEO grade result showing performance before optimization"
               width="303"
               height="255"
-              style="height: auto; object-fit: cover; display: block; width: 90%; "
+              style="object-fit: cover;"
               loading="lazy"
-            fetchpriority="auto"
+              fetchpriority="low"
               decoding="async"
             />
           </picture>
@@ -311,9 +292,9 @@
               alt="Tech Trends Blog SEO grade result showing performance before optimization"
               width="304"
               height="322"
-              style="width: 90%; height: auto; object-fit: cover; display: block; "
+              style="object-fit: cover;"
               loading="lazy"
-            fetchpriority="auto"
+              fetchpriority="low"
               decoding="async"
             />
           </picture>
@@ -341,9 +322,9 @@
               alt="Tech Trends Blog SEO grade result showing performance after optimization"
               width="304"
               height="322"
-              style="width: 90%; height: auto; object-fit: cover; display: block;"
+              style="object-fit: cover;"
               loading="lazy"
-            fetchpriority="auto"
+              fetchpriority="low"
               decoding="async"
             />
           </picture>
@@ -371,9 +352,9 @@
               alt="Tech Trends Blog SEO grade result showing performance before optimization"
               width="313"
               height="265"
-              style="width: 90%; height: auto; object-fit: cover; display: block; "
+              style="object-fit: cover;"
               loading="lazy"
-            fetchpriority="auto"
+            fetchpriority="low"
               decoding="async"
             />
           </picture>
@@ -401,8 +382,8 @@
               width="304"
               height="309"
               loading="lazy"
-              fetchpriority="auto"
-              style="object-fit: cover; width: 90%; height: auto;"
+              fetchpriority="low"
+              style="object-fit: cover;"
               decoding="async"
             />
           </picture>
@@ -429,9 +410,9 @@
               alt="Tech Trends Blog SEO grade result showing performance before optimization"
               width="304"
               height="323"
-              style="width: 90%; height: auto; object-fit: cover; display: block;"
+              style="object-fit: cover;"
               loading="lazy"
-              fetchpriority="auto"
+              fetchpriority="low"
               decoding="async"
             />
           </picture>
@@ -460,8 +441,8 @@
               width="304"
               height="434"
               loading="lazy"
-                fetchpriority="auto"
-              style="object-fit: cover; width: 90%; height: auto;"
+              fetchpriority="low"
+              style="object-fit: cover;"
               decoding="async"
             />
           </picture>
@@ -488,8 +469,8 @@
               width="296"
               height="129"
               loading="lazy"
-              fetchpriority="auto"
-              style="object-fit: cover; width: 100%; height: auto;"
+              fetchpriority="low"
+              style="object-fit: cover;"
               decoding="async" 
             />
           </picture> 
@@ -535,8 +516,8 @@
               width="272"
               height="228"
               loading="lazy"
-              fetchpriority="auto"
-              style="object-fit: cover; width: 90%; height: auto;"
+              fetchpriority="low"
+              style="object-fit: cover;"
               decoding="async"     
               />
           </picture>
@@ -579,8 +560,8 @@
               width="272"
               height="318"
               loading="lazy"
-              fetchpriority="auto"
-              style="object-fit: cover; width: 90%; height: auto;"
+              fetchpriority="low"
+              style="object-fit: cover;"
               decoding="async" 
               />
           </picture>
@@ -622,8 +603,8 @@
               width="316"
               height="1076"
               loading="lazy"
-              fetchpriority="auto"
-              style="object-fit: cover; width: 100%; height: auto;"
+              fetchpriority="low"
+              style="object-fit: cover;"
               decoding="async" 
             />
           </picture>
@@ -649,8 +630,8 @@
               width="316"
               height="1137"
               loading="lazy"
-              fetchpriority="auto"
-              style="object-fit: cover; width: 100%; height: auto;"
+              fetchpriority="low"
+              style="object-fit: cover;"
               decoding="sync"   
             />
           </picture>
@@ -676,8 +657,8 @@
               width="316"
               height="729"
               loading="lazy"
-              fetchpriority="auto"
-              style="object-fit: cover; width: 100%; height: auto;"
+              fetchpriority="low"
+              style="object-fit: cover;"
               decoding="async" 
             />
           </picture>
@@ -721,8 +702,8 @@
               width="296"
               height="190"
               loading="lazy"
-              fetchpriority="auto"
-              style="object-fit: cover; width: 100%; height: auto;"
+              fetchpriority="low"
+              style="object-fit: cover;"
               decoding="async"
             />
           </picture> 
@@ -864,8 +845,8 @@
               width="376"
               height="164"
               loading="lazy"
-              fetchpriority="auto"
-              style="object-fit: cover; width: 100%; height: auto;"
+              fetchpriority="low"
+              style="object-fit: cover;"
               decoding="async" 
             />
           </picture> 
