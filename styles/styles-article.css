@@ -152,7 +152,7 @@
     padding: 0 1em;
     box-sizing: border-box;
     margin: 0 auto;
-    min-height: 632 / 275;
+
   }
 
   #grade-table-img1,
@@ -201,52 +201,52 @@
     margin: 0.5em auto;
   }
 
-  .gradie-img img {
+  .gradie-img {
     min-height: 21.93rem;
   }
 
-  #pagespeed-grade-img2 img,
-  #pagespeed-grade-img1 img {
+  #pagespeed-grade-img2,
+  #pagespeed-grade-img1 {
     min-height: 40rem;
   }
 
-  #pagespeed-grade-img3 img {
+  #pagespeed-grade-img3 {
     min-height: 25.75rem;
   }
 
-  #pagespeed-grade-img4 img {
+  #pagespeed-grade-img4 {
     min-height: 26.93rem;
   }
 
-  #grade-table-img1 img {
+  #grade-table-img1 {
     min-height: 21.31rem;
   }
 
-  #grade-table-img2 img {
+  #grade-table-img2 {
     min-height: 22.125rem;
   }
 
-  #hubspot img {
+  #hubspot {
     min-height: 36.18rem;
   }
 
-  .author-bio-container img {
+  .author-bio-container {
     min-height: 11rem;
   }
 
-  #mood-board img {
+  #mood-board {
     min-height: 19.56rem;
   }
 
-  #past-meets-future img {
+  #past-meets-future {
     min-height: 27.3125rem;
   }
 
-  #wireframe-img1 img {
+  #wireframe-img1 {
     min-height: 85.625rem;
   }
 
-  #wireframe-img3 img {
+  #wireframe-img3 {
     min-height: 58rem;
   }
 
@@ -254,7 +254,7 @@
     min-height: 90.5rem;
   }
 
-  #cute-robot img {
+  #cute-robot {
     min-height: 16.25rem;
   }
 
@@ -375,6 +375,61 @@
       width: 93%;
       max-width: 93vw;
       height: auto;
+    }
+
+    #grade-img {
+      min-height: 21.56rem;
+    }
+
+    #pagespeed-grade-img2,
+    #pagespeed-grade-img1 {
+      min-height: 40rem;
+    }
+
+    #pagespeed-grade-img3 {
+      min-height: 26.5rem;
+    }
+
+    #pagespeed-grade-img4 {
+      min-height: 26.875rem;
+    }
+
+    #grade-table-img1 {
+      min-height: 21.625rem;
+    }
+
+    #grade-table-img2 {
+      min-height: 22.125rem;
+    }
+
+    #hubspot {
+      min-height: 36.625rem;
+    }
+
+    .author-bio-container {
+      min-height: 11rem;
+    }
+
+    #mood-board {
+      min-height: 19.93rem;
+    }
+
+    #past-meets-future {
+      min-height: 27.75rem;
+    }
+
+    #woreframe-img3,
+    #wireframe-img1 {
+      min-height: 89.5rem;
+    }
+
+    #wireframe-img2 {
+      min-height: 47rem;
+      height: auto;
+    }
+
+    #cute-robot {
+      min-height: 18.4375rem;
     }
   }
 
@@ -507,7 +562,7 @@
       min-height: 6.75rem;
     }
 
-    .gradie-img img {
+    .gradie-img {
       min-height: 21.93rem;
     }
 
@@ -527,45 +582,45 @@
       max-width: 85vw;
     }
 
-    #pagespeed-grade-img2 img,
-    #pagespeed-grade-img1 img {
+    #pagespeed-grade-img2,
+    #pagespeed-grade-img1 {
       min-height: 40rem;
     }
 
-    #pagespeed-grade-img3 img {
+    #pagespeed-grade-img3 {
       min-height: 25.75rem;
     }
 
-    #pagespeed-grade-img4 img {
+    #pagespeed-grade-img4 {
       min-height: 26.93rem;
     }
 
-    #grade-table-img1 img {
+    #grade-table-img1 {
       min-height: 21.31rem;
     }
 
-    #grade-table-img2 img {
+    #grade-table-img2 {
       min-height: 22.125rem;
     }
 
-    #hubspot img {
+    #hubspot {
       min-height: 36.18rem;
     }
 
-    .author-bio-container img {
+    .author-bio-container {
       min-height: 12.5rem;
     }
 
-    #mood-board img {
+    #mood-board {
       min-height: 19.56rem;
     }
 
-    #past-meets-future img {
+    #past-meets-future {
       min-height: 27.3125rem;
     }
 
-    #woreframe-img3 img,
-    #wireframe-img1 img {
+    #woreframe-img3,
+    #wireframe-img1 {
       min-height: 96.875rem;
     }
 
@@ -573,7 +628,7 @@
       min-height: 51.5rem;
     }
 
-    #cute-robot img {
+    #cute-robot {
       min-height: 20.375rem;
     }
   }
