@@ -12,7 +12,7 @@
     contain: layout;
     background-color: #000;
     box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1);
-    min-height: 100vh;
+    min-height: 100%;
     contain: layout;
   }
 
@@ -141,7 +141,6 @@
     width: 100%;
     max-width: 100vw;
     height: auto;
-    min-height: 51rem;
   }
 
   .author-bio-container img {
@@ -201,6 +200,63 @@
     margin: 0.5em auto;
   }
 
+  .gradie-img {
+    min-height: 21.93rem;
+  }
+
+  #pagespeed-grade-img2,
+  #pagespeed-grade-img1 {
+    min-height: 40rem;
+  }
+
+  #pagespeed-grade-img3 {
+    min-height: 25.75rem;
+  }
+
+  #pagespeed-grade-img4 {
+    min-height: 26.93rem;
+  }
+
+  #grade-table-img1 {
+    min-height: 21.31rem;
+  }
+
+  #grade-table-img2 {
+    min-height: 22.125rem;
+  }
+
+  #hubspot {
+    min-height: 36.18rem;
+  }
+
+  .author-bio-container {
+    min-height: 11rem;
+  }
+
+  #mood-board {
+    min-height: 19.56rem;
+  }
+
+  #past-meets-future {
+    min-height: 27.3125rem;
+  }
+
+  #wireframe-img1 {
+    min-height: 85.625rem;
+  }
+
+  #wireframe-img3 {
+    min-height: 58rem;
+  }
+
+  #wireframe-img2 {
+    min-height: 90.5rem;
+  }
+
+  #cute-robot {
+    min-height: 16.25rem;
+  }
+
   .cta-section p {
     font-size: 1.3rem;
     width: 100%;
@@ -225,7 +281,7 @@
 
   .list-items ul li {
     color: #fff;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     line-height: 1.2;
     text-align: left;
@@ -257,7 +313,7 @@
   }
 
   .list-items ul li {
-    padding-left: 1.25em;
+    padding-left: 1em;
     margin-top: .5em
   }
 

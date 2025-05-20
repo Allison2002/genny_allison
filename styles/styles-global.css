@@ -700,8 +700,8 @@ footer {
 
 .button-grid {
   display: flex;
-  width: 40%;
-  max-width: 40vw;
+  width: 45vw;
+  max-width: 45vw;
   height: auto;
   margin: 0 auto;
   padding-bottom: 2em;
