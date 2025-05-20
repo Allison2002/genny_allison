@@ -303,7 +303,7 @@ nav {
   max-width: 100vw;
   height: auto;
   box-sizing: border-box;
-  min-height: 25rem;
+  min-height: 20rem;
   contain: layout;
   overflow: hidden;
   background-color: #000;
@@ -321,7 +321,7 @@ nav {
   border: 1em solid #000;
   border-right: 0.5em solid #000;
   flex: 1 1 30%;
-  min-height: 28rem;
+  min-height: 20rem;
 }
 
 img[fetchpriority=high] {
@@ -345,7 +345,7 @@ img[fetchpriority=high] {
   line-height: 1.4;
   min-height: 25rem;
   flex: 1 1 70%;
-  min-height: 28rem;
+  min-height: 20rem;
   contain: layout;
 }
 
@@ -375,8 +375,8 @@ img[fetchpriority=high] {
   align-items: center;
   text-align: center;
   height: auto;
-  width: 40vw;
-  max-width: 40vw;
+  width: 55%;
+  max-width: 55vw;
   padding: 2em 0;
   background-color: #000;
 }
@@ -386,7 +386,7 @@ img[fetchpriority=high] {
   height: auto;
   min-height: 17rem;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   background-color: #000;
 }
 
@@ -590,7 +590,8 @@ footer {
   background-color: #000;
   color: #fff;
   border-radius: .25rem;
-  transition: opacity .3s ease
+  transition: opacity .3s ease;
+  text-align: center;
 }
 
 .click-me:hover {
@@ -699,8 +700,8 @@ footer {
 
 .button-grid {
   display: flex;
-  width: 80%;
-  max-width: 100%;
+  width: 40%;
+  max-width: 40vw;
   height: auto;
   margin: 0 auto;
   padding-bottom: 2em;
@@ -858,15 +859,15 @@ button.submit-button:hover {
 
 @media (max-width:768px) {
   .fancy-border-img {
-    border: 1em solid white;
+    border: 0.5em solid white;
     outline: 0.2em solid white;
-    outline-offset: 1.5em;
-    padding: 1em;
-    width: 96%;
-    max-width: 96vw;
+    outline-offset: 1em;
+    padding: 0.5em;
+    width: 93%;
+    max-width: 93vw;
     height: auto;
     max-height: auto;
-    margin: 3em auto 3em;
+    margin: 6em auto 6em;
   }
 
   .canvas-skills-title {
@@ -971,10 +972,50 @@ button.submit-button:hover {
     margin: 0 auto
   }
 
+  #grade-img {
+    min-height: 20.93rem;
+  }
+
+  #grade-table-img1 {
+    min-height: 21.25rem;
+  }
+
+  #pagespeed-grade-img2,
+  #pagespeed-grade-img1 {
+    min-height: 21.25rem;
+  }
+
+  #pagespeed-grade-img3,
+  #grade-table-img2 {
+    min-height: 22.125rem;
+  }
+
+  #pagespeed-grade-img34 {
+    min-height: 26.875rem;
+  }
+
+  #hubspot {
+    min-height: 36.125rem;
+  }
+
+  .author-bio-container {
+    min-height: 11.3125rem;
+  }
 }
 
 @media (max-width: 680px) {
 
+  .fancy-border-img {
+    border: 0.5em solid white;
+    outline: 0.2em solid white;
+    outline-offset: 1em;
+    padding: 0.5em;
+    width: 90%;
+    max-width: 90vw;
+    height: auto;
+    max-height: auto;
+    margin: 6em auto 3em;
+  }
 
   .canvas-skills-grid img {
     min-height: 22rem;

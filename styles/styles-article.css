@@ -71,6 +71,10 @@
     line-height: 1.34
   }
 
+  #description {
+    margin: 1em auto;
+  }
+
   #section1 {
     margin: 4em auto;
   }
@@ -149,7 +153,6 @@
     box-sizing: border-box;
     margin: 0 auto;
     min-height: 632 / 275;
-    background-color: #000;
   }
 
   #grade-table-img1,
@@ -158,7 +161,7 @@
   .author-img-wrapper,
   .wireframe-img,
   #hubspot,
-  .cute-robot,
+  #cute-robot,
   .cta-section,
   #grade-img,
   #mood-board,
@@ -168,11 +171,10 @@
   #pagespeed-grade-img3,
   #pagespeed-grade-img4,
   .project-img {
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
+    width: 90%;
+    max-width: 90vw;
+    height: 100%;
     padding: 0.02em;
-    margin: 1em auto 2em;
   }
 
   #grade-table-img1 img,
@@ -180,7 +182,7 @@
   .author-img-wrapper img,
   .wireframe-img img,
   #hubspot img,
-  .cute-robot img,
+  #cute-robot img,
   .cta-section img,
   #mood-baord img,
   .past-meets-future img,
@@ -195,67 +197,65 @@
     height: auto;
     object-fit: cover;
     box-sizing: border-box;
-    aspect-ratio: inherit;
     padding: 0.02em;
-    margin: 1.5em auto;
-    background-color: #000;
+    margin: 0.5em auto;
   }
 
   .gradie-img img {
-    aspect-ratio: 616 / 532;
+    min-height: 21.93rem;
   }
 
   #pagespeed-grade-img2 img,
   #pagespeed-grade-img1 img {
-    aspect-ratio: 617 / 653;
+    min-height: 40rem;
   }
 
   #pagespeed-grade-img3 img {
-    aspect-ratio: 617 / 627;
+    min-height: 25.75rem;
   }
 
   #pagespeed-grade-img4 img {
-    aspect-ratio: 617 / 655;
+    min-height: 26.93rem;
   }
 
   #grade-table-img1 img {
-    aspect-ratio: 616 / 518;
+    min-height: 21.31rem;
   }
 
   #grade-table-img2 img {
-    aspect-ratio: 636 / 538;
+    min-height: 22.125rem;
   }
 
   #hubspot img {
-    aspect-ratio: 617 / 881;
+    min-height: 36.18rem;
   }
 
   .author-bio-container img {
-    aspect-ratio: 632 / 275;
+    min-height: 11rem;
   }
 
   #mood-board img {
-    aspect-ratio: 585 / 490;
+    min-height: 19.56rem;
   }
 
   #past-meets-future img {
-    aspect-ratio: 632 / 407;
+    min-height: 27.3125rem;
   }
 
   #wireframe-img1 img {
-    aspect-ratio: 628 / 2137;
+    min-height: 85.625rem;
   }
 
   #wireframe-img3 img {
-    aspect-ratio: 628 / 1137;
+    min-height: 58rem;
   }
 
   #wireframe-img2 {
-    aspect-ratio: 628 / 1057;
+    min-height: 90.5rem;
   }
 
-  .cute-robot img {
-    aspect-ratio: 730 / 548;
+  #cute-robot img {
+    min-height: 16.25rem;
   }
 
   .cta-section p {
@@ -387,8 +387,8 @@
     }
 
     #projects {
-      width: 85%;
-      max-width: 85vw;
+      width: 80%;
+      max-width: 80vw;
     }
 
     .article-global-container {
@@ -471,8 +471,7 @@
 
     .author-bio-text,
     .cta-section img {
-      margin: 1em auto;
-      background-color: #000;
+      margin: 1em auto
     }
 
     .author-bio-text h2 {
@@ -502,6 +501,80 @@
     #projects {
       width: 90%;
       max-width: 90vw;
+    }
+
+    #project-title {
+      min-height: 6.75rem;
+    }
+
+    .gradie-img img {
+      min-height: 21.93rem;
+    }
+
+    #wireframe-img1,
+    #wireframe-img2,
+    #wireframe-img3,
+    #hubspot,
+    #mood-baord,
+    .past-meets-future,
+    #pagespeed-grade-img1,
+    #pagespeed-grade-img2,
+    #pagespeed-grade-img3,
+    #pagespeed-grade-img4,
+    #grade-table-img2,
+    #grade-table-img1 {
+      width: 85%;
+      max-width: 85vw;
+    }
+
+    #pagespeed-grade-img2 img,
+    #pagespeed-grade-img1 img {
+      min-height: 40rem;
+    }
+
+    #pagespeed-grade-img3 img {
+      min-height: 25.75rem;
+    }
+
+    #pagespeed-grade-img4 img {
+      min-height: 26.93rem;
+    }
+
+    #grade-table-img1 img {
+      min-height: 21.31rem;
+    }
+
+    #grade-table-img2 img {
+      min-height: 22.125rem;
+    }
+
+    #hubspot img {
+      min-height: 36.18rem;
+    }
+
+    .author-bio-container img {
+      min-height: 12.5rem;
+    }
+
+    #mood-board img {
+      min-height: 19.56rem;
+    }
+
+    #past-meets-future img {
+      min-height: 27.3125rem;
+    }
+
+    #woreframe-img3 img,
+    #wireframe-img1 img {
+      min-height: 96.875rem;
+    }
+
+    #wireframe-img2 {
+      min-height: 51.5rem;
+    }
+
+    #cute-robot img {
+      min-height: 20.375rem;
     }
   }
 
@@ -553,46 +626,4 @@
       height: auto;
     }
 
-
-    .gradie-img {
-      aspect-ratio: 370 / 297;
-    }
-
-    #pagespeed-grade-img2 img,
-    #pagespeed-grade-img1 img {
-      aspect-ratio: 354 / 359;
-    }
-
-    #pagespeed-grade-img3 img {
-      aspect-ratio: 346 / 327;
-    }
-
-    #pagespeed-grade-img4 img {
-      aspect-ratio: 346 / 342;
-    }
-
-    #hubspot img {
-      aspect-ratio: 362 / 514;
-    }
-
-    #author-img-wrapper img {
-      aspect-ratio: 340 / 149;
-    }
-
-    #past-meets-future img {
-      aspect-ratio: 403 / 477;
-    }
-
-    #wireframe-img-3 img,
-    #wireframe-img-1 img {
-      aspect-ratio: 396 / 1219;
-    }
-
-    #wireframe-img-2 img {
-      aspect-ratio: 396 / 684;
-    }
-
-    .cute-robot img {
-      aspect-ratio: 403 / 314;
-    }
   }
