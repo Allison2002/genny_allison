@@ -814,7 +814,7 @@ button.submit-button:hover {
     height: auto;
     width: 100%;
     max-width: 100vw;
-    min-height: clamp(600px, 95vw, 853px);
+    min-height: clamp(43.75rem, 95vw, 53.3125rem);
     margin: 0 auto;
   }
 
@@ -1071,9 +1071,6 @@ button.submit-button:hover {
 }
 
 @media (max-width:320px) {
-  .canvas-skills-grid {
-    min-height: 43.75rem;
-  }
 
   .canvas-skills-title {
     padding: 1em;
@@ -1092,3 +1089,4 @@ button.submit-button:hover {
     line-height: 1;
     padding: 0;
   }
+}
