@@ -1068,5 +1068,27 @@ button.submit-button:hover {
     font-size: 2rem;
     line-height: 1.6
   }
-
 }
+
+@media (max-width:320px) {
+  .canvas-skills-grid {
+    min-height: 43.75rem;
+  }
+
+  .canvas-skills-title {
+    padding: 1em;
+    height: auto;
+    min-height: 300px;
+  }
+
+  h1 {
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0;
+  }
