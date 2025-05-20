@@ -201,63 +201,6 @@
     margin: 0.5em auto;
   }
 
-  .gradie-img {
-    min-height: 21.93rem;
-  }
-
-  #pagespeed-grade-img2,
-  #pagespeed-grade-img1 {
-    min-height: 40rem;
-  }
-
-  #pagespeed-grade-img3 {
-    min-height: 25.75rem;
-  }
-
-  #pagespeed-grade-img4 {
-    min-height: 26.93rem;
-  }
-
-  #grade-table-img1 {
-    min-height: 21.31rem;
-  }
-
-  #grade-table-img2 {
-    min-height: 22.125rem;
-  }
-
-  #hubspot {
-    min-height: 36.18rem;
-  }
-
-  .author-bio-container {
-    min-height: 11rem;
-  }
-
-  #mood-board {
-    min-height: 19.56rem;
-  }
-
-  #past-meets-future {
-    min-height: 27.3125rem;
-  }
-
-  #wireframe-img1 {
-    min-height: 85.625rem;
-  }
-
-  #wireframe-img3 {
-    min-height: 58rem;
-  }
-
-  #wireframe-img2 {
-    min-height: 90.5rem;
-  }
-
-  #cute-robot {
-    min-height: 16.25rem;
-  }
-
   .cta-section p {
     font-size: 1.3rem;
     width: 100%;
