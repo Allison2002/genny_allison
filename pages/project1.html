@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
 
-    <!-- Desktop (≥ 941px) -->
+    <!-- Desktop image preload (≥ 941px) -->
     <link
       rel="preload"
       as="image"
@@ -19,7 +19,7 @@
       fetchpriority="high"
     />
 
-    <!-- Tablet (681px–940px) -->
+    <!-- Tablet image preload (681px–940px) -->
     <link
       rel="preload"
       as="image"
@@ -28,23 +28,22 @@
       media="(min-width: 681px) and (max-width: 940px)"
     />
 
-    <!-- Mobile mid-range (481px–680px) -->
+    <!-- Small mobile image preload (481px–680px) -->
     <link
       rel="preload"
       as="image"
-      href="/img/welcome_to_tech_trends_midmobile.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/w_615,h_415,f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
       type="image/avif"
       media="(min-width: 481px) and (max-width: 680px)"
     />
 
-    <!-- Mobile default (≤ 480px) -->
+    <!-- Fallback image preload (≤ 480px) -->
     <link
       rel="preload"
       as="image"
       href="/img/welcome_to_tech_trends_mobile.avif"
       type="image/avif"
       media="(max-width: 480px)"
-      fetchpriority="high"
     />
 
     <link rel="preload" href="/assets/fonts/georgia.woff2" as="font" type="font/woff2" crossorigin="anonymous">
