@@ -13,34 +13,35 @@
     <link rel="preload" href="/assets/fonts/georgia.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/assets/fonts/SegoeUI.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <!-- Desktop preload (min-width: 1200px) -->
+    <!-- Preload for Desktop (1200px+) -->
     <link 
       rel="preload" 
       as="image" 
       href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1200,h_675,dpr_auto,fl_lossy,fl_force_strip/v1742324200/welcome_to_tech_trends_desktop_hp4pdx.avif" 
       type="image/avif" 
       media="(min-width: 1200px)" 
-      fetchpriority="high" />
+      fetchpriority="high" 
+    />
 
-    <!-- Tablet preload (941px–1199px) -->
+    <!-- Preload for Tablet (941px–1199px) -->
     <link 
       rel="preload" 
       as="image" 
       href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_768,h_432,dpr_auto,fl_lossy,fl_force_strip/v1742324200/welcome_to_tech_trends_desktop_hp4pdx.avif" 
       type="image/avif" 
       media="(min-width: 941px) and (max-width: 1199px)" 
-      fetchpriority="high" />
+      fetchpriority="high" 
+    />
 
-    <!-- Mobile preload (≤940px) -->
+    <!-- Preload for Mobile (≤940px) -->
     <link 
       rel="preload" 
       as="image" 
-      href="/img/welcome_to_tech_trends_mobile.avif" 
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_576,h_324,dpr_auto,fl_lossy,fl_force_strip/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif" 
       type="image/avif" 
       media="(max-width: 940px)" 
-      fetchpriority="high" />
-
-
+      fetchpriority="high" 
+    />
 
     <link rel="preload" href="/styles/styles-article.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
@@ -121,14 +122,14 @@
 
           <!-- Mobile: ≤940px -->
           <source
-            srcset="/img/welcome_to_tech_trends_940.avif"
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_576,h_324,dpr_auto,fl_lossy,fl_force_strip/v1742324200/welcome_to_tech_trends_mobile.avif"
             type="image/avif"
             media="(max-width: 940px)"
             sizes="100vw" />
 
-          <!-- Fallback -->
+          <!-- Fallback image -->
           <img
-            src="/img/welcome_to_tech_trends_mobile.avif"
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_576,h_324,dpr_auto,fl_lossy,fl_force_strip/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
             alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology motifs"
             width="576"
             height="324"
@@ -137,7 +138,6 @@
             decoding="async"
             loading="eager" />
         </picture>
-
         <div class="canvas-skills-title">
           <h1>a canvas of code:</h1>
           <h2>showcasing the craft</h2>
