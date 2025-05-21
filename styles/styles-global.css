@@ -312,6 +312,7 @@ nav {
 .canvas-skills-grid img {
   display: block;
   width: 100%;
+  aspect-ratio: 768 / 432;
   height: auto;
   overflow: hidden;
   background-color: #000;
