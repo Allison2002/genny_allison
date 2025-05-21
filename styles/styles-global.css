@@ -322,6 +322,8 @@ nav {
   background-color: #000;
   border: 1em solid #000;
   border-right: 0.5em solid #000;
+  width: 46.5rem;
+  height: 26.125rem;
 }
 
 .canvas-skills-grid img {
@@ -825,6 +827,8 @@ button.submit-button:hover {
     flex: 0 0 100%;
     max-width: 100%;
     min-width: 100%;
+    width: 57.25rem;
+    height: 32.187rem;
   }
 
   .canvas-skills-grid img {
@@ -873,6 +877,11 @@ button.submit-button:hover {
     max-width: 85vw;
     height: auto;
     margin: 6em auto 6em;
+  }
+
+  .canvas-skills-grid img {
+    width: 46.5rem;
+    height: 26.125rem;
   }
 
   .canvas-skills-title h2 {
@@ -993,6 +1002,7 @@ button.submit-button:hover {
     min-height: 469px;
   }
 
+
   .fancy-border-img {
     border: 0.5em solid white;
     outline: 0.2em solid white;
@@ -1035,6 +1045,11 @@ button.submit-button:hover {
 @media (max-width:480px) {
   .canvas-skills-grid {
     min-height: 20rem;
+  }
+
+  .canvas-skills-grid img {
+    width: 28.5rem;
+    height: 16rem;
   }
 
   .side-nav {
