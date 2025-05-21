@@ -137,6 +137,8 @@
   }
 
   .author-bio-container {
+    display: flex;
+    flex-direction: column;
     background-color: #000;
     width: 100%;
     max-width: 100vw;
