@@ -303,23 +303,32 @@ nav {
   max-width: 100vw;
   height: auto;
   box-sizing: border-box;
-  min-height: clamp(16rem, calc(30vw * 0.6), 22.5rem);
   contain: layout;
   overflow: hidden;
   background-color: #000;
+}
+
+.canvas-skills-grid picture,
+.canvas-skills-title {
+  flex: 0 0 auto;
+}
+
+.canvas-skills-grid picture {
+  flex: 0 0 40%;
+  max-width: 40%;
+  min-width: 40%;
+  display: block;
+  background-color: #000;
+  border: 1em solid #000;
+  border-right: 0.5em solid #000;
 }
 
 .canvas-skills-grid img {
   display: block;
   width: 100%;
   height: auto;
-  overflow: hidden;
-  background-color: #000;
   object-fit: cover;
-  margin: 0 auto;
-  border: 1em solid #000;
-  border-right: 0.5em solid #000;
-  flex: 1 1 30%;
+  aspect-ratio: 16 / 9;
 }
 
 img[fetchpriority=high] {
@@ -336,14 +345,13 @@ img[fetchpriority=high] {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  width: 100%;
-  max-width: 100vw;
+  flex-basis: 60%;
+  max-width: 60%;
+  min-width: 60%;
   height: auto;
   max-height: 100%;
-  flex: 1 1 70%;
   contain: layout;
   padding: clamp(0.5rem, 2vw, 1.5rem);
-  min-height: calc(30vw * 0.72);
 }
 
 .canvas-skills-title h1,
@@ -472,7 +480,6 @@ footer {
   width: 90%;
   max-width: 90vw;
   height: auto;
-  max-height: auto;
   margin: 6em auto 6em;
 }
 
@@ -606,6 +613,10 @@ footer {
   height: auto;
   width: 100%;
   max-width: 100vw
+}
+
+.project-links {
+  text-align: center;
 }
 
 .resume-date {
@@ -862,7 +873,6 @@ button.submit-button:hover {
     width: 93%;
     max-width: 93vw;
     height: auto;
-    max-height: auto;
     margin: 6em auto 6em;
   }
 
@@ -976,35 +986,7 @@ button.submit-button:hover {
     margin: 0 auto
   }
 
-  #grade-img {
-    min-height: 20.93rem;
-  }
 
-  #grade-table-img1 {
-    min-height: 21.25rem;
-  }
-
-  #pagespeed-grade-img2,
-  #pagespeed-grade-img1 {
-    min-height: 21.25rem;
-  }
-
-  #pagespeed-grade-img3,
-  #grade-table-img2 {
-    min-height: 22.125rem;
-  }
-
-  #pagespeed-grade-img34 {
-    min-height: 26.875rem;
-  }
-
-  #hubspot {
-    min-height: 36.125rem;
-  }
-
-  .author-bio-container {
-    min-height: 11.3125rem;
-  }
 }
 
 @media (max-width: 680px) {
@@ -1013,15 +995,21 @@ button.submit-button:hover {
   }
 
   .fancy-border-img {
-    border: 0.5em solid white;
+    border: 1em solid white;
     outline: 0.2em solid white;
-    outline-offset: 1em;
-    padding: 0.5em;
+    outline-offset: 1.5em;
+    padding: 1em;
+    margin: 6em auto;
     width: 90%;
     max-width: 90vw;
-    height: auto;
-    max-height: auto;
-    margin: 6em auto 3em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 16 / 9;
+    /* Maintains consistent ratio */
+    background-color: black;
+    /* ensures outline stands out */
   }
 
   .canvas-skills-title {
