@@ -869,8 +869,8 @@ button.submit-button:hover {
     outline: 0.2em solid white;
     outline-offset: 1em;
     padding: 0.5em;
-    width: 93%;
-    max-width: 93vw;
+    width: 85%;
+    max-width: 85vw;
     height: auto;
     margin: 6em auto 6em;
   }
@@ -994,21 +994,14 @@ button.submit-button:hover {
   }
 
   .fancy-border-img {
-    border: 1em solid white;
+    border: 0.5em solid white;
     outline: 0.2em solid white;
-    outline-offset: 1.5em;
-    padding: 1em;
-    margin: 6em auto;
-    width: 90%;
-    max-width: 90vw;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 16 / 9;
-    /* Maintains consistent ratio */
-    background-color: black;
-    /* ensures outline stands out */
+    outline-offset: 1em;
+    padding: 0.5em;
+    width: 80%;
+    max-width: 80vw;
+    height: auto;
+    margin: 6em auto 6em;
   }
 
   .canvas-skills-title {
