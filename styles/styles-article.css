@@ -329,12 +329,24 @@
     text-align: center;
   }
 
+  @media (max-width:1300px) {
+    .menu-grid {
+      width: 70%;
+      max-width: 70vw;
+    }
+  }
+
   @media (max-width:1024px) {
     #projects {
       width: 75%;
       max-width: 75vw;
       margin: 3em auto 3em;
       padding: 1em;
+    }
+
+    .menu-grid {
+      width: 90%;
+      max-width: 90vw;
     }
 
     #section1 {
