@@ -313,7 +313,7 @@ nav {
   max-width: 100vw;
   height: auto;
   min-height: 13.125;
-  max-height: 51.3vh;
+  max-height: 68.3vh;
   box-sizing: border-box;
   contain: none;
   overflow: hidden;
@@ -888,6 +888,7 @@ button.submit-button:hover {
     display: flex;
     flex-direction: column;
     min-height: clamp(16rem, calc(30vw * 0.6), 22.5rem);
+    max-height: 53.375rem;
   }
 
   .canvas-skills-grid picture {
@@ -895,7 +896,7 @@ button.submit-button:hover {
     max-width: 100%;
     min-width: 100%;
     width: 57.25rem;
-    height: 32.187rem;
+    height: 33.625rem;
   }
 
   .canvas-skills-grid img {
@@ -935,6 +936,10 @@ button.submit-button:hover {
 }
 
 @media (max-width:768px) {
+  .canvas-skills-grid {
+    min-height: 45.93rem;
+  }
+
   .fancy-border-img {
     border: 0.5em solid white;
     outline: 0.2em solid white;
@@ -1068,9 +1073,12 @@ button.submit-button:hover {
 
 @media (max-width: 680px) {
   .canvas-skills-grid {
-    min-height: 469px;
+    min-height: 37.278rem;
   }
 
+  .canvas-skills-grid img {
+    min-height: 24.529rem;
+  }
 
   .fancy-border-img {
     border: 0.5em solid white;
@@ -1118,13 +1126,13 @@ button.submit-button:hover {
   }
 
   .canvas-skills-grid {
-    min-height: 31rem;
+    min-height: 39.178rem;
     height: auto;
   }
 
   .canvas-skills-grid img {
     width: 28.5rem;
-    height: 16.625rem;
+    height: 24.528rem;
   }
 
   .side-nav {
