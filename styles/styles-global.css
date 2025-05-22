@@ -140,12 +140,13 @@ body.fonts-loaded p {
   visibility: visible;
 }
 
+.collections-title a,
 .links,
 .links a,
 a,
 p a {
-  color: #0ff;
-  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d;
+  color: black;
+  text-shadow: 0 0 1px cyan, 0 0 2px cyan;
   font-weight: 700;
   text-decoration: underline
 }
@@ -154,7 +155,13 @@ p a {
 .links:visited,
 a:visited,
 p a:visited {
-  color: #8be4ed;
+  color: black;
+  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
+}
+
+#nav ul li a,
+#footer-links ul li a {
+  color: cyan;
   text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
 }
 
@@ -168,12 +175,16 @@ a:focus,
 a:hover,
 p a:focus,
 p a:hover {
-  color: white;
+  color: cyan;
   text-shadow: 0 0 2px #1a1d9e, 0 0 4px #1a1d9e;
   text-decoration: underline;
   background-color: rgba(255, 255, 255, .05);
   border-radius: 3px;
   padding: 0 2px
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
 }
 
 a::after,
@@ -378,25 +389,28 @@ img[fetchpriority=high] {
   line-height: 1.4;
 }
 
+
 .footer-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: auto;
-  width: 55%;
-  max-width: 55vw;
-  padding: 2em 0;
+  height: 240px;
+  width: 384px;
+  max-width: 384px;
+  padding: 1em 0;
   background-color: #000;
+  aspect-ratio: 16 / 10;
 }
 
 .footer-logo img {
   width: 100%;
   height: auto;
-  min-height: 17rem;
+  min-height: 15rem;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   background-color: #000;
+
 }
 
 .footer-links ul li {
@@ -488,6 +502,18 @@ footer {
   max-width: 90vw;
   height: auto;
   margin: 6em auto 6em;
+}
+
+.fancy-border-title {
+  border: 1em solid white;
+  outline: 0.2em solid white;
+  outline-offset: 1.5em;
+  padding: 1em;
+  margin: 1.875em auto 2em;
+  width: 90%;
+  max-width: 90vw;
+  height: auto;
+  margin: 2em auto 0.5em;
 }
 
 .hamburger-icon {
@@ -582,6 +608,7 @@ footer {
   transform: scale(1.05)
 }
 
+.collections-click-me,
 .click-me {
   display: flex;
   justify-content: center;
@@ -602,12 +629,14 @@ footer {
   text-align: center;
 }
 
+.collections-click-me:hover,
 .click-me:hover {
   background-color: gray;
   box-shadow: .0225em .0225em .0125em rgba(0, 0, 0, .3), -.125em -.125em .3125em rgba(255, 255, 255, .7);
   color: #fff
 }
 
+.collections-click-me a,
 .click-me a {
   text-decoration: none;
   color: #fff;
@@ -621,6 +650,14 @@ footer {
   width: 100%;
   max-width: 100vw
 }
+
+.collections-click-me {
+  margin: 1em auto 0.5em;
+  height: auto;
+  width: 100%;
+  max-width: 100vw
+}
+
 
 .project-links {
   text-align: center;
@@ -687,17 +724,22 @@ footer {
   line-height: 1.6;
 }
 
+.resume-summary p strong {
+  color: mediumturquoise;
+  font-weight: 900;
+}
+
 .takeme-text {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  margin: 1em auto;
+  margin: 4em auto 3em;
 }
 
 .takeme-text h3 {
   color: #0ff;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   text-decoration: underline cyan;
   height: auto;
   width: 100%;
@@ -712,12 +754,34 @@ footer {
 
 .button-grid {
   display: flex;
-  width: 45vw;
-  max-width: 45vw;
+  width: 75%;
+  max-width: 75vw;
   height: auto;
   margin: 0 auto;
   padding-bottom: 2em;
   gap: 1em;
+}
+
+.collections-button-grid {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 75vw;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 0;
+  gap: 0.2em;
+}
+
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  max-width: 40vw;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  gap: 0.5em;
 }
 
 button.submit-button {
@@ -925,6 +989,7 @@ button.submit-button:hover {
     flex-direction: column
   }
 
+  .collections-click-me,
   .click-me {
     height: auto;
     margin: 0 auto
@@ -966,6 +1031,7 @@ button.submit-button:hover {
     display: flex
   }
 
+  .collections-click-me a,
   .click-me a {
     font-size: 1rem
   }

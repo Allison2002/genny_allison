@@ -9,6 +9,56 @@
       name="description"
       content="Explore Genny Allison's portfolio showcasing projects that merge creativity and code. From engaging animations to responsive designs, each project highlights her skills in UI/UX, front-end development, and client-focused web solutions. Discover the blend of artistry and functionality across a range of digital creations."
     />
+
+        <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+
+
+    <link rel="preload" href="/assets/fonts/georgia.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/assets/fonts/SegoeUI.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- ✅ Desktop ≥ 941px -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_744,h_418/v1743092340/collections_ky7hd1.avif"
+      type="image/avif"
+      media="(min-width: 941px)"
+      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_744,h_418/v1743092340/collections_ky7hd1.avif"
+      imagesizes="744px"
+    />
+
+    <!-- ✅ Tablet: 769px–940px -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_916,h_515/v1743092340/collections_ky7hd1.avif"
+      type="image/avif"
+      media="(min-width: 769px) and (max-width: 940px)"
+      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_916,h_515/v1743092340/collections_ky7hd1.avif"
+      imagesizes="916px"
+    />
+
+    <!-- ✅ Mobile: 481px–768px -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_744,h_418/v1743092340/collections_ky7hd1.avif"
+      type="image/avif"
+      media="(min-width: 481px) and (max-width: 768px)"
+      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_744,h_418/v1743092340/collections_ky7hd1.avif"
+      imagesizes="744px"
+    />
+
+    <!-- ✅ Optional fallback for ≤480px -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_456,h_256/v1743092340/collections_ky7hd1.avif"
+      type="image/avif"
+      media="(max-width: 480px)"
+      imagesrcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_456,h_256/v1743092340/collections_ky7hd1.avif"
+      imagesizes="480px"
+    />
     <link
       class="tab-logo"
       rel="icon"
@@ -30,218 +80,224 @@
     <noscript><link rel="stylesheet" href="/styles/styles-global.css"></noscript>
 
   </head>
-  <body>
-    <section>
-      <div id="nav"></div>
-    </section>
+  <body class="fonts-loading">
     <header>
+      <div id="nav"></div>
       <div class="canvas-skills-grid">
-        <div class="canvas-skills-img">
-          <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1200/v1743092340/collections_ky7hd1.avif"
+        <picture>
+          <!-- Desktop ≥ 1025px -->
+          <source
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_744,h_418/v1743092340/collections_ky7hd1.avif"
+            media="(min-width: 941px)"
+            type="image/avif" />
+
+          <!-- Tablet ≥ 769px -->
+          <source
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_916,h_515/v1743092340/collections_ky7hd1.avif"
+            media="(min-width: 769px) and (max-width: 940px)"
+            type="image/avif" />
+
+          <!-- Mobile ≤ 768px -->
+          <source
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_744,h_418/v1743092340/collections_ky7hd1.avif"
+            media="(min-width: 481px) and (max-width: 768px)"
+            type="image/avif" />
+
+          <!-- Fallback -->
+          <img
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_456,h_256/v1743092340/collections_ky7hd1.avif"
             alt="A woman coding on a laptop, symbolizing the integration of creativity and technology in web development"
-            type="image/avif"
-            width="610"
-            height="345"
-            aspect-ratio="1.75"
-            object-fit="cover"
-          >
-        </div>
+            width="456"
+            height="256"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+            style="object-fit: cover; aspect-ratio: 16 / 9; width: 100%; height: auto;"
+          />
+        </picture>
         <div class="canvas-skills-title">
           <h1>a canvas of innovation:</h1>
           <h2>my digital creations</h2>
         </div>
       </div>
     </header>
-    <main class="collections">
-      <div class="collections-grid">
-        <div class="collections-row">
-          <div class="collection-thumbnail-box">
-            <div class="collections-title">
-              <h2><a href="/pages/project1.html">project 1</a></h2>
-            </div>
-            <div class="collections-border-white">
-              <div class="collections-container">
-                <div class="collections-thumbnail">
-                  <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743014132/project1-thumbnail_palgve.avif" 
-                    alt=""
-                    type="image/avif"
-                    width="100%"
-                    height="auto"
-                    apect-ratio="1.19 / 1"
-                  />
-                </div>
-                <div class="collection-links">
-                  <div class="collection-links-text">
-                    <h3>take me to the</h3>
-                  </div>
-                  <div class="collections-button-grid">
-                    <div class="collections-btn">
-                      <a href="https://tech-trends-blog.netlify.app/">design</a>
-                    </div>
-                    <div class="collections-btn">
-                      <a href="/pages/project1.html">the study</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <main class="collections-grid">
+      <div class="collections-row">
+        <div class="collection-thumbnail-box">
+          <div class="collections-title fancy-border-title">
+            <h2><a href="/pages/project1/project1-intro.html">project 1</a></h2>
           </div>
-          <div class="collection-thumbnail-box">
-            <div class="collections-title">
-             <h2><a href="/pages/project2.html">project 2</a></h2>
+          <div class="collections-container">
+            <div class="collections-thumbnail fancy-border-img">
+              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743014132/project1-thumbnail_palgve.avif" 
+                alt=""
+                type="image/avif"
+                width="100%"
+                height="auto"
+                apect-ratio="1.19 / 1"
+              />
             </div>
-            <div class="collections-border-white">
-              <div class="collections-container">
-                <div class="collections-thumbnail">
-                  <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743014132/project2-thumbnail_z7t2rk.avif" 
-                    alt=""
-                    type="image/avif"
-                    width="100%"
-                    height="auto"
-                    apect-ratio="1.19 / 1"
-                  />
-                </div>
-                <div class="collection-links">
-                  <div class="collection-links-text">
-                    <h3>take me to the</h3>
-                  </div>
-                  <div class="collections-button-grid">
-                    <div class="collections-btn">
-                      <a href="https://tech-trends-blog.netlify.app/">design</a>
-                    </div>
-                    <div class="collections-btn">
-                      <a href="/pages/project2.html">the study</a>
-                    </div>
-                  </div>
-                </div>
+            <div class="collection-links">
+              <div class="collection-links-text">
+                <h3>take me to the</h3>
               </div>
-            </div>
-          </div>
-          <div class="collection-thumbnail-box">
-            <div class="collections-title">
-              <h2><a href="/pages/project3.html">project 3</a></h2>
-            </div>
-            <div class="collections-border-white">
-              <div class="collections-container">
-                <div class="collections-thumbnail">
-                  <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743014132/project3-thumbnail_m2okuz.avif" 
-                    alt=""
-                    type="image/avif"
-                    width="100%"
-                    height="auto"
-                    apect-ratio="1.19 / 1"
-                  />
+              <div class="collections-button-grid">
+                <div class="collections-click-me">
+                  <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">final design</a>
                 </div>
-                <div class="collection-links">
-                  <div class="collection-links-text">
-                    <h3>take me to the</h3>
-                  </div>
-                  <div class="collections-button-grid">
-                    <div class="collections-btn">
-                      <a href="https://tech-trends-blog.netlify.app/">design</a>
-                    </div>
-                    <div class="collections-btn">
-                      <a href="/pages/project3.html">the study</a>
-                    </div>
-                  </div>
+                <div class="click-me">  
+                  <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="collections-row">
-          <div class="collection-thumbnail-box">
-            <div class="collections-title">
-              <h2><a href="/pages/project4.html">project 4</a></h2>
+        <div class="collection-thumbnail-box">
+          <div class="collections-title fancy-border-title">
+          <h2><a href="/pages/project2.html">project 2</a></h2>
+          </div>
+          <div class="collections-container">
+            <div class="collections-thumbnail fancy-border-img">
+              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743014132/project2-thumbnail_z7t2rk.avif" 
+                alt=""
+                type="image/avif"
+                width="100%"
+                height="auto"
+                apect-ratio="1.19 / 1"
+              />
             </div>
-            <div class="collections-border-white">
-              <div class="collections-container">
+            <div class="collection-links">
+              <div class="collection-links-text">
+                <h3>take me to the</h3>
+              </div>
+              <div class="collections-button-grid">
+                <div class="collections-click-me">
+                  <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">final design</a>
+                </div>
+                <div class="click-me">  
+                  <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection-thumbnail-box">
+          <div class="collections-title fancy-border-title">
+            <h2><a href="/pages/project3.html">project 3</a></h2>
+          </div>
+          <div class="collections-container">
+            <div class="collections-thumbnail fancy-border-img">
+              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743014132/project3-thumbnail_m2okuz.avif" 
+                alt=""
+                type="image/avif"
+                width="100%"
+                height="auto"
+                apect-ratio="1.19 / 1"
+              />
+            </div>
+            <div class="collection-links">
+              <div class="collection-links-text">
+                <h3>take me to the</h3>
+              </div>
+              <div class="collections-button-grid">
+                <div class="collections-click-me">
+                  <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">final design</a>
+                </div>
+                <div class="click-me">  
+                  <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collections-row">
+        <div class="collection-thumbnail-box">
+          <div class="collections-title fancy-border-title">
+            <h2><a href="/pages/project4.html">project 4</a></h2>
+          </div>
+          <div class="collections-container">
 
-                <div class="collections-thumbnail">
-                  <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743014132/project4-thumbnail_e5nrva.avif" 
-                    alt=""
-                    type="image/avif"
-                    width="100%"
-                    height="auto"
-                    apect-ratio="1.19 / 1"
-                  />
+            <div class="collections-thumbnail fancy-border-img">
+              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743014132/project4-thumbnail_e5nrva.avif" 
+                alt=""
+                type="image/avif"
+                width="100%"
+                height="auto"
+                apect-ratio="1.19 / 1"
+              />
+            </div>
+            <div class="collection-links">
+              <div class="collection-links-text">
+                <h3>take me to the</h3>
+              </div>
+              <div class="collections-button-grid">
+                <div class="collections-click-me">
+                  <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">final design</a>
                 </div>
-                <div class="collection-links">
-                  <div class="collection-links-text">
-                    <h3>take me to the</h3>
-                  </div>
-                  <div class="collections-button-grid">
-                    <div class="collections-btn">
-                      <a href="https://tech-trends-blog.netlify.app/">design</a>
-                    </div>
-                    <div class="collections-btn">
-                      <a href="/pages/project4.html">the study</a>
-                    </div>
-                  </div>
+                <div class="click-me">  
+                  <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="collection-thumbnail-box">
-            <div class="collections-title">
-              <h2><a href="/pages/project5.html">project 5</a></h2>
+        </div>
+        <div class="collection-thumbnail-box">
+          <div class="collections-title fancy-border-title">
+            <h2><a href="/pages/project5.html">project 5</a></h2>
+          </div>
+          <div class="collections-container">
+            <div class="collections-thumbnail fancy-border-img">
+              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743017418/project5-thumbnail_ljotky.avif" 
+                alt=""
+                type="image/avif"
+                width="100%"
+                height="auto"
+                apect-ratio="1.19 / 1"
+              />
             </div>
-            <div class="collections-border-white">
-              <div class="collections-container">
-                <div class="collections-thumbnail">
-                  <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743017418/project5-thumbnail_ljotky.avif" 
-                    alt=""
-                    type="image/avif"
-                    width="100%"
-                    height="auto"
-                    apect-ratio="1.19 / 1"
-                  />
+            <div class="collection-links">
+              <div class="collection-links-text">
+                <h3>take me to the</h3>
+              </div>
+              <div class="collections-button-grid">
+                <div class="collections-click-me">
+                  <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">final design</a>
                 </div>
-                <div class="collection-links">
-                  <div class="collection-links-text">
-                    <h3>take me to the</h3>
-                  </div>
-                  <div class="collections-button-grid">
-                    <div class="collections-btn">
-                      <a href="https://tech-trends-blog.netlify.app/">design</a>
-                    </div>
-                    <div class="collections-btn">
-                      <a href="/pages/project5.html">the study</a>
-                    </div>
-                  </div>
+                <div class="click-me">  
+                  <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="collection-thumbnail-box">
-            <div class="collections-title">
-              <h2><a href="/pages/project6.html">project 6</a></h2>
-            </div>
-            <div class="collections-border-white">
-              <div class="collections-container">
-                <div class="collections-thumbnail">
-                  <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743017418/project6-thumbnail_ws3h0z.avif" 
-                    alt=""
-                    type="image/avif"
-                    width="100%"
-                    height="auto"
-                    apect-ratio="1.19 / 1"
-                  />
+        </div>
+        <div class="collection-thumbnail-box">
+          <div class="collections-title fancy-border-title">
+            <h2><a href="/pages/project6.html">project 6</a></h2>
+          </div>
+            <div class="collections-container">
+              <div class="collections-thumbnail fancy-border-img">
+                <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,w_1880,fl_lossy/v1743017418/project6-thumbnail_ws3h0z.avif" 
+                  alt=""
+                  type="image/avif"
+                  width="100%"
+                  height="auto"
+                  apect-ratio="1.19 / 1"
+                />
+              </div>
+              <div class="collection-links">
+              <div class="collection-links-text">
+                <h3>take me to the</h3>
+              </div>
+              <div class="collections-button-grid">
+                <div class="collections-click-me">
+                  <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">final design</a>
                 </div>
-                <div class="collection-links">
-                  <div class="collection-links-text">
-                    <h3>take me to the</h3>
-                  </div>
-                  <div class="collections-button-grid">
-                    <div class="collections-btn">
-                      <a href="https://tech-trends-blog.netlify.app/">design</a>
-                    </div>
-                    <div class="collections-btn">
-                      <a href="/pages/project6.html">the study</a>
-                    </div>
-                  </div>
+                <div class="click-me">  
+                  <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>

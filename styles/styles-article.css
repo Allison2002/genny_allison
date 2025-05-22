@@ -58,7 +58,7 @@
     line-height: 1.6;
   }
 
-  .author-bio-text h2 {
+  .author-bio-text h3 {
     font-size: 1.8rem;
     width: 100%;
     height: auto;
@@ -77,6 +77,10 @@
 
   #section1 {
     margin: 4em auto;
+  }
+
+  #section1 h2 {
+    color: cyan;
   }
 
   .grade-title {
@@ -156,20 +160,7 @@
 
   }
 
-  #grade-table-img1,
-  #grade-table-img2,
-  #pagespeed-grade-img1,
-  .author-img-wrapper,
-  #cute-robot,
-  .cta-section,
-  #grade-img,
-  #mood-board,
-  .past-meets-future,
-  #pagespeed-grade-img1,
-  #pagespeed-grade-img2,
-  #pagespeed-grade-img3,
-  #pagespeed-grade-img4,
-  .project-img {
+  .images picture .mages {
     width: 90%;
     max-width: 90vw;
     height: auto;
@@ -177,10 +168,7 @@
     padding: 1em;
   }
 
-  .hubspot,
-  #wireframe-img2,
-  #wireframe-img1,
-  #wireframe-img3 {
+  .images2 {
     width: 90%;
     max-width: 900px;
     margin: 6em auto;
@@ -192,29 +180,32 @@
     box-sizing: border-box;
   }
 
-  .hubspot img,
-  #wireframe-img2 img,
-  #wireframe-img3 img,
-  #wireframe-img1 img {
+
+  .collections-thumbnail {
+    width: 20%;
+    max-width: 200px;
+    margin: 6em auto;
+    padding: 1em;
+    overflow: hidden;
+    border: 1em solid white;
+    outline: 0.2em solid white;
+    outline-offset: 1.5em;
+    box-sizing: border-box;
+  }
+
+
+  .menu-grid .git-gub-thumbnail {
+    padding: 2em;
+  }
+
+  .images2 img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: contain;
   }
 
-  #grade-table-img1 img,
-  #grade-table-img2 img,
-  .author-img-wrapper img,
-  #cute-robot img,
-  .cta-section img,
-  #mood-baord img,
-  .past-meets-future img,
-  #pagespeed-grade-img1 img,
-  #pagespeed-grade-img2 img,
-  #pagespeed-grade-img3 img,
-  #pagespeed-grade-img4 img,
-  .project-img img,
-  #grade-img img {
+  .images img {
     width: 100%;
     height: auto;
     max-width: 100vw;
@@ -222,6 +213,10 @@
     display: block;
     margin: auto;
     padding: 0.25em;
+  }
+
+  .menu-grid img {
+    margin: 4em auto 2em;
   }
 
   .cta-section p {
@@ -440,7 +435,7 @@
       margin: 1em auto
     }
 
-    .author-bio-text h2 {
+    .author-bio-text h3 {
       font-size: clamp(1.1rem, 2vw, 1.3rem);
       height: auto;
       line-height: 1.2;
