@@ -312,7 +312,7 @@ nav {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 13.125;
+  min-height: 24.93;
   max-height: 68.3vh;
   box-sizing: border-box;
   contain: none;
@@ -348,6 +348,7 @@ nav {
   object-fit: cover;
   border: 1em solid #000;
   border-right: 0.5em solid #000;
+  aspect-ratio: 473 / 243;
 }
 
 img[fetchpriority=high] {
@@ -902,6 +903,7 @@ button.submit-button:hover {
   .canvas-skills-grid img {
     border: 1em solid black;
     background-color: #000;
+    aspect-ratio: 933 / 538;
   }
 
   img[fetchpriority=high] {
@@ -937,7 +939,7 @@ button.submit-button:hover {
 
 @media (max-width:768px) {
   .canvas-skills-grid {
-    min-height: 45.93rem;
+    min-height: 45.95rem;
   }
 
   .fancy-border-img {
@@ -954,6 +956,7 @@ button.submit-button:hover {
   .canvas-skills-grid img {
     width: 46.5rem;
     height: 26.125rem;
+    aspect-ratio: 761 / 441;
   }
 
   .canvas-skills-title h2 {
@@ -1073,11 +1076,12 @@ button.submit-button:hover {
 
 @media (max-width: 680px) {
   .canvas-skills-grid {
-    min-height: 37.278rem;
+    min-height: 40.33rem;
   }
 
   .canvas-skills-grid img {
     min-height: 24.529rem;
+    aspect-ratio: 673 / 441;
   }
 
   .fancy-border-img {
@@ -1133,6 +1137,7 @@ button.submit-button:hover {
   .canvas-skills-grid img {
     width: 28.5rem;
     height: 24.528rem;
+    aspect-ratio: 473 / 392;
   }
 
   .side-nav {
