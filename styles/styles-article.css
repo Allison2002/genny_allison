@@ -72,11 +72,14 @@
   }
 
   #description {
-    margin: 1em auto;
+    margin: 1em auto 0;
   }
+
+
 
   #section1 {
     margin: 4em auto;
+    padding: 1em 4em;
   }
 
   #section1 h2 {
@@ -195,7 +198,11 @@
 
 
   .menu-grid .git-gub-thumbnail {
-    padding: 2em;
+    padding: 0 3em;
+  }
+
+  .menu-grid {
+    padding: 2em 0;
   }
 
   .images2 img {
@@ -323,7 +330,10 @@
       max-width: 75vw;
       margin: 3em auto 3em;
       padding: 1em;
+    }
 
+    #section1 {
+      padding: 2em;
     }
 
     .resume-border {
@@ -532,12 +542,28 @@
       margin: auto;
       padding: 0.25em;
     }
+
+    .git-gub-thumbnail {
+      width: 100px;
+      height: 100px;
+      padding: 2em;
+    }
   }
 
   @media (max-width:480px) {
+    #section1 {
+      padding: 1em;
+    }
+
     #grade-table-img1 img {
       width: 96%;
       max-width: 96vw;
+    }
+
+    .menu-grid {
+      width: 90%;
+      max-width: 90vw;
+
     }
 
     .design {
@@ -559,12 +585,13 @@
     }
 
     .takeme-text {
-      margin: 4em auto 0
+      margin: 8em auto 3em;
     }
 
     #projects {
       width: 90%;
       max-width: 90vw;
+      margin: 3em auto 3em;
     }
 
     .border-white {
