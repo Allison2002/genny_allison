@@ -774,17 +774,6 @@ footer {
   gap: 0.2em;
 }
 
-.menu-grid {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  max-width: 40vw;
-  height: auto;
-  margin: 0 auto;
-  padding-bottom: 1em;
-  gap: 0.5em;
-}
-
 button.submit-button {
   width: 100%;
   padding: .75em;

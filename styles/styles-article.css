@@ -196,13 +196,22 @@
     box-sizing: border-box;
   }
 
-
-  .menu-grid .git-gub-thumbnail {
-    padding: 0 3em;
+  .menu-grid {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    gap: 1em;
   }
 
-  .menu-grid {
-    padding: 2em 0;
+  .git-gub-thumbnail img {
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    padding: 2em;
   }
 
   .images2 img {
@@ -220,10 +229,6 @@
     display: block;
     margin: auto;
     padding: 0.25em;
-  }
-
-  .menu-grid img {
-    margin: 4em auto 2em;
   }
 
   .cta-section p {
@@ -543,11 +548,6 @@
       padding: 0.25em;
     }
 
-    .git-gub-thumbnail {
-      width: 100px;
-      height: 100px;
-      padding: 2em;
-    }
   }
 
   @media (max-width:480px) {
@@ -563,7 +563,12 @@
     .menu-grid {
       width: 90%;
       max-width: 90vw;
+    }
 
+    .github-img img {
+      width: 100px;
+      height: auto;
+      min-height: 100px;
     }
 
     .design {
