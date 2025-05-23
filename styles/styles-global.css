@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
   font-size: 1rem;
   margin: 0;
   padding: 0;
@@ -90,13 +90,13 @@ p,
 li,
 input,
 textarea {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
   font-weight: 400;
 }
 
 h1,
 .canvas-skills-title h1 {
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-weight: 400;
   letter-spacing: 0.05em;
 }
@@ -106,38 +106,13 @@ h3,
 nav,
 .btn,
 label {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
   font-weight: 400;
   letter-spacing: 0.02em;
 }
 
-body.fonts-loading .about-me {
-  opacity: 0;
-  min-height: 100vh;
-  position: relative;
-}
-
-body.fonts-loaded .about-me {
-  visibility: visible;
-}
-
-body.fonts-loaded {
-  font-family: 'Segoe UI', system-ui, sans-serif;
-}
-
-body:not(.fonts-loaded) .canvas-skills-title,
-body:not(.fonts-loaded) h1,
-body:not(.fonts-loaded) h2,
-body:not(.fonts-loaded) p {
-  visibility: hidden;
-  height: auto;
-}
-
-body.fonts-loaded .canvas-skills-title,
-body.fonts-loaded h1,
-body.fonts-loaded h2,
-body.fonts-loaded p {
-  visibility: visible;
+body.fonts-loaded h1 {
+  letter-spacing: 0.05em;
 }
 
 .collections-title a,
@@ -226,6 +201,7 @@ nav {
   max-width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
+  min-height: 5.3rem;
 }
 
 nav {
@@ -312,14 +288,13 @@ nav {
   width: 100%;
   max-width: 100vw;
   height: auto;
-  min-height: 24.93;
-  max-height: 68.3vh;
   box-sizing: border-box;
   contain: none;
   overflow: hidden;
   background-color: #000;
   contain: paint;
   padding: 0.2em;
+  min-height: 14.25rem;
 }
 
 .canvas-skills-grid picture,
@@ -337,18 +312,20 @@ nav {
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
-  height: auto;
+  height: 100%;
   max-height: 100%;
   contain: none;
+  min-height: 14.25rem;
+  aspect-ratio: 744 / 418;
 }
 
 .canvas-skills-grid img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   border: 1em solid #000;
   border-right: 0.5em solid #000;
-  aspect-ratio: 473 / 243;
+
 }
 
 img[fetchpriority=high] {
@@ -371,6 +348,8 @@ img[fetchpriority=high] {
   max-height: 100%;
   contain: layout;
   padding: clamp(0.5rem, 2vw, 1.5rem);
+  min-height: 14.25rem;
+  aspect-ratio: 1148 / 430;
 }
 
 .canvas-skills-title h1,
