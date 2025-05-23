@@ -1076,7 +1076,7 @@ button.submit-button:hover {
 
 @media (max-width: 680px) {
   .canvas-skills-grid {
-    min-height: 40.33rem;
+    min-height: 44.33rem;
   }
 
   .canvas-skills-grid img {
@@ -1097,8 +1097,8 @@ button.submit-button:hover {
 
   .canvas-skills-title {
     padding: 0;
-    height: 180px;
-    max-height: 180px;
+    height: 220px;
+    max-height: 220px;
     width: 90%;
     max-width: 90vw;
     margin: 1em auto;
