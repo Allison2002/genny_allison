@@ -14,35 +14,7 @@
     <link rel="preload" href="/assets/fonts/georgia.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/assets/fonts/SegoeUI.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <!-- ✅ Desktop ≥ 941px -->
-    <link
-      rel="preload"
-      as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_765,h_393/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
-      type="image/avif"
-      media="(min-width: 941px)"
-      fetchpriority="high"
-    />
-
-    <!-- ✅ Tablet: 769px–940px -->
-    <link
-      rel="preload"
-      as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_933,h_538/v1747860860/welcome_to_tech_trends_940_bgl09w.avif"
-      type="image/avif"
-      media="(min-width: 769px) and (max-width: 940px)"
-    />
-
-    <!-- ✅ Mobile: 481px–768px -->
-    <link
-      rel="preload"
-      as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_761,h_441/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
-      type="image/avif"
-      media="(min-width: 481px) and (max-width: 768px)" 
-    />
-
-    <!-- ✅ Fallback: ≤480px -->
+    <!-- ✅ Preload MOBILE fallback (≤480px) -->
     <link
       rel="preload"
       as="image"
@@ -51,6 +23,35 @@
       media="(max-width: 480px)"
       fetchpriority="high"
     />
+
+    <!-- ✅ Preload TABLET (481px–768px) -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_761,h_441/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
+      type="image/avif"
+      media="(min-width: 481px) and (max-width: 768px)"
+    />
+
+    <!-- ✅ Preload SMALL DESKTOP (769px–940px) -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_933,h_538/v1747860860/welcome_to_tech_trends_940_bgl09w.avif"
+      type="image/avif"
+      media="(min-width: 769px) and (max-width: 940px)"
+    />
+
+    <!-- ✅ Preload FULL DESKTOP (≥941px) -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_765,h_393/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
+      type="image/avif"
+      media="(min-width: 941px)"
+    />
+
+
 
     <link
       class="tab-logo"
