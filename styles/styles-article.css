@@ -184,9 +184,9 @@
   }
 
 
-  .collections-thumbnail {
-    width: 20%;
-    max-width: 200px;
+  .thumbnails {
+    width: 40%;
+    max-width: 40vw;
     margin: 6em auto;
     padding: 1em;
     overflow: hidden;
@@ -194,6 +194,8 @@
     outline: 0.2em solid white;
     outline-offset: 1.5em;
     box-sizing: border-box;
+    min-height: 10.625rem;
+    height: auto;
   }
 
   .menu-grid {
@@ -224,7 +226,6 @@
   .images img {
     width: 100%;
     height: auto;
-    max-width: 100vw;
     object-fit: contain;
     display: block;
     margin: auto;
@@ -337,6 +338,11 @@
   }
 
   @media (max-width:1024px) {
+
+    .thumbnail-aspect {
+      aspect-ratio: 170 / 146;
+    }
+
     #projects {
       width: 75%;
       max-width: 75vw;
