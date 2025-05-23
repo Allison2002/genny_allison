@@ -894,7 +894,7 @@ button.submit-button:hover {
     height: auto;
     width: 100%;
     max-width: 100vw;
-    min-height: 42.84rem;
+    min-height: 4rem;
   }
 
   .canvas-skills-grid picture {
@@ -940,7 +940,17 @@ button.submit-button:hover {
 }
 
 @media (max-width:768px) {
+  .canvas-skills-grid {
+    min-height: 42.81rem;
+  }
 
+  .canvas-skills-grid picture {
+    aspect-ratio: 761 / 439;
+  }
+
+  .canvas-skills-img {
+    aspect-ratio: 761 / 439;
+  }
 
   .nav-logo {
     height: calc(12.5rem / 2.38);
@@ -1101,8 +1111,11 @@ button.submit-button:hover {
     min-height: 43rem;
   }
 
+  .canvas-skills-grid picture {
+    aspect-ratio: 473 / 392;
+  }
+
   .canvas-skills-grid img {
-    min-height: 24.5rem;
     aspect-ratio: 473 / 392;
   }
 
