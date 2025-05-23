@@ -325,12 +325,12 @@ nav {
   max-width: 100%;
   width: 100%;
   height: auto;
+  aspect-ratio: 765 / 396;
   object-fit: cover;
   border-top: 1em solid #000;
   border-left: 1em solid black;
   border-right: 0.5em solid #000;
   border-bottom: none;
-
 }
 
 img[fetchpriority=high] {
@@ -1123,13 +1123,13 @@ button.submit-button:hover {
   .canvas-skills-grid picture {
     width: 473px;
     height: 392px;
-    aspect-ratio: 473 / 392;
     min-height: 24.5rem;
   }
 
   .canvas-skills-grid img {
     width: 100%;
     height: auto;
+    aspect-ratio: 473 / 392;
   }
 
   .side-nav {
@@ -1195,11 +1195,6 @@ button.submit-button:hover {
 @media (max-width: 429px) {
   .canvas-skills-grid {
     min-height: 40rem;
-  }
-
-  .canvas-skills-img {
-    aspect-ratio: 422 / 392;
-    min-height: 24.5rem;
   }
 
   .canvas-skills-title {
