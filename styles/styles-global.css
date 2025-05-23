@@ -281,11 +281,6 @@ nav {
   text-align: center;
 }
 
-.canvas-skills-grid picture,
-.canvas-skills-title {
-  flex: 0 0 auto;
-}
-
 .canvas-skills-grid {
   display: flex;
   flex-wrap: nowrap;
@@ -294,12 +289,18 @@ nav {
   max-width: 100vw;
   height: auto;
   box-sizing: border-box;
+  contain: none;
   overflow: hidden;
   background-color: #000;
-  contain: layout paint;
+  contain: paint;
   padding: 0.2em;
   min-height: 14.25rem;
-  /* Helps reserve layout */
+}
+
+.canvas-skills-grid picture,
+.canvas-skills-title {
+  flex: 0 0 auto;
+
 }
 
 .canvas-skills-grid picture {
@@ -309,22 +310,24 @@ nav {
   background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: stretch;
   align-items: center;
+  height: 100%;
+  max-height: 100%;
+  contain: none;
+  min-height: 14.25rem;
   aspect-ratio: 673 / 451;
-  contain: layout paint;
 }
 
 .canvas-skills-grid img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  width: 673px;
+  height: 451px;
   object-fit: cover;
-  display: block;
   border: 1em solid #000;
   border-right: 0.5em solid #000;
-  aspect-ratio: 673 / 451;
-}
 
+}
 
 img[fetchpriority=high] {
   contain: layout paint;
