@@ -798,11 +798,3 @@ textarea {
     width: 100%
   }
 }
-
-@media (max-width: 480px) {
-  .menu-grid {
-    width: 90%;
-    max-width: 90vw;
-
-  }
-}
