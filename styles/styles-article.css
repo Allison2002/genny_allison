@@ -209,11 +209,8 @@
     gap: 1em;
   }
 
-  .git-gub-thumbnail img {
-    width: 100px;
-    max-width: 100px;
-    height: 100px;
-    padding: 2em;
+  .git-gub-thumbnail {
+    aspect-ratio: 1 / 1;
   }
 
   .images2 img {
@@ -338,6 +335,16 @@
   }
 
   @media (max-width:1024px) {
+    .menu-grid {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      max-width: 80vw;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      gap: 1em;
+    }
 
     .thumbnail-aspect {
       aspect-ratio: 170 / 146;
@@ -348,6 +355,10 @@
       max-width: 75vw;
       margin: 3em auto 3em;
       padding: 1em;
+    }
+
+    #description {
+      margin: 2em auto;
     }
 
     .menu-grid {
@@ -373,6 +384,17 @@
   }
 
   @media (max-width:768px) {
+    .thumbnail-aspect {
+      aspect-ratio: 337 / 288;
+    }
+
+    #collections-buttongrid {
+      margin-top: 2em;
+    }
+
+    .thumbnails img {
+      margin-bottom: 2em;
+    }
 
     .article-global-container,
     .resume-border {
@@ -492,9 +514,13 @@
   }
 
   @media (max-width: 680px) {
-    #projects {
+    .thumbnail #projects {
       width: 90%;
       max-width: 90vw;
+    }
+
+    .thumbnail-aspect {
+      aspect-ratio: ;
     }
 
     #grade-table-img1,
@@ -566,9 +592,15 @@
       padding: 0.25em;
     }
 
+
+
   }
 
   @media (max-width:480px) {
+    .thumbnail-aspect {
+      aspect-ratio: 220 / 189;
+    }
+
     #section1 {
       padding: 1em;
     }
