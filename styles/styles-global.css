@@ -299,12 +299,13 @@ nav {
   flex: 0 0 40%;
   max-width: 40%;
   min-width: 40%;
-  min-height: 15rem;
-  background-color: black;
+  aspect-ratio: 765 / 430;
+  min-height: 392px;
   display: flex;
   align-items: stretch;
   justify-content: center;
   contain: layout paint;
+  background-color: black;
 }
 
 .canvas-skills-grid img {
@@ -316,6 +317,10 @@ nav {
   border-left: 1em solid #000;
   border-right: 0.5em solid #000;
   border-bottom: 1em solid black;
+}
+
+img {
+  display: block;
 }
 
 img[fetchpriority=high] {
@@ -375,7 +380,6 @@ img[fetchpriority=high] {
 .footer-logo img {
   width: 100%;
   height: auto;
-  min-height: 15rem;
   display: block;
   object-fit: contain;
   background-color: #000;
@@ -397,6 +401,7 @@ footer {
   min-height: 29rem;
   height: auto;
   box-sizing: border-box;
+  contain: layout;
 }
 
 .footer-links ul,
