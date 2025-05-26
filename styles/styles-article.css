@@ -336,6 +336,17 @@
   }
 
   @media (max-width:1024px) {
+    .canvas-skills-grid picture {
+      width: 407px;
+      height: 288px;
+      min-height: 15rem;
+      max-height: 18rem;
+    }
+
+    .canvas-skills-grid img {
+      aspect-ratio: 407 / 288;
+    }
+
     .menu-grid {
       display: flex;
       flex-direction: column;
@@ -391,6 +402,16 @@
   }
 
   @media (max-width:768px) {
+    .canvas-skills-grid picture {
+      width: 761px;
+      height: 439px;
+      min-height: 27rem;
+    }
+
+    .canvas-skills-grid img {
+      aspect-ratio: 761 / 439;
+    }
+
     .thumbnails picture {
       width: 337px;
       height: 288px;
@@ -524,6 +545,16 @@
   }
 
   @media (max-width: 680px) {
+    .canvas-skills-grid picture {
+      width: 673px;
+      height: 441px;
+      min-height: 27rem;
+    }
+
+    .canvas-skills-grid img {
+      aspect-ratio: 673 / 441;
+    }
+
     .thumbnail #projects {
       width: 90%;
       max-width: 90vw;
@@ -610,6 +641,16 @@
   }
 
   @media (max-width:480px) {
+    .canvas-skills-grid picture {
+      width: 473px;
+      height: 392px;
+      min-height: 24.5rem;
+    }
+
+    .canvas-skills-grid img {
+      aspect-ratio: 473 / 392;
+    }
+
     .thumbnails picture {
       width: 220px;
       height: 189px;
