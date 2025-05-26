@@ -299,8 +299,9 @@ nav {
   flex: 0 0 40%;
   max-width: 40%;
   min-width: 40%;
-  aspect-ratio: 765 / 430;
-  min-height: 392px;
+  min-height: 24.5rem;
+  width: 765px;
+  height: 392px;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -311,6 +312,7 @@ nav {
 .canvas-skills-grid img {
   width: 100%;
   height: auto;
+  aspect-ratio: 765 / 392;
   object-fit: cover;
   display: block;
   border-top: 1em solid #000;
@@ -826,14 +828,21 @@ button.submit-button:hover {
   }
 
   .canvas-skills-grid picture {
-    aspect-ratio: 407 / 228;
+    min-height: 14.25rem;
+    width: 407px;
+    height: 391px;
   }
 
   .canvas-skills-grid img {
-    aspect-ratio: 407 / 228;
+    aspect-ratio: 407 / 391;
     border-top: 0.5em solid #000;
     border-left: 0.5em solid black;
     border-right: 0.25em solid #000;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+
   }
 
   .canvas-skills-title {
@@ -901,14 +910,17 @@ button.submit-button:hover {
   }
 
   .canvas-skills-grid picture {
-    aspect-ratio: 933 / 538;
     width: 100%;
     max-width: 100vw;
+    min-height: 27.43rem;
   }
 
   .canvas-skills-grid img {
+    width: 100%;
+    height: auto;
     display: block;
     aspect-ratio: 933 / 538;
+    object-fit: cover;
   }
 
   .canvas-skills-title {
@@ -944,10 +956,12 @@ button.submit-button:hover {
   }
 
   .canvas-skills-grid picture {
-    aspect-ratio: 761 / 439;
+    min-height: 27.437rem;
+    width: 761px;
+    height: 439px;
   }
 
-  .canvas-skills-img {
+  .canvas-skills-grid img {
     aspect-ratio: 761 / 439;
   }
 
@@ -1058,7 +1072,9 @@ button.submit-button:hover {
   }
 
   .canvas-skills-grid picture {
-    aspect-ratio: 673 / 441;
+    min-height: 27.562;
+    width: 673px;
+    height: 441px;
   }
 
   .canvas-skills-grid img {
@@ -1111,7 +1127,9 @@ button.submit-button:hover {
   }
 
   .canvas-skills-grid picture {
-    aspect-ratio: 473 / 392;
+    min-height: 24.5rem;
+    width: 473px;
+    height: 392px;
   }
 
   .canvas-skills-grid img {
@@ -1141,11 +1159,8 @@ button.submit-button:hover {
     width: 100%;
     height: auto;
     aspect-ratio: 473 / 392;
-  }
-
-  .side-nav {
-    height: auto;
-    min-height: 17rem;
+    object-fit: cover;
+    display: block;
   }
 
   h2 {

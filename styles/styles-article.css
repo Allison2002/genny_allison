@@ -166,14 +166,6 @@
 
   }
 
-  .images picture .mages {
-    width: 90%;
-    max-width: 90vw;
-    height: auto;
-    max-height: 90vw;
-    padding: 1em;
-  }
-
   .images2 {
     width: 90%;
     max-width: 900px;
@@ -201,6 +193,21 @@
     height: auto;
   }
 
+  .thumbnails picture {
+    width: 390px;
+    height: 329px;
+    min-height: 20.56rem;
+  }
+
+  .thumbnails img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    padding: 0.25em;
+  }
+
   .menu-grid {
     display: flex;
     flex-direction: column;
@@ -212,7 +219,7 @@
     gap: 1em;
   }
 
-  .git-gub-thumbnail {
+  .github-container img {
     aspect-ratio: 1 / 1;
   }
 
@@ -221,15 +228,6 @@
     height: auto;
     display: block;
     object-fit: contain;
-  }
-
-  .images img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: auto;
-    padding: 0.25em;
   }
 
   .cta-section p {
@@ -349,7 +347,13 @@
       gap: 1em;
     }
 
-    .thumbnail-aspect {
+    .thumbnails picture {
+      width: 170px;
+      height: 146px;
+      min-height: 9.125rem;
+    }
+
+    .thumbnails img {
       aspect-ratio: 170 / 146;
     }
 
@@ -387,16 +391,19 @@
   }
 
   @media (max-width:768px) {
-    .thumbnail-aspect {
+    .thumbnails picture {
+      width: 337px;
+      height: 288px;
+      min-height: 18rem;
+    }
+
+    .thumbnails img {
       aspect-ratio: 337 / 288;
+      margin-bottom: 2em;
     }
 
     #collections-buttongrid {
       margin-top: 2em;
-    }
-
-    .thumbnails img {
-      margin-bottom: 2em;
     }
 
     .article-global-container,
@@ -522,7 +529,13 @@
       max-width: 90vw;
     }
 
-    .thumbnail-aspect {
+    .thumbnails picture {
+      width: 275px;
+      height: 238px;
+      min-height: 9.125rem;
+    }
+
+    .thumbnails img {
       aspect-ratio: 275 / 238;
     }
 
@@ -594,13 +607,16 @@
       margin: auto;
       padding: 0.25em;
     }
-
-
-
   }
 
   @media (max-width:480px) {
-    .thumbnail-aspect {
+    .thumbnails picture {
+      width: 220px;
+      height: 189px;
+      min-height: 9.125rem;
+    }
+
+    .thumbnails img {
       aspect-ratio: 220 / 189;
     }
 
