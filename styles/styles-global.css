@@ -5,7 +5,7 @@
   src: url("/assets/fonts/georgia.woff2");
   font-style: normal;
   font-weight: 400;
-  font-display: optional;
+  font-display: swap;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
@@ -17,7 +17,7 @@
   src: url("/assets/fonts/SegoeUI.woff2");
   font-style: normal;
   font-weight: 400;
-  font-display: optional;
+  font-display: swap;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
@@ -25,12 +25,10 @@
 
 
 html {
-  font-display: swap;
   font-synthesis: none;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-
 
 body {
   font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
@@ -926,10 +924,6 @@ button.submit-button:hover {
 
   p {
     line-height: 1.45;
-  }
-
-  #projects {
-    min-height: 100vw;
   }
 
   .resume-summary {
