@@ -2,6 +2,7 @@
     min-height: 100vh;
     position: relative;
     display: flex;
+    contain: layout paint style;
     flex-direction: column;
     justify-content: start;
     overflow-x: hidden;
