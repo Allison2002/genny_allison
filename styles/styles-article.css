@@ -1,19 +1,18 @@
   #projects {
+    min-height: 100vh;
+    contain: strict;
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: start;
+    overflow-x: hidden;
     margin: 5em auto 5em;
     width: 54%;
     max-width: 54vw;
     padding: 2em 1em;
     height: auto;
-    overflow-x: hidden;
     contain: layout;
     background-color: #000;
     box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1);
-    min-height: 100vh;
-    contain: layout;
   }
 
   body:not(.fonts-loaded) #projects>* {
@@ -652,13 +651,13 @@
     }
 
     .thumbnails picture {
-      width: 222px;
+      width: 220px;
       height: 189px;
       min-height: 9.125rem;
     }
 
     .thumbnails img {
-      aspect-ratio: 222 / 189;
+      aspect-ratio: 220 / 189;
     }
 
     #section1 {
