@@ -133,7 +133,7 @@ p a {
 .links:visited,
 a:visited,
 p a:visited {
-  color: black;
+  color: cyan;
   text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
 }
 
@@ -176,14 +176,8 @@ p a::after {
   bottom: -.1vw;
   height: .28vh;
   width: 90%;
-  transform: scaleX(0);
   transition: transform .3s ease;
   will-change: transform;
-}
-
-.links a:hover::after,
-.links:hover::after {
-  transform: scaleX(1)
 }
 
 .links a::after,

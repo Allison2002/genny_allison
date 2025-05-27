@@ -5,7 +5,7 @@
     contain: content;
     flex-direction: column;
     justify-content: start;
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 5em auto 5em;
     width: 54%;
     max-width: 54vw;
@@ -35,7 +35,7 @@
     background-color: #fff;
     width: 98%;
     padding: 1em;
-    min-height: 24.25rem;
+    min-height: 10rem;
   }
 
   .project-title h2 {
