@@ -1142,20 +1142,18 @@ button.submit-button:hover {
 
 @media (min-width:430px) and (max-width:480px) {
   .canvas-skills-grid {
-    min-height: 320px;
-    height: 320px;
+    min-height: 37rem;
+    height: 600px;
   }
 
   .canvas-skills-grid picture {
+    min-height: 20rem;
     width: 473px;
     height: 320px;
-    min-height: 320px;
   }
 
   .canvas-skills-grid img {
     aspect-ratio: 473 / 320;
-    width: 100%;
-    height: auto;
   }
 
   .canvas-skills-title {
