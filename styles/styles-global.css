@@ -818,8 +818,8 @@ button.submit-button:hover {
     flex-wrap: nowrap;
     align-items: stretch;
     width: 100%;
+    height: 392px;
     max-width: 100vw;
-    height: auto;
     box-sizing: border-box;
     contain: none;
     overflow: hidden;
@@ -905,8 +905,8 @@ button.submit-button:hover {
   .canvas-skills-grid {
     display: flex;
     flex-direction: column;
-    height: auto;
     width: 100%;
+    height: 731px;
     max-width: 100vw;
     min-height: 4rem;
   }
@@ -953,7 +953,7 @@ button.submit-button:hover {
 @media (max-width:768px) {
   .canvas-skills-grid {
     min-height: 42.81rem;
-    height: auto;
+    height: 684px;
   }
 
   .canvas-skills-grid picture {
@@ -1070,7 +1070,7 @@ button.submit-button:hover {
 @media (max-width: 680px) {
   .canvas-skills-grid {
     min-height: 44.33rem;
-    height: auto;
+    height: 709px;
   }
 
   .canvas-skills-grid picture {
@@ -1126,7 +1126,7 @@ button.submit-button:hover {
 @media (min-width:430px) and (max-width:480px) {
   .canvas-skills-grid {
     min-height: 43rem;
-    height: auto;
+    height: 688px;
   }
 
   .canvas-skills-grid picture {
@@ -1182,7 +1182,7 @@ button.submit-button:hover {
 
   .hamburger-icon {
     width: 6.4vw;
-    height: auto;
+    height: 7vh;
   }
 
   .button-grid {
