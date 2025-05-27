@@ -94,6 +94,10 @@ textarea {
   font-weight: 400;
 }
 
+html {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
 h1,
 .canvas-skills-title h1 {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
@@ -293,7 +297,7 @@ nav {
   padding: 0.2em;
   background-color: #000;
   overflow: hidden;
-  contain: paint;
+  contain: layout paint;
   min-height: 14.68rem;
 }
 
