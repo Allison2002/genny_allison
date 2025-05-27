@@ -510,7 +510,11 @@ footer {
 }
 
 .hamburger-icon {
-  display: none
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  display: none;
 }
 
 #back-to-top {
