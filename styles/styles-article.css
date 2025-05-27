@@ -14,15 +14,6 @@
     box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1);
   }
 
-  body:not(.fonts-loaded) #projects>* {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  body.fonts-loaded #projects>* {
-    opacity: 1;
-  }
-
   #the-design {
     margin: 0 auto;
     height: auto;
@@ -43,6 +34,7 @@
     background-color: #fff;
     width: 98%;
     padding: 1em;
+    min-height: 24.25rem;
   }
 
   .project-title h2 {
@@ -210,6 +202,7 @@
     width: 60%;
     max-width: 60vw;
     height: auto;
+    min-height: 100rem;
     margin: 0 auto;
     padding: 0;
     gap: 1em;
@@ -659,6 +652,7 @@
       width: 90%;
       max-width: 90vw;
       margin: 3em auto 3em;
+      min-height: 100vw;
     }
 
     .border-white {

@@ -25,11 +25,12 @@
 
 
 html {
+  font-display: swap;
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
 }
+
 
 body {
   font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
