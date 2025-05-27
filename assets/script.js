@@ -1,23 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Load components dynamically
-  const loadComponent = (url, elementId) => {
-    fetch(url)
-      .then((response) => {
-        if (!response.ok) throw new Error("Network response was not ok");
-        return response.text();
-      })
-      .then((data) => {
-        document.getElementById(elementId).innerHTML = data;
-        if (elementId === "nav") {
-          setupNavbar();
-          initializeMenus();
-        }
-      })
-      .catch((error) => console.error("Error loading component:", error));
-  };
-
-  loadComponent("/assets/nav.html", "nav");
-  loadComponent("/assets/footer.html", "footer");
 
   // Navbar toggle and scroll
   const setupNavbar = () => {
