@@ -5,7 +5,7 @@
   src: url("/assets/fonts/georgia.woff2");
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: optional;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
@@ -17,7 +17,7 @@
   src: url("/assets/fonts/SegoeUI.woff2");
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: optional;
   ascent-override: 92%;
   descent-override: 8%;
   line-gap-override: 0%;
@@ -297,7 +297,6 @@ nav {
   padding: 0.2em;
   background-color: #000;
   overflow: hidden;
-  contain: layout paint;
   min-height: 14.68rem;
 }
 

@@ -17,11 +17,11 @@
 
   body:not(.fonts-loaded) #projects>* {
     opacity: 0;
-    transition: opacity 0.3s ease;
   }
 
   body.fonts-loaded #projects>* {
     opacity: 1;
+    transition: opacity 0.3s ease;
   }
 
   #the-design {
