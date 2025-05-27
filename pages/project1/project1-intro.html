@@ -151,19 +151,24 @@
           <source
             srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_765,h_392/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
             media="(min-width: 941px)"
-            type="image/avif" />
+            type="image/avif"
+            sizes="(min-width: 1400px) 765px, 100vw"
+          />
 
           <!-- Tablet ≥ 769px -->
           <source
             srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_933,h_538/v1747860860/welcome_to_tech_trends_940_bgl09w.avif"
             media="(min-width: 769px) and (max-width: 940px)"
-            type="image/avif" />
-
+            type="image/avif"
+            sizes="(min-width: 769px) and (max-width: 940px) 933px, 100vw"
+          />
           <!-- Mobile ≤ 768px -->
           <source
             srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_761,h_439/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
             media="(min-width: 481px) and (max-width: 768px)"
-            type="image/avif" />
+            type="image/avif"
+            sizes="(min-width: 481px) and (max-width: 768px) 761px, 100vw"
+          />
 
           <!-- Fallback -->
           <img
@@ -174,6 +179,7 @@
             fetchpriority="high"
             loading="eager"
             decoding="async"
+            style="aspect-ratio: 473 / 320;"
           />
         </picture>
         <div class="canvas-skills-title">
