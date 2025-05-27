@@ -363,7 +363,6 @@ img[fetchpriority=high] {
   font-style: normal;
   line-height: 1.6;
   font-display: swap;
-  min-height: 4rem;
 }
 
 .canvas-skills-title h1 {
