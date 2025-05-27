@@ -681,7 +681,8 @@ footer {
   width: 97%;
   max-width: 97vw;
   height: auto;
-  margin: 1em auto
+  margin: 1em auto;
+  min-height: 45rem;
 }
 
 .resume-summary a {
@@ -1141,18 +1142,18 @@ button.submit-button:hover {
 
 @media (min-width:430px) and (max-width:480px) {
   .canvas-skills-grid {
-    min-height: 43rem;
-    height: 688px;
+    min-height: 37rem;
+    height: 600px;
   }
 
   .canvas-skills-grid picture {
-    min-height: 24.5rem;
+    min-height: 20rem;
     width: 473px;
-    height: 392px;
+    height: 320px;
   }
 
   .canvas-skills-grid img {
-    aspect-ratio: 473 / 392;
+    aspect-ratio: 473 / 320;
   }
 
   .canvas-skills-title {
@@ -1161,25 +1162,6 @@ button.submit-button:hover {
 
   .fancy-border-img {
     margin: 2em auto 2em;
-  }
-
-  .canvas-skills-grid {
-    height: auto;
-    min-height: 43rem;
-  }
-
-  .canvas-skills-grid picture {
-    width: 473px;
-    height: 392px;
-    min-height: 24.5rem;
-  }
-
-  .canvas-skills-grid img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 473 / 392;
-    object-fit: cover;
-    display: block;
   }
 
   h2 {
@@ -1194,6 +1176,14 @@ button.submit-button:hover {
 
   p {
     line-height: 1.45;
+  }
+
+  #projects {
+    min-height: 100vw;
+  }
+
+  .resume-summary {
+    height: auto;
   }
 
   .hamburger-icon {
