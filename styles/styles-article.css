@@ -1,7 +1,6 @@
   #projects {
     min-height: 100vh;
     position: relative;
-    contain: layout;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -17,11 +16,11 @@
 
   body:not(.fonts-loaded) #projects>* {
     opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
   body.fonts-loaded #projects>* {
     opacity: 1;
-    transition: opacity 0.3s ease;
   }
 
   #the-design {
