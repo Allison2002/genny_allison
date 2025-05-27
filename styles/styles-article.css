@@ -652,13 +652,13 @@
     }
 
     .thumbnails picture {
-      width: 220px;
+      width: 222px;
       height: 189px;
       min-height: 9.125rem;
     }
 
     .thumbnails img {
-      aspect-ratio: 220 / 189;
+      aspect-ratio: 222 / 189;
     }
 
     #section1 {
