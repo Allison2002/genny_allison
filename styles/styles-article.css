@@ -170,7 +170,6 @@
     box-sizing: border-box;
   }
 
-
   .thumbnails {
     width: 40%;
     max-width: 40vw;
@@ -181,7 +180,7 @@
     outline: 0.2em solid white;
     outline-offset: 1.5em;
     box-sizing: border-box;
-    min-height: 32.625rem;
+    min-height: unset;
     height: auto;
   }
 
@@ -206,10 +205,10 @@
     width: 60%;
     max-width: 60vw;
     height: auto;
-    min-height: 100rem;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0;
-    gap: 1em;
+    gap: 5em;
   }
 
   .github-container img {
@@ -337,7 +336,7 @@
       height: auto;
       margin: 0 auto;
       padding: 0;
-      gap: 1em;
+      gap: 3em;
     }
 
     .thumbnails picture {
@@ -481,10 +480,6 @@
       margin: 2em auto;
     }
 
-    .takeme-text h3 {
-      margin: 0 auto 1em;
-    }
-
     .author-bio-container,
     .cta-section {
       max-width: 100%;
@@ -622,9 +617,10 @@
   }
 
   @media (max-width:480px) {
-    .fancy-border-img {
-      max-width: 88% !important;
-      width: 88% !important;
+    main#projects {
+      width: 90%;
+      max-width: 90%;
+      margin: 2em auto 2em;
     }
 
     .author-bio-container {
@@ -632,9 +628,28 @@
     }
 
     .author-bio-container img {
-      width: 265px;
+      width: 200px;
       height: auto;
       min-height: 9.25rem;
+      object-fit: contain;
+    }
+
+    .author-bio-text {
+      padding: 0;
+    }
+
+    .author-bio-text h3 {
+      font-size: 1.1rem;
+    }
+
+    .author-bio-text p {
+      font-size: 1rem;
+      padding: 0.1em;
+      font-weight: 400;
+    }
+
+    .menu-grid {
+      gap: 3em;
     }
 
     .thumbnails img {
@@ -652,8 +667,8 @@
     }
 
     .menu-grid {
-      width: 90%;
-      max-width: 90vw;
+      width: 50%;
+      max-width: 50vw;
       height: auto;
     }
 
@@ -685,12 +700,6 @@
       margin: 8em auto 3em;
     }
 
-    #projects {
-      width: 90%;
-      max-width: 90vw;
-      margin: 2em auto 2em;
-    }
-
     .border-white {
       border: .2em solid #fff;
       margin: .5em auto;
@@ -704,6 +713,16 @@
     .resume-border {
       width: 100%;
       height: auto;
+    }
+
+    #collections-buttongrid {
+      padding: 0;
+    }
+
+
+    #collections-buttongrid a {
+      font-size: 1rem;
+
     }
 
   }

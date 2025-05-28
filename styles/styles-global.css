@@ -85,6 +85,10 @@ label {
   letter-spacing: 0.02em;
 }
 
+#collections-buttongrid a {
+  font-family: Georgia, serif;
+}
+
 .collections-title a,
 .links,
 .links a,
@@ -352,7 +356,6 @@ footer {
   width: 90%;
   max-width: 90vw;
   height: auto;
-  margin: 6em auto 6em;
 }
 
 .fancy-border-title {
@@ -609,11 +612,12 @@ footer {
 .takeme-text h3 {
   color: #0ff;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   text-decoration: underline cyan;
   height: auto;
   width: 100%;
   max-width: 100vw;
+  margin: 0 auto 1em;
 }
 
 .button-grid {
@@ -894,8 +898,11 @@ button.submit-button:hover {
 
 @media (min-width:430px) and (max-width:480px) {
 
+
   .fancy-border-img {
-    margin: 2em auto 2em;
+    margin: 1em auto 1em;
+    max-width: 90% !important;
+    width: 90% !important;
   }
 
   h2 {
@@ -914,6 +921,10 @@ button.submit-button:hover {
 
   .resume-summary {
     height: auto;
+  }
+
+  .resume-summary p {
+    font-size: 1rem;
   }
 
   .hamburger-icon {
