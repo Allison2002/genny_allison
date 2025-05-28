@@ -1,16 +1,4 @@
 /*Navbar, footer, colors, typography, shared layout*/
-
-@font-face {
-  font-family: 'Georgia';
-  src: url("/assets/fonts/georgia.woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  ascent-override: 92%;
-  descent-override: 8%;
-  line-gap-override: 0%;
-}
-
 html {
   font-synthesis: none;
   -webkit-font-smoothing: antialiased;
@@ -82,7 +70,7 @@ textarea {
 
 h1,
 .canvas-skills-title h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, serif;
   font-weight: 400;
   letter-spacing: 0.05em;
 }
@@ -92,13 +80,9 @@ h3,
 nav,
 .btn,
 label {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, serif;
   font-weight: 400;
   letter-spacing: 0.02em;
-}
-
-body.fonts-loaded h1 {
-  letter-spacing: 0.05em;
 }
 
 .collections-title a,
