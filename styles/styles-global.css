@@ -562,7 +562,7 @@ footer {
   width: 97%;
   max-width: 97vw;
   height: auto;
-  min-height: 100vh;
+  min-height: 265rem;
 }
 
 .resume-summary a {
@@ -579,6 +579,7 @@ footer {
   padding: 2em 0 1em;
   font-size: clamp(1rem, 1.8rem, 2rem);
   line-height: 1.6;
+  min-height: 8rem;
 }
 
 .resume-summary h2,
@@ -612,6 +613,7 @@ footer {
   max-width: 100vw;
   height: auto;
   margin: 4em auto 3em;
+  min-height: 1.6rem;
 }
 
 .takeme-text h3 {

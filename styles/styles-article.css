@@ -147,6 +147,7 @@
     width: 100%;
     max-width: 100vw;
     height: auto;
+    min-height: 44rem;
   }
 
   .author-bio-container img {
@@ -183,7 +184,7 @@
     outline: 0.2em solid white;
     outline-offset: 1.5em;
     box-sizing: border-box;
-    min-height: unset;
+    min-height: 22rem;
     height: auto;
   }
 
