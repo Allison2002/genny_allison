@@ -406,7 +406,7 @@
       height: auto;
     }
 
-    #projects {
+    main#projects {
       width: 80%;
       max-width: 80vw;
       margin: 2em auto 2em;
