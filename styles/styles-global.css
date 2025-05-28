@@ -170,7 +170,6 @@ p a:hover {
   outline: none;
 }
 
-a::after,
 .links a::after,
 .links::after,
 p a::after {
