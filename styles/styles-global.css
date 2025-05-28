@@ -1,29 +1,5 @@
 /*Navbar, footer, colors, typography, shared layout*/
 
-@font-face {
-  font-family: 'Georgia';
-  src: url("/assets/fonts/georgia.woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  ascent-override: 92%;
-  descent-override: 8%;
-  line-gap-override: 0%;
-}
-
-
-@font-face {
-  font-family: 'Segoe UI';
-  src: url("/assets/fonts/SegoeUI.woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  ascent-override: 92%;
-  descent-override: 8%;
-  line-gap-override: 0%;
-}
-
-
 html {
   font-synthesis: none;
   -webkit-font-smoothing: antialiased;
@@ -31,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
   font-size: 1rem;
   margin: 0;
   padding: 0;
@@ -89,17 +65,17 @@ p,
 li,
 input,
 textarea {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
   font-weight: 400;
 }
 
 html {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 h1,
 .canvas-skills-title h1 {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-family: system-ui, sans-serif;
   font-weight: 400;
   letter-spacing: 0.05em;
 }
@@ -109,7 +85,7 @@ h3,
 nav,
 .btn,
 label {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
   font-weight: 400;
   letter-spacing: 0.02em;
 }
@@ -209,7 +185,7 @@ nav {
   height: clamp(4rem, 10vh, 7rem);
   background-color: #000;
   min-height: 4rem;
-  font-family: "Segoe UI", Helvetica, sans-serif;
+  font-family: system-ui, sans-serif;
   font-display: optional;
 }
 
@@ -616,7 +592,7 @@ footer {
 
 .resume-summary p {
   color: #fff;
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: system-ui, sans-serif;
   font-weight: 250;
   padding: 1.25em 3em;
   font-size: clamp(1rem, 1.3rem, 1.8rem);
@@ -737,6 +713,7 @@ button.submit-button:hover {
   text-align: center;
   margin: 1em auto;
   width: 100%;
+  font-family: system-ui, sans-serif;
 }
 
 
@@ -916,12 +893,6 @@ button.submit-button:hover {
     height: auto;
     margin: 6em auto 6em;
   }
-
-  .project-title {
-    width: 80%;
-    max-width: 80vw;
-  }
-
 }
 
 @media (min-width:430px) and (max-width:480px) {
