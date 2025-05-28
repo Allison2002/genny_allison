@@ -174,14 +174,4 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!tooltip.contains(e.target)) hideTip();
     });
   });
-  if ('fonts' in document) {
-    document.fonts.ready.then(() => {
-      document.body.classList.add('fonts-loaded');
-    });
-  } else {
-    document.body.classList.add('fonts-loaded');
-  }
-  document.fonts.ready.then(() => {
-    document.body.classList.add("fonts-loaded");
-  });
 });
