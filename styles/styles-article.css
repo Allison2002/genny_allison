@@ -185,8 +185,8 @@
   }
 
   .thumbnails picture {
-    width: 382px;
-    height: 323px;
+    width: 383px;
+    height: 317px;
     min-height: 20rem;
   }
 
@@ -341,13 +341,13 @@
     }
 
     .thumbnails picture {
-      width: 450px;
-      height: 380px;
+      width: 282px;
+      height: 233px;
       min-height: 9.125rem;
     }
 
     .thumbnails img {
-      aspect-ratio: 450 / 380;
+      aspect-ratio: 282 / 233;
     }
 
     #projects {
@@ -392,7 +392,7 @@
     }
 
     .thumbnails img {
-      aspect-ratio: 355 / 300;
+      aspect-ratio: 356 / 295;
       margin-bottom: 2em;
     }
 
@@ -411,6 +411,13 @@
       max-width: 80vw;
       margin: 2em auto 2em;
     }
+
+    .project-title h2,
+    .project-title h3 {
+      min-height: 4.5rem;
+      font-display: swap;
+    }
+
 
     .article-global-container {
       padding: .2em
@@ -538,13 +545,13 @@
     }
 
     .thumbnails picture {
-      width: 338px;
-      height: 285px;
-      min-height: 9.125rem;
+      width: 291px;
+      height: 241px;
+      min-height: 6rem;
     }
 
     .thumbnails img {
-      aspect-ratio: 338 / 285;
+      aspect-ratio: 291 / 241;
     }
 
     #grade-table-img1,
@@ -653,8 +660,14 @@
       gap: 3em;
     }
 
+    .thumbnails picture {
+      width: 118px;
+      height: 97px;
+      min-height: 6rem;
+    }
+
     .thumbnails img {
-      aspect-ratio: 237 / 201;
+      aspect-ratio: 118 / 97;
     }
 
     #section1 {
