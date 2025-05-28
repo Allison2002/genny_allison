@@ -12,41 +12,41 @@
     <link rel="preload" href="/assets/fonts/georgia.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/assets/fonts/SegoeUI.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <!-- ✅ Desktop ≥ 941px -->
+    <!-- Desktop ≥ 941px -->
     <link
       rel="preload"
       as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_765,/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1530/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
       type="image/avif"
       media="(min-width: 941px)"
       fetchpriority="high"
     />
 
-    <!-- ✅ Tablet: 769px–940px -->
+    <!-- Tablet 769px–940px -->
     <link
       rel="preload"
       as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_933,/v1747860860/welcome_to_tech_trends_940_bgl09w.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1866/v1747860860/welcome_to_tech_trends_940_bgl09w.avif"
       type="image/avif"
       media="(min-width: 769px) and (max-width: 940px)"
       fetchpriority="high"
     />
 
-    <!-- ✅ Mobile: 481px–768px -->
+    <!-- Mobile 481px–768px -->
     <link
       rel="preload"
       as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_50,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_304/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_50,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_608/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
       type="image/avif"
       media="(min-width: 481px) and (max-width: 768px)"
       fetchpriority="high"
     />
 
-    <!-- ✅ Mobile fallback: ≤480px (MUST match fallback <img>) -->
+    <!-- Fallback Mobile ≤480px -->
     <link
       rel="preload"
       as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_50,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_378,/v1747860860/welcome_to_tech_trends_mobile_bvstct.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_50,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_378/v1747860860/welcome_to_tech_trends_mobile_bvstct.avif"
       type="image/avif"
       media="(max-width: 480px)"
       fetchpriority="high"
@@ -296,7 +296,7 @@
         }
 
         .canvas-skills-grid img {
-          aspect-ratio: 188 / 145;
+          aspect-ratio: 189 / 145;
           width: 100%;
           height: auto;
           border-width: 0.5em;
@@ -371,41 +371,41 @@
         </div>
       </nav>
       <div class="canvas-skills-grid">
-        <picture>
-          <!-- Desktop ≥ 1025px -->
+        <picture> 
+          <!-- Desktop ≥ 941px -->
           <source
             srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1530/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
             media="(min-width: 941px)"
             type="image/avif"
-            sizes="(min-width: 941px)"
           />
 
-          <!-- Tablet ≥ 769px -->
+          <!-- Tablet 769px–940px -->
           <source
             srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1866/v1747860860/welcome_to_tech_trends_940_bgl09w.avif"
             media="(min-width: 769px) and (max-width: 940px)"
             type="image/avif"
-            sizes="(min-width: 769px) and (max-width: 940px)"
           />
-          <!-- Mobile ≤ 768px -->
+
+          <!-- Mobile 481px–768px -->
           <source
             srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_50,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_608/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
             media="(min-width: 481px) and (max-width: 768px)"
             type="image/avif"
-            sizes="(min-width: 481px) and (max-width: 768px)"
           />
 
-          <!-- Fallback -->
+          <!-- Fallback ≤480px -->
           <img
             src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_50,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_378/v1747860860/welcome_to_tech_trends_mobile_bvstct.avif"
             alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology vibes"
             width="189"
             height="145"
+            style="aspect-ratio: 189 / 145; object-fit: cover;"
             fetchpriority="high"
             loading="eager"
             decoding="async"
           />
         </picture>
+
         <div class="canvas-skills-title">
           <h1>a canvas of code:</h1>
           <h2 >showcasing the craft</h2>
@@ -459,6 +459,7 @@
                   width="222"
                   height="189"
                   loading="auto"  
+                  style="aspect-ratio: 222 / 189; object-fit: cover;"
                   fetchpriority="auto"
                   decoding="async"
                 />
@@ -488,6 +489,7 @@
                   height="189"
                   loading="auto"  
                   fetchpriority="auto"
+                  style="aspect-ratio: 222 / 189; object-fit: cover;"
                   decoding="async"
                 />
               </picture>
@@ -516,6 +518,7 @@
                   height="189"
                   loading="auto"  
                   fetchpriority="auto"
+                  style="aspect-ratio: 222 / 189; object-fit: cover;"
                   decoding="async" 
                 />
               </picture>
@@ -544,6 +547,7 @@
                   height="189"
                   loading="auto"  
                   fetchpriority="auto"
+                  style="aspect-ratio: 222 / 189; object-fit: cover;"
                   decoding="async" 
                 />
               </picture>
@@ -572,6 +576,7 @@
                   height="189"
                   loading="auto"  
                   fetchpriority="auto"
+                  style="aspect-ratio: 222 / 189; object-fit: cover;"
                   decoding="async"
                 />
               </picture>
@@ -600,6 +605,7 @@
               width="297" 
               height="148" 
               alt="Photo of Genny Allison, the web developer and AI content specialist"
+              style="aspect-ratio: 297 / 148; object-fit: cover;"
               loading="auto" 
               decoding="async" 
             />
