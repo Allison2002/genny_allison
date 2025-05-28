@@ -932,12 +932,6 @@ button.submit-button:hover {
     height: auto;
   }
 
-  .resume-summary,
-  .resume-summary h2 {
-    contain: layout paint;
-    will-change: transform;
-  }
-
   .hamburger-icon {
     width: 6.4vw;
     height: 7vh;

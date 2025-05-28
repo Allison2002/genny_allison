@@ -26,12 +26,11 @@
 
   .projects-content {
     min-height: 100vh;
-    /* Lock height early */
+    height: auto;
     contain: layout style;
     overflow: hidden;
     position: relative;
     transition: none;
-    /* Prevent animation shifts */
   }
 
   .projects-placeholder {
