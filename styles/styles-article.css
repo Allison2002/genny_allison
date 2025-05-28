@@ -382,6 +382,7 @@
       width: 75%;
       max-width: 75vw;
       padding: 1em;
+      margin: 3em auto 3em;
     }
 
     #description {
@@ -436,6 +437,7 @@
     #projects {
       width: 80%;
       max-width: 80vw;
+      margin: 2em auto 2em;
     }
 
     .article-global-container {
@@ -554,6 +556,12 @@
     .thumbnail #projects {
       width: 90%;
       max-width: 90vw;
+    }
+
+    #projects {
+      width: 90%;
+      max-width: 90vw;
+      margin: 2em auto 2em;
     }
 
     .thumbnails picture {
@@ -703,6 +711,7 @@
     #projects {
       width: 90%;
       max-width: 90vw;
+      margin: 2em auto 2em;
     }
 
     .border-white {
