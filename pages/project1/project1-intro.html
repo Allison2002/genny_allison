@@ -149,9 +149,11 @@
         overflow: hidden;
         box-sizing: border-box;
         padding: 0.5rem;
-        min-height: 200px;
+        min-height: 300px;
         max-height: 400px;
+        contain: layout paint style;
       }
+      
 
       .canvas-skills-grid picture {
         flex: 0 0 40%;
@@ -162,6 +164,7 @@
         justify-content: center;
         background-color: #000;
         box-sizing: border-box;
+        aspect-ratio: 671 / 384;
       }
 
       .canvas-skills-grid img {
@@ -170,7 +173,6 @@
         object-fit: cover; /* keeps full image visible */
         object-position: center;
         display: block;
-        aspect-ratio: 737 / 352;
         border-top: 1em solid #000;
         border-left: 1em solid #000;
         border-right: 0.5em solid #000;
@@ -590,23 +592,23 @@
         <div class="author-bio-container fancy-border-img" id="author-bio">
           <picture> 
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,w_1400,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,w_944,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
               type="image/avif"
               media="(min-width: 1200px)"
               sizes="100vw"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,w_  820,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,w_520,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
             />
             <img 
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,w_400,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif" 
-              width="200" 
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,w_600,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif" 
+              width="300" 
               height="148" 
               alt="Photo of Genny Allison, the web developer and AI content specialist"
-              style="aspect-ratio: 200 / 148; object-fit: contain;"
+              style="aspect-ratio: 300 / 148; object-fit: contain;"
               loading="auto" 
               decoding="async" 
             />
@@ -654,7 +656,7 @@
               sizes="100vw"
             />
             <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_50,c_fill,w_736,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
+              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_50,c_fill,w_768,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
               type="image/avif"
               media="(min-width: 481px) and (max-width: 1199px)"
               sizes="100vw"
@@ -663,7 +665,7 @@
               src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_768,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
               alt="Photo of Genny Allison, the web developer and AI content specialist"
               width="384"
-              height="240"
+              height="168"
               loading="lazy"
               fetchpriority="low"
               decoding="async" 

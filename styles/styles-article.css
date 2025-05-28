@@ -148,8 +148,8 @@
 
   .author-bio-container img {
     display: block;
-    width: 90%;
-    max-width: 90vw;
+    width: 60%;
+    max-width: 60vw;
     height: auto;
     object-fit: contain;
     padding: 1em;
@@ -629,7 +629,7 @@
     }
 
     .author-bio-container img {
-      width: 200px;
+      width: 300px;
       height: auto;
       min-height: 9.25rem;
       object-fit: contain;
