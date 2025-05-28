@@ -25,9 +25,9 @@
   }
 
   .projects-content {
-    min-height: 80vh;
+    min-height: 100vh;
     /* Lock height early */
-    contain: layout;
+    contain: layout style;
     overflow: hidden;
     position: relative;
     transition: none;
