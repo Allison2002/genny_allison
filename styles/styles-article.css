@@ -1,12 +1,12 @@
   #projects {
     min-height: 100vh;
-    position: relative;
-    display: flex;
-    height: auto;
     contain: layout;
-    flex-direction: column;
-    justify-content: start;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    justify-content: start;
     margin: 5em auto 5em;
     width: 54%;
     max-width: 54vw;
@@ -14,11 +14,6 @@
     height: auto;
     background-color: #000;
     box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1);
-  }
-
-  .projects-placeholder {
-    min-height: 100vh;
-    visibility: hidden;
   }
 
   .lcp-title {
@@ -29,16 +24,26 @@
     /* fallback for faster rendering */
   }
 
+  .projects-content {
+    min-height: 80vh;
+    /* Lock height early */
+    contain: layout;
+    overflow: hidden;
+    position: relative;
+    transition: none;
+    /* Prevent animation shifts */
+  }
 
-  /* When fonts are ready */
-  body.fonts-loaded .projects-content {
-    visibility: visible;
-    opacity: 1;
+  .projects-placeholder {
+    min-height: 100vh;
+    visibility: hidden;
+    display: block;
   }
 
   body.fonts-loaded .projects-placeholder {
     display: none;
   }
+
 
   #the-design {
     margin: 0 auto;
@@ -60,7 +65,7 @@
     background-color: #fff;
     width: 98%;
     padding: 1em;
-    min-height: 10rem;
+    min-height: 160px;
   }
 
   .project-title h2 {
@@ -81,7 +86,7 @@
     font-size: 1.8rem;
     width: 100%;
     height: auto;
-    line-height: 1.4;
+    line-height: 1.7;
   }
 
   .author-bio-text p i,
@@ -91,7 +96,7 @@
   }
 
   #description {
-    margin: 1em auto 0;
+    margin: 2em auto 0;
   }
 
   #section1 {
@@ -467,8 +472,8 @@
     }
 
     .tooltip:hover .tooltip-text {
-      visibility: visible;
-      opacity: 1
+      transition: transform 0.3s ease;
+      will-change: transform;
     }
 
     .collections-button-grid {
@@ -488,7 +493,8 @@
       color: #000;
       text-decoration: none;
       cursor: pointer;
-      transition: transform .3s ease
+      transition: transform 0.3s ease;
+      will-change: transform;
     }
 
     .resume-border {

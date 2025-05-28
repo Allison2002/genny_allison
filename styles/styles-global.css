@@ -129,14 +129,15 @@ p a {
   text-decoration: underline
 }
 
-.links a:visited,
-.links:visited,
+
 a:visited,
 p a:visited {
-  color: cyan;
-  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
+  color: black;
+  text-shadow: 0 0 1px cyan, 0 0 2px cyan;
 }
 
+.links a:visited,
+.links:visited,
 .author-bio-text p a,
 #nav ul li a,
 #footer-links ul li a {
@@ -154,10 +155,13 @@ a:focus,
 a:hover,
 p a:focus,
 p a:hover {
-  color: cyan;
-  text-shadow: 0 0 2px #1a1d9e, 0 0 4px #1a1d9e;
+  filter: brightness(2.4) contrast(1.2);
+  will-change: filter;
+  transition: filter 0.3s ease;
+  border-radius: 3px;
+  padding: 0 2px;
   text-decoration: underline;
-  background-color: rgba(255, 255, 255, .05);
+  text-shadow: none;
   border-radius: 3px;
   padding: 0 2px
 }
@@ -173,21 +177,18 @@ p a::after {
   content: '';
   position: absolute;
   left: 5%;
-  bottom: -.1vw;
-  height: .28vh;
+  bottom: -0.1rem;
+  height: 0.2rem;
   width: 90%;
-  transition: transform .3s ease;
+  background: #0ff;
+  transition: transform 0.3s ease;
   will-change: transform;
 }
 
 .links a::after,
 .links::after {
-  background: #0ff
-}
-
-#back-to-top:hover {
-  background-color: #0ff;
-  color: #000
+  background: #0ff;
+  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
 }
 
 .background-color {
@@ -253,24 +254,23 @@ nav {
 }
 
 .nav-logo {
-  height: 86px;
+  height: 80px;
   width: 160px;
-  max-width: 10rem;
   overflow: hidden;
   justify-content: center;
   align-items: center;
   background-color: #000;
+  padding: 0.2em;
 }
 
 .nav-logo img {
   width: 100%;
   height: auto;
-  min-height: 5rem;
+  min-height: 80px;
   display: block;
   object-fit: contain;
   padding: .5em;
 }
-
 
 .footer-logo {
   display: flex;
@@ -420,8 +420,8 @@ footer {
   background-color: #000;
   color: #fff;
   border-radius: .25rem;
-  cursor: pointer;
-  transition: opacity .3s ease
+  contain: layout paint;
+  will-change: transform;
 }
 
 #side-nav {
@@ -441,7 +441,10 @@ footer {
 
 #back-to-top {
   bottom: 1rem;
-  left: 1rem
+  left: 1rem;
+  width: auto;
+  min-width: 6rem;
+  contain: layout
 }
 
 #side-nav {
@@ -456,6 +459,10 @@ footer {
   right: max(1rem, env(safe-area-inset-right))
 }
 
+#back-to-top {
+  left: max(1rem, env(safe-area-inset-left))
+}
+
 #side-nav ul {
   list-style-type: none;
   padding: 0;
@@ -466,6 +473,7 @@ footer {
   margin: 5% 0
 }
 
+#back-to-top,
 #side-nav ul li a {
   display: block;
   padding: .5em;
@@ -485,16 +493,20 @@ footer {
   height: auto;
 }
 
+#back-to-top,
 #side-nav a {
   color: #fff;
   text-decoration: none;
   line-height: 1.2;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  /* only GPU-accelerated props */
+  will-change: transform, opacity;
 }
 
+#back-to-top:hover,
 #side-nav li a:hover {
-  background-color: #0ff;
-  color: #000;
-  transform: scale(1.05)
+  filter: drop-shadow(0 0 12px #0ff);
+  transform: scale(1.05);
 }
 
 .collections-click-me,
@@ -521,9 +533,12 @@ footer {
 .collections-click-me:hover,
 .click-me:hover {
   background-color: gray;
-  box-shadow: .0225em .0225em .0125em rgba(0, 0, 0, .3), -.125em -.125em .3125em rgba(255, 255, 255, .7);
-  color: #fff
+  filter: drop-shadow(0.0225em 0.0225em 0.0125em rgba(0, 0, 0, 0.3)) drop-shadow(-0.125em -0.125em 0.3125em rgba(255, 255, 255, 0.7));
+  color: #fff;
+  transition: filter 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  will-change: filter, background-color, color;
 }
+
 
 .collections-click-me a,
 .click-me a {
@@ -573,7 +588,7 @@ footer {
   width: 97%;
   max-width: 97vw;
   height: auto;
-  min-height: 45rem;
+  min-height: 100vh;
 }
 
 .resume-summary a {
@@ -635,12 +650,6 @@ footer {
   max-width: 100vw;
 }
 
-#back-to-top:hover {
-  background-color: #0ff;
-  color: #000;
-  transform: scale(1.1)
-}
-
 .button-grid {
   display: flex;
   width: 75%;
@@ -671,11 +680,13 @@ button.submit-button {
   border-radius: .3125em;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color .3s ease
+  transition: filter 0.3s ease, color 0.3s ease;
+  will-change: filter, color;
 }
 
 button.submit-button:hover {
-  background-color: #0bd6e2
+  filter: drop-shadow(0 0 0 #0bd6e2) brightness(1.4) saturate(1.3);
+  color: #000;
 }
 
 .hamburger-nav-links {
@@ -954,4 +965,15 @@ button.submit-button:hover {
     height: auto;
   }
 
+}
+
+a:focus,
+.nav-links a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.links:focus {
+  outline: none;
+  box-shadow: none;
 }
