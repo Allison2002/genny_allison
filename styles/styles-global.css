@@ -939,6 +939,11 @@ button.submit-button:hover {
     height: auto;
   }
 
+  .footer-logo {
+    height: 109px;
+    width: 250px;
+  }
+
 }
 
 a:focus,
