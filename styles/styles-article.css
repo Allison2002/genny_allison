@@ -1,20 +1,23 @@
   main#projects {
-    min-height: 100vh;
-    contain: layout style;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    transition: none;
-    height: auto;
-    justify-content: start;
-    margin: 5em auto 5em;
     width: 54%;
     max-width: 54vw;
+    min-height: 3200px;
+    /* or a realistic lowest bound for long content */
+    margin: 5em auto;
     padding: 2em 1em;
-    height: auto;
     background-color: #000;
     box-shadow: 0 .25em .5em rgba(0, 0, 0, .4), inset 0 0 .625em rgba(255, 255, 255, .1);
+
+    /* Prevent layout shifts */
+    contain: layout paint style;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    /* Fallbacks */
+    position: relative;
+    overflow-anchor: none;
+    /* Avoid shift from dynamic content below */
   }
 
   #the-design {
@@ -155,7 +158,7 @@
     padding: 1em;
     box-sizing: border-box;
     margin: 0 auto;
-
+    aspect-ratio: 472 / 186;
   }
 
   .images2 {
@@ -197,6 +200,7 @@
     display: block;
     margin: auto;
     padding: 0.25em;
+    aspect-ratio: 383 / 317;
   }
 
   .menu-grid {
@@ -376,6 +380,7 @@
       width: 93%;
       max-width: 93vw;
       height: auto;
+      aspect-ratio: 344 / 130;
     }
   }
 
