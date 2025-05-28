@@ -127,7 +127,7 @@
 
 .greetings p {
   color: #fff;
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: system-ui, sans-serif;
   font-weight: 250;
   font-size: 1.4rem;
   padding: 2vw;
