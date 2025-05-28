@@ -878,6 +878,15 @@ button.submit-button:hover {
     font-size: .9rem;
     margin: 0 auto
   }
+
+  #section1 {
+    margin: 1em auto;
+    padding: 0.5em 1em;
+  }
+
+  .resume-summary h2 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 680px) {
@@ -922,6 +931,12 @@ button.submit-button:hover {
 
   .resume-summary {
     height: auto;
+  }
+
+  .resume-summary,
+  .resume-summary h2 {
+    contain: layout paint;
+    will-change: transform;
   }
 
   .hamburger-icon {
