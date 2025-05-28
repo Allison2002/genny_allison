@@ -21,6 +21,15 @@
     visibility: hidden;
   }
 
+  .lcp-title {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: none !important;
+    font-family: system-ui, sans-serif;
+    /* fallback for faster rendering */
+  }
+
+
   /* Real content hidden by default (until fonts load) */
   .projects-content {
     visibility: hidden;
