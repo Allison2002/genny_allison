@@ -647,6 +647,12 @@
       margin: 2em auto;
     }
 
+    .author-bio-container img {
+      width: 297px;
+      height: auto;
+      min-height: 9.25rem;
+    }
+
     .thumbnails img {
       aspect-ratio: 220 / 189;
     }
