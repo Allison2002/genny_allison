@@ -95,13 +95,10 @@ label {
 
 .collections-title a,
 .links,
-.links a,
-a,
-p a {
+.links a {
   color: black;
   text-shadow: 0 0 1px cyan, 0 0 2px cyan;
   font-weight: 700;
-  text-decoration: underline
 }
 
 
@@ -111,6 +108,7 @@ p a:visited {
   text-shadow: 0 0 1px cyan, 0 0 2px cyan;
 }
 
+.resume-summary p a,
 .links a:visited,
 .links:visited,
 .author-bio-text p a,
@@ -118,6 +116,24 @@ p a:visited {
 #footer-links ul li a {
   color: cyan;
   text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
+}
+
+.author-bio-text h2 {
+  font-size: 1.5rem;
+}
+
+.author-bio-text p i {
+  color: #0BD6E3;
+  font-size: 1.3rem;
+  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
+}
+
+.padding-right {
+  padding-right: 0.5em;
+}
+
+.padding-left {
+  padding-left: 0.5em;
 }
 
 .nav-links ul li a:focus,
@@ -135,7 +151,6 @@ p a:hover {
   transition: filter 0.3s ease;
   border-radius: 3px;
   padding: 0 2px;
-  text-decoration: underline;
   text-shadow: none;
   border-radius: 3px;
   padding: 0 2px
@@ -448,6 +463,8 @@ footer {
   margin: 5% 0
 }
 
+.collections-click-me,
+.click-me,
 #back-to-top,
 #side-nav ul li a {
   display: block;
@@ -469,6 +486,8 @@ footer {
   height: auto;
 }
 
+.click-me,
+.collections-click-me,
 #back-to-top,
 #side-nav a {
   color: #fff;
@@ -476,6 +495,8 @@ footer {
   line-height: 1.2;
 }
 
+.click-me:hover,
+.collections-click-me:hover,
 #back-to-top:hover,
 #side-nav li a:hover {
   filter: drop-shadow(0 0 12px #0ff);
@@ -483,44 +504,12 @@ footer {
   opacity: 0.8;
 }
 
-.collections-click-me,
-.click-me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2em auto;
-  width: auto;
-  height: auto;
-  font-size: 1.3rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  padding: .5em;
-  border: .0825em solid #0ff;
-  background-color: #000;
-  color: #fff;
-  border-radius: .25rem;
-  transition: opacity .3s ease;
-  text-align: center;
-}
-
-.collections-click-me:hover,
-.click-me:hover {
-  background-color: gray;
-  filter: drop-shadow(0.0225em 0.0225em 0.0125em rgba(0, 0, 0, 0.3)) drop-shadow(-0.125em -0.125em 0.3125em rgba(255, 255, 255, 0.7));
-  color: #fff;
-  transition: filter 0.3s ease, color 0.3s ease, background-color 0.3s ease;
-  will-change: filter, background-color, color;
-}
-
-
 .collections-click-me a,
 .click-me a {
   text-decoration: none;
   color: #fff;
 }
 
-.project-links,
 .explore-container,
 .click-me {
   margin: 2em auto;
