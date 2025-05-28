@@ -573,7 +573,6 @@ footer {
   width: 97%;
   max-width: 97vw;
   height: auto;
-  margin: 1em auto;
   min-height: 45rem;
 }
 
@@ -888,11 +887,6 @@ button.submit-button:hover {
   .footer-links ul li a {
     font-size: .9rem;
     margin: 0 auto
-  }
-
-  #section1 {
-    margin: 1em auto;
-    padding: 0.5em 1em;
   }
 
   .resume-summary h2 {

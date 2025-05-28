@@ -178,10 +178,11 @@
 
   .author-bio-container img {
     display: block;
-    width: 100%;
+    width: 90%;
+    max-width: 90vw;
     height: auto;
-    object-fit: cover;
-    padding: 0 1em;
+    object-fit: contain;
+    padding: 1em;
     box-sizing: border-box;
     margin: 0 auto;
 
@@ -382,7 +383,6 @@
     #projects {
       width: 75%;
       max-width: 75vw;
-      margin: 3em auto 3em;
       padding: 1em;
     }
 
@@ -544,6 +544,11 @@
       width: 75%;
       line-height: 1.2;
     }
+
+    #section1 {
+      margin: 4em auto 4em;
+      padding: 0.5em 1em;
+    }
   }
 
   @media (max-width: 680px) {
@@ -633,6 +638,14 @@
   }
 
   @media (max-width:480px) {
+    .fancy-border-img {
+      max-width: 88% !important;
+      width: 88% !important;
+    }
+
+    .author-bio-container {
+      margin: 2em auto;
+    }
 
     .thumbnails img {
       aspect-ratio: 220 / 189;
@@ -640,6 +653,7 @@
 
     #section1 {
       padding: 1em;
+      margin: 4em auto 4em;
     }
 
     #grade-table-img1 img {
@@ -684,8 +698,6 @@
     #projects {
       width: 90%;
       max-width: 90vw;
-      margin: 3em auto 3em;
-      min-height: 100vw;
     }
 
     .border-white {

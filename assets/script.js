@@ -181,4 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     document.body.classList.add('fonts-loaded');
   }
+  document.fonts.ready.then(() => {
+    document.body.classList.add("fonts-loaded");
+  });
 });
