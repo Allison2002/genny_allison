@@ -784,11 +784,6 @@
       margin: 0 auto;
     }
 
-    .past-meets-future {
-      margin: 6em auto 8em;
-    }
-
-
     #wireframe-img1 picture {
       width: 327px;
       height: 590px;
@@ -832,6 +827,16 @@
 
     .past-meets-future {
       margin: 6em auto 8em;
+    }
+
+    .past-meets-future {
+      width: 90%;
+      max-width: 90vw;
+      margin: 1em auto 1em;
+    }
+
+    .past-meets-future img {
+      aspect-ratio: 256 / 343;
     }
 
     main#projects {
