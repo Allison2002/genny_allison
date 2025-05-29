@@ -211,15 +211,18 @@
     aspect-ratio: 383 / 317;
   }
 
-
+  .grade-table,
+  .vision-container,
+  .wireframe,
+  .past-meets-design,
   .the-grade {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2em;
     margin: 6em auto 6em;
-    width: 80%;
-    max-width: 80vw;
+    width: 98%;
+    max-width: 98vw;
     height: auto;
   }
 
@@ -227,12 +230,24 @@
     min-height: 100vh;
   }
 
+  .vision-container,
   .past-meets-design {
     min-height: 47rem;
   }
 
+  .vision,
   .past-meets-future {
     min-height: 44rem;
+  }
+
+  .vision picture {
+    width: 814px;
+    height: 769px;
+    min-height: 22rem;
+  }
+
+  .vision img {
+    aspect-ratio: 814 / 769;
   }
 
   .past-meets-future picture {
@@ -241,6 +256,11 @@
     min-height: 22rem;
   }
 
+  #description {
+    margin: 2em auto;
+  }
+
+  .vision img,
   .website-grade img,
   .grade-table img,
   #hubspot-img img,
@@ -259,6 +279,10 @@
     height: 552px;
   }
 
+  .vision img {
+    aspect-ratio: 814 / 769;
+  }
+
   .past-meets-future img {
     aspect-ratio: 659 / 679;
     object-fit: cover;
@@ -270,11 +294,16 @@
   }
 
   #hubspot-img img {
-    aspect-ratio: 659 / 939;
+    aspect-ratio: 814 / 1163;
   }
 
-  .grade-table img {
-    aspect-ratio: 659 / 554;
+  #tt-grade-table1 img {
+    aspect-ratio: 814 / 671;
+  }
+
+  #tt-grade-table2 img {
+    aspect-ratio: 814 / 699;
+    object-fit: contain;
   }
 
   .website-grade img {
@@ -282,8 +311,8 @@
   }
 
   #hubspot-img picture {
-    width: 659px;
-    height: 939px;
+    width: 814px;
+    height: 1163px;
   }
 
   #pagespeed1 picture {
@@ -292,40 +321,96 @@
     min-height: 10rem;
   }
 
-  .grade-table picture {
-    width: 659px;
-    height: 554px;
+  #st-grade-table1 picture {
+    width: 814px;
+    height: 492;
     min-height: 10rem;
   }
 
-  #wireframe-img1 picture {
+  #st-grade-table1 img {
+    aspect-ratio: 814 / 492;
+  }
+
+  #st-grade-table2 picture {
+    width: 814px;
+    height: 492PX;
+    min-height: 10rem;
+  }
+
+  #st-grade-table2 img {
+    aspect-ratio: 814 / 492;
+  }
+
+  #tt-grade-table1 picture {
+    width: 814px;
+    height: 671px;
+    min-height: 10rem;
+  }
+
+  #tt-grade-table2 picture {
+    width: 814px;
+    height: 699px;
+    min-height: 10rem;
+  }
+
+  #tt-wireframe-img1 picture {
     width: 659px;
     height: 2235px;
     min-height: 70rem;
   }
 
-  #wireframe-img1 img {
+  #tt-wireframe-img1 img {
     aspect-ratio: 659 / 2235;
   }
 
-  #wireframe-img2 picture {
+  #tt-wireframe-img2 picture {
     width: 659px;
     height: 1173px;
     min-height: 70rem;
   }
 
-  #wireframe-img2 img {
+  #tt-wireframe-img2 img {
     aspect-ratio: 659 / 1173;
   }
 
-  #wireframe-img3 picture {
+  #tt-wireframe-img3 picture {
     width: 659px;
     height: 2235px;
     min-height: 84rem;
   }
 
-  #wireframe-img3 img {
+  #tt-wireframe-img3 img {
     aspect-ratio: 659 / 2721;
+  }
+
+  #st-wireframe-img1 picture {
+    width: 814px;
+    height: 2512px;
+    min-height: 46rem;
+  }
+
+  #st-wireframe-img1 img {
+    aspect-ratio: 814 / 2512;
+  }
+
+  #st-wireframe-img2 picture {
+    width: 814px;
+    height: 1471px;
+    min-height: 45rem;
+  }
+
+  #st-wireframe-img2 img {
+    aspect-ratio: 814 / 1471;
+  }
+
+  #st-wireframe-img3 picture {
+    width: 814px;
+    height: 2769px;
+    min-height: 45rem;
+  }
+
+  #st-wireframe-img3 img {
+    aspect-ratio: 814 / 2769;
   }
 
   .menu-grid {
@@ -536,6 +621,15 @@
       margin: 2em auto 2em;
     }
 
+    .vision picture {
+      width: 441px;
+      height: 417px;
+    }
+
+    .vision img {
+      aspect-ratio: 441 / 417;
+    }
+
     .past-meets-future img {
       aspect-ratio: 300 / 400;
     }
@@ -561,7 +655,6 @@
       min-height: 4.5rem;
       font-display: swap;
     }
-
 
     .article-global-container {
       padding: .2em
@@ -676,33 +769,81 @@
       gap: 1em;
     }
 
-    #wireframe-img1 picture {
+    #st-grade-table1 picture {
+      width: 441px;
+      height: 263px;
+    }
+
+    #st-grade-table1 img {
+      aspect-ratio: 441 / 263;
+    }
+
+    #st-grade-table2 picture {
+      width: 441px;
+      height: 263px;
+    }
+
+    #st-grade-table2 img {
+      aspect-ratio: 441 / 263;
+    }
+
+    #st-wireframe-img1 picture {
+      width: 399px;
+      height: 1232px;
+      min-height: 46rem;
+    }
+
+    #st-wireframe-img1 img {
+      aspect-ratio: 399 / 1232;
+    }
+
+    #st-wireframe-img2 picture {
+      width: 399px;
+      height: 719px;
+      min-height: 45rem;
+    }
+
+    #st-wireframe-img2 img {
+      aspect-ratio: 399 / 1353;
+    }
+
+    #st-wireframe-img3 picture {
+      width: 399px;
+      height: 1353px;
+      min-height: 45rem;
+    }
+
+    #st-wireframe-img3 img {
+      aspect-ratio: 399 / 719;
+    }
+
+    #tt-wireframe-img1 picture {
       width: 407px;
       height: 736px;
       min-height: 46rem;
     }
 
-    #wireframe-img1 img {
+    #tt-wireframe-img1 img {
       aspect-ratio: 447 / 736;
     }
 
-    #wireframe-img2 picture {
+    #tt-wireframe-img2 picture {
       width: 407px;
       height: 733px;
       min-height: 45rem;
     }
 
-    #wireframe-img2 img {
+    #tt-wireframe-img2 img {
       aspect-ratio: 407 / 733;
     }
 
-    #wireframe-img3 picture {
+    #tt-wireframe-img3 picture {
       width: 407px;
       height: 1386px;
       min-height: 84rem;
     }
 
-    #wireframe-img3 img {
+    #tt-wireframe-img3 img {
       aspect-ratio: 407 / 1386;
     }
   }
@@ -752,8 +893,7 @@
       aspect-ratio: 292 / 392;
     }
 
-    #grade-table-img1,
-    #grade-table-img2,
+    .grade-table,
     #pagespeed-grade-img1,
     .author-img-wrapper,
     #cute-robot,
@@ -773,9 +913,12 @@
     }
 
     .hubspot,
-    #wireframe-img2,
-    #wireframe-img1,
-    #wireframe-img3 {
+    #st-wireframe-img2,
+    #st-wireframe-img3,
+    #st-wireframe-img1,
+    #tt-wireframe-img2,
+    #tt-wireframe-img1,
+    #tt-wireframe-img3 {
       width: 85%;
       max-width: 680px;
       margin: 6em auto;
@@ -789,9 +932,11 @@
     }
 
     .hubspot img,
-    #wireframe-img2 img,
-    #wireframe-img3 img,
-    #wireframe-img1 img {
+    #st-wireframe-img2 img,
+    #st-wireframe-img3 img,
+    #st-wireframe-img1 img #tt-wireframe-img2 img,
+    #tt-wireframe-img3 img,
+    #tt-wireframe-img1 img {
       width: 100%;
       height: auto;
       display: block;
@@ -799,8 +944,11 @@
 
     }
 
-    #wireframe-img2 img,
-    #grade-table-img1 img,
+    #tt-wireframe-img2 img,
+    #tt-grade-table1 img,
+    #tt-grade-table2 img,
+    #st-grade-table1 img,
+    #st-grade-table2 img,
     #grade-table-img2 img,
     .author-img-wrapper img,
     #cute-robot img,
@@ -830,40 +978,49 @@
       margin: 0 auto;
     }
 
-    #wireframe-img1 picture {
+    #tt-wireframe-img1 picture {
       width: 327px;
       height: 590px;
       min-height: 23rem;
     }
 
-    #wireframe-img1 img {
+    #tt-wireframe-img1 img {
       aspect-ratio: 327 / 590;
     }
 
-    #wireframe-img2 picture {
+    #tt-wireframe-img2 picture {
       width: 319px;
       height: 575px;
       min-height: 22rem;
     }
 
-    #wireframe-img2 img {
+    #tt-wireframe-img2 img {
       aspect-ratio: 319 / 575;
     }
 
-    #wireframe-img3 picture {
+    #tt-wireframe-img3 picture {
       width: 327px;
       height: 1115px;
       min-height: 43rem;
     }
 
-    #wireframe-img3 img {
+    #tt-wireframe-img3 img {
       aspect-ratio: 327 / 1115;
     }
   }
 
   @media (max-width:480px) {
+    .fancy-border {
+      margin: 1em auto;
+    }
+
     .project-sub-title {
       margin: 6em auto 0;
+
+    }
+
+    .project-title h2 {
+      min-height: 2rem;
     }
 
     .wireframe {
@@ -883,6 +1040,11 @@
 
     .past-meets-future img {
       aspect-ratio: 256 / 343;
+    }
+
+    .vision picture {
+      width: 312px;
+      height: 295px;
     }
 
     main#projects {
@@ -996,7 +1158,43 @@
 
     #collections-buttongrid a {
       font-size: 1rem;
-
     }
+
+    #tt-grade-table2 img {
+      aspect-ratio: 320 / 274;
+    }
+
+    #tt-grade-table2 picture {
+      width: 320px;
+      height: 274px;
+    }
+
+    #tt-grade-table1 img {
+      aspect-ratio: 320 / 274;
+    }
+
+    #tt-grade-table1 picture {
+      width: 320px;
+      height: 274px;
+    }
+
+    #st-grade-table2 img {
+      aspect-ratio: 320 / 193;
+    }
+
+    #st-grade-table2 picture {
+      width: 320px;
+      height: 193px;
+    }
+
+    #st-grade-table1 img {
+      aspect-ratio: 320 / 185;
+    }
+
+    #st-grade-table1 picture {
+      width: 320px;
+      height: 185px;
+    }
+
 
   }

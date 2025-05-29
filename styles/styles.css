@@ -58,6 +58,73 @@
   object-fit: cover
 }
 
+.grade-text .grade-title h3 {
+  font-size: 1.8rem;
+  height: auto;
+  min-height: 1rem;
+}
+
+.grade-text {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+#desktop-grade h3 {
+  font-size: 1.1rem;
+}
+
+#desktop-grade .grade-header h3,
+#desktop-grade p {
+  font-size: 1.1rem;
+}
+
+.grade-item p {
+  font-size: 1rem;
+}
+
+.grades {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.grade-container {
+  width: 100%;
+  max-width: 100vw;
+  margin: 1em auto;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(5vw, 1fr));
+  gap: 0.3125em;
+  background-color: black;
+}
+
+.grade-header,
+.grade-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grade-header {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.3125em;
+  background-color: white;
+}
+
+.grade-item {
+  padding: 0.3125em;
+  height: auto;
+  width: 100%;
+  background-color: white;
+}
+
+
 .headshot-about {
   display: flex;
   height: auto;
