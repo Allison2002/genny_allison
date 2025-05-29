@@ -532,6 +532,15 @@ footer {
   max-width: 100vw
 }
 
+.click-me {
+  min-height: 54px;
+  height: auto;
+}
+
+.takeme-text {
+  min-height: 48px;
+}
+
 
 .project-links {
   min-height: 6rem;
