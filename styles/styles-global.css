@@ -510,6 +510,13 @@ footer {
   color: #fff;
 }
 
+.click-me a {
+  display: block;
+  min-height: 2.25rem;
+  line-height: 2.25rem;
+  text-align: center;
+}
+
 .explore-container,
 .click-me {
   margin: 2em auto;
@@ -527,7 +534,11 @@ footer {
 
 
 .project-links {
-  text-align: center;
+  min-height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .resume-date {
@@ -624,6 +635,7 @@ footer {
   margin: 0 auto;
   padding-bottom: 2em;
   gap: 1em;
+  min-height: 4.5rem;
 }
 
 .collections-button-grid {
@@ -713,9 +725,15 @@ button.submit-button:hover {
 @media (max-width:1024px) {
   .button-grid {
     display: flex;
+    flex-direction: column;
     width: 90%;
     max-width: 90vw;
     padding-bottom: 1em;
+    gap: 0m;
+  }
+
+  .click-me {
+    margin: 0 auto;
   }
 
   .nav-links {
