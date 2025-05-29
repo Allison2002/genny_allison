@@ -571,8 +571,16 @@ footer {
   width: 97%;
   max-width: 97vw;
   height: auto;
-  min-height: 265rem;
 }
+
+#section1 {
+  min-height: 258rem;
+}
+
+#section2 {
+  min-height: 269rem;
+}
+
 
 .resume-summary a {
   text-decoration: none;

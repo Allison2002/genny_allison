@@ -140,14 +140,6 @@
     max-width: 100%
   }
 
-  .pagespeed-container {
-    width: 100%;
-    height: auto;
-    max-width: 100vw;
-    overflow: hidden;
-    margin: 6em auto;
-  }
-
   .author-bio-text {
     background-color: #000;
     color: #0bd6e2;
@@ -214,11 +206,14 @@
     height: auto;
     object-fit: contain;
     display: block;
-    margin: auto;
+    margin: 0 auto;
     padding: 0.25em;
     aspect-ratio: 383 / 317;
   }
 
+  .hubspot-container,
+  .pagespeed-container,
+  .the-grade,
   .wireframe,
   .past-meets-design {
     display: flex;
@@ -228,6 +223,7 @@
     margin: 6em auto 6em;
     width: 80%;
     max-width: 80vw;
+    height: auto;
   }
 
   .wireframe {
@@ -244,57 +240,88 @@
 
   .past-meets-future picture {
     width: 659px;
-    height: 769px;
+    height: 679px;
     min-height: 22rem;
   }
 
+  .grade-table img,
+  .hubspot-container img,
+  .pagespeed-container img,
+  .wireframe-img img,
   .past-meets-future img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: contain;
+    margin: 0 auto;
+    padding: 0.25em;
+  }
+
+  .past-meets-future img {
+    aspect-ratio: 659 / 679;
+    object-fit: cover;
+  }
+
+  .pagespeed-container img {
+    aspect-ratio: 659 / 679;
+    object-fit: cover;
+  }
+
+  .hubspot-container img {
+    aspect-ratio: 659 / 939;
+    object-fit: cover;
+  }
+
+  .grade-table img {
+    aspect-ratio: 659 / 554;
+    object-fit: cover;
+  }
+
+  .grade-img img {
+    aspect-ratio: 659 /552;
+    object-fit: cover;
+  }
+
+
+  #pagespeed1 picture {
+    width: 659px;
+    height: 679px;
+    min-height: 10rem;
+  }
+
+  .grade-table picture {
+    width: 659px;
+    height: 554px;
+    min-height: 10rem;
   }
 
   #wireframe-img1 picture {
-    width: 800px;
-    height: 2714px;
-    min-height: 84rem;
+    width: 659px;
+    height: 2235px;
+    min-height: 70rem;
   }
 
   #wireframe-img1 img {
-    aspect-ratio: 800 / 2714;
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
+    aspect-ratio: 659 / 2235;
   }
 
   #wireframe-img2 picture {
-    width: 800px;
-    height: 1445px;
-    min-height: 84rem;
+    width: 659px;
+    height: 1173px;
+    min-height: 70rem;
   }
 
   #wireframe-img2 img {
-    aspect-ratio: 800 / 1445;
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
+    aspect-ratio: 659 / 1173;
   }
 
   #wireframe-img3 picture {
-    width: 800px;
-    height: 2721px;
+    width: 659px;
+    height: 2235px;
     min-height: 84rem;
   }
 
   #wireframe-img3 img {
-    aspect-ratio: 800 / 2721;
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
+    aspect-ratio: 659 / 2721;
   }
 
   .menu-grid {
