@@ -211,11 +211,8 @@
     aspect-ratio: 383 / 317;
   }
 
-  .hubspot-container,
-  .pagespeed-container,
-  .the-grade,
-  .wireframe,
-  .past-meets-design {
+
+  .the-grade {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,8 +241,9 @@
     min-height: 22rem;
   }
 
+  .website-grade img,
   .grade-table img,
-  .hubspot-container img,
+  #hubspot-img img,
   .pagespeed-container img,
   .wireframe-img img,
   .past-meets-future img {
@@ -266,21 +264,22 @@
     object-fit: cover;
   }
 
-  .hubspot-container img {
+  #hubspot-img img {
     aspect-ratio: 659 / 939;
-    object-fit: cover;
   }
 
   .grade-table img {
     aspect-ratio: 659 / 554;
-    object-fit: cover;
   }
 
-  .grade-img img {
+  .website-grade img {
     aspect-ratio: 659 /552;
-    object-fit: cover;
   }
 
+  #hubspot-img picture {
+    width: 659px;
+    height: 939px;
+  }
 
   #pagespeed1 picture {
     width: 659px;
@@ -505,6 +504,10 @@
       max-width: 93vw;
       height: auto;
       aspect-ratio: 344 / 130;
+    }
+
+    .the-grade {
+      margin: 2em auto 2em;
     }
   }
 
