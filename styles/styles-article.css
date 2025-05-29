@@ -254,6 +254,11 @@
     padding: 0.25em;
   }
 
+  .website-grade picture {
+    width: 659px;
+    height: 552px;
+  }
+
   .past-meets-future img {
     aspect-ratio: 659 / 679;
     object-fit: cover;
