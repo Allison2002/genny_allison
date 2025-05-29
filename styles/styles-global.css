@@ -574,14 +574,11 @@ footer {
   margin: 0 auto;
 }
 
+#section3,
+#section2,
 #section1 {
-  min-height: 258rem;
+  min-height: 100vh;
 }
-
-#section2 {
-  min-height: 269rem;
-}
-
 
 .resume-summary a {
   text-decoration: none;

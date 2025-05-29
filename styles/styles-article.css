@@ -198,9 +198,9 @@
   }
 
   .thumbnails picture {
-    width: 383px;
-    height: 317px;
-    min-height: 20rem;
+    width: 100%;
+    aspect-ratio: 383 / 317;
+    display: block;
   }
 
   .thumbnails img {
@@ -210,7 +210,6 @@
     display: block;
     margin: 0 auto;
     padding: 0.25em;
-    aspect-ratio: 383 / 317;
   }
 
   .grade-table,
@@ -243,32 +242,23 @@
   }
 
   .vision picture {
-    width: 814px;
-    height: 769px;
-    min-height: 22rem;
-  }
-
-  .vision img {
     aspect-ratio: 814 / 769;
   }
 
-  .past-meets-future picture {
-    width: 659px;
-    height: 679px;
-    min-height: 22rem;
+  .vision img {
+    object-fit: contain;
   }
 
   #description {
     margin: 2em auto;
   }
 
-  .vision img,
-  .website-grade img,
-  .grade-table img,
-  #hubspot-img img,
-  .pagespeed-container img,
-  .wireframe-img img,
-  .past-meets-future img {
+  picture {
+    width: 100%;
+    display: block;
+  }
+
+  img {
     width: 100%;
     height: auto;
     display: block;
@@ -277,142 +267,80 @@
   }
 
   .website-grade picture {
-    width: 659px;
-    height: 552px;
+    aspect-ratio: 659 / 552;
   }
 
-  .vision img {
+  .past-meets-future picture {
+    aspect-ratio: 659 / 679;
+  }
+
+  .vision picture {
     aspect-ratio: 814 / 769;
   }
 
-  .past-meets-future img {
+  .past-meets-future picture {
     aspect-ratio: 659 / 679;
-    object-fit: cover;
   }
 
-  .pagespeed-container img {
+  .pagespeed-container picture {
     aspect-ratio: 659 / 679;
-    object-fit: cover;
-  }
-
-  #hubspot-img img {
-    aspect-ratio: 814 / 1163;
-  }
-
-  #tt-grade-table1 img {
-    aspect-ratio: 814 / 671;
-  }
-
-  #tt-grade-table2 img {
-    aspect-ratio: 814 / 699;
-    object-fit: contain;
-  }
-
-  .website-grade img {
-    aspect-ratio: 659 /552;
   }
 
   #hubspot-img picture {
-    width: 814px;
-    height: 1163px;
+    aspect-ratio: 814 / 1163;
+  }
+
+  #tt-grade-table1 picture {
+    aspect-ratio: 814 / 671;
+  }
+
+  #tt-grade-table2 picture {
+    aspect-ratio: 814 / 699;
+  }
+
+  .website-grade picture {
+    aspect-ratio: 659 /552;
   }
 
   #pagespeed1 picture {
-    width: 659px;
-    height: 679px;
-    min-height: 10rem;
+    aspect-ratio: 659 / 679;
   }
 
   #st-grade-table1 picture {
-    width: 814px;
-    height: 492;
-    min-height: 10rem;
-  }
-
-  #st-grade-table1 img {
     aspect-ratio: 814 / 492;
   }
 
   #st-grade-table2 picture {
-    width: 814px;
-    height: 492PX;
-    min-height: 10rem;
-  }
-
-  #st-grade-table2 img {
     aspect-ratio: 814 / 492;
   }
 
-  #tt-grade-table1 picture {
-    width: 814px;
-    height: 671px;
-    min-height: 10rem;
-  }
-
-  #tt-grade-table2 picture {
-    width: 814px;
-    height: 699px;
-    min-height: 10rem;
-  }
-
   #tt-wireframe-img1 picture {
-    width: 659px;
-    height: 2235px;
-    min-height: 70rem;
-  }
-
-  #tt-wireframe-img1 img {
     aspect-ratio: 659 / 2235;
   }
 
   #tt-wireframe-img2 picture {
-    width: 659px;
-    height: 1173px;
-    min-height: 70rem;
-  }
-
-  #tt-wireframe-img2 img {
     aspect-ratio: 659 / 1173;
-  }
-
-  #tt-wireframe-img3 picture {
-    width: 659px;
-    height: 2235px;
-    min-height: 84rem;
+    min-height: 65rem;
   }
 
   #tt-wireframe-img3 img {
     aspect-ratio: 659 / 2721;
+    min-height: 84rem;
   }
 
   #st-wireframe-img1 picture {
-    width: 814px;
-    height: 2512px;
+    aspect-ratio: 814 / 2512;
     min-height: 46rem;
   }
 
-  #st-wireframe-img1 img {
-    aspect-ratio: 814 / 2512;
-  }
-
   #st-wireframe-img2 picture {
-    width: 814px;
-    height: 1471px;
-    min-height: 45rem;
-  }
-
-  #st-wireframe-img2 img {
     aspect-ratio: 814 / 1471;
+    min-height: 45rem;
   }
 
   #st-wireframe-img3 picture {
-    width: 814px;
-    height: 2769px;
-    min-height: 45rem;
-  }
-
-  #st-wireframe-img3 img {
     aspect-ratio: 814 / 2769;
+    min-height: 45rem;
   }
 
   .menu-grid {
@@ -546,23 +474,14 @@
     }
 
     .thumbnails picture {
-      width: 282px;
-      height: 233px;
-      min-height: 9.125rem;
-    }
-
-    .thumbnails img {
       aspect-ratio: 282 / 233;
+      min-height: 9rem;
+      margin-bottom: 1em;
     }
 
     .past-meets-future picture {
-      width: 388px;
-      height: 322px;
-      min-height: 20rem;
-    }
-
-    .past-meets-future img {
       aspect-ratio: 388 / 322;
+      min-height: 20rem;
     }
 
     #projects {
@@ -602,39 +521,20 @@
     .the-grade {
       margin: 2em auto 2em;
     }
+
+    picture {
+      min-height: 10rem;
+    }
   }
 
   @media (max-width:768px) {
 
-    .thumbnails picture {
-      width: 355px;
-      height: 300px;
-      min-height: 18rem;
-    }
-
     .thumbnails img {
-      aspect-ratio: 356 / 295;
       margin-bottom: 2em;
     }
 
     .past-meets-future picture {
-      width: 300px;
-      height: 400px;
-      min-height: 15rem;
       margin: 2em auto 2em;
-    }
-
-    .vision picture {
-      width: 441px;
-      height: 417px;
-    }
-
-    .vision img {
-      aspect-ratio: 441 / 417;
-    }
-
-    .past-meets-future img {
-      aspect-ratio: 300 / 400;
     }
 
     #collections-buttongrid {
@@ -773,82 +673,28 @@
       gap: 1em;
     }
 
-    #st-grade-table1 picture {
-      width: 441px;
-      height: 263px;
-    }
-
-    #st-grade-table1 img {
-      aspect-ratio: 441 / 263;
-    }
-
-    #st-grade-table2 picture {
-      width: 441px;
-      height: 263px;
-    }
-
-    #st-grade-table2 img {
-      aspect-ratio: 441 / 263;
-    }
-
     #st-wireframe-img1 picture {
-      width: 399px;
-      height: 1232px;
       min-height: 46rem;
-    }
-
-    #st-wireframe-img1 img {
-      aspect-ratio: 399 / 1232;
     }
 
     #st-wireframe-img2 picture {
-      width: 399px;
-      height: 719px;
       min-height: 45rem;
-    }
-
-    #st-wireframe-img2 img {
-      aspect-ratio: 399 / 1353;
     }
 
     #st-wireframe-img3 picture {
-      width: 399px;
-      height: 1353px;
       min-height: 45rem;
-    }
-
-    #st-wireframe-img3 img {
-      aspect-ratio: 399 / 719;
     }
 
     #tt-wireframe-img1 picture {
-      width: 407px;
-      height: 736px;
       min-height: 46rem;
     }
 
-    #tt-wireframe-img1 img {
-      aspect-ratio: 447 / 736;
-    }
-
     #tt-wireframe-img2 picture {
-      width: 407px;
-      height: 733px;
       min-height: 45rem;
     }
 
-    #tt-wireframe-img2 img {
-      aspect-ratio: 407 / 733;
-    }
-
     #tt-wireframe-img3 picture {
-      width: 407px;
-      height: 1386px;
       min-height: 84rem;
-    }
-
-    #tt-wireframe-img3 img {
-      aspect-ratio: 407 / 1386;
     }
   }
 
@@ -870,8 +716,6 @@
     }
 
     .thumbnails picture {
-      width: 291px;
-      height: 241px;
       min-height: 6rem;
     }
 
@@ -880,9 +724,6 @@
     }
 
     .past-meets-future picture {
-      width: 300px;
-      height: 392px;
-      min-height: 10rem;
       padding-top: 0;
       min-height: 10rem;
     }
@@ -983,18 +824,10 @@
     }
 
     #tt-wireframe-img1 picture {
-      width: 327px;
-      height: 590px;
       min-height: 23rem;
     }
 
-    #tt-wireframe-img1 img {
-      aspect-ratio: 327 / 590;
-    }
-
     #tt-wireframe-img2 picture {
-      width: 319px;
-      height: 575px;
       min-height: 22rem;
     }
 
@@ -1003,13 +836,7 @@
     }
 
     #tt-wireframe-img3 picture {
-      width: 327px;
-      height: 1115px;
       min-height: 43rem;
-    }
-
-    #tt-wireframe-img3 img {
-      aspect-ratio: 327 / 1115;
     }
   }
 
@@ -1042,15 +869,6 @@
       margin: 1em auto 1em;
     }
 
-    .past-meets-future img {
-      aspect-ratio: 256 / 343;
-    }
-
-    .vision picture {
-      width: 312px;
-      height: 295px;
-    }
-
     main#projects {
       width: 90%;
       max-width: 90%;
@@ -1062,10 +880,7 @@
     }
 
     .author-bio-container img {
-      width: 300px;
-      height: auto;
       min-height: 9.25rem;
-      object-fit: contain;
     }
 
     .author-bio-text {
@@ -1087,15 +902,8 @@
     }
 
     .thumbnails picture {
-      width: 118px;
-      height: 97px;
       min-height: 6rem;
     }
-
-    .thumbnails img {
-      aspect-ratio: 118 / 97;
-    }
-
 
     #section1 {
       padding: 1em;
@@ -1114,9 +922,7 @@
     }
 
     .github-img img {
-      width: 100px;
-      height: auto;
-      min-height: 100px;
+      min-height: 10rem;
     }
 
     .design {
@@ -1165,41 +971,24 @@
       font-size: 1rem;
     }
 
-    #tt-grade-table2 img {
-      aspect-ratio: 320 / 274;
-    }
-
     #tt-grade-table2 picture {
-      width: 320px;
-      height: 274px;
-    }
-
-    #tt-grade-table1 img {
       aspect-ratio: 320 / 274;
     }
 
     #tt-grade-table1 picture {
-      width: 320px;
-      height: 274px;
-    }
-
-    #st-grade-table2 img {
-      aspect-ratio: 320 / 193;
+      aspect-ratio: 320 / 274;
     }
 
     #st-grade-table2 picture {
-      width: 320px;
-      height: 193px;
-    }
-
-    #st-grade-table1 img {
-      aspect-ratio: 320 / 185;
+      aspect-ratio: 320 / 193;
     }
 
     #st-grade-table1 picture {
-      width: 320px;
-      height: 185px;
+      aspect-ratio: 320 / 185;
     }
 
+    #section1 {
+      min-height: 100rem
+    }
 
   }
