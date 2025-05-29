@@ -568,9 +568,10 @@ footer {
   height: auto;
   padding: 2em 1em;
   border: .3vh solid #fff;
-  width: 97%;
-  max-width: 97vw;
+  width: 96%;
+  max-width: 96vw;
   height: auto;
+  margin: 0 auto;
 }
 
 #section1 {
