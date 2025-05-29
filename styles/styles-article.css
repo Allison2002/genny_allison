@@ -228,7 +228,18 @@
     margin: 6em auto 6em;
     width: 80%;
     max-width: 80vw;
+  }
+
+  .wireframe {
     min-height: 100vh;
+  }
+
+  .past-meets-design {
+    min-height: 47rem;
+  }
+
+  .past-meets-future {
+    min-height: 44rem;
   }
 
   .past-meets-future picture {
