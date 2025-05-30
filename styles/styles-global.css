@@ -632,6 +632,10 @@ footer {
   font-weight: 900;
 }
 
+.list-items ul li {
+  line-height: 1.6;
+}
+
 .takeme-text {
   width: 100%;
   max-width: 100vw;
