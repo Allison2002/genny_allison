@@ -133,6 +133,21 @@
       }
     </script>
     <style>
+      picture {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 0.25em;
+      }
+
       .canvas-skills-grid {
         display: flex;
         flex-direction: row;
@@ -143,8 +158,6 @@
         overflow: hidden;
         box-sizing: border-box;
         padding: 0.5rem;
-        min-height: 300px;
-        max-height: 575px;
         contain: layout paint style;
       }
       
@@ -152,21 +165,15 @@
       .canvas-skills-grid picture {
         flex: 0 0 40%;
         max-width: 40%;
-        min-width: 40%;
         display: flex;
         align-items: stretch;
         justify-content: center;
         background-color: #000;
         box-sizing: border-box;
-        aspect-ratio: 737 / 497;
       }
 
       .canvas-skills-grid img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
         object-position: center;
-        display: block;
         border-top: 1em solid #000;
         border-left: 1em solid #000;
         border-right: 0.5em solid #000;
@@ -231,41 +238,31 @@
       /* Tablets: 941px–1024px */
       @media (min-width: 769px) and (max-width: 1024px) {
         .canvas-skills-grid {
-          padding: 0.4rem;
-          min-height: 200px;
-          max-height: 300px;
+          padding: 0.4rem;2
         }
 
         .canvas-skills-grid img {
-          aspect-ratio: 388 / 264;
           border-width: 0.5em;
         }
 
         .canvas-skills-title {
-          min-height: 200px;
+          height: 100%;
           border-width: 0.5em;
         }
       }
 
-      @media (min-width: 769px) and (max-width:940px) {
-        .canvas-skills-grid img {
-          aspect-ratio: 354 / 241;
-        }
-      }
 
       /* Mobile landscape & phablets: 481px–768px */
       @media (min-width: 481px) and (max-width: 768px) {
         .canvas-skills-grid {
-          min-height: 180px;
           padding: 0.3rem;
         }
 
         .canvas-skills-grid picture {
-          min-width: 40%;
+          max-width: 40%;
         }
 
         .canvas-skills-grid img {
-          aspect-ratio: 287 / 188;
           border-width: 0.5em;
         }
 
@@ -287,21 +284,12 @@
       /* Smallest mobile screens ≤ 480px */
       @media (max-width: 480px) {
         .canvas-skills-grid {
-          min-height: 200px;
           padding: 0.25rem;
         }
 
-        .canvas-skills-grid picture {
-          min-width: 50%;
-          min-height: 200px;
-        }
-
+  
         .canvas-skills-grid img {
-          aspect-ratio: auto;
-          width: 100%;
-          height: auto;
           border-width: 0.5em;
-          aspect-ratio: 220 / 184; 
           object-fit: cover;
         }
 
