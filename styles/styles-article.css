@@ -256,10 +256,6 @@
     max-width: 900px;
   }
 
-  #pagespeed1 picture {
-    max-width: 900px;
-  }
-
   #st-grade-table1 picture {
     max-width: 900px;
   }
@@ -298,7 +294,7 @@
 
   #pagespeed2,
   #pagespeed1 {
-    max-width: 822px;
+    max-width: 900px;
   }
 
   .menu-grid {
