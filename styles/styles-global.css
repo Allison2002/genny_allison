@@ -404,6 +404,7 @@ footer {
   display: block;
   margin: 0 auto;
   padding: 0.25em;
+  display: none;
 }
 
 #back-to-top {
@@ -762,21 +763,14 @@ button.submit-button:hover {
     display: none
   }
 
-  .menu-toggle {
-    display: block;
-    color: #fff;
-    font-size: 2rem;
-    padding: 1em 1em .5em .5em;
-    cursor: pointer;
-    z-index: 20
-  }
-
   .hamburger-icon {
     display: flex;
-    width: 48px;
-    height: 48px;
-    min-height: 3rem;
   }
+
+  .menu-toggle img {
+    display: flex;
+  }
+
 
   .hamburger-nav-links {
     display: flex

@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-
   // Navbar toggle and scroll
   const setupNavbar = () => {
     const navbar = document.querySelector("nav");
     const hamburgerIcon = document.getElementById("menu-toggle");
-    const navMenu = document.getElementById("nav-menu");
+    const navMenu = document.getElementById("mobile-menu");
 
     if (!hamburgerIcon || !navMenu) return;
 
@@ -38,30 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburgerIcon.setAttribute("aria-expanded", "false");
   };
 
-  // Hamburger menu toggle
-  const initializeMenus = () => {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const hamburgerNavLinks = document.querySelector(".hamburger-nav-links");
-
-    if (menuToggle && hamburgerNavLinks) {
-      menuToggle.addEventListener("click", (e) => {
-        e.stopPropagation();
-        hamburgerNavLinks.classList.toggle("active");
-      });
-
-      document.body.addEventListener("click", (e) => {
-        if (!hamburgerNavLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-          hamburgerNavLinks.classList.remove("active");
-        }
-      });
-
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 768) {
-          hamburgerNavLinks.classList.remove("active");
-        }
-      });
-    }
-  };
+  // ✅ CALL setupNavbar here
+  setupNavbar();
 
   // Side nav and back-to-top scroll behavior
   const backToTopButton = document.getElementById("back-to-top");
@@ -74,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 200) {
         backToTopButton.classList.remove("hidden");
-        sideNav.classList.remove("hidden"); // ← now works on all screen sizes
+        sideNav.classList.remove("hidden");
       } else {
         backToTopButton.classList.add("hidden");
         sideNav.classList.add("hidden");
@@ -120,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.style.backgroundImage =
-            'url("https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_3600,fl_lossy,c_fill,/v1736226778/join-img_vhu2bg.avif")';
+            'url("https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,w_3600,fl_lossy,c_fill/v1736226778/join-img_vhu2bg.avif")';
           observer.unobserve(entry.target);
         }
       });
