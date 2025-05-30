@@ -192,7 +192,6 @@
     outline: 0.2em solid white;
     outline-offset: 1.5em;
     box-sizing: border-box;
-    min-height: 22rem;
     height: auto;
   }
 
@@ -203,7 +202,6 @@
   .thumbnails img {
     width: 100%;
     height: auto;
-    object-fit: contain;
     display: block;
     margin: 0 auto;
     padding: 0.25em;
@@ -232,17 +230,16 @@
     max-width: 814px;
   }
 
-  .vision img {
-    object-fit: contain;
-  }
-
   #description {
     margin: 2em auto;
   }
 
   picture {
+    max-width: 100vw;
     width: 100%;
+    height: auto;
     display: block;
+    margin: 0 auto;
   }
 
   img {
@@ -269,20 +266,16 @@
     max-width: 659px;
   }
 
-  .pagespeed-container picture {
-    max-width: 659px;
-  }
-
   #hubspot-img picture {
     max-width: 814px;
   }
 
   #tt-grade-table1 picture {
-    max-width: 814px;
+    max-width: 886px;
   }
 
   #tt-grade-table2 picture {
-    max-width: 814px;
+    max-width: 886px;
   }
 
   .website-grade picture {
@@ -290,7 +283,7 @@
   }
 
   #pagespeed1 picture {
-    max-width: 659px;
+    max-width: 822px;
   }
 
   #st-grade-table1 picture {
@@ -329,7 +322,8 @@
     min-height: 100vh;
   }
 
-  #pagespeed {
+  #pagespeed2,
+  #pagespeed1 {
     max-width: 822px;
   }
 
@@ -791,8 +785,8 @@
     }
 
     .menu-grid {
-      width: 50%;
-      max-width: 50vw;
+      width: 60%;
+      max-width: 60vw;
       height: auto;
     }
 
