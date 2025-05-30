@@ -593,7 +593,8 @@ footer {
   color: #0ff;
   height: auto;
   width: 100%;
-  max-width: 100vw
+  max-width: 100vw;
+  line-height: 1.6;
 }
 
 .resume-summary h2 {

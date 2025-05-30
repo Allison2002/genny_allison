@@ -93,6 +93,7 @@
   #section1 {
     margin: 4em auto;
     padding: 1em 4em;
+    min-height: 100vh;
   }
 
   #section2 h2,
