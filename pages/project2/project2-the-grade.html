@@ -42,7 +42,7 @@
     <link
       rel="preload"
       as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_424,h_352/v1748537741/sports-tube-mobile_j2lush.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_328,h_352/v1748537741/sports-tube-mobile_j2lush.avif"
       type="image/avif"
       media="(max-width: 480px)"
       fetchpriority="high"
@@ -118,8 +118,6 @@
         overflow: hidden;
         box-sizing: border-box;
         padding: 0.5rem;
-        min-height: 300px;
-        max-height: 575px;
         contain: layout paint style;
       }
       
@@ -133,7 +131,6 @@
         justify-content: center;
         background-color: #000;
         box-sizing: border-box;
-        aspect-ratio: 737 / 497;
       }
 
       .canvas-skills-grid img {
@@ -212,7 +209,6 @@
         }
 
         .canvas-skills-grid img {
-          aspect-ratio: 388 / 264;
           border-width: 0.5em;
         }
 
@@ -222,16 +218,10 @@
         }
       }
 
-      @media (min-width: 769px) and (max-width:940px) {
-        .canvas-skills-grid img {
-          aspect-ratio: 354 / 241;
-        }
-      }
 
       /* Mobile landscape & phablets: 481px–768px */
       @media (min-width: 481px) and (max-width: 768px) {
         .canvas-skills-grid {
-          min-height: 180px;
           padding: 0.3rem;
         }
 
@@ -240,7 +230,6 @@
         }
 
         .canvas-skills-grid img {
-          aspect-ratio: 287 / 188;
           border-width: 0.5em;
         }
 
@@ -262,21 +251,15 @@
       /* Smallest mobile screens ≤ 480px */
       @media (max-width: 480px) {
         .canvas-skills-grid {
-          min-height: 200px;
           padding: 0.25rem;
         }
 
-        .canvas-skills-grid picture {
-          min-width: 50%;
-          min-height: 200px;
-        }
-
+  
         .canvas-skills-grid img {
           aspect-ratio: auto;
           width: 100%;
           height: auto;
           border-width: 0.5em;
-          aspect-ratio: 220 / 184; 
           object-fit: cover;
         }
 
@@ -367,7 +350,7 @@
         <picture> 
           <!-- Desktop ≥ 941px -->
           <source
-            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1430,h_946/v1748537741/sports-tube-desktop_c9qmdx.avif"
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1458,h_946/v1748537741/sports-tube-desktop_c9qmdx.avif"
             media="(min-width: 941px)"
             type="image/avif"
           />
@@ -389,9 +372,9 @@
 
           <!-- Fallback ≤480px -->
           <img
-            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_424,h_352/v1748537741/sports-tube-mobile_j2lush.avif"
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_328,h_352/v1748537741/sports-tube-mobile_j2lush.avif"
             alt="Sports Tube project hero showcasing a fast-loading, responsive sports blog with AI-generated content"
-            width="212"
+            width="164"
             height="176"
             style="object-fit: cover;"
             fetchpriority="high"
