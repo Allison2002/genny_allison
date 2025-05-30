@@ -771,7 +771,6 @@ button.submit-button:hover {
     display: flex;
   }
 
-
   .hamburger-nav-links {
     display: flex
   }
@@ -844,8 +843,7 @@ button.submit-button:hover {
 
   .hamburger-icon {
     display: flex;
-    width: 4.2vw;
-    min-height: 4rem;
+    width: 48px;
     height: auto;
   }
 
