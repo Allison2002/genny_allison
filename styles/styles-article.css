@@ -160,15 +160,6 @@
     height: auto;
   }
 
-  .author-bio-container img {
-    display: block;
-    width: 60%;
-    max-width: 60vw;
-    height: auto;
-    padding: 1em;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
 
   .images2 {
     width: 90%;
@@ -232,22 +223,6 @@
 
   #description {
     margin: 2em auto;
-  }
-
-  picture {
-    max-width: 100vw;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    padding: 0.25em;
   }
 
   .website-grade picture {
@@ -488,11 +463,6 @@
       height: auto;
     }
 
-    .author-bio-container img {
-      width: 93%;
-      max-width: 93vw;
-      height: auto;
-    }
 
     .the-grade {
       margin: 2em auto 2em;
@@ -603,7 +573,6 @@
       margin: 2em auto;
     }
 
-    .author-bio-container,
     .cta-section {
       max-width: 100%;
       height: auto;
