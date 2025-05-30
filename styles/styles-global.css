@@ -243,13 +243,12 @@ nav {
 }
 
 .nav-logo {
-  height: 80px;
-  width: 160px;
+  max-width: 130px;
   overflow: hidden;
   justify-content: center;
   align-items: center;
   background-color: #000;
-  padding: 0.2em;
+  margin-left: 3em;
 }
 
 .nav-logo img {
@@ -807,10 +806,8 @@ button.submit-button:hover {
 @media (max-width:768px) {
 
   .nav-logo {
-    height: calc(12.5rem / 2.38);
-    width: auto;
-    max-height: 105px;
-    padding-left: 1em;
+    max-height: 80px;
+    margin-left: 2em;
     overflow: hidden
   }
 
