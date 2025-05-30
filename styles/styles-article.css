@@ -292,8 +292,7 @@
     min-height: 100vh;
   }
 
-  #pagespeed2,
-  #pagespeed1 {
+  #pagespeed {
     max-width: 900px;
   }
 
