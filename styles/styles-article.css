@@ -168,7 +168,7 @@
     padding: 1em;
     box-sizing: border-box;
     margin: 0 auto;
-    aspect-ratio: 472 / 186;
+    max-width: 472;
   }
 
   .images2 {
@@ -198,9 +198,7 @@
   }
 
   .thumbnails picture {
-    width: 100%;
-    aspect-ratio: 383 / 317;
-    display: block;
+    max-width: 385px;
   }
 
   .thumbnails img {
@@ -242,7 +240,7 @@
   }
 
   .vision picture {
-    aspect-ratio: 814 / 769;
+    max-width: 814;
   }
 
   .vision img {
@@ -267,80 +265,83 @@
   }
 
   .website-grade picture {
-    aspect-ratio: 659 / 552;
+    max-width: 814px;
   }
 
   .past-meets-future picture {
-    aspect-ratio: 659 / 679;
+    max-width: 659px;
   }
 
   .vision picture {
-    aspect-ratio: 814 / 769;
+    max-width: 814px;
   }
 
   .past-meets-future picture {
-    aspect-ratio: 659 / 679;
+    max-width: 659px;
   }
 
   .pagespeed-container picture {
-    aspect-ratio: 659 / 679;
+    max-width: 659px;
   }
 
   #hubspot-img picture {
-    aspect-ratio: 814 / 1163;
+    max-width: 814px;
   }
 
   #tt-grade-table1 picture {
-    aspect-ratio: 814 / 671;
+    max-width: 814px;
   }
 
   #tt-grade-table2 picture {
-    aspect-ratio: 814 / 699;
+    max-width: 814px;
   }
 
   .website-grade picture {
-    aspect-ratio: 659 /552;
+    max-width: 659px;
   }
 
   #pagespeed1 picture {
-    aspect-ratio: 659 / 679;
+    max-width: 659px;
   }
 
   #st-grade-table1 picture {
-    aspect-ratio: 814 / 492;
+    max-width: 814px;
   }
 
   #st-grade-table2 picture {
-    aspect-ratio: 814 / 492;
+    aspect-ratio: 822px;
   }
 
   #tt-wireframe-img1 picture {
-    aspect-ratio: 659 / 2235;
+    max-width: 659px;
   }
 
   #tt-wireframe-img2 picture {
-    aspect-ratio: 659 / 1173;
-    min-height: 65rem;
+    max-width: 659px;
   }
 
   #tt-wireframe-img3 img {
-    aspect-ratio: 659 / 2721;
-    min-height: 84rem;
+    max-width: 659px;
   }
 
   #st-wireframe-img1 picture {
-    aspect-ratio: 814 / 2512;
-    min-height: 46rem;
+    max-width: 814px;
   }
 
   #st-wireframe-img2 picture {
-    aspect-ratio: 814 / 1471;
-    min-height: 45rem;
+    max-width: 814px;
   }
 
   #st-wireframe-img3 picture {
-    aspect-ratio: 814 / 2769;
-    min-height: 45rem;
+    max-width: 814px;
+  }
+
+  .wireframe-img {
+    min-height: 100vh;
+  }
+
+  #pagespeed {
+    max-width: 822px;
   }
 
   .menu-grid {
@@ -474,14 +475,7 @@
     }
 
     .thumbnails picture {
-      aspect-ratio: 282 / 233;
-      min-height: 9rem;
       margin-bottom: 1em;
-    }
-
-    .past-meets-future picture {
-      aspect-ratio: 388 / 322;
-      min-height: 20rem;
     }
 
     #projects {
@@ -515,19 +509,17 @@
       width: 93%;
       max-width: 93vw;
       height: auto;
-      aspect-ratio: 344 / 130;
     }
 
     .the-grade {
       margin: 2em auto 2em;
     }
-
-    picture {
-      min-height: 10rem;
-    }
   }
 
   @media (max-width:768px) {
+    .vision-container {
+      margin: 2em auto 3em;
+    }
 
     .thumbnails img {
       margin-bottom: 2em;
@@ -673,29 +665,6 @@
       gap: 1em;
     }
 
-    #st-wireframe-img1 picture {
-      min-height: 46rem;
-    }
-
-    #st-wireframe-img2 picture {
-      min-height: 45rem;
-    }
-
-    #st-wireframe-img3 picture {
-      min-height: 45rem;
-    }
-
-    #tt-wireframe-img1 picture {
-      min-height: 46rem;
-    }
-
-    #tt-wireframe-img2 picture {
-      min-height: 45rem;
-    }
-
-    #tt-wireframe-img3 picture {
-      min-height: 84rem;
-    }
   }
 
   @media (max-width: 680px) {
@@ -715,27 +684,14 @@
       margin: 2em auto 2em;
     }
 
-    .thumbnails picture {
-      min-height: 6rem;
-    }
-
-    .thumbnails img {
-      aspect-ratio: 232 / 241;
-    }
-
     .past-meets-future picture {
       padding-top: 0;
-      min-height: 10rem;
     }
 
     .past-meets-future {
       width: 90%;
       max-width: 90vw;
       margin: 1em auto 1em;
-    }
-
-    .past-meets-future img {
-      aspect-ratio: 292 / 392;
     }
 
     .grade-table,
@@ -758,12 +714,7 @@
     }
 
     .hubspot,
-    #st-wireframe-img2,
-    #st-wireframe-img3,
-    #st-wireframe-img1,
-    #tt-wireframe-img2,
-    #tt-wireframe-img1,
-    #tt-wireframe-img3 {
+    .wireframe-img {
       width: 85%;
       max-width: 680px;
       margin: 6em auto;
@@ -776,67 +727,9 @@
       height: auto;
     }
 
-    .hubspot img,
-    #st-wireframe-img2 img,
-    #st-wireframe-img3 img,
-    #st-wireframe-img1 img #tt-wireframe-img2 img,
-    #tt-wireframe-img3 img,
-    #tt-wireframe-img1 img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: contain;
-
-    }
-
-    #tt-wireframe-img2 img,
-    #tt-grade-table1 img,
-    #tt-grade-table2 img,
-    #st-grade-table1 img,
-    #st-grade-table2 img,
-    #grade-table-img2 img,
-    .author-img-wrapper img,
-    #cute-robot img,
-    .cta-section img,
-    #mood-baord img,
-    #pagespeed-grade-img1 img,
-    #pagespeed-grade-img2 img,
-    #pagespeed-grade-img3 img,
-    #pagespeed-grade-img4 img,
-    .project-img img,
-    #grade-img img {
-      width: 100%;
-      height: auto;
-      max-width: 100vw;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
-      padding: 0.25em;
-    }
-
-    .project-sub-title {
-      margin: 6em auto 0;
-    }
-
     .wireframe {
       gap: 1em;
-      margin: 0 auto;
-    }
-
-    #tt-wireframe-img1 picture {
-      min-height: 23rem;
-    }
-
-    #tt-wireframe-img2 picture {
-      min-height: 22rem;
-    }
-
-    #tt-wireframe-img2 img {
-      aspect-ratio: 319 / 575;
-    }
-
-    #tt-wireframe-img3 picture {
-      min-height: 43rem;
+      margin: 2em auto;
     }
   }
 
@@ -879,10 +772,6 @@
       margin: 2em auto;
     }
 
-    .author-bio-container img {
-      min-height: 9.25rem;
-    }
-
     .author-bio-text {
       padding: 0;
     }
@@ -901,10 +790,6 @@
       gap: 3em;
     }
 
-    .thumbnails picture {
-      min-height: 6rem;
-    }
-
     #section1 {
       padding: 1em;
       margin: 4em auto 4em;
@@ -919,10 +804,6 @@
       width: 50%;
       max-width: 50vw;
       height: auto;
-    }
-
-    .github-img img {
-      min-height: 10rem;
     }
 
     .design {
@@ -971,24 +852,9 @@
       font-size: 1rem;
     }
 
-    #tt-grade-table2 picture {
-      aspect-ratio: 320 / 274;
-    }
-
-    #tt-grade-table1 picture {
-      aspect-ratio: 320 / 274;
-    }
-
-    #st-grade-table2 picture {
-      aspect-ratio: 320 / 193;
-    }
-
-    #st-grade-table1 picture {
-      aspect-ratio: 320 / 185;
-    }
-
-    #section1 {
-      min-height: 100rem
+    .wireframe {
+      margin: 2em auto;
+      gap: 2em;
     }
 
   }
