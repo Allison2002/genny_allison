@@ -36,7 +36,6 @@
     <style>
       picture {
         width: 100%;
-        height: auto;
         display: block;
         margin: 0 auto;
       }
@@ -60,6 +59,7 @@
         box-sizing: border-box;
         padding: 0.5rem;
         contain: layout paint style;
+        aspect-ratio: 1024 / 283;
       }
       
 
@@ -71,6 +71,7 @@
         justify-content: center;
         background-color: #000;
         box-sizing: border-box;
+        height: auto;
       }
 
       .canvas-skills-grid img {
@@ -103,9 +104,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        height: auto;  
-        min-height: 200px;
+        align-items: stretch;
+        height: auto;
       }
 
       .canvas-skills-title h1,
@@ -188,18 +188,19 @@
           padding: 0.25rem;
         }
 
-  
         .canvas-skills-grid img {
           border-width: 0.5em;
           object-fit: cover;
+          aspect-ratio: 164 / 100;
+          object-position: center top;
+
         }
 
         .canvas-skills-title {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
-          min-height: 200px;
+          min-height: 100px;
           border-width: 0.5em;
           width: 50%;
           max-width: 50vw;
@@ -228,9 +229,57 @@
     </style>
   </head>
   <body>
-    <section>
-      <div id="nav"></div>
-    </section>  
+    <nav role="navigation" aria-label="Main navigation">
+      <div class="nav-logo">
+        <a href="/index.html">
+          <img
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_336,h_138/v1746551086/allisonstock-white-nav-logo_tklcra.png"
+            alt="Logo for Allison Stock Inc"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            style="object-fit: contain; aspect-ratio: 168 / 69.078"
+          />
+        </a>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle" role="button"   
+        tabindex="0"  aria-label="Open Menu">
+        <img
+          src="https://res.cloudinary.com/dnptzisuf/image/fetch/fl_progressive,f_auto,q_auto,c_fill,w_96,h_96,dpr_auto,fl_lossy,fl_force_strip/v1747140374/https://gennyallison.netlify.app/img/hamburger-icon.png"
+          alt="Hamburger Icon Menu"
+          class="hamburger-icon"
+          loading="eager"
+          fetchpriority="high"
+          width="48"
+          height="48"
+          style="object-fit: contain; aspect-ratio: 48 / 48;"
+
+        />
+      </div>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="/index.html" class="links">My Home</a></li>
+          <li><a href="/pages/about.html" class="links">About Me</a></li>
+          <li><a href="/pages/skills.html" class="links">My Skills</a></li>
+          <li><a href="/pages/resume.html" class="links">My Resume</a></li>
+          <li><a href="/pages/collections.html" class="links">My Work</a></li>
+          <li><a href="/pages/contact.html" class="links">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger-nav-links" id="mobile-menu">
+        <ul>
+          <li><a href="/index.html" class="links">My Home</a></li>
+          <li><a href="/pages/about.html" class="links">About Me</a></li>
+          <li><a href="/pages/skills.html" class="links">My Skills</a></li>
+          <li><a href="/pages/resume.html" class="links">My Resume</a></li>
+          <li><a href="/pages/collections.html" class="links">My Work</a></li>
+          <li><a href="/pages/contact.html" class="links">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
     <header>
           <div class="canvas-skills-grid">
             <div class="canvas-skills-img">

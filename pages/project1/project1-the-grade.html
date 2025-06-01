@@ -156,7 +156,6 @@
     <style>
       picture {
         width: 100%;
-        height: auto;
         display: block;
         margin: 0 auto;
       }
@@ -180,6 +179,7 @@
         box-sizing: border-box;
         padding: 0.5rem;
         contain: layout paint style;
+        aspect-ratio: 1024 / 283;
       }
       
 
@@ -191,6 +191,7 @@
         justify-content: center;
         background-color: #000;
         box-sizing: border-box;
+        height: auto;
       }
 
       .canvas-skills-grid img {
@@ -223,9 +224,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        height: auto;  
-        min-height: 200px;
+        align-items: stretch;
+        height: auto;
       }
 
       .canvas-skills-title h1,
@@ -308,18 +308,19 @@
           padding: 0.25rem;
         }
 
-  
         .canvas-skills-grid img {
           border-width: 0.5em;
           object-fit: cover;
+          aspect-ratio: 164 / 100;
+          object-position: center top;
+
         }
 
         .canvas-skills-title {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
-          min-height: 200px;
+          min-height: 100px;
           border-width: 0.5em;
           width: 50%;
           max-width: 50vw;
@@ -353,14 +354,12 @@
         <div class="nav-logo">
           <a href="/index.html">
             <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_304,h_125/v1746551086/allisonstock-white-nav-logo_tklcra.png"
+              src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_336,h_138/v1746551086/allisonstock-white-nav-logo_tklcra.png"
               alt="Logo for Allison Stock Inc"
-              width="152" 
-              height="75"
               loading="eager"
               fetchpriority="high"
               decoding="async"
-              style="object-fit: contain; aspect-ratio: ;"
+              style="object-fit: contain; aspect-ratio: 168 / 69.078"
             />
           </a>
         </div>
@@ -375,6 +374,8 @@
             fetchpriority="high"
             width="48"
             height="48"
+            style="object-fit: contain; aspect-ratio: 48 / 48;"
+
           />
         </div>
 
