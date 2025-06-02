@@ -929,8 +929,6 @@ button.submit-button:hover {
 }
 
 @media (min-width:430px) and (max-width:480px) {
-
-
   .fancy-border-img {
     margin: 1em auto 1em;
     max-width: 90% !important;
@@ -972,6 +970,10 @@ button.submit-button:hover {
   .footer-logo {
     height: 109px;
     width: 250px;
+  }
+
+  .fancy-border {
+    padding: 1em;
   }
 }
 

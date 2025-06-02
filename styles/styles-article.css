@@ -446,7 +446,8 @@
       margin-bottom: 1em;
     }
 
-    #projects {
+    main#casestudy,
+    main#projects {
       width: 75%;
       max-width: 75vw;
       padding: 1em;
@@ -507,6 +508,7 @@
       height: auto;
     }
 
+    main#casestudy,
     main#projects {
       width: 80%;
       max-width: 80vw;
@@ -646,7 +648,8 @@
       max-width: 90vw;
     }
 
-    #projects {
+    main#casestudy,
+    main#projects {
       width: 90%;
       max-width: 90vw;
       margin: 2em auto 2em;
@@ -702,8 +705,16 @@
   }
 
   @media (max-width:480px) {
+    #description {
+      margin: 2em auto;
+    }
+
     .fancy-border {
       margin: 1em auto;
+    }
+
+    .project-title {
+      padding: 1em;
     }
 
     .project-sub-title {
@@ -730,6 +741,7 @@
       margin: 1em auto 1em;
     }
 
+    main#casestudy,
     main#projects {
       width: 90%;
       max-width: 90vw;
