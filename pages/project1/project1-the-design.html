@@ -434,30 +434,40 @@
           <h2>past meets future</h2>
         </div>
         <div class="past-meets-future fancy-border-img">
-          <picture>
-            <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1304,h_976/v1748605835/where-I-started-tech-trends_dq9svh.avif"
-              type="image/avif"
-              media="(min-width: 1200px)"
-              sizes="100vw"
-            />
-            <source
-              srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_882,h_548/v1748605835/where-I-started-tech-trends_dq9svh.avif"
-              type="image/avif"
-              media="(min-width: 481px) and (max-width: 1199px)"
-              sizes="100vw"
-            />
-            <img 
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_624,h_468/v1748605835/where-I-started-tech-trends_dq9svh.avif"
-              alt="Tech Trends Blog Hero Image showcasing a modern, AI-powered platform for technology insights"
-              width="312"
-              height="234"
-              loading="auto"  
-              style="object-fit: cover;"
-              fetchpriority="auto"
-              decoding="async"
-            />
-          </picture>
+          <picture> 
+          <!-- Desktop ≥ 941px -->
+          <source
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1458,h_946/v1742647059/welcome_to_tech_trends_desktop_gxfoz3.avif"
+            media="(min-width: 941px)"
+            type="image/avif"
+          />
+
+          <!-- Tablet 769px–940px -->
+          <source
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_692,h_452/v1747860860/welcome_to_tech_trends_940_bgl09w.avif"
+            media="(min-width: 769px) and (max-width: 940px)"
+            type="image/avif"
+          />
+
+          <!-- Mobile 481px–768px -->
+          <source
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_558,h_360/v1746744082/welcome_to_tech_trends_tablet_d9ctvt.avif"
+            media="(min-width: 481px) and (max-width: 768px)"
+            type="image/avif"
+          />
+
+          <!-- Fallback ≤480px -->
+          <img
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_328,h_352/v1747860860/welcome_to_tech_trends_mobile_bvstct.avif"
+            alt="Tech Trends Blog Hero Image showcasing a modern, futuristic design with technology vibes"
+            width="164"
+            height="176"
+            style="object-fit: cover;"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
           <div class="project-links">
             <div class="takeme-text">
               <h3>take me to the</h3>
