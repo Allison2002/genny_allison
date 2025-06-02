@@ -935,6 +935,15 @@ button.submit-button:hover {
     width: 90% !important;
   }
 
+  .fancy-border {
+    margin: 1em auto;
+  }
+
+  .project-sub-title {
+    width: 85%;
+    max-width: 85vw;
+  }
+
   h2 {
     line-height: 1.7;
     padding: 0.3em;

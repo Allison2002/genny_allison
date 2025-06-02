@@ -422,6 +422,13 @@
     text-align: center;
   }
 
+  #hubspot-img,
+  #pagespeed,
+  #tt-grade-table2,
+  #tt-grade-table1 {
+    margin: 5em auto;
+  }
+
   @media (max-width:1300px) {
     .menu-grid {
       width: 70%;
@@ -481,6 +488,13 @@
   }
 
   @media (max-width:768px) {
+
+    #hubspot-img,
+    #pagespeed,
+    #tt-grade-table2,
+    #tt-grade-table1 {
+      margin: 4em auto;
+    }
 
     #description {
       margin: 1em auto;
