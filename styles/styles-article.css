@@ -86,7 +86,7 @@
   }
 
   #description {
-    margin: 2em auto 0;
+    margin: 0 auto;
   }
 
   #section2,
@@ -207,7 +207,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 2em;
-    margin: 6em auto 6em;
+    margin: 1em auto;
     width: 98%;
     max-width: 98vw;
     height: auto;
