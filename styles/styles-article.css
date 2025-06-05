@@ -30,6 +30,10 @@
     overflow-anchor: none;
   }
 
+  body {
+    min-height: 100vh;
+  }
+
   .casestudy {
     min-height: auto;
     visibility: visible;
@@ -89,6 +93,12 @@
     height: auto;
     width: 100%;
     line-height: 1.3;
+  }
+
+  .author-bio-container img {
+    aspect-ratio: 1664 / 730;
+    object-fit: contain;
+    display: block;
   }
 
   .author-bio-text h3 {
