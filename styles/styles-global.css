@@ -580,6 +580,7 @@ footer {
   max-width: 96vw;
   height: auto;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 #section3,
