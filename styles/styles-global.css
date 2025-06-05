@@ -118,6 +118,13 @@ p a:visited {
   text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
 }
 
+.list-items ul li a:hover,
+.list-items ul li a:focus {
+  color: #00ffff;
+  background-color: rgba(0, 255, 255, 0.1);
+  text-decoration: underline;
+}
+
 .author-bio-text h2 {
   font-size: 1.5rem;
 }
