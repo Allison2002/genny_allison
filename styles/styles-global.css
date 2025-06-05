@@ -100,7 +100,7 @@ label {
 #nav ul li a,
 #footer-links ul li a {
   color: cyan;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: underline;
   /* REQUIRED for WCAG */
   text-shadow: 0 0 0.8px cyan, 0 0 1.5px cyan;
