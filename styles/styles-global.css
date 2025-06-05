@@ -152,11 +152,17 @@ p a:visited {
 #nav ul li a,
 #footer-links ul li a {
   color: cyan;
-  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
+  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d;
+  font-weight: 600;
 }
 
 .author-bio-text h2 {
   font-size: 1.5rem;
+}
+
+span {
+  color: cyan;
+  font-weight: 500;
 }
 
 .author-bio-text p i {
@@ -667,7 +673,7 @@ footer {
 
 .resume-summary p strong {
   color: mediumturquoise;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .list-items ul li {
