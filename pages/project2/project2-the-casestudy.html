@@ -58,7 +58,7 @@
     <link
       rel="preload"
       as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_328,h_200/v1748537741/sports-tube-mobile_j2lush.avif"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_164,h_168/v1748537741/sports-tube-mobile_j2lush.avif"
       type="image/avif"
       media="(max-width: 480px)"
       fetchpriority="high"
@@ -294,12 +294,14 @@
       @media (max-width: 480px) {
         .canvas-skills-grid {
           padding: 0.25rem;
+          height: 200px;
+          width: 480px;  
         }
 
         .canvas-skills-grid img {
           border-width: 0.5em;
           object-fit: cover;
-          aspect-ratio: 164 / 100;
+          min-height: 168px;
           object-position: center top;
 
         }
@@ -308,10 +310,11 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          min-height: 100px;
+          min-height: 168px;
           border-width: 0.5em;
-          width: 50%;
-          max-width: 50vw;
+          width: 100%;
+          max-width: 480px;
+          height: auto;
           padding-right: 0.7em;
         }
 
@@ -393,7 +396,7 @@
         <picture> 
           <!-- Desktop ≥ 941px -->
           <source
-            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1458,h_948/v1748537741/sports-tube-desktop_c9qmdx.avif"
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1450,h_948/v1748537741/sports-tube-desktop_c9qmdx.avif"
             media="(min-width: 941px)"
             type="image/avif"
           />
