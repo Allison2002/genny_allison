@@ -93,6 +93,30 @@ label {
   font-family: Georgia, serif;
 }
 
+.links a,
+.list-items ul li a,
+.collections-title a,
+.author-bio-text p a,
+#nav ul li a,
+#footer-links ul li a {
+  color: cyan;
+  font-weight: 600;
+  text-decoration: underline;
+  /* REQUIRED for WCAG */
+  text-shadow: 0 0 0.8px cyan, 0 0 1.5px cyan;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.links a:hover,
+.links a:focus,
+.collections-title a:hover,
+.collections-title a:focus {
+  color: #0ff;
+  text-shadow: 0 0 3px white, 0 0 6px cyan;
+  background-color: rgba(0, 255, 255, 0.1);
+  /* subtle hover feedback */
+}
+
 .collections-title a,
 .links,
 .links a {
@@ -116,13 +140,6 @@ p a:visited {
 #footer-links ul li a {
   color: cyan;
   text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
-}
-
-.list-items ul li a:hover,
-.list-items ul li a:focus {
-  color: #00ffff;
-  background-color: rgba(0, 255, 255, 0.1);
-  text-decoration: underline;
 }
 
 .author-bio-text h2 {
