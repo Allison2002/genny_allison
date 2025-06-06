@@ -318,8 +318,8 @@
   .menu-grid {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    max-width: 60vw;
+    width: 40%;
+    max-width: 40vw;
     height: auto;
     min-height: 100vh;
     margin: 0 auto;
@@ -444,8 +444,8 @@
     .menu-grid {
       display: flex;
       flex-direction: column;
-      width: 80%;
-      max-width: 80vw;
+      width: 60%;
+      max-width: 60vw;
       height: auto;
       margin: 0 auto;
       padding: 0;
@@ -469,8 +469,8 @@
     }
 
     .menu-grid {
-      width: 90%;
-      max-width: 90vw;
+      width: 60%;
+      max-width: 60vw;
     }
 
     #section2,

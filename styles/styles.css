@@ -635,7 +635,7 @@ textarea {
 .collections-container {
   width: 100%;
   height: auto;
-  margin: 0 auto
+  margin: 2em auto 0;
 }
 
 .collections-thumbnail {
