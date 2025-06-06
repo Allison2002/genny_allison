@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    position: relative;
     overflow-anchor: none;
   }
 
@@ -20,10 +19,6 @@
 
   main#casestudy {
     min-height: 490rem;
-  }
-
-  body {
-    contain: layout style;
   }
 
   .casestudy {

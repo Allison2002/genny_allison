@@ -23,15 +23,6 @@ body {
   margin: 0
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  max-width: 100vw;
-  contain: layout;
-  min-height: 100vw;
-
-}
-
 body,
 html {
   width: 100%;
@@ -42,7 +33,6 @@ html {
 .hidden {
   display: none !important;
 }
-
 
 header {
   width: 100%;
@@ -452,58 +442,9 @@ footer {
   display: none;
 }
 
-#back-to-top {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  z-index: 999;
-  padding: .5rem 1rem;
-  font-size: 1rem;
-  border: .0825em solid #0ff;
-  background-color: #000;
-  color: #fff;
-  border-radius: .25rem;
-  contain: layout paint;
-  will-change: transform;
-}
-
-#side-nav {
-  position: fixed;
-  bottom: 1rem;
-  right: max(1rem, env(safe-area-inset-right));
-  z-index: 999;
-  width: auto;
-  min-width: 6rem;
-  padding: .5rem 1rem;
-  background-color: #000;
-  color: #fff;
-  border-radius: .25rem;
-  contain: layout paint;
-  will-change: transform;
-}
-
-#back-to-top {
-  bottom: 1rem;
-  left: 1rem;
-  width: auto;
-  min-width: 6rem;
-  contain: layout
-}
-
-#side-nav {
-  bottom: 1rem;
-  right: 1rem;
-  width: auto;
-  min-width: 6rem;
-  contain: layout
-}
-
-#side-nav {
-  right: max(1rem, env(safe-area-inset-right))
-}
-
-#back-to-top {
-  left: max(1rem, env(safe-area-inset-left))
+#back-to-top,
+#side-nav ul li a {
+  display: block;
 }
 
 #side-nav ul {
@@ -514,6 +455,30 @@ footer {
 
 #side-nav ul li {
   margin: 5% 0
+}
+
+#side-nav,
+#back-to-top {
+  display: block !important;
+  position: fixed !important;
+  z-index: 999;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #0ff;
+  border-radius: 0.25rem;
+  contain: layout paint;
+  will-change: transform;
+}
+
+#side-nav {
+  bottom: 1rem !important;
+  right: max(1rem, env(safe-area-inset-right)) !important;
+}
+
+#back-to-top {
+  bottom: 1rem !important;
+  left: max(1rem, env(safe-area-inset-left)) !important;
 }
 
 .collections-click-me,
@@ -790,8 +755,6 @@ button.submit-button:hover {
   width: 100%;
   font-family: system-ui, sans-serif;
 }
-
-
 
 @media (max-width:1024px) {
   .button-grid {
