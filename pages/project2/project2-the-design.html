@@ -209,6 +209,7 @@
         background-color: #000;
         box-sizing: border-box;
         height: auto;
+        aspect-ratio: 1904 / 502;
       }
 
       .canvas-skills-grid img {
@@ -323,12 +324,14 @@
       @media (max-width: 480px) {
         .canvas-skills-grid {
           padding: 0.25rem;
+          height: 200px;
+          width: 480px;  
         }
 
         .canvas-skills-grid img {
           border-width: 0.5em;
           object-fit: cover;
-          aspect-ratio: 164 / 100;
+          min-height: 168px;
           object-position: center top;
 
         }
@@ -337,10 +340,11 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          min-height: 100px;
+          min-height: 168px;
           border-width: 0.5em;
-          width: 50%;
-          max-width: 50vw;
+          width: 100%;
+          max-width: 480px;
+          height: auto;
           padding-right: 0.7em;
         }
 
