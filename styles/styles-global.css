@@ -632,6 +632,24 @@ footer {
   max-width: 100vw;
 }
 
+blockquote {
+  color: #fff;
+  font-family: system-ui, sans-serif;
+  font-weight: 250;
+  padding: 1.25em 3em;
+  font-size: clamp(1rem, 1.3rem, 1.5rem);
+  width: 100%;
+  height: auto;
+  max-width: 100vw;
+  padding: .2em;
+  line-height: 1.6;
+}
+
+.block-quotes {
+  font-size: clamp(1rem, 2rem, 2.5rem);
+  color: cyan;
+}
+
 .resume-summary p {
   color: #fff;
   font-family: system-ui, sans-serif;
