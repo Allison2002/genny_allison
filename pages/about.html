@@ -8,17 +8,15 @@
     <meta name="description" content="Learn more about Genny Allison, a Full Stack Developer blending technical expertise with creativity. With a unique background in design, business, and web development, Genny crafts responsive, user-friendly websites and applications that enhance digital experiences. Explore her journey, skills, and dedication to impactful technology solutions." />
 
     <link class="tab-logo" rel="icon" href="/img/white_favicon/favicon.ico" type="image/icon type">
-    <link rel="preload" href="/styles/styles-article.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <link rel="preload" href="/styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-    <link rel="preload" href="/styles/styles-global.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-    <noscript><link rel="stylesheet" href="/styles/styles-article.css"></noscript>
     <noscript><link rel="stylesheet" href="/styles/styles.css"></noscript>
 
+    <link rel="preload" href="/styles/styles-global.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
     <noscript><link rel="stylesheet" href="/styles/styles-global.css"></noscript>
-    <link href="https://fonts.cdnfonts.com/css/tt-norms-pro" rel="stylesheet">
+
     <style>
       picture {
         width: 100%;
@@ -45,7 +43,7 @@
         box-sizing: border-box;
         padding: 0.5rem;
         contain: layout paint style;
-        aspect-ratio: 1024 / 283;
+        aspect-ratio: 1904 / 502;
       }
       
 
@@ -58,6 +56,7 @@
         background-color: #000;
         box-sizing: border-box;
         height: auto;
+        aspect-ratio: 1458 / 948;
       }
 
       .canvas-skills-grid img {
@@ -172,12 +171,14 @@
       @media (max-width: 480px) {
         .canvas-skills-grid {
           padding: 0.25rem;
+          height: 200px;
+          width: 480px;  
         }
 
         .canvas-skills-grid img {
           border-width: 0.5em;
           object-fit: cover;
-          aspect-ratio: 164 / 100;
+          min-height: 168px;
           object-position: center top;
 
         }
@@ -186,10 +187,11 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          min-height: 100px;
+          min-height: 168px;
           border-width: 0.5em;
-          width: 50%;
-          max-width: 50vw;
+          width: 100%;
+          max-width: 480px;
+          height: auto;
           padding-right: 0.7em;
         }
 
@@ -216,82 +218,86 @@
   </head>
   <body>
     <nav role="navigation" aria-label="Main navigation">
-        <div class="nav-logo">
-          <a href="/index.html">
-            <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_336,h_138/v1746551086/allisonstock-white-nav-logo_tklcra.png"
-              alt="Logo for Allison Stock Inc"
-              loading="eager"
-              fetchpriority="high"
-              decoding="async"
-              style="object-fit: contain; aspect-ratio: 168 / 69.078"
-            />
-          </a>
-        </div>
-
-        <div class="menu-toggle" id="menu-toggle" role="button"   
-          tabindex="0"  aria-label="Open Menu">
+      <div class="nav-logo">
+        <a href="/index.html">
           <img
-            src="https://res.cloudinary.com/dnptzisuf/image/fetch/fl_progressive,f_auto,q_auto,c_fill,w_96,h_96,dpr_auto,fl_lossy,fl_force_strip/v1747140374/https://gennyallison.netlify.app/img/hamburger-icon.png"
-            alt="Hamburger Icon Menu"
-            class="hamburger-icon"
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_272,h_120/v1746551086/allisonstock-white-nav-logo_tklcra.png"
+            alt="Logo for Allison Stock Inc"
             loading="eager"
+            width="136"
+            height="60"
             fetchpriority="high"
-            width="48"
-            height="48"
-            style="object-fit: contain; aspect-ratio: 48 / 48;"
-
+            decoding="async"
+            style="object-fit: contain;"
           />
-        </div>
+        </a>
+      </div>
 
-        <div class="nav-links">
-          <ul>
-            <li><a href="/index.html" class="links">My Home</a></li>
-            <li><a href="/pages/about.html" class="links">About Me</a></li>
-            <li><a href="/pages/skills.html" class="links">My Skills</a></li>
-            <li><a href="/pages/resume.html" class="links">My Resume</a></li>
-            <li><a href="/pages/collections.html" class="links">My Work</a></li>
-            <li><a href="/pages/contact.html" class="links">Contact Me</a></li>
-          </ul>
-        </div>
+      <div class="menu-toggle" id="menu-toggle" role="button"   
+        tabindex="0"  aria-label="Open Menu">
+        <img
+          src="https://res.cloudinary.com/dnptzisuf/image/fetch/fl_progressive,f_auto,q_auto,c_fill,w_96,h_96,dpr_auto,fl_lossy,fl_force_strip/v1747140374/https://gennyallison.netlify.app/img/hamburger-icon.png"
+          alt="Hamburger Icon Menu"
+          class="hamburger-icon"
+          loading="eager"
+          fetchpriority="high"
+          width="48"
+          height="48"
+          style="object-fit: contain; aspect-ratio: 48 / 48;"
 
-        <div class="hamburger-nav-links" id="mobile-menu">
-          <ul>
-            <li><a href="/index.html" class="links">My Home</a></li>
-            <li><a href="/pages/about.html" class="links">About Me</a></li>
-            <li><a href="/pages/skills.html" class="links">My Skills</a></li>
-            <li><a href="/pages/resume.html" class="links">My Resume</a></li>
-            <li><a href="/pages/collections.html" class="links">My Work</a></li>
-            <li><a href="/pages/contact.html" class="links">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    <main class="about-me">
-      <section>
-        <div class="outer-container">
-          <div class="section1">
-            <div class="dots">
-              <img src="/img/b&w-dots.png" alt="black dots">
-            </div>
-            <div class="headshot-about">
-              <img src="/img/b&wHeadShot.png" alt="headshot of site owner">
-            </div>
-          </div>
-          <div class="section2">
-            <div class="portfolio-name">
-              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_auto,dpr_auto,fl_lossy,fl_force_strip/v1746546707/genny_allison_portfolio_transparent_pojusr.avif"
-                alt="decorative name of site owner created on canva"
-                width="168"
-                height="90"
-                loading="eager"
-                fetchpriority="high"
-                style="object-fit: cover;"
-                decoding="async"
-              >
-            </div>
-          </div>
-        </div> 
-      </section>
+        />
+      </div>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="/index.html" class="links">My Home</a></li>
+          <li><a href="/pages/about.html" class="links">About Me</a></li>
+          <li><a href="/pages/skills.html" class="links">My Skills</a></li>
+          <li><a href="/pages/resume.html" class="links">My Resume</a></li>
+          <li><a href="/pages/collections.html" class="links">My Work</a></li>
+          <li><a href="/pages/contact.html" class="links">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger-nav-links" id="mobile-menu">
+        <ul>
+          <li><a href="/index.html" class="links">My Home</a></li>
+          <li><a href="/pages/about.html" class="links">About Me</a></li>
+          <li><a href="/pages/skills.html" class="links">My Skills</a></li>
+          <li><a href="/pages/resume.html" class="links">My Resume</a></li>
+          <li><a href="/pages/collections.html" class="links">My Work</a></li>
+          <li><a href="/pages/contact.html" class="links">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="outer-container">
+      <picture> 
+        <source
+          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_1292,h_336/v1749308658/allison-stock-aboutme_rwwkww.avif"
+          type="image/avif"
+          media="(min-width: 1200px)"
+          sizes="100vw"
+        />
+        <source
+          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_667,h_173/v1749308658/allison-stock-aboutme_rwwkww.avif"
+          type="image/avif"
+          media="(min-width: 481px) and (max-width: 1199px)"
+          sizes="100vw"
+        />
+        
+        <img 
+          src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,dpr_auto,fl_lossy,fl_force_strip/v1749309125/allison-stock-aboutme-mobile_a6btoe.avif" 
+          width="100%" 
+          height="auto" 
+          alt="Photo of Genny Allison, the web developer and AI content specialist"
+          style="object-fit: contain;"
+          loading="auto" 
+          decoding="async" 
+        />
+      </picture> 
+        
+    </div> 
+    <main class="about-me" id="about-me">
       <section class="about-me-container">
         <!--ABOUT ME-->
           <div class="greetings-label">
@@ -310,7 +316,7 @@
             <div class="grid-container">
               <div class="facts-grid">
                 <div class="my-favorites-grid">
-                  <div class="sub-labels favorites-label">
+                  <div class="sub-labels">
                     <h3>my favorites</h3>
                   </div>
                   <div class="inside-grid-favorites">
@@ -329,41 +335,166 @@
                   </div>
                 </div>
                 <div class="quote">
-                  <img src="/img/quotes-icon.png">
+                  <div class="quote-img">
+                    <img src="/img/quotes-icon.png">
+                  </div>
                   <p>god promises a rainbow after the storm.</p>
                   <p> - genesis 9:16</p>
                 </div>
               </div>
               <div class="fun-facts-grid">
-                <div class="sub-labels favorites-label">
+                <div class="sub-labels">
                   <h3>fun facts</h3>
                 </div>
                 <div class="fun-facts">
                   <div class="facts">
-                    <div class="check-mark"><img src="/img/circle-checkmark.png"></div>
-                    <div class="check-mark-text"><p>I have been married for 22 years and I am a mother of 3. Ages 22, 16, and 10.</p></div>
-                    
+                    <div class="check-mark">
+                      <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_80,h_80/v1749428408/checkmark-icon_1_xjxra1.png" alt="checkmark" width="40" height="40" />
+                    </div>
+                    <div class="check-mark-text">
+                      <p>I've been married for 23 years and am a proud mom of three — ages 23, 17, and 11. My husband and I still love playing video games together and cheering at baseball and hockey games.</p>
+                    </div>
                   </div>
+
                   <div class="facts">
-                    <div class="check-mark"><img src="/img/circle-checkmark.png"></div>
-                    <div class="check-mark-text"><p>When I’m not at my computer I am at a baseball field watching my son play baseball.</p></div>
+                    <div class="check-mark">
+                      <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_80,h_80/v1749428408/checkmark-icon_1_xjxra1.png" alt="checkmark" width="40" height="40" />
+                    </div>
+                    <div class="check-mark-text">
+                      <p>When I’m not at my computer, you’ll usually find me at the ballpark watching my 11-year-old son play baseball.</p>
+                    </div>
                   </div>
+
                   <div class="facts">
-                    <div class="check-mark"><img src="/img/circle-checkmark.png"></div>
-                    <div class="check-mark-text"><p>I have 2 Golden Retrievers named Ruby and Harley Davidson.</p></div>
+                    <div class="check-mark">
+                      <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_80,h_80/v1749428408/checkmark-icon_1_xjxra1.png" alt="checkmark" width="40" height="40" />
+                    </div>
+                    <div class="check-mark-text">
+                      <p>I have two amazing daughters. My 23-year-old is off building her life, and my 17-year-old graduated high school early to start pursuing her dreams.</p>
+                    </div>
+                  </div>
+
+                  <div class="facts">
+                    <div class="check-mark">
+                      <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_80,h_80/v1749428408/checkmark-icon_1_xjxra1.png" alt="checkmark" width="40" height="40" />
+                    </div>
+                    <div class="check-mark-text">
+                      <p>Our two Golden Retrievers — Ruby and Harley Davidson — keep life joyful (and my floors covered in fur and muddy paw prints).</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              
             </div>
           </div> 
       </section>               
     </main>
-      <div class="back-to-top">
-        <button id="back-to-top" onclick="scrollToTop()">back to top</button>
-      </div>  
-        <div id="footer"></div>
-    <script src="/assets/script.js"></script>
+    <div id="side-nav" class="hidden">
+      <ul>
+        <li><a href="/index.html">home</a></li>
+        <li><a href="/pages/collections.html">the "projects"</a></li>
+        <li><a href="/pages/skills.html">the "skills"</a></li>
+        <li><a href="/pages/resume.html">the "resume"</a></li>
+        <li><a href="/pages/contact.html">contact me</a></li>
+      </ul>
+    </div>
+    <div>
+      <button class="back-to-top" id="back-to-top" class="hidden">back to top</button>
+    </div>
+    <footer id="nav">
+      <div class="footer-logo">
+        <picture> 
+          <source
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_768,h_330,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
+            type="image/avif"
+            media="(min-width: 1200px)"
+            sizes="100vw"
+          />
+          <source
+            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_50,c_fill,w_752,h_328,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
+            type="image/avif"
+            media="(min-width: 481px) and (max-width: 1199px)"
+            sizes="100vw"
+          />
+          <img       
+            src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_484,h_210,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
+            alt="Photo of Genny Allison, the web developer and AI content specialist"
+            width="242"
+            height="105"
+            loading="lazy"
+            fetchpriority="low"
+            decoding="async" 
+            style-"object-fit: cover;"
+          />
+        </picture>
+      </div>
+      <div class="footer-links" id="footer-links">
+        <ul>
+          <li><a href="/index.html" class="links">my home</a></li>           
+          <li><a href="/pages/about.html" class="links">about me</a></li>
+          <li><a href="/pages/skills.html" class="links">my skills</a></li>
+          <li><a href="/pages/resume.html" class="links">my resume</a></li>
+          <li><a href="/pages/collections.html" class="links">my work</a></li> 
+          <li><a href="/pages/project3/project3-the-casestudy.html#author-bio" class="links">contact me</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href="https://x.com/allis78978" class="links" aria-label="Visit my X (formerly Twitter) profile" target="_blank" rel="noopener noreferrer">
+              <img src="/img/x-bird-icon.webp" 
+                alt="X (Twitter) logo"
+                width="32"
+                height="32"
+                loading="auto"  
+                style="object-fit: contain;"
+                fetchpriority="auto"
+                decoding="async"
+              >
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/allison_stock_inc/" class="links" aria-label="Visit my Instagram profile" target="_blank" rel="noopener noreferrer">
+              <img src="/img/ig-icon.webp" 
+                alt="Instagram logo"
+                width="32"
+                height="32"
+                loading="auto"  
+                style="object-fit: contain;"
+                fetchpriority="auto"
+                decoding="async"
+              >
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/genny-allison/" class="links" aria-label="Visit my LinkedIn profile" target="_blank" rel="noopener noreferrer">
+              <img src="/img/linkedin-icon.webp" 
+                alt="LinkedIn logo"
+                width="32"
+                height="32"
+                loading="auto"  
+                style="object-fit: contain;"
+                fetchpriority="auto"
+                decoding="async"
+              >
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Allison2002" class="links" aria-label="Visit my GitHub profile" target="_blank" rel="noopener noreferrer">
+              <img src="/img/github-icon.avif" 
+                alt="GitHub logo"
+                width="32"
+                height="32"
+                loading="auto"  
+                style="object-fit: contain;"
+                fetchpriority="auto"
+                decoding="async"
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="/assets/script.js" defer></script>
   </body>
 </html>
 

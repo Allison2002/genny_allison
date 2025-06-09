@@ -4,11 +4,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector("nav");
     const hamburgerIcon = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("mobile-menu");
+    const sideNav = document.getElementById("side-nav");
+
+    let isMenuOpen = false;
+    let allowSideNavReveal = true;
 
     if (!hamburgerIcon || !navMenu) return;
 
     const handleScroll = () => {
       navbar.classList.toggle("scrolled", window.scrollY > 50);
+
+      if (window.innerWidth <= 1024 && !isMenuOpen && allowSideNavReveal) {
+        if (window.scrollY > 200) {
+          sideNav?.classList.remove("hidden");
+        } else {
+          sideNav?.classList.add("hidden");
+        }
+      }
     };
 
     const updateHamburgerVisibility = () => {
@@ -21,12 +33,22 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburgerIcon.addEventListener("click", (e) => {
       e.stopPropagation();
       navMenu.classList.toggle("active");
+      isMenuOpen = navMenu.classList.contains("active");
       updateHamburgerVisibility();
+
+      if (window.innerWidth <= 1024 && isMenuOpen) {
+        sideNav?.classList.add("hidden");
+        allowSideNavReveal = false;
+      } else {
+        allowSideNavReveal = true;
+      }
     });
 
     window.addEventListener("click", (e) => {
       if (!navMenu.contains(e.target) && !hamburgerIcon.contains(e.target)) {
         navMenu.classList.remove("active");
+        isMenuOpen = false;
+        allowSideNavReveal = true;
         updateHamburgerVisibility();
       }
     });
@@ -37,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburgerIcon.setAttribute("aria-expanded", "false");
   };
 
-  // ✅ CALL setupNavbar here
   setupNavbar();
 
   // Side nav and back-to-top scroll behavior
@@ -51,10 +72,14 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 200) {
         backToTopButton.classList.remove("hidden");
-        sideNav.classList.remove("hidden");
+        if (window.innerWidth > 1024) {
+          sideNav.classList.remove("hidden");
+        }
       } else {
         backToTopButton.classList.add("hidden");
-        sideNav.classList.add("hidden");
+        if (window.innerWidth > 1024) {
+          sideNav.classList.add("hidden");
+        }
       }
     });
 

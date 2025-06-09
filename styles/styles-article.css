@@ -1,5 +1,8 @@
   main#parent-tech,
+  main#contactme-form,
+  main#mario-race,
   main#casestudy,
+  main#about-me,
   main#projects {
     width: 54%;
     max-width: 54vw;
@@ -24,6 +27,10 @@
 
   main#parent-tech {
     min-height: 380rem;
+  }
+
+  main#mario-race {
+    min-height: 160rem;
   }
 
   .casestudy {
@@ -80,6 +87,7 @@
     min-height: 8rem;
   }
 
+  .project-sub-title h3,
   .project-sub-title h2 {
     font-size: clamp(1rem, 2rem, 2.5rem);
     height: auto;
@@ -100,15 +108,47 @@
     line-height: 1.34
   }
 
+  #download-me {
+    margin: 4em auto 6em;
+  }
+
   #description {
     margin: 0 auto;
   }
 
+
+  #contactme-section2,
+  #contactme-section1,
+  #aboutme-section2,
+  #aboutme-section1,
   #section2,
   #section1 {
     margin: 4em auto;
     padding: 1em 4em;
-    min-height: 100rem;
+    min-height: 20rem;
+  }
+
+  #aboutme-section2 {
+    margin: 4em auto 4em;
+    padding: 1em 4em;
+    min-height: 10rem;
+  }
+
+  #contact-form {
+    margin: 5em auto 5em;
+  }
+
+  #aboutme-section1 h2 {
+    color: cyan;
+  }
+
+  #contactme-section1 h2,
+  #aboutme-section2 h2 {
+    color: black;
+  }
+
+  .aboutme-margin {
+    margin: 4em auto 4em;
   }
 
   .list-items {
@@ -116,7 +156,7 @@
     min-height: 5rem;
     width: 100%;
     max-width: 100vw;
-    content: cotnent;
+    contain: content;
   }
 
   .list-items h3 {
@@ -127,6 +167,7 @@
   #section1 h2 {
     color: cyan;
   }
+
 
   .grade-title {
     display: flex;
@@ -249,10 +290,12 @@
     max-width: 900px;
   }
 
+
   #description {
     margin: 2em auto;
   }
 
+  .mario-race picture,
   .past-meets-future picture {
     max-width: 900px;
   }
@@ -355,9 +398,9 @@
     color: #fff;
     width: 80%;
     margin: 0 auto;
-    line-height: 1.2;
+    line-height: 1.6;
     text-align: left;
-    font-size: 1.2rem
+    font-size: clamp(1rem, 1.5rem, 1.8rem);
   }
 
   .casestudy h3 {
@@ -384,28 +427,6 @@
     height: auto
   }
 
-  .list-items ul li {
-    padding-left: 1em;
-    margin-top: .5em
-  }
-
-  .list-items ul li {
-    margin-bottom: 1em
-  }
-
-  .list-items h3 {
-    font-size: 1.5rem;
-    left: 1%;
-    margin: 0 auto 1em;
-    width: 100%;
-    height: auto
-  }
-
-  .list-items li {
-    line-height: 1.2;
-    font-size: 1.3rem
-  }
-
   .explore-container {
     display: flex;
     flex-direction: row;
@@ -417,10 +438,6 @@
 
   .project-links .explore-container .click-me {
     margin: 2em auto;
-  }
-
-  .hidden {
-    display: none;
   }
 
   .takeme-text {
@@ -458,6 +475,9 @@
       margin-bottom: 1em;
     }
 
+    main#mario-race,
+    main#parent-tech,
+    main#about-me,
     main#casestudy,
     main#projects {
       width: 75%;
@@ -475,6 +495,7 @@
       max-width: 60vw;
     }
 
+    #aboutme-section1,
     #section2,
     #section1 {
       padding: 2em;
@@ -513,6 +534,7 @@
       margin-bottom: 2em;
     }
 
+    .mario-race picture,
     .past-meets-future picture {
       margin: 2em auto 2em;
     }
@@ -533,6 +555,9 @@
       contain: content;
     }
 
+    main#mario-race,
+    main#parent-tech,
+    main#about-me,
     main#casestudy,
     main#projects {
       width: 80%;
@@ -562,6 +587,11 @@
       width: 95%;
       max-width: 95vw;
       padding: 0
+    }
+
+    .project-title,
+    .project-sub-title {
+      margin: 2em auto;
     }
 
     .project-title h2 {
@@ -638,12 +668,7 @@
       max-width: 98vw;
     }
 
-    .list-items ul li {
-      color: #fff;
-      width: 75%;
-      line-height: 1.2;
-    }
-
+    #aboutme-section1,
     #section2,
     #section1 {
       margin: 4em auto 4em;
@@ -671,6 +696,9 @@
       max-width: 90vw;
     }
 
+    main#mario-race,
+    main#parent-tech,
+    main#about-me,
     main#casestudy,
     main#projects {
       width: 90%;
@@ -678,10 +706,12 @@
       margin: 2em auto 2em;
     }
 
+    .mario-race picture,
     .past-meets-future picture {
       padding-top: 0;
     }
 
+    .mario-race,
     .past-meets-future {
       width: 90%;
       max-width: 90vw;
@@ -728,12 +758,9 @@
   }
 
   @media (max-width:480px) {
+
     #description {
       margin: 2em auto;
-    }
-
-    .fancy-border {
-      margin: 1em auto;
     }
 
     .project-title {
@@ -754,14 +781,11 @@
       margin: 0 auto;
     }
 
-    .past-meets-future {
-      margin: 6em auto 8em;
-    }
-
+    .mario-race,
     .past-meets-future {
       width: 90%;
       max-width: 90vw;
-      margin: 1em auto 1em;
+      margin: 0.5em auto 0.5em;
     }
 
     main#casestudy,
@@ -820,10 +844,6 @@
       margin: 0 auto;
       width: 100%;
       height: auto;
-      line-height: 1.5;
-    }
-
-    .list-items ul li {
       line-height: 1.5;
     }
 
