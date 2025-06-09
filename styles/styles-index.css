@@ -165,6 +165,16 @@ main#index-pg {
   min-height: 230px;
 }
 
+.desktop-version .designer-box,
+.desktop-version .coder-box {
+  min-height: 300px;
+}
+
+.mobile-version .designer-box,
+.mobile-version .designer-box {
+  min-height: 150px;
+}
+
 .headshot,
 .headshot-animated {
   width: 100%;
