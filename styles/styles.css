@@ -320,7 +320,7 @@
   margin-top: 4vh;
 }
 
-.skills-firstset h4 {
+.skills-firstset h2 {
   color: #a6a6a6;
   font-size: clamp(1.1rem, 1.6vw, 1.4rem);
   text-shadow: 0 0 0.8px cyan, 0 0 1.5px cyan;
@@ -340,7 +340,7 @@
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.skills-secondset h4 {
+.skills-secondset h2 {
   font-size: 2.4vw;
   color: #a6a6a6;
   text-shadow: 0 0 0.8px cyan, 0 0 1.5px cyan;
@@ -1054,7 +1054,7 @@ button.submit-button:hover {
   cursor: pointer;
 }
 
-.tooltip h4 {
+.tooltip h2 {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -1487,7 +1487,7 @@ button.submit-button:hover {
     line-height: 1.4;
   }
 
-  .skills-secondset h4 {
+  .skills-secondset h2 {
     width: 100%;
   }
 
