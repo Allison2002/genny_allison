@@ -1,5 +1,6 @@
   main#parent-tech,
   main#contactme-form,
+  main#resume,
   main#mario-race,
   main#casestudy,
   main#about-me,
@@ -31,6 +32,10 @@
 
   main#mario-race {
     min-height: 160rem;
+  }
+
+  main#resume {
+    min-height: 250rem;
   }
 
   .casestudy {
