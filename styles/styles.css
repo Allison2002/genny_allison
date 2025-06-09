@@ -323,23 +323,28 @@
 .skills-firstset h4 {
   color: #a6a6a6;
   font-size: clamp(1.1rem, 1.6vw, 1.4rem);
-  transition: font-size 0.3s ease, color 0.3s ease;
+  text-shadow: 0 0 0.8px cyan, 0 0 1.5px cyan;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
   padding: 2vw 2vw;
   width: 80%;
   height: auto;
   margin: 0 auto;
 }
 
+
 .skills-firstset:hover .skills-text,
 .skills-firstset:focus .skills-text {
   transform: scale(1.15);
   color: white;
+  text-shadow: 0 0 0.8px cyan, 0 0 1.5px cyan;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .skills-secondset h4 {
   font-size: 2.4vw;
   color: #a6a6a6;
-  transition: font-size 0.3s ease, color 0.3s ease;
+  text-shadow: 0 0 0.8px cyan, 0 0 1.5px cyan;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
   padding: 2vw 3vw;
   width: 60%;
   height: auto;
@@ -350,6 +355,7 @@
 .skills-secondset:focus .skills-text {
   transform: scale(1.15);
   color: white;
+  text-shadow: 0 0 0.8px cyan, 0 0 1.5px cyan;
 }
 
 .skills1 {
