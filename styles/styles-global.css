@@ -125,6 +125,7 @@ label {
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
+#download-me h2 a,
 .links a:hover,
 .links a:focus,
 .collections-title a:hover,
@@ -135,6 +136,7 @@ label {
   /* subtle hover feedback */
 }
 
+#download-me h2 a,
 a,
 .collections-title a,
 .links,
@@ -579,6 +581,19 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.list-items {
+  margin: 0 auto
+}
+
+.list-items ul li {
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: left;
+  font-size: clamp(1rem, 1.5rem, 1.8rem);
 }
 
 .resume-date {
