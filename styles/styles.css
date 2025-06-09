@@ -19,6 +19,10 @@ main #skills-pages {
   padding: 0.2em;
 }
 
+main #skills-pages {
+  min-height: 25rem;
+}
+
 .black-container {
   display: flex;
   text-align: center;
