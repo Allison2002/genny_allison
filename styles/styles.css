@@ -819,7 +819,8 @@ button.submit-button:hover {
 }
 
 .collections-container {
-  width: 100%;
+  width: 90%;
+  max-width: 90vw;
   height: auto;
   /* Let the content define the height */
   margin: 0 auto;

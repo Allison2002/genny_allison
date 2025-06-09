@@ -419,6 +419,17 @@ footer {
   height: auto;
 }
 
+.collections-border {
+  border: 1em solid black;
+  outline: 1em solid white;
+  outline-offset: 1em;
+  padding: 2em;
+  margin: 2em auto 3em;
+  width: 80%;
+  max-width: 80vw;
+  height: auto;
+}
+
 .fancy-border-img {
   border: 1em solid white;
   outline: 0.2em solid white;
