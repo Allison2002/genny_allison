@@ -1181,6 +1181,14 @@ button.submit-button:hover {
 }
 
 @media (max-width: 768px) {
+
+  .skills-firstset h2,
+  .skills-secondset h2 {
+
+    width: 100%;
+
+  }
+
   .check-mark img {
     width: 60px;
     max-width: 60px;
@@ -1206,8 +1214,8 @@ button.submit-button:hover {
   }
 
   .skills-text {
-    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
-    padding: 1.5vw;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    padding: 1rem;
   }
 
   .skills-grid {
