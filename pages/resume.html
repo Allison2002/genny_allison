@@ -103,7 +103,6 @@
     <style>
       picture {
         width: 100%;
-        height: auto;
         display: block;
         margin: 0 auto;
       }
@@ -127,6 +126,7 @@
         box-sizing: border-box;
         padding: 0.5rem;
         contain: layout paint style;
+        aspect-ratio: 1904 / 502;
       }
       
 
@@ -138,6 +138,8 @@
         justify-content: center;
         background-color: #000;
         box-sizing: border-box;
+        height: auto;
+        aspect-ratio: 1458 / 948;
       }
 
       .canvas-skills-grid img {
@@ -170,9 +172,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        height: auto;  
-        min-height: 200px;
+        align-items: stretch;
+        height: auto;
       }
 
       .canvas-skills-title h1,
@@ -183,6 +184,7 @@
         text-align: center;
         line-height: 1.4;
         font-display: swap;
+        height: auto;
         margin: 0;
       }
 
@@ -199,6 +201,7 @@
         height: auto;
         overflow: hidden;
       }
+
 
       /* === MEDIA QUERIES === */
 
@@ -252,40 +255,45 @@
       @media (max-width: 480px) {
         .canvas-skills-grid {
           padding: 0.25rem;
+          height: 200px;
+          width: 480px;  
         }
 
-  
         .canvas-skills-grid img {
           border-width: 0.5em;
           object-fit: cover;
+          min-height: 168px;
+          object-position: center top;
+
         }
 
         .canvas-skills-title {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
-          min-height: 200px;
+          min-height: 168px;
           border-width: 0.5em;
-          width: 50%;
-          max-width: 50vw;
-          padding-right: 0.7em;
+          width: 100%;
+          max-width: 480px;
+          height: auto;
+          padding-right: 0;
+          margin: 0 auto;
         }
 
         .canvas-skills-title h1 {
-          font-size: 1.4rem;
-          height: 3rem;
+          font-size: 1.1rem;
+          height: auto;
           width: 100%;
-          line-height: 1.5;
+          line-height: 1.6;
           margin: 0 auto;
           padding: 0;
         }
 
         .canvas-skills-title h2 {
-          font-size: 1.3rem;
-          height: 3rem;
+          font-size: 1rem;
+          height: auto;
           width: 100%;
-          line-height: 1;
+          line-height: 1.5;
           margin: 0 auto;
           padding: 0;
         }
