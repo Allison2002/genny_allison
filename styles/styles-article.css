@@ -467,6 +467,7 @@
       margin-bottom: 1em;
     }
 
+    main#resume,
     main#mario-race,
     main#parent-tech,
     main#about-me,
@@ -547,6 +548,7 @@
       contain: content;
     }
 
+    main#resume,
     main#mario-race,
     main#parent-tech,
     main#about-me,
@@ -688,6 +690,7 @@
       max-width: 90vw;
     }
 
+    main#resume,
     main#mario-race,
     main#parent-tech,
     main#about-me,
@@ -780,6 +783,7 @@
       margin: 0.5em auto 0.5em;
     }
 
+    main#about-me,
     main#casestudy,
     main#projects {
       width: 90%;
