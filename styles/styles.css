@@ -23,6 +23,7 @@ main #skills-pages {
   min-height: 25rem;
 }
 
+
 .skills-container {
   min-height: 25rem;
   max-width: 100%;
@@ -47,6 +48,19 @@ main #skills-pages {
 
 #about-me-black-container {
   margin: 0 auto;
+}
+
+.about-me {
+  margin: 0 auto;
+  max-width: 52vw;
+  width: 52%;
+  height: auto;
+  min-height: unset;
+  position: relative;
+  padding-bottom: 10rem;
+  contain: layout;
+  overflow: hidden;
+  padding: 0.2em;
 }
 
 .main-container {
