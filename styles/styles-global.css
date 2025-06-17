@@ -255,7 +255,7 @@ nav {
   max-width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  min-height: 5.3rem;
+  min-height: 92px;
 }
 
 nav {
@@ -471,9 +471,10 @@ footer {
 }
 
 .hamburger-icon {
-  max-width: 48px;
   width: 48px;
   height: 48px;
+  display: block;
+  object-fit: contain;
   display: none;
 }
 
