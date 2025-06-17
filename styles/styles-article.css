@@ -38,6 +38,10 @@
     min-height: 250rem;
   }
 
+  main#about-me {
+    min-height: 560rem;
+  }
+
   .casestudy {
     min-height: auto;
     visibility: visible;

@@ -52,6 +52,7 @@ body {
   overflow-x: hidden;
 }
 
+
 section h1:not([class]),
 article h1:not([class]),
 nav h1:not([class]),
@@ -278,7 +279,9 @@ nav {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  contain: layout;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease;
 }
 
 .nav-links ul {
@@ -914,7 +917,11 @@ button.submit-button:hover {
   }
 
   .nav-links {
-    display: none
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
   }
 
   .hamburger-icon {
