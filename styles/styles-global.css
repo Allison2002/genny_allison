@@ -186,6 +186,7 @@ span {
   padding-left: 0.5em;
 }
 
+/* General link hover/focus styles */
 .nav-links ul li a:focus,
 .nav-links ul li a:hover,
 .links a:focus,
@@ -196,18 +197,24 @@ a:focus,
 a:hover,
 p a:focus,
 p a:hover {
-  filter: brightness(2.4) contrast(1.2);
-  will-change: filter;
-  transition: filter 0.3s ease;
+  filter: brightness(1.8) contrast(1.1);
+  transition: filter 200ms ease-in-out;
   border-radius: 3px;
   padding: 0 2px;
-  text-shadow: none;
-  border-radius: 3px;
-  padding: 0 2px
+  outline: none;
 }
 
+/* Accessibility: remove focus outline unless keyboard user */
 :focus:not(:focus-visible) {
   outline: none;
+}
+
+/* Underline animation */
+.links a,
+.links,
+p a {
+  position: relative;
+  text-decoration: none;
 }
 
 .links a::after,
@@ -220,14 +227,22 @@ p a::after {
   height: 0.2rem;
   width: 90%;
   background: #0ff;
-  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease-in-out;
   will-change: transform;
+}
+
+.links a:hover::after,
+.links:hover::after,
+p a:hover::after {
+  transform: scaleX(1);
 }
 
 .links a::after,
 .links::after {
   background: #0ff;
-  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d
+  text-shadow: 0 0 1px #003f4d, 0 0 2px #003f4d;
 }
 
 .background-color {

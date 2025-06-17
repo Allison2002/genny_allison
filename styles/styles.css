@@ -1080,7 +1080,8 @@ button.submit-button:hover {
 
 .cta-section img,
 .author-bio img {
-  width: 93%;
+  width: 100%;
+  max-width: 832px;
   height: auto;
   margin: 2em auto 0;
   object-fit: cover;
