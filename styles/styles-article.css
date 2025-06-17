@@ -19,7 +19,7 @@
   }
 
   main#projects {
-    min-height: 242rem;
+    min-height: 100vh;
   }
 
   main#casestudy {
