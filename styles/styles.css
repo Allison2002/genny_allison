@@ -361,8 +361,7 @@ main #skills-pages {
 
 .skills-firstset h2 {
   color: #a6a6a6;
-  font-size: clamp(1rem, 1.6vw, 1.4rem);
-  line-height: 1.5;
+
   text-shadow: 0 0 0.8px cyan, 0 0 1.5px cyan;
   transition: color 0.3s ease, text-shadow 0.3s ease;
   width: auto;
@@ -373,6 +372,8 @@ main #skills-pages {
   cursor: pointer;
 }
 
+.skills-secondset:hover .skills-text,
+.skills-secondset:focus .skills-text,
 .skills-firstset:hover .skills-text,
 .skills-firstset:focus .skills-text {
   transform: scale(1.15);
@@ -415,6 +416,7 @@ main #skills-pages {
   display: flex;
   justify-content: start;
   width: auto;
+  padding: 2em 0;
 }
 
 .skills3 {
@@ -426,17 +428,17 @@ main #skills-pages {
 
 .skills0 {
   display: flex;
-  padding: 1em 3em 3em 0;
+  padding: 1em 3em 1em 0;
 }
 
 .skills4 {
   display: flex;
-  padding: 1em 0 3em 2em;
+  padding: 1em 0 1em 2em;
 }
 
 .skills5 {
   display: flex;
-  padding: 1em 2em 0 0;
+  padding: 3em 3em 3em 0;
 }
 
 .skills5 h2 {
@@ -485,6 +487,12 @@ main #skills-pages {
   display: flex;
   text-align: center;
   padding: 3em 4em 0 2em;
+}
+
+.skills13 {
+  display: flex;
+  text-align: center;
+  padding: 5em 2em 0 2em;
 
 }
 
@@ -492,7 +500,14 @@ main #skills-pages {
   display: flex;
   text-align: start;
   align-content: flex-start;
-  padding: 2em 0;
+  padding: 2em 0 1em 2em;
+}
+
+.skills15 {
+  display: flex;
+  text-align: start;
+  align-content: flex-start;
+  padding: 2em 2em 5em 0;
 }
 
 .skills17 {
@@ -1210,9 +1225,13 @@ button.submit-button:hover {
   }
 
   .skills-black-container {
-    width: 90%;
-    max-width: 90vw;
+    width: 98%;
+    max-width: 98vw;
     padding: 2em;
+  }
+
+  .skills-grid {
+    margin: 2em auto;
   }
 
   .skills-row {
@@ -1220,8 +1239,10 @@ button.submit-button:hover {
     max-width: 90vw;
     height: 90%;
     max-height: 90vw;
+    padding: 0;
   }
 
+  .skills0,
   .skills1,
   .skills2,
   .skills4,
@@ -1230,7 +1251,15 @@ button.submit-button:hover {
   .skills7,
   .skills8,
   .skills9,
-  .skills10 {
+  .skills10,
+  .skills11,
+  .skills12,
+  .skills13,
+  .skills14,
+  .skills15,
+  .skills16,
+  .skills17,
+  .skills18 {
     padding: 0;
   }
 
@@ -1239,16 +1268,17 @@ button.submit-button:hover {
   }
 
   .skills-text {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-size: 1rem;
   }
 
   .skills h2 {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: 1.3rem;
   }
 }
 
 
 @media (max-width: 768px) {
+
 
   .skills-firstset h2,
   .skills-secondset h2 {
@@ -1526,6 +1556,9 @@ button.submit-button:hover {
 
 
 @media (max-width: 480px) {
+  .skills h2 {
+    font-size: 1.3rem;
+  }
 
   .greetings-label h2 {
     font-size: 1rem;
