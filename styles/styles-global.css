@@ -272,7 +272,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  min-height: 4rem;
+  min-height: 80px;
   width: 80%;
   max-width: 80vw;
   box-sizing: border-box;
@@ -289,7 +289,6 @@ nav {
   min-height: 2.5rem;
   list-style-type: none;
   height: auto;
-  line-height: 1.6;
   flex-wrap: nowrap;
   padding: 1em 2em 0 0;
 }
