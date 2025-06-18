@@ -791,6 +791,10 @@ button.submit-button:hover {
   transform: translateX(0);
 }
 
+#project1-thumbnail {
+  padding: 2em 3em;
+}
+
 /* Nav links inside the hamburger menu */
 .hamburger-nav-links ul {
   display: flex;

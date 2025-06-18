@@ -4,6 +4,7 @@
   main#mario-race,
   main#casestudy,
   main#about-me,
+  main#collections-page,
   main#projects {
     width: 54%;
     max-width: 54vw;
@@ -40,6 +41,10 @@
 
   main#about-me {
     min-height: 560rem;
+  }
+
+  main#collections-page {
+    min-height: 118rem;
   }
 
   .casestudy {
