@@ -25,10 +25,17 @@ main #skills-pages {
 
 .skills-container {
   min-height: 10rem;
-  max-width: 100%;
+  max-width: 100vw;
+  width: 100%;
   overflow: hidden;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
   box-sizing: border-box;
+}
+
+.skills-grid {
+  width: 95%;
+  max-width: 95vw;
 }
 
 .black-container {
@@ -1587,12 +1594,51 @@ main#collections-page {
 
 
 @media (max-width: 480px) {
+
+  .designer-box,
+  .coder-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
   .skills h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .greetings-label h2 {
     font-size: 1rem;
+  }
+
+  .skills-container {
+    padding: 1rem;
+  }
+
+  .skills-black-container {
+    width: 100%;
+    max-width: 100vw;
+    padding: 0;
+  }
+
+  .skills4,
+  .skills3 {
+    padding: 0 0 0 2em;
+  }
+
+  .skills2 {
+    padding: 0 0 0 0.5;
+  }
+
+  .skills18,
+  .skills17,
+  .skills16,
+  .skills15,
+  .skills14 {
+    padding-right: 1em;
+  }
+
+  .skills-row {
+    gap: 0;
   }
 
   .outer-container {
