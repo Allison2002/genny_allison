@@ -1588,6 +1588,10 @@ main#collections-page {
     height: auto;
     width: 100%;
   }
+
+  .thumbnail-section {
+    margin: 1em auto 1em;
+  }
 }
 
 
