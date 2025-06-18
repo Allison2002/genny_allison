@@ -775,8 +775,8 @@ button.submit-button:hover {
 }
 
 main#collections-page {
-  width: 54%;
-  max-width: 54vw;
+  width: 80%;
+  max-width: 80vw;
   margin: 5em auto;
   padding: 2em 1em;
   background-color: #000;
@@ -1587,10 +1587,6 @@ main#collections-page {
   .favorites-label {
     height: auto;
     width: 100%;
-  }
-
-  .thumbnail-section {
-    margin: 1em auto 1em;
   }
 }
 
