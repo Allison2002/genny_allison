@@ -1218,6 +1218,11 @@ main#collections-page {
     max-width: 75vw;
   }
 
+  main#collections-page {
+    width: 75%;
+    max-width: 75vw;
+  }
+
   .outer-container {
     margin-bottom: -3rem;
     width: 100%;
