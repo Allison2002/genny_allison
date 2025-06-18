@@ -24,7 +24,35 @@
     <meta name="twitter:image" content="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1200,h_630/v1749314349/genny-about-portrait_qu2vcz" />
     <meta name="twitter:image:alt" content="Portrait of Genny Allison, AI content and SEO specialist" />
 
+    <!-- Desktop ≥ 941px -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_40,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1458,h_900/v1749150451/texas-remodelers-hero-desktop_auvn6l.avif"
+      type="image/avif"
+      media="(min-width: 941px)"
+      fetchpriority="high"
+    />
 
+    <!-- Mobile 481px–768px -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_1520,h_394/v1749308658/allison-stock-aboutme_rwwkww.avif"
+      type="image/avif"
+      media="(min-width: 481px) and (max-width: 768px)"
+      fetchpriority="high"
+    />
+
+    <!-- Mobile ≤480px -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_944,h_244/v1749309125/allison-stock-aboutme-mobile_a6btoe.avif"
+      type="image/avif"
+      media="(max-width: 480px)"
+      fetchpriority="high"
+    />
 
     <link class="tab-logo" rel="icon" href="/img/white_favicon/favicon.ico" type="image/icon type">
 
@@ -365,7 +393,7 @@
     <div class="outer-container">
       <picture> 
         <source
-          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_2584,h_672/v1749308658/allison-stock-aboutme_rwwkww.avif"
+          srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_40,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_3362,h_874/v1749308658/allison-stock-aboutme_rwwkww.avif"
           type="image/avif"
           media="(min-width: 1200px)"
           sizes="100vw"
@@ -382,9 +410,10 @@
           width="472" 
           height="122" 
           alt="Photo of Genny Allison, the web developer and AI content specialist"
-          style="object-fit: contain;"
-          loading="auto" 
-          decoding="async" 
+          style="object-fit: contain"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
         />
       </picture> 
         
