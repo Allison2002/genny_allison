@@ -255,7 +255,7 @@ nav {
   max-width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  min-height: 92px;
+  min-height: 100px;
 }
 
 nav {
@@ -264,7 +264,6 @@ nav {
   justify-content: space-between;
   height: clamp(5rem, 10vh, 7rem);
   background-color: #000;
-  min-height: 5rem;
   font-family: system-ui, sans-serif;
   font-display: optional;
 }
@@ -273,12 +272,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  min-height: 80px;
   width: 80%;
   max-width: 80vw;
+  height: auto;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  min-height: 47px;
 }
 
 .nav-links ul {
