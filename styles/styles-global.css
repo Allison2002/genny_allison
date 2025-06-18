@@ -279,9 +279,6 @@ nav {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.2s ease;
 }
 
 .nav-links ul {
@@ -307,7 +304,6 @@ nav {
   color: #fff;
   width: 100%;
   height: auto;
-  line-height: 1.3;
 }
 
 .nav-logo {
