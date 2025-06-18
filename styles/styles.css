@@ -1626,7 +1626,7 @@ main#collections-page {
   }
 
   .skills2 {
-    padding: 0 0 0 0.5;
+    padding: 0 0 0 0.5em;
   }
 
   .skills18,
@@ -1665,9 +1665,6 @@ main#collections-page {
     width: 100%;
   }
 
-}
-
-@media (max-width:480px) {
   .about-me {
     height: 100%;
     width: 100%;
@@ -1692,5 +1689,53 @@ main#collections-page {
     max-width: 100vw;
     height: auto;
     min-height: 10rem;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .skills4,
+  .skills3 {
+    padding: 0 0 0 2em;
+  }
+
+  .skills2 {
+    padding: 0 0 0 1em;
+  }
+
+  .skills18,
+  .skills17,
+  .skills16,
+  .skills15,
+  .skills14 {
+    padding-right: 1em;
+  }
+
+  .skills-row {
+    gap: 0;
+  }
+
+  .skills h2 {
+    font-size: 0.8rem;
+  }
+
+  .skills-container {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .skills-grid {
+    width: 98%;
+    max-width: 98vw;
+  }
+
+  .skills-firstset h2,
+  .skills-secondset h2 {
+    font-size: 0.8rem;
+  }
+
+  .skills-row {
+    width: 100%;
+    max-width: 100vw;
   }
 }
