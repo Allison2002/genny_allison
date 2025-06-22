@@ -475,6 +475,7 @@
       margin-bottom: 1em;
     }
 
+    main#contactme-form,
     main#resume,
     main#mario-race,
     main#parent-tech,
@@ -556,6 +557,7 @@
       contain: content;
     }
 
+    main#contactme-form,
     main#resume,
     main#mario-race,
     main#parent-tech,
@@ -698,6 +700,7 @@
       max-width: 90vw;
     }
 
+    main#contactme-form,
     main#resume,
     main#mario-race,
     main#parent-tech,
@@ -761,6 +764,9 @@
   }
 
   @media (max-width:480px) {
+    #contact-info {
+      padding-bottom: 2em;
+    }
 
     #description {
       margin: 2em auto;
@@ -789,6 +795,35 @@
       width: 90%;
       max-width: 90vw;
       margin: 0.5em auto 0.5em;
+    }
+
+
+    #contact-form-border {
+      margin: 4em auto 4em;
+    }
+
+    #contact-form {
+      margin: 0 auto 2em;
+    }
+
+    #contactme-section2,
+    #contactme-section1,
+    #aboutme-section2,
+    #aboutme-section1,
+    #section2,
+    #section1 {
+      padding: 1em;
+    }
+
+    #contactme-section1 {
+      margin: 1em auto 1em;
+    }
+
+
+    #contact-form-border,
+    #contact-form {
+      width: 100%;
+      max-width: 100vw;
     }
 
     main#about-me,

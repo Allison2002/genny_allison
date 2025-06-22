@@ -147,7 +147,6 @@ a,
   font-weight: 500;
 }
 
-
 a:visited,
 p a:visited {
   color: black;
@@ -1036,7 +1035,8 @@ button.submit-button:hover {
 
 
   footer {
-    margin-top: 2em
+    margin-top: 2em;
+    z-index: 10000;
   }
 
   .list-items ul li {
@@ -1114,6 +1114,13 @@ button.submit-button:hover {
 }
 
 @media (min-width:430px) and (max-width:480px) {
+  #download-me {
+    margin: 2em auto 2em;
+  }
+
+  form {
+    padding: 1em;
+  }
 
   .fancy-border {
     margin: 1em auto;
