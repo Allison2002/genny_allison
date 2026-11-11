@@ -1,0 +1,152 @@
+/* Portfolio shared visual system — About, Skills, Resume, Contact.
+   Scoped, additive rules. Does not affect the homepage, My Work, or project case studies. */
+body.portfolio-interior {
+  --portfolio-black: #080808;
+  --portfolio-white: #fff;
+  --portfolio-teal: #008f97;
+  --portfolio-teal-link: #07545a;
+  --portfolio-teal-hover: #087d86;
+  --portfolio-body: #222;
+  --portfolio-outline: #d8e0e1;
+  --portfolio-section-space: clamp(2rem, 5vw, 4.5rem);
+  background: var(--portfolio-white);
+  color: var(--portfolio-body);
+}
+
+/* Equal white breathing room: consistent with the approved My Work framing */
+body.portfolio-interior main {
+  margin-top: var(--portfolio-section-space) !important;
+  margin-bottom: var(--portfolio-section-space) !important;
+  box-sizing: border-box;
+}
+body.portfolio-interior main#about-me,
+body.portfolio-interior main#resume,
+body.portfolio-interior main#contactme-form,
+body.portfolio-interior main#skills-pages {
+  width: min(92%, 1100px) !important;
+  max-width: 1100px !important;
+  min-width: 0;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  height: auto;
+  min-height: 0;
+  padding: 0 !important;
+  overflow: visible;
+  contain: none;
+}
+
+body.portfolio-interior .canvas-skills-grid,
+body.portfolio-interior .outer-container {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* About retains its original design but gets the same framed, legible proportions */
+body.portfolio-interior .about-me-container {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body.portfolio-interior .about-me-container .black-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 1.5rem auto 2.5rem;
+  padding: clamp(1.25rem, 3.2vw, 2.75rem);
+  border: 1px solid #434e51;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+body.portfolio-interior .about-me-container .greetings,
+body.portfolio-interior .about-me-container .grid-container {
+  max-width: 100%;
+}
+body.portfolio-interior .about-me-container .greetings-label {
+  margin-block: 1.5rem;
+}
+
+/* Skills grid stays interactive; contain the full set and provide readable spacing */
+body.portfolio-interior .skills-container {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: clamp(1rem, 2.5vw, 2rem);
+  margin-inline: auto;
+}
+body.portfolio-interior .skills-grid {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body.portfolio-interior .skills-main .skills-row {
+  max-width: 100%;
+}
+
+/* Resume & Contact: same white page / black sections rhythm */
+body.portfolio-interior main#resume .projects-content,
+body.portfolio-interior main#contactme-form .past-meets-design {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body.portfolio-interior .resume-date,
+body.portfolio-interior .resume-summary,
+body.portfolio-interior .contact-form-container {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body.portfolio-interior .resume-summary,
+body.portfolio-interior .contact-form-container {
+  line-height: 1.65;
+}
+body.portfolio-interior .contact-form-container input,
+body.portfolio-interior .contact-form-container textarea {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Keep existing turquoise as an accent rather than a neon text color. */
+body.portfolio-interior main a:not(.button):not(.btn),
+body.portfolio-interior main a:not(.button):not(.btn):visited {
+  filter: none !important;
+  text-shadow: none;
+  transition: color 180ms ease;
+}
+body.portfolio-interior main a:not(.button):not(.btn):hover {
+  filter: none !important;
+  text-shadow: none;
+}
+body.portfolio-interior a:focus-visible,
+body.portfolio-interior button:focus-visible,
+body.portfolio-interior input:focus-visible,
+body.portfolio-interior textarea:focus-visible {
+  outline: 3px solid var(--portfolio-teal);
+  outline-offset: 3px;
+}
+
+/* Prevent wide assets from breaking phone layouts */
+body.portfolio-interior main img,
+body.portfolio-interior main video,
+body.portfolio-interior main iframe {
+  max-width: 100%;
+}
+@media (max-width: 700px) {
+  body.portfolio-interior {
+    --portfolio-section-space: 1.5rem;
+  }
+  body.portfolio-interior main#about-me,
+  body.portfolio-interior main#resume,
+  body.portfolio-interior main#contactme-form,
+  body.portfolio-interior main#skills-pages {
+    width: 95% !important;
+    max-width: 95% !important;
+  }
+  body.portfolio-interior .about-me-container .black-container {
+    padding: 1rem;
+  }
+  body.portfolio-interior .skills-container {
+    padding: .75rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.portfolio-interior main a { transition: none !important; }
+}

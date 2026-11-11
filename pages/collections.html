@@ -1,188 +1,77 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Genny Allison | AI Content Engineer & SEO Web Developer | Project Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Explore Genny Allison's portfolio showcasing projects that merge creativity and code. From engaging animations to responsive designs, each project highlights her skills in UI/UX, front-end development, and client-focused web solutions. Discover the blend of artistry and functionality across a range of digital creations."
-    />
-
-    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Genny Allison | My Work | AI-Powered SEO Projects & Web Development Portfolio" />
-    <meta property="og:description" content="Explore Genny Allison’s portfolio showcasing AI-driven content, Core Web Vitals optimization, and accessible, high-performing web design. Each project blends creativity, code, and strategy." />
-    <meta property="og:url" content="https://tech-trends-blog.netlify.app/pages/collections.html" />
-    <meta property="og:image" content="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1200,h_630/v1743092340/collections_ky7hd1" />
-    <meta property="og:image:alt" content="A woman coding on a laptop representing innovation and creativity in Genny Allison’s digital portfolio" />
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Genny Allison | Web Developer Portfolio | SEO, AI Content & UI/UX Projects" />
-    <meta name="twitter:description" content="Browse Genny Allison’s digital creations—from AI blogs to JavaScript animations. Designed for speed, SEO, accessibility, and beautiful user experience." />
-    <meta name="twitter:image" content="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1200,h_630/v1743092340/collections_ky7hd1" />
-    <meta name="twitter:image:alt" content="Hero image for the My Work page in Genny Allison’s portfolio" />
-    <meta name="twitter:site" content="@allis78978" />
-
-    <!-- Desktop ≥ 941px -->
-    <link
-      rel="preload"
-      as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1458,h_900/v1743092340/collections_ky7hd1.avif"
-      type="image/avif"
-      media="(min-width: 941px)"
-      fetchpriority="high"
-    />
-
-    <!-- Tablet 769px–940px -->
-    <link
-      rel="preload"
-      as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_692,h_422/v1743092340/collections_ky7hd1.avif"
-      type="image/avif"
-      media="(min-width: 769px) and (max-width: 940px)"
-      fetchpriority="high"
-    />
-
-    <!-- Mobile 481px–768px -->
-    <link
-      rel="preload"
-      as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_558,h_336/v1743092340/collections_ky7hd1.avif"
-      type="image/avif"
-      media="(min-width: 481px) and (max-width: 768px)"
-      fetchpriority="high"
-    />
-
-    <!-- Mobile ≤480px -->
-    <link
-      rel="preload"
-      as="image"
-      href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_328,h_336/v1743092340/collections_ky7hd1.avif"
-      type="image/avif"
-      media="(max-width: 480px)"
-      fetchpriority="high"
-    />
-
-    <link
-      class="tab-logo"
-      rel="icon"
-      href="/img/white_favicon/favicon.ico"
-      type="image/icon type"
-    />
-
-    <link rel="preload" href="/styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-    <link rel="preload" href="/styles/styles-global.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-    <noscript><link rel="stylesheet" href="/styles/styles-global.css"></noscript>
-
-    <noscript><link rel="stylesheet" href="/styles/styles-global.css"></noscript>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Genny Allison | AI Content Creator & SEO Specialist Portfolio Projects",
-        "url": "https://tech-trends-blog.netlify.app/pages/collections.html",
-        "description": "Explore portfolio projects by Genny Allison, an AI Content Creator & SEO Specialist. Each project showcases performance-driven development, WCAG accessibility, Core Web Vitals optimization, and creative AI-powered content solutions.",
-        "inLanguage": "en",
-        "author": {
-          "@type": "Person",
-          "name": "Genny Allison",
-          "url": "https://gennyallison.netlify.app",
-          "jobTitle": "AI Content Creator & SEO Specialist",
-          "sameAs": [
-            "https://www.linkedin.com/in/genny-allison/",
-            "https://github.com/Allison2002"
-          ]
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Allison Stock Inc.",
-          "url": "https://gennyallison.netlify.app",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dnptzisuf/image/upload/v1746550616/allisonstock-black-logo_yalqqx.avif",
-            "width": 531,
-            "height": 255
-          }
-        },
-        "hasPart": [
-          {
-            "@type": "CreativeWork",
-            "name": "Project 1: Tech Trends Blog",
-            "url": "https://tech-trends-blog.netlify.app",
-            "mainEntityOfPage": "https://tech-trends-blog.netlify.app/pages/project1/project1-intro.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743014132/project1-thumbnail_palgve.avif",
-            "description": "AI-driven blog optimized for SEO and performance. Achieved a perfect PageSpeed score with accessibility and responsive design."
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Project 2: Sports Tube",
-            "url": "https://sports-tube.netlify.app/",
-            "mainEntityOfPage": "https://tech-trends-blog.netlify.app/pages/project2.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743014132/project2-thumbnail_z7t2rk.avif",
-            "description": "Video-centric sports platform designed with performance and UI/UX in mind. Built using modern front-end techniques."
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Project 3: Sports Tube Community Blog",
-            "url": "https://sports-tube-community.netlify.app/",
-            "mainEntityOfPage": "https://tech-trends-blog.netlify.app/pages/project3.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743014132/project3-thumbnail_m2okuz.avif",
-            "description": "Community blog with AI-generated content, SEO-optimized structure, and a comic-inspired WCAG-accessible layout."
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Project 4: Texas Remodelers Sample Site",
-            "url": "https://texas-remodelers-sample.netlify.app/",
-            "mainEntityOfPage": "https://tech-trends-blog.netlify.app/pages/project4.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743014132/project4-thumbnail_e5nrva.avif",
-            "description": "Professional service site built for remodelers, showcasing clean code, accessibility features, and performance testing."
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Project 5: Parent Tech Support Video Page",
-            "url": "https://parenttech.support/videos/",
-            "mainEntityOfPage": "https://tech-trends-blog.netlify.app/pages/project5.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743017418/project5-thumbnail_ljotky.avif",
-            "description": "Family tech support video resource page with organized grid layout, accessible navigation, and clear UI."
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Project 6: Mario Race Animation",
-            "url": "https://mario-race.netlify.app/",
-            "mainEntityOfPage": "https://tech-trends-blog.netlify.app/pages/project6.html",
-            "image": "https://res.cloudinary.com/dnptzisuf/image/upload/v1743017418/project6-thumbnail_ws3h0z.avif",
-            "description": "JavaScript animation of Mario & Luigi racing. Features custom graphics, smooth transitions, and pure front-end logic."
-          }
-        ]
-      }
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Genny Allison | Technical Investigations, Architecture &amp; Projects</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore professional projects in information architecture, technical investigations, AI workflows, and web development by Genny Allison." name="description"/>
+<link crossorigin="" href="https://res.cloudinary.com" rel="preconnect"/>
+<!-- Open Graph Meta Tags -->
+<meta content="website" property="og:type"/>
+<meta content="Genny Allison | Selected Work in Systems &amp; Web Architecture" property="og:title"/>
+<meta content="Selected work in information architecture, technical problem investigation, AI-assisted workflows, and original web development." property="og:description"/>
+<meta content="https://gennyallison.netlify.app/pages/collections.html" property="og:url"/>
+<meta content="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1200,h_630/v1743092340/collections_ky7hd1" property="og:image"/>
+<meta content="A woman coding on a laptop representing innovation and creativity in Genny Allison’s digital portfolio" property="og:image:alt"/>
+<!-- Twitter Card Meta Tags -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Genny Allison | Architecture, Investigations &amp; Web Projects" name="twitter:title"/>
+<meta content="Professional architecture and technical investigation work alongside earlier hand-coded web projects." name="twitter:description"/>
+<meta content="https://res.cloudinary.com/dnptzisuf/image/upload/f_auto,q_auto,c_fill,w_1200,h_630/v1743092340/collections_ky7hd1" name="twitter:image"/>
+<meta content="Hero image for the My Work page in Genny Allison’s portfolio" name="twitter:image:alt"/>
+<meta content="@allis78978" name="twitter:site"/>
+<!-- Desktop ≥ 941px -->
+<link as="image" fetchpriority="high" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1458,h_900/v1743092340/collections_ky7hd1.avif" media="(min-width: 941px)" rel="preload" type="image/avif"/>
+<!-- Tablet 769px–940px -->
+<link as="image" fetchpriority="high" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_692,h_422/v1743092340/collections_ky7hd1.avif" media="(min-width: 769px) and (max-width: 940px)" rel="preload" type="image/avif"/>
+<!-- Mobile 481px–768px -->
+<link as="image" fetchpriority="high" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_558,h_336/v1743092340/collections_ky7hd1.avif" media="(min-width: 481px) and (max-width: 768px)" rel="preload" type="image/avif"/>
+<!-- Mobile ≤480px -->
+<link as="image" fetchpriority="high" href="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_328,h_336/v1743092340/collections_ky7hd1.avif" media="(max-width: 480px)" rel="preload" type="image/avif"/>
+<link class="tab-logo" href="/img/white_favicon/favicon.ico" rel="icon" type="image/icon type">
+<link as="style" href="/styles/styles.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<link as="style" href="/styles/styles-global.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<link href="/styles/featured-work.css" rel="stylesheet"/>
+<noscript><link href="/styles/styles-global.css" rel="stylesheet"/></noscript>
+<noscript><link href="/styles/styles-global.css" rel="stylesheet"/></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Genny Allison \u2014 Technical Investigations & Architecture Projects",
+  "url": "https://gennyallison.netlify.app/pages/collections.html",
+  "description": "A portfolio of information architecture, technical investigations, AI-assisted workflows, and web development projects.",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Genny Allison",
+    "url": "https://gennyallison.netlify.app/"
+  }
+}
     </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://gennyallison.netlify.app/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "My Work",
-            "item": "https://gennyallison.netlify.app/pages/collections"
-          },
-        ]
-      }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://gennyallison.netlify.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "My Work",
+      "item": "https://gennyallison.netlify.app/pages/collections.html"
+    }
+  ]
+}
     </script>
-    <style>
+<style>
       picture {
         width: 100%;
         display: block;
@@ -382,415 +271,78 @@
       }
 
     </style>
-  </head>
-  <body> 
-    <header>
-      <nav role="navigation" aria-label="Main navigation">
-        <div class="nav-logo">
-          <a href="/index.html">
-            <img
-              src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_288,h_124/v1746551086/allisonstock-white-nav-logo_tklcra.png"
-              alt="Logo for Allison Stock Inc"
-              width="144"
-              height="62"
-              loading="eager"
-              fetchpriority="high"
-              decoding="async"
-              style="object-fit: cover; aspect-ratio: 144 / 62;"
-            />
-          </a>
-        </div>
-
-        <div class="menu-toggle" id="menu-toggle" role="button"   
-          tabindex="0"  aria-label="Open Menu">
-          <img
-            src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_96,h_96/v1750202370/hamburger-icon_bullxb.png"
-            alt="Hamburger Icon Menu"
-            class="hamburger-icon"
-            fetchpriority="high"
-            width="48"
-            height="48"
-            loading="eager"
-            fetchpriority="high"
-            style="object-fit: cover; aspect-ratio: 48 /48;"
-          />
-        </div>
-
-        <div class="nav-links">
-          <ul>
-            <li><a href="/index.html" class="links">My Home</a></li>
-            <li><a href="/pages/about.html" class="links">About Me</a></li>
-            <li><a href="/pages/skills.html" class="links">My Skills</a></li>
-            <li><a href="/pages/resume.html" class="links">My Resume</a></li>
-            <li><a href="/pages/collections.html" class="links">My Work</a></li>
-            <li><a href="/pages/contact.html" class="links">Contact Me</a></li>
-          </ul>
-        </div>
-
-        <div class="hamburger-nav-links" id="mobile-menu">
-          <ul>
-            <li><a href="/index.html" class="links">My Home</a></li>
-            <li><a href="/pages/about.html" class="links">About Me</a></li>
-            <li><a href="/pages/skills.html" class="links">My Skills</a></li>
-            <li><a href="/pages/resume.html" class="links">My Resume</a></li>
-            <li><a href="/pages/collections.html" class="links">My Work</a></li>
-            <li><a href="/pages/contact.html" class="links">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="canvas-skills-grid">
-        <picture>
-          <!-- Desktop ≥ 1025px -->
-          <source
-            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_1458,h_900/v1743092340/collections_ky7hd1.avif"
-            media="(min-width: 941px)"
-            type="image/avif" />
-
-          <!-- Tablet ≥ 769px -->
-          <source
-            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_692,h_422/v1743092340/collections_ky7hd1.avif"
-            media="(min-width: 769px) and (max-width: 940px)"
-            type="image/avif" />
-
-          <!-- Mobile ≤ 768px -->
-          <source
-            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_558,h_336/v1743092340/collections_ky7hd1.avif"
-            media="(min-width: 481px) and (max-width: 768px)"
-            type="image/avif" />
-
-          <!-- Fallback -->
-          <img
-            src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_328,h_336/v1743092340/collections_ky7hd1.avif"
-            alt="A woman coding on a laptop, symbolizing the integration of creativity and technology in web development"
-            width="164"
-            height="168"
-            style="object-fit: cover"
-            fetchpriority="high"
-            loading="eager"
-            decoding="async"
-          />
-        </picture>
-        <div class="canvas-skills-title">
-          <h1>a canvas of innovation:</h1>
-          <h2>my digital creations</h2>
-        </div>
-      </div>
-    </header>
-    <main class="collections-grid" id="collections-page">
-      <div class="collections-row">
-        <div class="collection-thumbnail-box">
-          <div class="collections-title collections-border" id="project1-thumbnail">
-          <h2><a href="/pages/project1/project1-intro.html">project 1</a></h2>
-          </div>
-          <div class="collections-container">
-            <div class="collections-thumbnail fancy-border-img">
-              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_620,h_518/v1743014132/project1-thumbnail_palgve.avif" 
-                alt="Project 1 thumbnail: AI-powered Tech Trends Blog featuring SEO strategy, Core Web Vitals, and responsive design"
-                type="image/avif"
-                width="310"
-                height="259"
-                fetchpriority="auto"
-                loading="auto"
-                decoding="async"
-                style="object-fit: contain; aspect-ratio: 310 / 259;"
-              />
-            </div>
-            <div class="collection-links">
-              <div class="collection-links-text">
-                <h3>take me to the</h3>
-              </div>
-              <div class="collections-button-grid">
-                <div class="collections-click-me">
-                  <a href="/pages/project1/project1-intro.html" target="_blank" rel="noopener noreferrer">project 1</a>
-                </div>
-                <div class="collections-click-me">
-                  <a href="https://tech-trends-blog.netlify.app" target="_blank" rel="noopener noreferrer">final design</a>
-                </div>
-                <div class="collections-click-me">  
-                  <a href="https://github.com/Allison2002/tech-trends.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="collection-thumbnail-box">
-          <div class="collections-title collections-border">
-          <h2><a href="/pages/project2/project2-intro.html">project 2</a></h2>
-          </div>
-          <div class="collections-container">
-            <div class="collections-thumbnail fancy-border-img">
-              <img 
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_620,h_518/v1743014132/project2-thumbnail_z7t2rk.avif" 
-                alt="Project 2 thumbnail: Sports Tube video blog showcasing high-performance UI/UX design for sports media"
-                type="image/avif"
-                width="310"
-                height="259"
-                fetchpriority="auto"
-                loading="auto"
-                decoding="async"
-                style="object-fit: contain; aspect-ratio: 310 / 259;"
-              />
-            </div>
-            <div class="collection-links">
-              <div class="collection-links-text">
-                <h3>take me to the</h3>
-              </div>
-              <div class="collections-button-grid">
-                <div class="collections-click-me">
-                  <a href="/pages/project2/project2-intro.html" target="_blank" rel="noopener noreferrer">project 2</a>
-                </div>
-                <div class="collections-click-me">
-                  <a href="https://sports-tube.netlify.app/" target="_blank" rel="noopener noreferrer">final design</a>
-                </div>
-                <div class="collections-click-me">  
-                  <a href="https://github.com/Allison2002/my_tube.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="collection-thumbnail-box">
-          <div class="collections-title collections-border">
-            <h2><a href="/pages/project3/project3-intro.html">project 3</a></h2>
-          </div>
-          <div class="collections-container">
-            <div class="collections-thumbnail fancy-border-img">
-              <img 
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_620,h_518/v1743014132/project3-thumbnail_m2okuz.avif" 
-                alt="Project 3 thumbnail: Community blog with WCAG-compliant layout and AI-generated sports articles"
-                type="image/avif"
-                width="310"
-                height="259"
-                fetchpriority="auto"
-                loading="auto"
-                decoding="async"
-                style="object-fit: contain; aspect-ratio: 310 / 259;"
-              />
-            </div>
-            <div class="collection-links">
-              <div class="collection-links-text">
-                <h3>take me to the</h3>
-              </div>
-              <div class="collections-button-grid">
-                <div class="collections-click-me">
-                  <a href="/pages/project3/project3-intro.html" target="_blank" rel="noopener noreferrer">project 3</a>
-                </div>
-                <div class="collections-click-me">
-                  <a href="https://sports-tube-community.netlify.app/" target="_blank" rel="noopener noreferrer">final design</a>
-                </div>
-                <div class="collections-click-me">  
-                  <a href="https://github.com/Allison2002/sports_tube_community.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="collections-row">
-        <div class="collection-thumbnail-box">
-          <div class="collections-title collections-border">
-            <h2><a href="/pages/project4/project4-intro.html">project 4</a></h2>
-          </div>
-          <div class="collections-container">
-
-            <div class="collections-thumbnail fancy-border-img">
-              <img 
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_620,h_518/v1743014132/project4-thumbnail_e5nrva.avif" 
-                alt="Project 4 thumbnail: Service business website optimized for SEO, Core Web Vitals, and mobile-first design"
-                type="image/avif"
-                width="310"
-                height="259"
-                decoding="async"
-                style="object-fit: contain; aspect-ratio: 310 / 259;"
-              />
-            </div>
-            <div class="collection-links">
-              <div class="collection-links-text">
-                <h3>take me to the</h3>
-              </div>
-              <div class="collections-button-grid">
-                <div class="collections-click-me">
-                  <a href="/pages/project4/project4-intro.html" target="_blank" rel="noopener noreferrer">project 4</a>
-                </div>
-                <div class="collections-click-me">
-                  <a href="https://texas-remodelers-sample.netlify.app/" target="_blank" rel="noopener noreferrer">final design</a>
-                </div>
-                <div class="collections-click-me">  
-                  <a href="https://github.com/Allison2002/texas-remodelers-sample.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="collection-thumbnail-box">
-          <div class="collections-title collections-border">
-            <h2><a href="/pages/project5/project5-the-design.html">project 5</a></h2>
-          </div>
-          <div class="collections-container">
-            <div class="collections-thumbnail fancy-border-img">
-              <img 
-                src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_620,h_518/v1743017418/project5-thumbnail_ljotky.avif" 
-                alt="Project 5 thumbnail: Video resource page for parents featuring accessible layout and grid-based UI"
-                type="image/avif"
-                width="310"
-                height="259"
-                decoding="async"
-                style="object-fit: contain; aspect-ratio: 310 / 259;"
-              />
-            </div>
-            <div class="collection-links">
-              <div class="collection-links-text">
-                <h3>take me to the</h3>
-              </div>
-              <div class="collections-button-grid">
-                <div class="collections-click-me">
-                  <a href="/pages/project5/project5-the-design.html" target="_blank" rel="noopener noreferrer">project 5</a>
-                </div>
-                <div class="collections-click-me">
-                  <a href="https://parenttech.support/videos/" target="_blank" rel="noopener noreferrer">final design</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="collection-thumbnail-box">
-          <div class="collections-title collections-border">
-            <h2><a href="/pages/project6/project6-the-design.html">project 6</a></h2>
-          </div>
-            <div class="collections-container">
-              <div class="collections-thumbnail fancy-border-img">
-                <img 
-                  src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_620,h_518/v1743017418/project6-thumbnail_ws3h0z.avif" 
-                  alt="Project 6 thumbnail: Mario & Luigi animation built with HTML, CSS, and JavaScript for a fun UI showcase"
-                  type="image/avif"
-                  width="310"
-                  height="259"
-                  decoding="async"
-                  style="object-fit: contain; aspect-ratio: 310 / 259;"
-                />
-              </div>
-              <div class="collection-links">
-              <div class="collection-links-text">
-                <h3>take me to the</h3>
-              </div>
-              <div class="collections-button-grid">
-                <div class="collections-click-me">
-                  <a href="/pages/project6/project6-the-design.html" target="_blank" rel="noopener noreferrer">project 6</a>
-                </div>
-                <div class="collections-click-me">
-                  <a href="https://mario-race.netlify.app/" target="_blank" rel="noopener noreferrer">final design</a>
-                </div>
-                <div class="collections-click-me">  
-                  <a href="https://github.com/Allison2002/MarioKart.git" target="_blank" rel="noopener noreferrer">&lt; inspect the code &gt;</a>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <div class="back-to-top">
-      <button id="back-to-top" onclick="scrollToTop()">back to top</button>
-    </div>
-    <footer id="nav">
-      <div class="footer-logo">
-        <picture> 
-          <source
-            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_768,h_330,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
-            type="image/avif"
-            media="(min-width: 1200px)"
-            sizes="100vw"
-          />
-          <source
-            srcset="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_50,c_fill,w_752,h_328,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
-            type="image/avif"
-            media="(min-width: 481px) and (max-width: 1199px)"
-            sizes="100vw"
-          />
-          <img       
-            src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,w_317,h_136,dpr_auto,fl_lossy,fl_force_strip/v1746550266/allisonstock-logo_xgohg9.avif"
-            alt="Allison Stock Inc. logo representing Genny Allison’s AI-powered web development and SEO services"
-            width="317"
-            height="136"
-            loading="lazy"
-            fetchpriority="low"
-            decoding="async" 
-            style="object-fit: cover; aspect-ratio: 317 / 136;"
-          />
-        </picture>
-      </div>
-      <div class="footer-links" id="footer-links">
-        <ul>
-          <li><a href="/index.html" class="links">my home</a></li>           
-          <li><a href="/pages/about.html" class="links">about me</a></li>
-          <li><a href="/pages/skills.html" class="links">my skills</a></li>
-          <li><a href="/pages/resume.html" class="links">my resume</a></li>
-          <li><a href="/pages/collections.html" class="links">my work</a></li> 
-          <li><a href="/pages/project3/project3-the-design.html#author-bio" class="links">contact me</a></li>
-        </ul>
-      </div>
-      <div class="social-media">
-        <ul>
-          <li>
-            <a href="https://x.com/allis78978" 
-              aria-label="Visit my X (formerly Twitter) profile" target="_blank" rel="noopener noreferrer">
-              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186687/x-bird-icon_hptlvt.webp" 
-                alt="X (Twitter) logo"
-                width="40"
-                height="40"
-                loading="auto"  
-                style="object-fit: contain; aspect-ratio: 40 / 40"
-                fetchpriority="auto"
-                decoding="async"
-              >
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/allison_stock_inc/"
-              aria-label="Visit my Instagram profile" target="_blank" rel="noopener noreferrer">
-              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186686/ig-icon_loetwi.webp" 
-                alt="Instagram logo"
-                width="40"
-                height="40"
-                loading="auto"  
-                style="object-fit: contain; aspect-ratio: 40 / 40"
-                fetchpriority="auto"
-                decoding="async"
-              >
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/genny-allison/"   
-              aria-label="Visit my LinkedIn profile" target="_blank" rel="noopener noreferrer">
-              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186686/linkedin-icon_a07bb2.webp" 
-                alt="LinkedIn logo"
-                width="40"
-                height="40"
-                loading="auto"  
-                style="object-fit: contain; aspect-ratio: 40 / 40"
-                fetchpriority="auto"
-                decoding="async"
-              >
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Allison2002" 
-              aria-label="Visit my GitHub profile" target="_blank" rel="noopener noreferrer">
-              <img src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186686/github-icon_kully4.png" 
-                alt="GitHub logo"
-                width="40"
-                height="40"
-                loading="auto"  
-                style="object-fit: contain; aspect-ratio: 40 / 40"
-                fetchpriority="auto"
-                decoding="async"
-              >
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <script src="/assets/script.js"></script>
-  </body>
+</link><link href="/styles/work-navigation.css" rel="stylesheet"/><link href="/styles/site-page-banners.css" rel="stylesheet"/></head>
+<body>
+<header>
+<nav aria-label="Main navigation" role="navigation">
+<div class="nav-logo"><a aria-label="Go to Genny Allison home page" href="/index.html"><img alt="GA logo for Genny Allison" decoding="async" fetchpriority="high" height="80" loading="eager" src="/img/coderImages/new_logo.webp" style="object-fit: contain; aspect-ratio: 606 / 287;" width="170"/></a></div>
+<div aria-label="Open Menu" class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+<img alt="Hamburger Icon Menu" class="hamburger-icon" fetchpriority="high" height="48" loading="eager" src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_96,h_96/v1750202370/hamburger-icon_bullxb.png" style="object-fit: cover; aspect-ratio: 48 /48;" width="48"/>
+</div>
+<div class="nav-links">
+<ul>
+<li><a class="links" href="/index.html">My Home</a></li>
+<li><a class="links" href="/pages/about.html">About Me</a></li>
+<li><a class="links" href="/pages/skills.html">My Skills</a></li>
+<li><a class="links" href="/pages/resume.html">My Resume</a></li>
+<li class="work-menu"><a class="links" href="/pages/collections.html">My Work</a><details><summary aria-label="Show Architecture and Investigation pages">▾</summary><ul><li><a href="/pages/architecture.html">Architecture</a></li><li><a href="/pages/investigation.html">Investigation</a></li></ul></details></li>
+<li><a class="links" href="/pages/contact.html">Contact Me</a></li>
+</ul>
+</div>
+<div class="hamburger-nav-links" id="mobile-menu">
+<ul>
+<li><a class="links" href="/index.html">My Home</a></li>
+<li><a class="links" href="/pages/about.html">About Me</a></li>
+<li><a class="links" href="/pages/skills.html">My Skills</a></li>
+<li><a class="links" href="/pages/resume.html">My Resume</a></li>
+<li><a class="links" href="/pages/collections.html">My Work</a></li><li class="work-subpage"><a class="links" href="/pages/architecture.html">Architecture</a></li><li class="work-subpage"><a class="links" href="/pages/investigation.html">Investigation</a></li>
+<li><a class="links" href="/pages/contact.html">Contact Me</a></li>
+</ul>
+</div>
+</nav>
+<div class="site-page-banner"><div class="site-page-banner__image"><img alt="Black-and-white illustration of a woman studying a large architectural systems board" decoding="async" height="540" loading="eager" src="/img/collections-banner.webp" width="960"/></div><div class="site-page-banner__copy"><p class="site-page-banner__eyebrow">THE WORK BEHIND THE SOLUTIONS</p><h1>my work</h1><p class="site-page-banner__subtitle">Projects &amp; experience, from hand-coded foundations to technical systems.</p></div></div>
+</header>
+<main class="work-showcase" id="collections-page"><header class="work-showcase__intro"><p class="work-section__eyebrow">Selected work · Built through hands-on experience</p><h2>The work behind the solutions</h2><p>Explore two sides of my work—architecture and technical investigation—and the hand-coded projects that built my foundation.</p></header><div class="work-hub-paths"><a class="work-hub-path" href="/pages/architecture.html"><span class="work-hub-path__kicker">01 / ARCHITECTURE</span><strong class="work-hub-path__title">Systems made clearer</strong><span class="work-hub-path__desc">Information architecture, multi-location websites, WordPress structures, and AI workflow design.</span><span class="work-hub-path__action">Explore work →</span></a><a class="work-hub-path" href="/pages/investigation.html"><span class="work-hub-path__kicker">02 / INVESTIGATION</span><strong class="work-hub-path__title">Problems understood</strong><span class="work-hub-path__desc">Technical root-cause investigations, evidence-based QA, reporting accuracy, and validation.</span><span class="work-hub-path__action">Explore work →</span></a></div><section class="work-section" id="original-work"><p class="work-section__eyebrow">03 / Original development</p><h3 class="work-section__title">UI, design &amp; development</h3><p class="work-section__intro">My original hand-coded portfolio projects. The designs, demos, and source links remain available.</p><div class="portfolio-card-grid"><article class="portfolio-card"><div class="portfolio-card__visual portfolio-card__visual--type"><span class="portfolio-card__mark">UI / SEO</span><span class="portfolio-card__tile-name">AI &amp; Tech Trends Blog</span></div><div class="portfolio-card__body"><p class="portfolio-card__eyebrow">Original hand-coded project 1</p><h4 class="portfolio-card__title">AI &amp; Tech Trends Blog</h4><p class="portfolio-card__description">Original design and development project. Explore the project details, finished site, and available source code.</p><div class="portfolio-card__links"><a href="/pages/project1/project1-intro.html">Case study</a><a href="https://tech-trends-blog.netlify.app" rel="noopener noreferrer" target="_blank">View live project</a><a href="https://github.com/Allison2002/tech-trends.git" rel="noopener noreferrer" target="_blank">Source code</a></div></div></article><article class="portfolio-card"><div class="portfolio-card__visual portfolio-card__visual--type"><span class="portfolio-card__mark">UI / UX</span><span class="portfolio-card__tile-name">Sports Video Platform</span></div><div class="portfolio-card__body"><p class="portfolio-card__eyebrow">Original hand-coded project 2</p><h4 class="portfolio-card__title">Sports Video Platform</h4><p class="portfolio-card__description">Original design and development project. Explore the project details, finished site, and available source code.</p><div class="portfolio-card__links"><a href="/pages/project2/project2-intro.html">Case study</a><a href="https://sports-tube.netlify.app/" rel="noopener noreferrer" target="_blank">View live project</a><a href="https://github.com/Allison2002/my_tube.git" rel="noopener noreferrer" target="_blank">Source code</a></div></div></article><article class="portfolio-card"><div class="portfolio-card__visual portfolio-card__visual--type"><span class="portfolio-card__mark">UI / DESIGN</span><span class="portfolio-card__tile-name">Sports Community UI</span></div><div class="portfolio-card__body"><p class="portfolio-card__eyebrow">Original hand-coded project 3</p><h4 class="portfolio-card__title">Sports Community UI</h4><p class="portfolio-card__description">Original design and development project. Explore the project details, finished site, and available source code.</p><div class="portfolio-card__links"><a href="/pages/project3/project3-intro.html">Case study</a><a href="https://sports-tube-community.netlify.app/" rel="noopener noreferrer" target="_blank">View live project</a><a href="https://github.com/Allison2002/sports_tube_community.git" rel="noopener noreferrer" target="_blank">Source code</a></div></div></article><article class="portfolio-card"><div class="portfolio-card__visual portfolio-card__visual--type"><span class="portfolio-card__mark">WORDPRESS</span><span class="portfolio-card__tile-name">Texas Remodeling Website</span></div><div class="portfolio-card__body"><p class="portfolio-card__eyebrow">Original hand-coded project 4</p><h4 class="portfolio-card__title">Texas Remodeling Website</h4><p class="portfolio-card__description">Original design and development project. Explore the project details, finished site, and available source code.</p><div class="portfolio-card__links"><a href="/pages/project4/project4-intro.html">Case study</a><a href="https://texas-remodelers-sample.netlify.app/" rel="noopener noreferrer" target="_blank">View live project</a><a href="https://github.com/Allison2002/texas-remodelers-sample.git" rel="noopener noreferrer" target="_blank">Source code</a></div></div></article><article class="portfolio-card"><div class="portfolio-card__visual portfolio-card__visual--type"><span class="portfolio-card__mark">WORDPRESS</span><span class="portfolio-card__tile-name">Parent Tech Support</span></div><div class="portfolio-card__body"><p class="portfolio-card__eyebrow">Original hand-coded project 5</p><h4 class="portfolio-card__title">Parent Tech Support</h4><p class="portfolio-card__description">Original design and development project. Explore the project details, finished site, and available source code.</p><div class="portfolio-card__links"><a href="/pages/project5/project5-the-design.html">Case study</a><a href="https://parenttech.support/videos/" rel="noopener noreferrer" target="_blank">View live project</a></div></div></article><article class="portfolio-card"><div class="portfolio-card__visual portfolio-card__visual--type"><span class="portfolio-card__mark">FRONT END</span><span class="portfolio-card__tile-name">Front-End Animation</span></div><div class="portfolio-card__body"><p class="portfolio-card__eyebrow">Original hand-coded project 6</p><h4 class="portfolio-card__title">Front-End Animation</h4><p class="portfolio-card__description">Original design and development project. Explore the project details, finished site, and available source code.</p><div class="portfolio-card__links"><a href="/pages/project6/project6-the-design.html">Case study</a><a href="https://mario-race.netlify.app/" rel="noopener noreferrer" target="_blank">View live project</a><a href="https://github.com/Allison2002/MarioKart.git" rel="noopener noreferrer" target="_blank">Source code</a></div></div></article></div></section><p class="work-showcase__note">Professional work is summarized at a high level. Detailed case studies will be added with approved, sanitized examples and verified outcomes.</p></main>
+<div class="back-to-top">
+<button id="back-to-top" onclick="scrollToTop()">back to top</button>
+</div>
+<footer id="nav">
+<div class="footer-logo"><a aria-label="Return to Genny Allison home page" href="/index.html"><img alt="GA logo for Genny Allison" decoding="async" fetchpriority="low" height="170" loading="lazy" src="/img/coderImages/new_logo.webp" style="object-fit: contain; aspect-ratio: 606 / 287;" width="360"/></a></div>
+<div class="footer-links" id="footer-links">
+<ul>
+<li><a class="links" href="/index.html">my home</a></li>
+<li><a class="links" href="/pages/about.html">about me</a></li>
+<li><a class="links" href="/pages/skills.html">my skills</a></li>
+<li><a class="links" href="/pages/resume.html">my resume</a></li>
+<li><a class="links" href="/pages/collections.html">my work</a></li>
+<li><a class="links" href="/pages/contact.html">contact me</a></li>
+</ul>
+</div>
+<div class="social-media">
+<ul>
+<li>
+<a aria-label="Visit my X (formerly Twitter) profile" href="https://x.com/allis78978" rel="noopener noreferrer" target="_blank">
+<img alt="X (Twitter) logo" decoding="async" fetchpriority="auto" height="40" loading="auto" src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186687/x-bird-icon_hptlvt.webp" style="object-fit: contain; aspect-ratio: 40 / 40" width="40"/>
+</a>
+</li>
+<li>
+<a aria-label="Visit my Instagram profile" href="https://www.instagram.com/allison_stock_inc/" rel="noopener noreferrer" target="_blank">
+<img alt="Instagram logo" decoding="async" fetchpriority="auto" height="40" loading="auto" src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186686/ig-icon_loetwi.webp" style="object-fit: contain; aspect-ratio: 40 / 40" width="40"/>
+</a>
+</li>
+<li>
+<a aria-label="Visit my LinkedIn profile" href="https://www.linkedin.com/in/genny-allison/" rel="noopener noreferrer" target="_blank">
+<img alt="LinkedIn logo" decoding="async" fetchpriority="auto" height="40" loading="auto" src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186686/linkedin-icon_a07bb2.webp" style="object-fit: contain; aspect-ratio: 40 / 40" width="40"/>
+</a>
+</li>
+<li>
+<a aria-label="Visit my GitHub profile" href="https://github.com/Allison2002" rel="noopener noreferrer" target="_blank">
+<img alt="GitHub logo" decoding="async" fetchpriority="auto" height="40" loading="auto" src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186686/github-icon_kully4.png" style="object-fit: contain; aspect-ratio: 40 / 40" width="40"/>
+</a>
+</li>
+</ul>
+</div>
+</footer>
+<script src="/assets/script.js"></script>
+</body>
 </html>

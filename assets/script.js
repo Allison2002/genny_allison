@@ -1,62 +1,64 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Navbar toggle and scroll
+  // Accessible mobile navigation: click, keyboard, Escape, outside-click, and resize.
   const setupNavbar = () => {
     const navbar = document.querySelector("nav");
-    const hamburgerIcon = document.getElementById("menu-toggle");
-    const navMenu = document.getElementById("mobile-menu");
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
     const sideNav = document.getElementById("side-nav");
+    if (!navbar || !toggle || !menu) return;
 
-    let isMenuOpen = false;
-    let allowSideNavReveal = true;
+    // Existing markup uses a focusable div rather than a native button.
+    toggle.setAttribute("role", "button");
+    toggle.setAttribute("tabindex", "0");
+    toggle.setAttribute("aria-controls", "mobile-menu");
 
-    if (!hamburgerIcon || !navMenu) return;
+    const isOpen = () => menu.classList.contains("active");
+    const setOpen = (open, restoreFocus = false) => {
+      menu.classList.toggle("active", open);
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      // Keep the original menu visible while it is open so it can be closed.
+      toggle.style.display = window.innerWidth > 1024 ? "none" : "flex";
+      if (open) sideNav?.classList.add("hidden");
+      if (restoreFocus) toggle.focus();
+    };
 
     const handleScroll = () => {
       navbar.classList.toggle("scrolled", window.scrollY > 50);
-
-      if (window.innerWidth <= 1024 && !isMenuOpen && allowSideNavReveal) {
-        if (window.scrollY > 200) {
-          sideNav?.classList.remove("hidden");
-        } else {
-          sideNav?.classList.add("hidden");
-        }
+      if (window.innerWidth <= 1024 && !isOpen()) {
+        sideNav?.classList.toggle("hidden", window.scrollY <= 200);
       }
     };
 
-    const updateHamburgerVisibility = () => {
-      hamburgerIcon.style.display =
-        window.innerWidth > 1024 || navMenu.classList.contains("active")
-          ? "none"
-          : "flex";
-    };
-
-    hamburgerIcon.addEventListener("click", (e) => {
-      e.stopPropagation();
-      navMenu.classList.toggle("active");
-      isMenuOpen = navMenu.classList.contains("active");
-      updateHamburgerVisibility();
-
-      if (window.innerWidth <= 1024 && isMenuOpen) {
-        sideNav?.classList.add("hidden");
-        allowSideNavReveal = false;
-      } else {
-        allowSideNavReveal = true;
+    toggle.addEventListener("click", (event) => {
+      event.stopPropagation();
+      setOpen(!isOpen());
+    });
+    toggle.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        setOpen(!isOpen());
       }
     });
-
-    window.addEventListener("click", (e) => {
-      if (!navMenu.contains(e.target) && !hamburgerIcon.contains(e.target)) {
-        navMenu.classList.remove("active");
-        isMenuOpen = false;
-        allowSideNavReveal = true;
-        updateHamburgerVisibility();
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && isOpen()) setOpen(false, true);
+    });
+    document.addEventListener("click", (event) => {
+      if (isOpen() && !menu.contains(event.target) && !toggle.contains(event.target)) {
+        setOpen(false);
       }
     });
-
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", updateHamburgerVisibility);
-    updateHamburgerVisibility();
-    hamburgerIcon.setAttribute("aria-expanded", "false");
+    menu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setOpen(false));
+    });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1024 && isOpen()) setOpen(false);
+      toggle.style.display = window.innerWidth > 1024 ? "none" : "flex";
+      handleScroll();
+    });
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    setOpen(false);
+    handleScroll();
   };
 
   setupNavbar();
@@ -88,32 +90,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Login form
-  const loginForm = document.getElementById("account-form");
-  if (loginForm) {
-    loginForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      console.log("Login:", {
-        username: document.getElementById("username").value,
-        password: document.getElementById("password").value,
-      });
+  // Example account forms are not connected to an authentication backend.
+  // Prevent accidental submission and never log credentials or personal data.
+  ["account-form", "account-create-form"].forEach((id) => {
+    document.getElementById(id)?.addEventListener("submit", (event) => {
+      event.preventDefault();
     });
-  }
-
-  // Account form
-  const accountForm = document.getElementById("account-create-form");
-  if (accountForm) {
-    accountForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      console.log("Account Created:", {
-        fullName: document.getElementById("full-name").value,
-        dob: document.getElementById("dob").value,
-        email: document.getElementById("email").value,
-        username: document.getElementById("username").value,
-        password: document.getElementById("password").value,
-      });
-    });
-  }
+  });
 
   // Lazy load background image
   const lazySections = document.querySelectorAll(".join-section");

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Architecture &amp; Systems Design | Genny Allison</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Selected architecture work: multi-state website structure, multi-location healthcare organization, WordPress development and AI-assisted operational workflows." name="description"/>
+<link crossorigin="" href="https://res.cloudinary.com" rel="preconnect"/>
+<!-- Open Graph Meta Tags -->
+<!-- Twitter Card Meta Tags -->
+<!-- Desktop ≥ 941px -->
+<!-- Tablet 769px–940px -->
+<!-- Mobile 481px–768px -->
+<!-- Mobile ≤480px -->
+<link class="tab-logo" href="/img/white_favicon/favicon.ico" rel="icon" type="image/icon type"/>
+<link as="style" href="/styles/styles.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<link as="style" href="/styles/styles-global.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload">
+<link href="/styles/featured-work.css" rel="stylesheet"/>
+<noscript><link href="/styles/styles-global.css" rel="stylesheet"/></noscript>
+<noscript><link href="/styles/styles-global.css" rel="stylesheet"/></noscript>
+<style>
+      picture {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 0.25em;
+      }
+
+      .canvas-skills-grid {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        width: 100%;
+        max-width: 100vw;
+        background-color: #000;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0.5rem;
+        contain: layout paint style;
+        aspect-ratio: 1904 / 502;
+      }
+      
+
+      .canvas-skills-grid picture {
+        flex: 0 0 40%;
+        max-width: 40%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        background-color: #000;
+        box-sizing: border-box;
+        height: auto;
+        aspect-ratio: 1458 / 948;
+      }
+
+      .canvas-skills-grid img {
+        object-position: center;
+        border-top: 1em solid #000;
+        border-left: 1em solid #000;
+        border-right: 0.5em solid #000;
+        border-bottom: 1em solid #000;
+        will-change: transform;
+      }
+
+      img {
+        display: block;
+      }
+
+      img[fetchpriority="high"] {
+        contain: layout paint;
+        content-visibility: auto;
+      }
+
+      /* === TEXT CONTAINER === */
+      .canvas-skills-title {
+        flex: 0 0 60%;
+        max-width: 60%;
+        min-width: 60%;
+        background-color: #fff;
+        border: 1em solid #000;
+        border-left: 0.5em solid #000;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        height: auto;
+      }
+
+      .canvas-skills-title h1,
+      .canvas-skills-title h2 {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        line-height: 1.4;
+        font-display: swap;
+        height: auto;
+        margin: 0;
+      }
+
+      .canvas-skills-title h1 {
+        font-size: clamp(1.5rem, 3vw, 5rem);
+        line-height: 1.8;
+        height: auto;
+        overflow: hidden;
+      }
+
+      .canvas-skills-title h2 {
+        font-size: clamp(1.1rem, 3vw, 3rem);
+        line-height: 1.5;
+        height: auto;
+        overflow: hidden;
+      }
+
+
+      /* === MEDIA QUERIES === */
+
+      /* Tablets: 941px–1024px */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .canvas-skills-grid {
+          padding: 0.4rem;2
+        }
+
+        .canvas-skills-grid img {
+          border-width: 0.5em;
+        }
+
+        .canvas-skills-title {
+          height: 100%;
+          border-width: 0.5em;
+        }
+      }
+
+
+      /* Mobile landscape & phablets: 481px–768px */
+      @media (min-width: 481px) and (max-width: 768px) {
+        .canvas-skills-grid {
+          padding: 0.3rem;
+        }
+
+        .canvas-skills-grid picture {
+          max-width: 40%;
+        }
+
+        .canvas-skills-grid img {
+          border-width: 0.5em;
+        }
+
+        .canvas-skills-title {
+          min-height: 180px;
+          padding: 0.5rem;
+          border-width: 0.5em;
+        }
+
+        .canvas-skills-title h1 {
+          font-size: 2.2rem;
+        }
+
+        .canvas-skills-title h2 {
+          font-size: 1.5rem;
+        }
+      }
+
+      /* Smallest mobile screens ≤ 480px */
+      @media (max-width: 480px) {
+        .canvas-skills-grid {
+          padding: 0.25rem;
+          height: 200px;
+          width: 480px;  
+        }
+
+        .canvas-skills-grid img {
+          border-width: 0.5em;
+          object-fit: cover;
+          min-height: 168px;
+          object-position: center top;
+
+        }
+
+        .canvas-skills-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 168px;
+          border-width: 0.5em;
+          width: 100%;
+          max-width: 480px;
+          height: auto;
+          padding-right: 0;
+          margin: 0 auto;
+        }
+
+        .canvas-skills-title h1 {
+          font-size: 1.1rem;
+          height: auto;
+          width: 100%;
+          line-height: 1.6;
+          margin: 0 auto;
+          padding: 0;
+        }
+
+        .canvas-skills-title h2 {
+          font-size: 1rem;
+          height: auto;
+          width: 100%;
+          line-height: 1.5;
+          margin: 0 auto;
+          padding: 0;
+        }
+      }
+
+    </style>
+</link><link href="/styles/work-navigation.css" rel="stylesheet"/><link href="/styles/site-page-banners.css" rel="stylesheet"/><link href="https://gennyallison.netlify.app/pages/architecture.html" rel="canonical"/><link href="/styles/architecture-case-studies.css" rel="stylesheet"/><meta content="website" property="og:type"/><meta content="Architecture &amp; Systems Design | Genny Allison" property="og:title"/><meta content="Documented approaches to structuring websites, content systems and technical workflows." property="og:description"/><meta content="https://gennyallison.netlify.app/pages/architecture.html" property="og:url"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Architecture & Systems Design | Genny Allison", "url": "https://gennyallison.netlify.app/pages/architecture.html", "author": {"@type": "Person", "name": "Genny Allison"}, "hasPart": [{"@type": "CreativeWork", "name": "Multi-state Legal Website Architecture"}, {"@type": "CreativeWork", "name": "Multi-location Healthcare Information Architecture"}, {"@type": "CreativeWork", "name": "WordPress Website Extension"}, {"@type": "CreativeWork", "name": "AI-assisted Investigation Workflow Architecture"}]}</script></head>
+<body>
+<header>
+<nav aria-label="Main navigation" role="navigation">
+<div class="nav-logo"><a aria-label="Go to Genny Allison home page" href="/index.html"><img alt="GA logo for Genny Allison" decoding="async" fetchpriority="high" height="80" loading="eager" src="/img/coderImages/new_logo.webp" style="object-fit: contain; aspect-ratio: 606 / 287;" width="170"/></a></div>
+<div aria-label="Open Menu" class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+<img alt="Hamburger Icon Menu" class="hamburger-icon" fetchpriority="high" height="48" loading="eager" src="https://res.cloudinary.com/dnptzisuf/image/upload/fl_progressive,f_auto,q_auto,c_fill,dpr_auto,fl_lossy,fl_force_strip,w_96,h_96/v1750202370/hamburger-icon_bullxb.png" style="object-fit: cover; aspect-ratio: 48 /48;" width="48"/>
+</div>
+<div class="nav-links">
+<ul>
+<li><a class="links" href="/index.html">My Home</a></li>
+<li><a class="links" href="/pages/about.html">About Me</a></li>
+<li><a class="links" href="/pages/skills.html">My Skills</a></li>
+<li><a class="links" href="/pages/resume.html">My Resume</a></li>
+<li class="work-menu"><a class="links" href="/pages/collections.html">My Work</a><details><summary aria-label="Show Architecture and Investigation pages">▾</summary><ul><li><a href="/pages/architecture.html">Architecture</a></li><li><a href="/pages/investigation.html">Investigation</a></li></ul></details></li>
+<li><a class="links" href="/pages/contact.html">Contact Me</a></li>
+</ul>
+</div>
+<div class="hamburger-nav-links" id="mobile-menu">
+<ul>
+<li><a class="links" href="/index.html">My Home</a></li>
+<li><a class="links" href="/pages/about.html">About Me</a></li>
+<li><a class="links" href="/pages/skills.html">My Skills</a></li>
+<li><a class="links" href="/pages/resume.html">My Resume</a></li>
+<li><a class="links" href="/pages/collections.html">My Work</a></li><li class="work-subpage"><a class="links" href="/pages/architecture.html">Architecture</a></li><li class="work-subpage"><a class="links" href="/pages/investigation.html">Investigation</a></li>
+<li><a class="links" href="/pages/contact.html">Contact Me</a></li>
+</ul>
+</div>
+</nav>
+<div class="site-page-banner"><div class="site-page-banner__image"><img alt="Monochrome illustration of a woman studying architectural blueprints and technical drawings" decoding="async" height="540" loading="eager" src="/img/coderImages/architecture.avif" width="960"/></div><div class="site-page-banner__copy"><p class="site-page-banner__eyebrow">DESIGNING THE STRUCTURE</p><h1>architecture</h1><p class="site-page-banner__subtitle">Information architecture, websites, and dependable workflows.</p></div></div>
+</header>
+<main class="arch-work" id="architecture-case-studies">
+<div class="arch-work__frame">
+<header class="arch-intro">
+<p class="arch-kicker">SELECTED WORK / INFORMATION ARCHITECTURE</p>
+<h2>Making complicated systems easier to navigate.</h2>
+<p class="arch-intro__lead">I approach architecture by understanding what exists, tracing how the pieces connect, and designing a structure people can actually use and maintain. These projects span multi-location websites, WordPress development, and AI-assisted operational workflows.</p>
+<nav aria-label="Jump to architecture projects" class="arch-quick-links">
+<a href="#thompson">01 / Multi-state</a><a href="#premier">02 / Healthcare</a><a href="#owl">03 / WordPress</a><a href="#vito">04 / Systems</a>
+</nav>
+</header>
+<section aria-labelledby="thompson-title" class="arch-case" id="thompson">
+<div class="arch-case__heading"><div><p class="arch-kicker">01 / LARGE-SCALE INFORMATION ARCHITECTURE</p><h3 id="thompson-title">Thompson Law</h3><p class="arch-case__sub">From inconsistent geographic URLs to a defined page hierarchy.</p></div><span class="arch-case__type">Website architecture · Migration planning</span></div>
+<div class="arch-case__cols"><div><h4>The challenge</h4><p>A large legal website expanded across states and cities without a consistently expressed geographic hierarchy. Older URL patterns varied by city, state, and practice, making page relationships, mapping, and location-based reporting difficult to manage.</p></div><div><h4>My contribution</h4><p>Researched and helped establish a national → state → city/office → practice-area structure; worked on URL mapping and redirect planning; coordinated internal-link priorities and technical validation across the migration.</p></div></div>
+<div aria-label="Example website hierarchy: National website to state hub to city and office hub to city practice pages" class="arch-diagram" role="img">
+<span>National website</span><i aria-hidden="true">↓</i><span>State hub <small>/tx/</small></span><i aria-hidden="true">↓</i><span>City / office hub <small>/tx/dallas/</small></span><i aria-hidden="true">↓</i><span>City practice page <small>/tx/dallas/car-accident-lawyers/</small></span>
+</div>
+<div class="arch-case__bottom"><div><strong>Design decisions</strong><p>Consistent geographic paths, clear parent/child intent, documented legacy mapping, and validation of redirects, canonicals, navigation and internal linking.</p></div><div><strong>Implementation context</strong><p>The geographic hierarchy and migration planning are documented, but subsequent performance was affected by overlapping site changes and reported server, crawling, and caching incidents. No single cause of the search decline or ranking recovery is established by this case study.</p></div></div>
+</section>
+<section aria-labelledby="premier-title" class="arch-case" id="premier">
+<div class="arch-case__heading"><div><p class="arch-kicker">02 / MULTI-LOCATION HEALTHCARE</p><h3 id="premier-title">Premier Injury Clinics</h3><p class="arch-case__sub">Reorganizing what already exists before creating more.</p></div><span class="arch-case__type">Audit review · Content systems</span></div>
+<div class="arch-case__cols"><div><h4>The challenge</h4><p>An outside audit recommended more location pages and substantially more copy. My review of the existing site found location pages and extensive content were already present, but page overlap, weak organization and inconsistent visitor pathways called for a different priority.</p></div><div><h4>My contribution</h4><p>Reviewed the audit against existing pages; separated useful recommendations from unsupported assumptions; proposed a structure built around locations, treatment services and injuries, supported by blogs and contextual links.</p></div></div>
+<div aria-label="Proposed Premier architecture: three primary content groupings connected to supporting blogs" class="arch-diagram arch-diagram--branch">
+<div><span>Locations <small>WHERE</small></span><span>Services <small>HOW</small></span><span>Injuries <small>WHAT</small></span></div><p>Supporting articles connect visitors to the relevant location, treatment, and injury information.</p>
+</div>
+<div class="arch-case__bottom"><div><strong>Recommended sequence</strong><p>Audit existing URLs → decide which pages to retain or consolidate → finalize redirects and primary destinations → organize internal links → expand only for verified gaps.</p></div><div><strong>Evaluation limitations</strong><p>The audit review and architecture proposal are documented. The site underwent repeated design changes, limiting the time available to measure any one version consistently. Early improvement is reported, but its extent and attribution require dated change and Search Console comparisons.</p></div></div>
+</section>
+<section aria-labelledby="owl-title" class="arch-case" id="owl">
+<div class="arch-case__heading"><div><p class="arch-kicker">03 / HANDS-ON WEBSITE DEVELOPMENT</p><h3 id="owl-title">Owl Pipe ID</h3><p class="arch-case__sub">Hands-on ownership in an established WordPress site, with later search visibility to investigate.</p></div><span class="arch-case__type">WordPress · UI components · Forms</span></div>
+<div class="arch-case__cols"><div><h4>The challenge</h4><p>Extend an existing business website without making the new experience feel disconnected from the site's established structure and visual conventions.</p></div><div><h4>My contribution</h4><p>Worked within the WordPress environment to add a Free Samples page and form, reuse familiar site components, and maintain continuity with the navigation and existing layouts.</p></div></div>
+<div class="arch-case__bottom"><div><strong>Approach</strong><p>Study the existing components → identify the page's role → build within reusable patterns → check content and form behavior.</p></div><div><strong>Observed visibility · not causal attribution</strong><p>In a six-month Google Search Console view shared November 2026, the website recorded 18.2K impressions, 167 clicks and an average position of 16.9. The chart shows a later increase in visibility; it does not isolate the effect of this page/form work or establish lead conversions.</p></div></div>
+</section>
+<section aria-labelledby="vito-title" class="arch-case" id="vito">
+<div class="arch-case__heading"><div><p class="arch-kicker">04 / OPERATIONAL SYSTEM DESIGN</p><h3 id="vito-title">Vito / Lucky OS</h3><p class="arch-case__sub">Designing technical workflows that preserve evidence and require validation.</p></div><span class="arch-case__type">AI-assisted workflows · QA · Human approval</span></div>
+<div class="arch-case__cols"><div><h4>The challenge</h4><p>Recurring audits and investigations produce large amounts of evidence, interrupted work, competing hypotheses and proposed changes. Without a durable process, it's easy to repeat work or mistake a prepared change for a verified fix.</p></div><div><h4>My contribution</h4><p>Defined an investigation and operations workflow emphasizing source traceability, checkpoints, change status, review gates, and clear separation between analysis and production implementation.</p></div></div>
+<div aria-label="Workflow: collect evidence, investigate, recommend, seek approval, validate, and record" class="arch-diagram arch-diagram--flow">
+<span>Collect evidence</span><b aria-hidden="true">→</b><span>Investigate</span><b aria-hidden="true">→</b><span>Recommend</span><b aria-hidden="true">→</b><span>Approve &amp; implement</span><b aria-hidden="true">→</b><span>Verify &amp; log</span>
+</div>
+<div class="arch-case__bottom"><div><strong>Core guardrails</strong><p>Keep observations distinct from hypotheses, mark unresolved findings honestly, retain recovery checkpoints, and require authorization before live changes.</p></div><div><strong>Current status</strong><p>Ongoing system design and development. The workflow documentation supports the design approach, not a claim of fully autonomous production deployment.</p></div></div>
+</section>
+<aside class="arch-outro"><p class="arch-kicker">THE COMMON THREAD</p><h3>I don't just add more pages or more tools. I work out how the system should fit together.</h3><p>My architecture work connects technical decisions with usability, maintenance, traceability and real operational constraints.</p><div class="arch-outro__links"><a href="/pages/investigation.html">Explore technical investigations <span aria-hidden="true">→</span></a><a href="/pages/collections.html">Return to all work <span aria-hidden="true">→</span></a><a href="/pages/contact.html">Contact me <span aria-hidden="true">→</span></a></div></aside>
+</div>
+</main>
+<div class="back-to-top">
+<button id="back-to-top" onclick="scrollToTop()">back to top</button>
+</div>
+<footer id="nav">
+<div class="footer-logo"><a aria-label="Return to Genny Allison home page" href="/index.html"><img alt="GA logo for Genny Allison" decoding="async" fetchpriority="low" height="170" loading="lazy" src="/img/coderImages/new_logo.webp" style="object-fit: contain; aspect-ratio: 606 / 287;" width="360"/></a></div>
+<div class="footer-links" id="footer-links">
+<ul>
+<li><a class="links" href="/index.html">my home</a></li>
+<li><a class="links" href="/pages/about.html">about me</a></li>
+<li><a class="links" href="/pages/skills.html">my skills</a></li>
+<li><a class="links" href="/pages/resume.html">my resume</a></li>
+<li><a class="links" href="/pages/collections.html">my work</a></li>
+<li><a class="links" href="/pages/contact.html">contact me</a></li>
+</ul>
+</div>
+<div class="social-media">
+<ul>
+<li>
+<a aria-label="Visit my X (formerly Twitter) profile" href="https://x.com/allis78978" rel="noopener noreferrer" target="_blank">
+<img alt="X (Twitter) logo" decoding="async" fetchpriority="auto" height="40" loading="auto" src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186687/x-bird-icon_hptlvt.webp" style="object-fit: contain; aspect-ratio: 40 / 40" width="40"/>
+</a>
+</li>
+<li>
+<a aria-label="Visit my Instagram profile" href="https://www.instagram.com/allison_stock_inc/" rel="noopener noreferrer" target="_blank">
+<img alt="Instagram logo" decoding="async" fetchpriority="auto" height="40" loading="auto" src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186686/ig-icon_loetwi.webp" style="object-fit: contain; aspect-ratio: 40 / 40" width="40"/>
+</a>
+</li>
+<li>
+<a aria-label="Visit my LinkedIn profile" href="https://www.linkedin.com/in/genny-allison/" rel="noopener noreferrer" target="_blank">
+<img alt="LinkedIn logo" decoding="async" fetchpriority="auto" height="40" loading="auto" src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186686/linkedin-icon_a07bb2.webp" style="object-fit: contain; aspect-ratio: 40 / 40" width="40"/>
+</a>
+</li>
+<li>
+<a aria-label="Visit my GitHub profile" href="https://github.com/Allison2002" rel="noopener noreferrer" target="_blank">
+<img alt="GitHub logo" decoding="async" fetchpriority="auto" height="40" loading="auto" src="https://res.cloudinary.com/dnptzisuf/image/upload/f_avif,q_auto,fl_lossy,fl_force_strip,dpr_auto,c_fill,g_auto,w_120,h_120/v1750186686/github-icon_kully4.png" style="object-fit: contain; aspect-ratio: 40 / 40" width="40"/>
+</a>
+</li>
+</ul>
+</div>
+</footer>
+<script src="/assets/script.js"></script>
+</body>
+</html>

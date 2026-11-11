@@ -1,0 +1,5 @@
+/* Shared project-page refinements: preserve the original project imagery and content. */
+body.portfolio-project-page img, body.portfolio-project-page video {max-width:100%;height:auto;}
+body.portfolio-project-page a:focus-visible {outline:2px solid #76d5d5;outline-offset:3px;}
+body.portfolio-project-page {overflow-wrap:break-word;}
+@media (max-width:760px) {body.portfolio-project-page .past-meets-design,body.portfolio-project-page main {max-width:100%;box-sizing:border-box;}}

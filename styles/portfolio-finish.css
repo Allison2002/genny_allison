@@ -1,0 +1,37 @@
+/* Contact page: intentional single black editorial panel and evenly spaced margins */
+.portfolio-contact {max-width:1140px;width:calc(100% - 48px);margin:64px auto 72px;padding:0!important; background:transparent!important;box-shadow:none!important;border:0!important;color:#fff}
+.portfolio-contact .contact-panel {background:#090a0b;padding:clamp(28px,4vw,58px);border:1px solid #344044;box-shadow:0 8px 24px #00000012;}
+.portfolio-contact .contact-eyebrow {font:700 11px/1.5 Arial,sans-serif;letter-spacing:.16em;color:#83d3d5;margin:0 0 10px;}
+.portfolio-contact h2,.portfolio-contact h3 {color:white!important;font-family:Georgia,serif;text-transform:none;}
+.portfolio-contact h2 {font-size:clamp(29px,3vw,42px);font-weight:400;margin:0 0 12px;}
+.portfolio-contact .contact-intro {max-width:650px;color:#dae3e3;line-height:1.65;margin:0 0 30px;}
+.portfolio-contact .contact-columns {display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);border-top:1px solid #374244;padding-top:32px;}
+.portfolio-contact h3 {font-size:26px;font-weight:400;margin:0 0 18px;}
+.portfolio-contact p,.portfolio-contact dt,.portfolio-contact dd {font-family:Arial,sans-serif;line-height:1.7;font-size:15px;color:#e9eded;}
+.portfolio-contact dl {margin-top:20px;}.portfolio-contact dt {font-weight:700;color:#a0d9db;margin:14px 0 0;}.portfolio-contact dd{margin:2px 0 0;overflow-wrap:anywhere;}
+.portfolio-contact a {color:#a6eaeb;text-decoration:underline;text-underline-offset:3px;}.portfolio-contact a:hover,.portfolio-contact a:focus-visible {color:#fff;}
+.portfolio-contact .contact-form-updated {display:grid;gap:9px;}
+.portfolio-contact label {color:#eaf4f4;font:700 13px Arial,sans-serif;margin-top:5px;}
+.portfolio-contact input:not([type=hidden]),.portfolio-contact textarea {box-sizing:border-box;display:block;width:100%;background:#fff!important;color:#161b1d!important;border:1px solid #a4b4b7!important;border-radius:2px;padding:12px;font:15px/1.4 Arial,sans-serif;min-height:42px;}
+.portfolio-contact textarea{resize:vertical;min-height:135px;}
+.portfolio-contact .contact-form-updated button {width:100%;background:#fff;color:#082e32;border:2px solid #5bc1c5;min-height:46px;font:700 15px Arial,sans-serif;cursor:pointer;margin-top:12px;}
+.portfolio-contact .contact-form-updated button:hover,.portfolio-contact .contact-form-updated button:focus-visible {background:#b9edef;outline:2px solid #fff;outline-offset:3px;}
+.portfolio-contact .contact-small {font-size:12px;color:#bccccc;margin-top:13px;}
+
+@media (prefers-reduced-motion:reduce){.portfolio-contact *{scroll-behavior:auto!important}}
+
+/* Contact form: keep the existing labels visible on the pale form panel. */
+.portfolio-contact .contact-form-updated > label {
+  display: block !important;
+  color: #173a3e !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0 !important;
+  text-align: left !important;
+  margin: 8px 0 0 !important;
+}
+.portfolio-contact .contact-form-updated > label:first-child { margin-top: 0 !important; }

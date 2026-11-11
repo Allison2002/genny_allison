@@ -1,0 +1,91 @@
+/* Skills cloud refinement — retains the original handmade layout. */
+.skills-main { padding-bottom: clamp(3.5rem, 6vw, 6rem); }
+.skills-cloud-hint { color:#29474b; text-align:center; font: 0.95rem/1.6 Arial,sans-serif; padding:1.6rem 1rem .3rem; margin:0 auto; }
+.skills-black-container { border:1px solid #fff; outline:12px solid #090909; outline-offset:-12px; background:#060606; max-width: min(1150px, 88vw); width:88%; min-height: 500px; aspect-ratio:auto; overflow:visible; padding: clamp(2.5rem,4vw,4rem) clamp(1.2rem,3vw,3rem); margin: 2.5rem auto 4rem; }
+.skills-black-container .skills-text { color:#8fc7c9; text-shadow:none; transition:color .2s ease,transform .2s ease; }
+.skills-black-container .tooltip:hover .skills-text, .skills-black-container .tooltip:focus-visible .skills-text { color:#e4ffff; transform:scale(1.075); text-shadow:none; }
+.skills-black-container .tooltip { border-radius:3px; outline-offset:4px; }
+.skills-black-container .tooltip:focus-visible { outline:2px solid #67cbd0; }
+.skills-black-container .tooltip-text { background:#171a1b; color:#fff; border:1px solid #77c7ca; font: 0.9rem/1.5 Arial,sans-serif; text-align:left; max-width:min(270px,80vw); width:max-content; padding:.75rem 1rem; bottom:calc(100% + 9px); transform:translateX(-50%); box-shadow:0 8px 25px rgba(0,0,0,.5); pointer-events:none; }
+.skills-black-container .tooltip-text::after { border-top-color:#77c7ca; }
+.skills-black-container .tooltip:focus-visible .tooltip-text { visibility:visible; opacity:1; }
+.skills-next { display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem;margin:0 auto;max-width:900px;padding:0 1.5rem; }
+.skills-next a { color:#07595d; border:1px solid #0b767b; text-decoration:none; padding:.7rem 1rem; font:700 .86rem/1.4 Arial,sans-serif; }
+.skills-next a:hover,.skills-next a:focus-visible { background:#e4f4f4; color:#043b3e; outline:2px solid #0a7a80;outline-offset:2px; }
+@media(max-width:760px){
+ .skills-black-container {width:calc(100% - 2rem);max-width:none; margin:1.7rem auto 3.5rem; padding:1.5rem 1.05rem; display:block; }
+ .skills-black-container .skills-row { display:grid;grid-template-columns:repeat(2,minmax(0,1fr)); gap:.55rem; padding:0; }
+ .skills-black-container .tooltip { display:flex;align-items:center;justify-content:center; width:100%;margin:0; padding:1.15rem .5rem; min-height:75px; text-align:center; }
+ .skills-black-container .skills-text,.skills-black-container .skills-secondset h2 { font-size:clamp(.88rem,3.6vw,1.2rem);line-height:1.25; }
+ .skills-black-container .tooltip-text {max-width:min(240px,75vw);left:50%;}
+}
+@media(max-width:380px){.skills-black-container .skills-row {grid-template-columns:1fr 1fr;}.skills-black-container .tooltip{min-height:68px}}
+@media(prefers-reduced-motion:reduce){.skills-black-container .skills-text,.skills-black-container .tooltip-text{transition:none!important;transform:none!important}}
+
+/* Fix: replace the old themed .skills-container wrapper with an unframed stage.
+   This deliberately avoids inherited white-card rules targeting .skills-container. */
+.skills-main .skills-stage {
+  display: flow-root;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+.skills-main .skills-stage::before,
+.skills-main .skills-stage::after {
+  background: none;
+  box-shadow: none;
+  border: 0;
+}
+.skills-main .skills-stage > .skills-cloud-hint {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 1.6rem 1rem 0.3rem;
+}
+.skills-main .skills-stage > .skills-black-container {
+  margin-top: 2rem;
+}
+
+
+/* Final Skills page cleanup: the legacy site stylesheet shadows #skills-pages
+   itself. Remove the outer card, not the interactive black skills cloud. */
+main#skills-pages {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  max-width: none;
+  width: 100%;
+  padding: 0 0 clamp(3.5rem, 6vw, 6rem);
+  margin: 0 auto;
+  overflow: visible;
+}
+main#skills-pages > .skills-stage {
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  width: 100%;
+}
+main#skills-pages .skills-cloud-hint {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  max-width: 1100px;
+  padding: 1.6rem 1rem 0.3rem;
+  margin: 0 auto;
+}
+/* Keep the interactive black area unchanged in appearance. */
+main#skills-pages .skills-black-container {
+  box-sizing: border-box;
+}

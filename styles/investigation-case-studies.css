@@ -1,0 +1,104 @@
+/* Investigation case studies: black, white and restrained teal; scoped page only. */
+.arch-work{background:#fff;color:#1c2223;padding:clamp(28px,5vw,72px) 18px;}
+.arch-work *{box-sizing:border-box;}
+.arch-work__frame{max-width:1180px;margin:0 auto;background:#080a0b;color:#fff;padding:clamp(20px,3.1vw,44px);box-shadow:0 12px 32px rgba(0,0,0,.12);}
+.arch-kicker{font:700 11px/1.5 Arial,sans-serif;letter-spacing:.17em;color:#87dde1;text-transform:uppercase;margin:0 0 12px;}
+.arch-intro{padding:10px 0 34px;border-bottom:1px solid #465154;}
+.arch-intro h2,.arch-case h3,.arch-outro h3{font:400 clamp(29px,3.6vw,50px)/1.17 Georgia,serif;color:inherit;margin:0 0 20px;letter-spacing:-.018em;}
+.arch-intro__lead{max-width:76ch;font:400 17px/1.75 Arial,sans-serif;color:#e0e6e6;margin:0 0 25px;}
+.arch-quick-links{display:flex;gap:11px;flex-wrap:wrap;}
+.arch-quick-links a,.arch-quick-links a:visited{font:700 13px/1.4 Arial,sans-serif;color:#e6f7f8!important;padding:10px 13px;border:1px solid #65777a;text-decoration:none!important;filter:none!important;transition:color .2s,border-color .2s;}
+.arch-quick-links a:hover,.arch-quick-links a:focus-visible{color:#83e0e2!important;border-color:#83e0e2;filter:none!important;}
+.arch-case{padding:40px 0 45px;border-bottom:1px solid #465154;scroll-margin-top:110px;}
+.arch-case__heading{display:flex;align-items:start;justify-content:space-between;gap:24px;margin-bottom:22px;}
+.arch-case h3{font-size:clamp(28px,3vw,42px);margin-bottom:9px;}
+.arch-case__sub{font:400 17px/1.55 Georgia,serif;color:#d5dddd;margin:0;}
+.arch-case__type{font:700 11px/1.6 Arial,sans-serif;letter-spacing:.06em;text-align:right;color:#acccce;max-width:185px;}
+.arch-case__cols,.arch-case__bottom{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,3vw,38px);}
+.arch-case__cols{margin-bottom:25px;}
+.arch-case h4{font:400 21px/1.3 Georgia,serif;color:#fff;margin:0 0 12px;}
+.arch-case__cols p,.arch-case__bottom p{font:400 15px/1.7 Arial,sans-serif;color:#e0e6e6;margin:0;}
+.arch-case__bottom{margin-top:22px;padding:22px;background:#fff;color:#111;gap:24px;}
+.arch-case__bottom strong{display:block;font:700 12px/1.4 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#07545a;margin-bottom:9px;}
+.arch-case__bottom p{color:#263638;line-height:1.65;}
+.arch-diagram{background:#f7f8f8;color:#182426;display:flex;gap:7px;flex-direction:column;align-items:center;text-align:center;padding:22px 16px;border-top:3px solid #028b92;}
+.arch-diagram>span,.arch-diagram--branch span,.arch-diagram--flow span{display:block;background:white;border:1px solid #7c9599;padding:9px 15px;min-width:min(100%,260px);font:700 14px/1.4 Arial,sans-serif;}
+.arch-diagram small{font-size:12px;color:#286169;margin-left:4px;font-weight:400;}
+.arch-diagram i{font-style:normal;color:#047c83;font-size:17px;}
+.arch-diagram--branch>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:100%;}
+.arch-diagram--branch span{min-width:0;}
+.arch-diagram--branch span small{display:block;margin-top:5px;}
+.arch-diagram--branch p{font:400 13px/1.6 Arial,sans-serif;margin:14px auto 0;}
+.arch-diagram--flow{flex-direction:row;flex-wrap:wrap;justify-content:center;}
+.arch-diagram--flow span{min-width:0;}
+.arch-diagram--flow b{color:#047c83;}
+.arch-outro{padding:46px 0 5px;}
+.arch-outro h3{max-width:850px;font-size:clamp(25px,3.1vw,38px);}
+.arch-outro>p:not(.arch-kicker){font:400 16px/1.7 Arial,sans-serif;color:#dfe7e8;max-width:70ch;}
+.arch-outro__links{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+.arch-outro__links a,.arch-outro__links a:visited{display:inline-block;background:#fff;color:#07545a!important;padding:12px 15px;text-decoration:none!important;font:700 13px/1.45 Arial,sans-serif;filter:none!important;border-bottom:2px solid #039198;}
+.arch-outro__links a:hover,.arch-outro__links a:focus-visible{color:#087d86!important;background:#f1f6f6;filter:none!important;}
+.arch-work a:focus-visible{outline:3px solid #7ee4e6;outline-offset:3px;}
+@media(max-width:750px){.arch-work{padding:25px 12px}.arch-work__frame{padding:22px 18px}.arch-case__heading{display:block}.arch-case__type{display:block;text-align:left;margin-top:13px;max-width:none}.arch-case__cols,.arch-case__bottom{grid-template-columns:1fr;gap:20px}.arch-diagram--branch>div{grid-template-columns:1fr}.arch-intro__lead{font-size:15px}.arch-case__cols p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.arch-work a{transition:none!important}}
+
+/* Architecture diagrams: restore the portfolio's black / white framed treatment.
+   All diagram variants share the same style; card interiors stay white. */
+.arch-work .arch-diagram {
+  background: #080808;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  outline: 10px solid #080808;
+  margin: 12px 10px;
+  padding: clamp(20px, 3vw, 32px) clamp(14px, 2vw, 28px);
+  gap: 12px;
+  box-shadow: none;
+}
+.arch-work .arch-diagram > span,
+.arch-work .arch-diagram--branch span,
+.arch-work .arch-diagram--flow span {
+  background: #ffffff;
+  color: #133338;
+  border: 1px solid #b9cbcd;
+  border-radius: 0;
+  box-shadow: none;
+  line-height: 1.55;
+}
+.arch-work .arch-diagram small {
+  color: #07545a;
+}
+.arch-work .arch-diagram i,
+.arch-work .arch-diagram--flow b {
+  color: #83d9dc;
+}
+.arch-work .arch-diagram--branch p {
+  color: #f3f5f5;
+  max-width: 65ch;
+}
+@media (max-width: 750px) {
+  .arch-work .arch-diagram { margin: 12px 10px; padding: 22px 12px; }
+  .arch-work .arch-diagram--branch > div { grid-template-columns: 1fr; }
+}
+
+/* Final Architecture page framing. Match the white gap below the page's
+   black panel to the intentional spacing below its banner. This margin is
+   outside the black panel, so the frame itself remains unchanged. */
+main#investigation-case-studies.arch-work {
+  margin-bottom: clamp(28px, 5vw, 72px) !important;
+}
+@media (max-width: 750px) {
+  main#investigation-case-studies.arch-work {
+    margin-bottom: 28px !important;
+  }
+}
+
+/* Investigation-specific diagrams / mini briefs */
+.investigation-work .arch-diagram--comparison{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:stretch;text-align:center;}
+.investigation-work .arch-diagram--comparison>span{min-width:0;display:flex;align-items:center;justify-content:center;padding:18px 12px;}
+.investigation-mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+.investigation-mini-grid article{padding:22px 19px;background:#fff;color:#141d1e;border-top:2px solid #008b91;}
+.investigation-mini-grid article .arch-kicker{color:#07545a;font-size:10px;}
+.investigation-mini-grid article h4{color:#111;font:400 23px/1.25 Georgia,serif;margin:0 0 12px;}
+.investigation-mini-grid article p:last-child{font:400 14px/1.65 Arial,sans-serif;color:#243839;margin:0;}
+@media(max-width:800px){.investigation-mini-grid{grid-template-columns:1fr 1fr}.investigation-work .arch-diagram--comparison{grid-template-columns:1fr;}}
+@media(max-width:600px){.investigation-mini-grid{grid-template-columns:1fr}}
