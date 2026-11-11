@@ -98,3 +98,117 @@ body.portfolio-project-page nav.project-next-steps .project-next-steps__links a:
     flex: 1 1 100%;
   }
 }
+
+
+/* Project intro thumbnail navigation: responsive, compact, and legible. */
+body.portfolio-project-page .menu-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  width: min(100%, 760px) !important;
+  max-width: 760px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 1.25rem auto 1.5rem !important;
+  padding: 0 !important;
+  align-items: stretch !important;
+}
+body.portfolio-project-page .menu-grid > .thumbnails {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 18px !important;
+  border: 8px solid #fff !important;
+  outline: 0 !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}
+body.portfolio-project-page .menu-grid > .thumbnails picture {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.portfolio-project-page .menu-grid > .thumbnails picture img {
+  width: auto !important;
+  max-width: 100% !important;
+  max-height: 160px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+body.portfolio-project-page .menu-grid .click-me,
+body.portfolio-project-page .menu-grid #collections-buttongrid {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+body.portfolio-project-page .menu-grid .click-me a,
+body.portfolio-project-page .menu-grid #collections-buttongrid a {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 44px !important;
+  height: auto !important;
+  padding: 11px 7px !important;
+  color: #b8fbfa !important;
+  background: #050b0c !important;
+  border: 1.5px solid #08dddd !important;
+  border-radius: 6px !important;
+  font: 600 clamp(0.82rem, 1.35vw, 1rem)/1.35 Arial, sans-serif !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+  filter: none !important;
+  box-sizing: border-box !important;
+}
+body.portfolio-project-page .menu-grid .click-me a:hover,
+body.portfolio-project-page .menu-grid .click-me a:focus-visible {
+  color: #041718 !important;
+  background: #b8fbfa !important;
+}
+body.portfolio-project-page .takeme-text { min-height: 0 !important; margin: 1.4rem auto .8rem !important; }
+
+@media (max-width: 640px) {
+  body.portfolio-project-page .menu-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 18px !important;
+    margin: 1rem auto 1.25rem !important;
+  }
+  body.portfolio-project-page .menu-grid > .thumbnails {
+    padding: 14px !important;
+    border-width: 7px !important;
+  }
+  body.portfolio-project-page .menu-grid > .thumbnails picture img { max-height: 150px !important; }
+  body.portfolio-project-page .menu-grid .click-me a,
+  body.portfolio-project-page .menu-grid #collections-buttongrid a {
+    font-size: clamp(.88rem, 3.5vw, 1rem) !important;
+  }
+  /* Fixed legacy project sidebar obscures cards and buttons on phones.
+     All destinations remain available in the page and mobile header menu. */
+  body.portfolio-project-page #side-nav { display: none !important; }
+}
